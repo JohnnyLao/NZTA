@@ -1,0 +1,71 @@
+#fancybox-buttons {
+	position: fixed;
+	right: 10px;
+	width: 55px;
+	z-index: 8050;
+}
+
+#fancybox-buttons.top {
+	top: 10px;
+}
+
+#fancybox-buttons.bottom {
+	bottom: 10px;
+}
+
+#fancybox-buttons ul {
+	width: 55px;
+}
+
+#fancybox-buttons ul li {
+	
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+#fancybox-buttons a {
+	display: block;
+	width: 55px;
+	height: 43px;
+	text-indent: -9999px;
+	outline: none;
+	opacity: 0.8;
+}
+
+#fancybox-buttons a:hover {
+	opacity: 1;
+}
+
+#fancybox-buttons a.btnPrev {
+	display: none;
+}
+
+#fancybox-buttons a.btnNext {
+	display: none;
+}
+
+#fancybox-buttons a.btnPlay {
+	background: url(../play.png) no-repeat 0 0;
+}
+
+#fancybox-buttons a.btnPlayOn {
+	background: url(../play.png) no-repeat 0 -43px;
+}
+
+#fancybox-buttons a.btnToggle {
+	background: url(../fscreen.png) no-repeat 0 0;
+}
+
+#fancybox-buttons a.btnToggleOn {
+	background: url(../fscreen.png) no-repeat 0 -43px;
+}
+
+#fancybox-buttons a.btnClose {
+	background: url(../close.png) no-repeat 0 0;
+}
+
+#fancybox-buttons a.btnDisabled {
+	opacity : 0.4;
+	cursor: default;
+}

@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>Публичное Акционерное Общество «Никопольский завод трубопроводной арматуры» (Никопольский
+        литейно–механический завод «Большевик»)</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="static/images/favicon.ico" type="image/x-icon"/>
+    <!-- Font Awesome -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="static/css/mdb.min.css"/>
+    <!--    SWIPER-->
+    <link rel="stylesheet" href="static/swiper/package/swiper-bundle.min.css"/>
+<!--    AOS-->
+    <link href="static/aos-master/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="">
+<div class="mask">
+    <div class="loader">
+    <svg viewBox="0 0 80 80">
+        <circle id="test" cx="40" cy="40" r="32"></circle>
+    </svg>
+</div>
+
+<div class="loader triangle">
+    <svg viewBox="0 0 86 80">
+        <polygon points="43 8 79 72 7 72"></polygon>
+    </svg>
+</div>
+
+<div class="loader">
+    <svg viewBox="0 0 80 80">
+        <rect x="8" y="8" width="64" height="64"></rect>
+    </svg>
+</div>
+</div>
+<!--JS SPINNER-->
+<script src="static/js/spinner.js"></script>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg pt-0 bg-primary">
+    <!-- Container wrapper -->
+    <div class="container-fluid shadow-lg">
+        <div data-aos="flip-up" class="col-2">
+            <!-- Navbar brand -->
+            <a class="navbar-brand" href="#">
+                <img class="im-fluid mx-auto" src="static/images/logo.png" alt="">
+            </a>
+        </div>
+        <div class="col-8 text-center">
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+
+                    <!-- Link -->
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">О нас</a>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown mx-auto">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                           data-mdb-toggle="dropdown" aria-expanded="false">
+                            Продукция
+                        </a>
+                        <!-- Dropdown menu -->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#">Задвижки чугунные</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Затворы</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Вантузы</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider"/>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Чугунное литье</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-2 text-center">
+            <ul class="navbar-nav">
+                <!-- Language dropdown -->
+                <li class="nav-item dropdown mx-auto">
+                    <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="languageDropdown"
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                    >
+                        <i class="flag-russia flag m-0"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <i class="flag-russia flag"></i>Русский
+                                <i class="fa fa-check text-success ms-2"></i
+                                ></a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider"/>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"><i class="flag-poland flag"></i>Polski</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"><i class="flag-china flag"></i>中文</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"><i class="flag-japan flag"></i>日本語</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"><i class="flag-germany flag"></i>Deutsch</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"><i class="flag-france flag"></i>Français</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"><i class="flag-spain flag"></i>Español</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"><i class="flag-united-kingdom flag"></i>English</a>
+
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"><i class="flag-portugal flag"></i>Português</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+</nav>
+<!-- Navbar -->
+
+<!--SWIPER-->
+<section>
+    <div class="container-fluid px-0">
+        <!-- Swiper -->
+        <link rel="stylesheet" href="static/css/index.css"/>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper" style="max-height: 450px">
+                <div class="swiper-slide"><img class="" src="static/images/slide2.jpg" alt=""></div>
+                <div class="swiper-slide"><img class="" src="static/images/slide1.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--SWIPER END-->
+
+<!--ABOUT US-->
+<section draggable="false" class="container pt-5" data-v-271253ee="">
+    <section class="mb-10 text-center text-lg-start">
+        <style>
+             .cascading-right { margin-right: -50px; } @media (max-width: 991.98px) { .cascading-right { margin-right: 0; } }
+
+
+        </style> <!-- Jumbotron -->
+        <div class="container py-4">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="card cascading-right"
+                         style=" background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px); ">
+                        <div class="card-body py-5 px-md-5 shadow-5"><h2 class="fw-bold mb-4" data-builder-edit="text"
+                                                                         data-builder-name="text1"
+                                                                         contenteditable="true">О компании</h2>
+                            <p class="text-muted mb-4" data-builder-edit="text" data-builder-name="text2"
+                               contenteditable="true">ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ «М-ЛИТ» (Никопольский
+                                завод трубопроводной арматуры,в прошлом – Никопольский литейно–механический завод
+                                «Большевик») — известное в Украине и за рубежом крупное специализированное предприятие
+                                по выпуску запорной арматуры.</p>
+                            <div class="row mb-3">
+                                <div class="col-lg-4"><p><i class="fas fa-check-circle text-dark me-2"></i><span
+                                        data-builder-edit="text" data-builder-name="text3" contenteditable="true">Best team</span>
+                                </p></div>
+                                <div class="col-lg-4"><p><i class="fas fa-check-circle text-dark me-2"></i><span
+                                        data-builder-edit="text" data-builder-name="text4" contenteditable="true">Best quality</span>
+                                </p></div>
+                                <div class="col-lg-4"><p><i class="fas fa-check-circle text-dark me-2"></i><span
+                                        data-builder-edit="text" data-builder-name="text5" contenteditable="true">Best experience</span>
+                                </p></div>
+                            </div>
+                            <p class="text-muted mb-0" data-builder-edit="text" data-builder-name="text6"
+                               contenteditable="true">ООО «М-ЛИТ» (НЗТА) (в прошлом – Никопольский литейно–механический
+                                завод «Большевик») — известное в Украине и за рубежом крупное специализированное
+                                предприятие по выпуску запорной арматуры. Предприятие было создано более 115 лет назад.
+                                За этот период завод прошел путь от производства печного литья до выпуска задвижек
+                                чугунных, применяемых в качестве запорных устройств на трубопроводах для перекрытия
+                                рабочей среды. Предприятием изготавливается задвижка чугунная с условным проходом от 50
+                                мм до 500 мм марки 30ч6бр и 30ч906бр для воды и пара с ручным управлением и
+                                электроприводом; 30ч6бк для нефтепродуктов и масел; 30ч47бк4 и 30ч47бр для природного
+                                газа и воды с условным проходом от 50 мм до 150 мм. 2ООО «М-ЛИТ» сегодня – это
+                                техническая оснащенность производства универсальным и специализированным оборудованием,
+                                квалифицированные специалисты, что в сочетании с большим опытом работы завода в этой
+                                отрасли промышленности позволяет коллективу предприятия выпускать широкую номенклатуру
+                                трубопроводной арматуры. Обращайтесь к нам – и мы выполним Ваш заказ быстро и
+                                качественно. Продукцию со знаком нашего предприятия можно встретить повсюду – от
+                                огромных металлургических комбинатов, ТЭЦ, карьеров до оросительных систем в сельском
+                                хозяйстве, коммунальном хозяйстве любого населенного пункта стран СНГ. И везде продукция
+                                нашего предприятия работает четко и надежно.</p></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5 mb-lg-0"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLJD6yt3WosdwXUkd0UIZlLSfo9KovTbM0TA&amp;usqp=CAU"
+                        class="w-100 rounded-4 shadow-4" alt="" data-builder-edit="image" data-builder-name="image1"
+                        aria-controls="#picker-editor" draggable="false"></div>
+            </div>
+        </div> <!-- Jumbotron --> </section>
+</section>
+<!--ABOUT US END-->
+
+<!--OUR CLIENT-->
+<section draggable="false" class="container pt-5" data-v-271253ee="">
+    <section class="mb-10 text-center"><h2 class="fw-bold mb-5"><span data-builder-edit="text" data-builder-name="text1"
+                                                                      contenteditable="true">Наши</span> <u
+            class="text-primary">Клиенты</u>
+    </h2>
+        <div class="row gx-lg-5">
+            <div class="col-xl-3 col-md-4 mb-5"><img src="static/images/clients/nzf-logo.png"
+                                                     class="rounded-circle shadow mb-3 bg-primary" alt=""
+                                                     style="max-width: 100px" data-builder-edit="image"
+                                                     data-builder-name="image1" aria-controls="#picker-editor">
+                <p class="fw-bold mb-1" data-builder-edit="text" data-builder-name="text3" contenteditable="true">
+                    НЗФ</p>
+                <p class="text-muted mb-0" data-builder-edit="text" data-builder-name="text4" contenteditable="true">
+                    ПАО «Никопольский завод ферросплавов»</p></div>
+            <div class="col-xl-3 col-md-4 mb-5"><img src="static/images/clients/nzf-logo.png"
+                                                     class="rounded-circle shadow-4 mb-3" alt=""
+                                                     style="max-width: 100px" data-builder-edit="image"
+                                                     data-builder-name="image2" aria-controls="#picker-editor">
+                <p class="fw-bold mb-1" data-builder-edit="text" data-builder-name="text5" contenteditable="true">Lisa
+                    Ferrol</p>
+                <p class="text-muted mb-0" data-builder-edit="text" data-builder-name="text6" contenteditable="true">Web
+                    designer</p></div>
+            <div class="col-xl-3 col-md-4 mb-5"><img src="static/images/clients/nzf-logo.png"
+                                                     class="rounded-circle shadow-4 mb-3" alt=""
+                                                     style="max-width: 100px" data-builder-edit="image"
+                                                     data-builder-name="image3" aria-controls="#picker-editor">
+                <p class="fw-bold mb-1" data-builder-edit="text" data-builder-name="text7" contenteditable="true">Maria
+                    Smith</p>
+                <p class="text-muted mb-0" data-builder-edit="text" data-builder-name="text8" contenteditable="true">
+                    Senior consultant</p></div>
+            <div class="col-xl-3 col-md-4 mb-5"><img src="static/images/clients/nzf-logo.png"
+                                                     class="rounded-circle shadow-4 mb-3" alt=""
+                                                     style="max-width: 100px" data-builder-edit="image"
+                                                     data-builder-name="image4" aria-controls="#picker-editor">
+                <p class="fw-bold mb-1" data-builder-edit="text" data-builder-name="text9" contenteditable="true">Agatha
+                    Bevos</p>
+                <p class="text-muted mb-0" data-builder-edit="text" data-builder-name="text10" contenteditable="true">
+                    Co-founder</p></div>
+            <div class="col-xl-3 col-md-4 mb-5"><img src="static/images/clients/nzf-logo.png"
+                                                     class="rounded-circle shadow-4 mb-3" alt=""
+                                                     style="max-width: 100px" data-builder-edit="image"
+                                                     data-builder-name="image5" aria-controls="#picker-editor">
+                <p class="fw-bold mb-1" data-builder-edit="text" data-builder-name="text11" contenteditable="true">
+                    Darren Randolph</p>
+                <p class="text-muted mb-0" data-builder-edit="text" data-builder-name="text12" contenteditable="true">
+                    Marketing expert</p></div>
+            <div class="col-xl-3 col-md-4 mb-5"><img src="static/images/clients/nzf-logo.png"
+                                                     class="rounded-circle shadow-4 mb-3" alt=""
+                                                     style="max-width: 100px" data-builder-edit="image"
+                                                     data-builder-name="image6" aria-controls="#picker-editor">
+                <p class="fw-bold mb-1" data-builder-edit="text" data-builder-name="text13" contenteditable="true">
+                    Soraya Letto</p>
+                <p class="text-muted mb-0" data-builder-edit="text" data-builder-name="text14" contenteditable="true">
+                    SEO expert</p></div>
+            <div class="col-xl-3 col-md-4 mb-5"><img src="static/images/clients/nzf-logo.png"
+                                                     class="rounded-circle shadow-4 mb-3" alt=""
+                                                     style="max-width: 100px" data-builder-edit="image"
+                                                     data-builder-name="image7" aria-controls="#picker-editor">
+                <p class="fw-bold mb-1" data-builder-edit="text" data-builder-name="text15" contenteditable="true">
+                    Maliha Welch</p>
+                <p class="text-muted mb-0" data-builder-edit="text" data-builder-name="text16" contenteditable="true">
+                    Web designer</p></div>
+            <div class="col-xl-3 col-md-4 mb-5"><img src="static/images/clients/nzf-logo.png"
+                                                     class="rounded-circle shadow-4 mb-3" alt=""
+                                                     style="max-width: 100px" data-builder-edit="image"
+                                                     data-builder-name="image8" aria-controls="#picker-editor">
+                <p class="fw-bold mb-1" data-builder-edit="text" data-builder-name="text17" contenteditable="true">
+                    Zeynep Dudley</p>
+                <p class="text-muted mb-0" data-builder-edit="text" data-builder-name="text18" contenteditable="true">
+                    Web developer</p></div>
+            <div class="col-xl-3 col-md-4 mb-5"><img src="static/images/clients/nzf-logo.png"
+                                                     class="rounded-circle shadow-4 mb-3" alt=""
+                                                     style="max-width: 100px" data-builder-edit="image"
+                                                     data-builder-name="image9" aria-controls="#picker-editor">
+                <p class="fw-bold mb-1" data-builder-edit="text" data-builder-name="text19" contenteditable="true">Avaya
+                    Hills</p>
+                <p class="text-muted mb-0" data-builder-edit="text" data-builder-name="text20" contenteditable="true">
+                    Copywritter</p></div>
+            <div class="col-xl-3 col-md-4 mb-5"><img src="https://mdbootstrap.com/img/new/avatars/13.jpg"
+                                                     class="rounded-circle shadow-4 mb-3" alt=""
+                                                     style="max-width: 100px" data-builder-edit="image"
+                                                     data-builder-name="image10" aria-controls="#picker-editor">
+                <p class="fw-bold mb-1" data-builder-edit="text" data-builder-name="text21" contenteditable="true">
+                    Thierry Fischer</p>
+                <p class="text-muted mb-0" data-builder-edit="text" data-builder-name="text22" contenteditable="true">
+                    Senior consultant</p></div>
+            <div class="col-xl-3 col-md-4 mb-5"><img src="https://mdbootstrap.com/img/new/avatars/14.jpg"
+                                                     class="rounded-circle shadow-4 mb-3" alt=""
+                                                     style="max-width: 100px" data-builder-edit="image"
+                                                     data-builder-name="image11" aria-controls="#picker-editor">
+                <p class="fw-bold mb-1" data-builder-edit="text" data-builder-name="text23" contenteditable="true">
+                    Aisling Sheldon</p>
+                <p class="text-muted mb-0" data-builder-edit="text" data-builder-name="text24" contenteditable="true">
+                    Senior developer</p></div>
+            <div class="col-xl-3 col-md-4 mb-5"><img src="https://mdbootstrap.com/img/new/avatars/15.jpg"
+                                                     class="rounded-circle shadow-4 mb-3" alt=""
+                                                     style="max-width: 100px" data-builder-edit="image"
+                                                     data-builder-name="image12" aria-controls="#picker-editor">
+                <p class="fw-bold mb-1" data-builder-edit="text" data-builder-name="text25" contenteditable="true">Ayat
+                    Black</p>
+                <p class="text-muted mb-0" data-builder-edit="text" data-builder-name="text26" contenteditable="true">
+                    Web designer</p></div>
+        </div>
+    </section>
+</section>
+<!--OUR CLIENTS END-->
+
+<!--OUR PRODUCTS-->
+<section draggable="false" class="container pt-5" data-v-271253ee="">
+    <section class="mb-10 text-center text-lg-start"><h2 class="fw-bold mb-5 text-center" data-builder-edit="text"
+                                                         data-builder-name="text1" contenteditable="true">Наша
+        продукция</h2>
+        <div class="row gx-lg-5">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <div>
+                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded-4 mb-4"
+                         data-mdb-ripple-color="light"><img
+                            src="static/images/prod1.png"
+                            class="w-100" alt="" data-builder-edit="image" data-builder-name="image1"
+                            aria-controls="#picker-editor"></div>
+                    <h5 class="fw-bold" data-builder-edit="text" data-builder-name="text2" contenteditable="true">
+                        Задвижки чугунные</h5>
+                    <div class="mb-3 text-danger small"><i class="fas fa-fire me-2" data-builder-edit="icon"
+                                                           data-builder-name="icon1" aria-controls="#picker-editor"></i><span
+                            data-builder-edit="text" data-builder-name="text3" contenteditable="true">Hot news</span>
+                    </div>
+                    <p class="text-muted">Назначение и область применения: Задвижки параллельные двухдисковые на
+                        номинальное давление PN10 предназначены для установки в качестве запорного устройства на
+                        трубопроводах различных отраслей промышленности.</p></div>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <div>
+                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded-4 mb-4"
+                         data-mdb-ripple-color="light"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmwXaa65i0cLpL_gl3eYk-OugWGJUmjiIu8w&amp;usqp=CAU"
+                            class="w-100" alt="" data-builder-edit="image" data-builder-name="image1"
+                            aria-controls="#picker-editor"></div>
+                    <h5 class="fw-bold" data-builder-edit="text" data-builder-name="text4" contenteditable="true">
+                        Затворы</h5>
+                    <div class="mb-3 text-primary small"><i class="fas fa-flask me-2" data-builder-edit="icon"
+                                                            data-builder-name="icon2"
+                                                            aria-controls="#picker-editor"></i><span
+                            data-builder-edit="text" data-builder-name="text5" contenteditable="true">Experiment</span>
+                    </div>
+                    <p class="text-muted"> Suspendisse in volutpat massa. Nulla facilisi. Sed aliquet diam orci, nec
+                        ornare metus semper sed. Integer volutpat ornare erat sit amet rutrum. </p></div>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <div>
+                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded-4 mb-4"
+                         data-mdb-ripple-color="light"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmwXaa65i0cLpL_gl3eYk-OugWGJUmjiIu8w&amp;usqp=CAU"
+                            class="w-100" alt="" data-builder-edit="image" data-builder-name="image1"
+                            aria-controls="#picker-editor"></div>
+                    <h5 class="fw-bold" data-builder-edit="text" data-builder-name="text6" contenteditable="true">
+                        Вантузы</h5>
+                    <div class="mb-3 text-warning small"><i class="fas fa-sun me-2" data-builder-edit="icon"
+                                                            data-builder-name="icon3"
+                                                            aria-controls="#picker-editor"></i><span
+                            data-builder-edit="text" data-builder-name="text7"
+                            contenteditable="true">Family friendly</span></div>
+                    <p class="text-muted" data-builder-edit="text" data-builder-name="text8" contenteditable="true">
+                        Curabitur tristique, mi a mollis sagittis, metus felis mattis arcu, non vehicula nisl dui quis
+                        diam. Mauris ut risus eget massa volutpat feugiat. Donec.</p></div>
+            </div>
+        </div>
+    </section>
+</section>
+<!--OUR PRODUCTS END-->
+
+<!--IRON CASTING-->
+<section draggable="false" class="container pt-5" data-v-271253ee="">
+    <section class="mb-10">
+        <style>
+             .rounded-t-5 { border-top-left-radius: 0.5rem; border-top-right-radius: 0.5rem; } @media (min-width: 992px) { .rounded-tr-lg-0 { border-top-right-radius: 0; } .rounded-bl-lg-5 { border-bottom-left-radius: 0.5rem; } }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </style>
+        <div class="card mb-3">
+            <div class="row g-0 d-flex align-items-center">
+                <div class="col-lg-5 col-xl-4 d-none d-lg-flex"><img
+                        src="https://neva-zmk.ru/assets/images/company/img-chugun1.jpg" alt=""
+                        class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5 ms-3" data-builder-edit="image"
+                        data-builder-name="image1" aria-controls="#picker-editor"></div>
+                <div class="col-lg-7 col-xl-8">
+                    <div class="card-body py-5 px-md-5"><h2 class="fw-bold mb-4" data-builder-edit="text"
+                                                            data-builder-name="text1" contenteditable="true">Чугунное
+                        литьё</h2>
+                        <p class="text-muted mb-4" data-builder-edit="text" data-builder-name="text2"
+                           contenteditable="true">Nunc tincidunt vulputate elit. Mauris varius purus malesuada neque
+                            iaculis malesuada. Aenean gravida magna orci, non efficitur est porta id. Donec magna
+                            diam.</p>
+                        <div class="row">
+                            <div class="col-lg-4 mb-2"><p><i class="fas fa-check text-dark me-2"></i><span
+                                    data-builder-edit="text" data-builder-name="text3" contenteditable="true">Support 24/7</span>
+                            </p></div>
+                            <div class="col-lg-4 mb-2"><p><i class="fas fa-check text-dark me-2"></i><span
+                                    data-builder-edit="text" data-builder-name="text4"
+                                    contenteditable="true">Analytics</span></p></div>
+                            <div class="col-lg-4 mb-2"><p><i class="fas fa-check text-dark me-2"></i><span
+                                    data-builder-edit="text" data-builder-name="text5"
+                                    contenteditable="true">Components</span></p></div>
+                            <div class="col-lg-4 mb-2"><p><i class="fas fa-check text-dark me-2"></i><span
+                                    data-builder-edit="text" data-builder-name="text6"
+                                    contenteditable="true">Updates</span></p></div>
+                            <div class="col-lg-4 mb-2"><p><i class="fas fa-check text-dark me-2"></i><span
+                                    data-builder-edit="text" data-builder-name="text7"
+                                    contenteditable="true">Reports</span></p></div>
+                            <div class="col-lg-4 mb-2"><p><i class="fas fa-check text-dark me-2"></i><span
+                                    data-builder-edit="text" data-builder-name="text8"
+                                    contenteditable="true">Mobile</span></p></div>
+                            <div class="col-lg-4 mb-2"><p><i class="fas fa-check text-dark me-2"></i><span
+                                    data-builder-edit="text" data-builder-name="text9"
+                                    contenteditable="true">Modules</span></p></div>
+                            <div class="col-lg-4 mb-2"><p><i class="fas fa-check text-dark me-2"></i><span
+                                    data-builder-edit="text" data-builder-name="text10"
+                                    contenteditable="true">Blocks</span></p></div>
+                            <div class="col-lg-4 mb-2"><p><i class="fas fa-check text-dark me-2"></i><span
+                                    data-builder-edit="text" data-builder-name="text11"
+                                    contenteditable="true">Templates</span></p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<!--IRON CASTING END-->
+
+<!--OUR ADVANTAGES-->
+<section draggable="false" class="container pt-5" data-v-271253ee="">
+    <section class="mb-10"><h2 class="fw-bold mb-5 text-center" data-builder-edit="text" data-builder-name="text12"
+                               contenteditable="true">Наши технологии</h2>
+        <div class="row gx-lg-5 align-items-center">
+            <div class="col-lg-5 mb-5 mb-lg-0">
+                <div class="bg-image rounded-5 shadow-5-strong"
+                     style="background-image: url(&quot;https://cdn.hswstatic.com/gif/gettyimages-492798423.jpg&quot;); height: 560px; background-size: cover; background-position: 50% 50%;"
+                     data-builder-edit="background" data-builder-name="background1" aria-controls="#picker-editor">
+                    <div class="mask1" style="background-color: rgba(0, 0, 0, 0.4)">
+                        <div class="d-flex justify-content-center align-items-center h-100">
+                            <div class="px-4 py-5 px-md-5 text-white text-center"><h3
+                                    class="text-uppercase fw-bold mb-4"><span data-builder-edit="text"
+                                                                              data-builder-name="text1"
+                                                                              contenteditable="true">THE FUTURE IS</span>
+                                <u style="color: hsl(231, 52.6%, 85%)" data-builder-edit="text"
+                                   data-builder-name="text2" contenteditable="true">now</u></h3>
+                                <p class="mb-0" style="color: hsl(231, 52.6%, 85%)" data-builder-edit="text"
+                                   data-builder-name="text3" contenteditable="true">Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Harum quia laboriosam error consequuntur fugit,
+                                    doloribus rerum, iure nesciunt amet quidem veniam cupiditate hic fugiat dolore
+                                    aperiam quisquam libero earum quibusdam?</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 mb-4 mb-lg-0">
+                <div class="d-flex align-items-start mb-5">
+                    <div class="flex-shrink-0">
+                        <div class="p-3 rounded-4 shadow-2-strong" style="background-color: hsl(231, 52.6%, 20%)"><i
+                                class="fas fa-headset fa-lg text-white fa-fw" data-builder-edit="icon"
+                                data-builder-name="icon1" aria-controls="#picker-editor"></i></div>
+                    </div>
+                    <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1" data-builder-edit="text"
+                                                     data-builder-name="text4" contenteditable="true">Support 24/7</p>
+                        <p class="text-muted mb-0" data-builder-edit="text" data-builder-name="text5"
+                           contenteditable="true">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
+                            quisquam quibusdam modi sapiente magni molestias pariatur facilis reprehenderit facere
+                            aliquam ex.</p></div>
+                </div>
+                <div class="d-flex align-items-start mb-5">
+                    <div class="flex-shrink-0">
+                        <div class="p-3 rounded-4 shadow-2-strong" style="background-color: hsl(231, 52.6%, 20%)"><i
+                                class="fas fa-shield-alt fa-lg text-white fa-fw" data-builder-edit="icon"
+                                data-builder-name="icon2" aria-controls="#picker-editor"></i></div>
+                    </div>
+                    <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1" data-builder-edit="text"
+                                                     data-builder-name="text6" contenteditable="true">Safe and solid</p>
+                        <p class="text-muted mb-0" data-builder-edit="text" data-builder-name="text7"
+                           contenteditable="true">Eum nostrum fugit numquam, voluptates veniam neque quibusdam ullam
+                            aspernatur odio soluta, quisquam dolore animi mollitia a omnis praesentium, expedita
+                            nobis!</p></div>
+                </div>
+                <div class="d-flex align-items-start mb-5">
+                    <div class="flex-shrink-0">
+                        <div class="p-3 rounded-4 shadow-2-strong" style="background-color: hsl(231, 52.6%, 20%)"><i
+                                class="fas fa-shipping-fast fa-lg text-white fa-fw" data-builder-edit="icon"
+                                data-builder-name="icon3" aria-controls="#picker-editor"></i></div>
+                    </div>
+                    <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1" data-builder-edit="text"
+                                                     data-builder-name="text8" contenteditable="true">Extremely fast</p>
+                        <p class="text-muted mb-0" data-builder-edit="text" data-builder-name="text9"
+                           contenteditable="true">Enim cupiditate, minus nulla dolor cumque iure eveniet facere ullam
+                            beatae hic voluptatibus dolores exercitationem? Facilis debitis aspernatur amet nisi iure
+                            eveniet facere?</p></div>
+                </div>
+                <div class="d-flex align-items-start">
+                    <div class="flex-shrink-0">
+                        <div class="p-3 rounded-4 shadow-2-strong" style="background-color: hsl(231, 52.6%, 20%)"><i
+                                class="fas fa-chart-pie fa-lg text-white fa-fw" data-builder-edit="icon"
+                                data-builder-name="icon4" aria-controls="#picker-editor"></i></div>
+                    </div>
+                    <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1" data-builder-edit="text"
+                                                     data-builder-name="text10" contenteditable="true">Live
+                        analytics</p>
+                        <p class="text-muted mb-0" data-builder-edit="text" data-builder-name="text11"
+                           contenteditable="true">Illum doloremque ea, blanditiis sed dolor laborum praesentium maxime
+                            sint, consectetur atque ipsum ab adipisci ullam aspernatur odio soluta, quisquam dolore</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<!--OUR ADVANTAGES END-->
+
+<!--STATS-->
+<section draggable="false" class="container pt-5" data-v-271253ee="">
+    <section class="mb-10 text-center"><h2 class="fw-bold mb-9 text-center" data-builder-edit="text"
+                                           data-builder-name="text1" contenteditable="true">Why is it so great?</h2>
+        <div class="row gx-lg-5">
+            <div class="col-lg-4 col-md-12 mb-8 mb-lg-0">
+                <div class="card shadow-2-strong h-100">
+                    <div class="d-flex justify-content-center" style="margin-top: -43px">
+                        <div class="p-4 bg-primary rounded-circle shadow-5-strong d-inline-block"><i
+                                class="fas fa-cubes fa-2x text-white" data-builder-edit="icon" data-builder-name="icon1"
+                                aria-controls="#picker-editor"></i></div>
+                    </div>
+                    <div class="card-body"><h3 class="fw-bold text-primary mb-3" data-builder-edit="text"
+                                               data-builder-name="text2" contenteditable="true">1000</h3> <h5
+                            class="text-muted mb-3" data-builder-edit="text" data-builder-name="text3"
+                            contenteditable="true">Components</h5>
+                        <p class="text-muted" data-builder-edit="text" data-builder-name="text4" contenteditable="true">
+                            Laudantium totam quas cumque pariatur at doloremque hic quos quia eius</p></div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-8 mb-lg-0">
+                <div class="card shadow-2-strong h-100">
+                    <div class="d-flex justify-content-center" style="margin-top: -43px">
+                        <div class="p-4 bg-primary rounded-circle shadow-5-strong d-inline-block"><i
+                                class="fas fa-chart-pie fa-2x text-white" data-builder-edit="icon"
+                                data-builder-name="icon2" aria-controls="#picker-editor"></i></div>
+                    </div>
+                    <div class="card-body"><h3 class="fw-bold text-primary mb-3" data-builder-edit="text"
+                                               data-builder-name="text5" contenteditable="true">70%</h3> <h5
+                            class="text-muted mb-3" data-builder-edit="text" data-builder-name="text6"
+                            contenteditable="true">Growth</h5>
+                        <p class="text-muted" data-builder-edit="text" data-builder-name="text7" contenteditable="true">
+                            Eum nostrum fugit numquam, voluptates veniam neque quibusdam ullam</p></div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-8 mb-lg-0">
+                <div class="card shadow-2-strong h-100">
+                    <div class="d-flex justify-content-center" style="margin-top: -43px">
+                        <div class="p-4 bg-primary rounded-circle shadow-5-strong d-inline-block"><i
+                                class="fas fa-cogs fa-2x text-white" data-builder-edit="icon" data-builder-name="icon3"
+                                aria-controls="#picker-editor"></i></div>
+                    </div>
+                    <div class="card-body"><h3 class="fw-bold text-primary mb-3" data-builder-edit="text"
+                                               data-builder-name="text8" contenteditable="true">49</h3> <h5
+                            class="text-muted mb-3" data-builder-edit="text" data-builder-name="text9"
+                            contenteditable="true">Projects</h5>
+                        <p class="text-muted" data-builder-edit="text" data-builder-name="text10"
+                           contenteditable="true">Cupiditate enim, minus nulla dolor cumque iure eveniet facere
+                            ullam</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<!--STATS END-->
+
+<!--CONTACT US-->
+<section draggable="false" class="container pt-5" data-v-271253ee="">
+    <section class="mb-10">
+        <style>
+             /* Map settings */ .map-container-2 { height: 500px; } .map-container-2 iframe { left: 0; top: 0; height: 100%; width: 100%; } .rounded-t-5 { border-top-left-radius: 0.5rem; border-top-right-radius: 0.5rem; } @media (min-width: 992px) { .rounded-tr-lg-0 { border-top-right-radius: 0; } .rounded-bl-lg-5 { border-bottom-left-radius: 0.5rem; } }
+
+
+
+
+
+
+
+
+
+
+        </style>
+        <div class="card mb-3">
+            <div class="row g-0 d-flex align-items-center">
+                <div class="col-lg-4 d-none d-lg-flex">
+                    <div class="map-container-2 w-100 mb-4 mb-lg-0">
+                        <iframe src="https://maps.google.com/maps?q=manhatan&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                                class="rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5" frameborder="0"
+                                allowfullscreen=""></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="card-body py-5 px-md-5">
+                        <div class="row gx-lg-5">
+                            <div class="col-md-6 mb-5">
+                                <div class="d-flex align-items-start">
+                                    <div class="flex-shrink-0">
+                                        <div class="p-3 bg-primary rounded-4 shadow-2-strong"><i
+                                                class="fas fa-headset fa-lg text-white fa-fw" data-builder-edit="icon"
+                                                data-builder-name="icon1" aria-controls="#picker-editor"></i></div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1" data-builder-edit="text"
+                                                                     data-builder-name="text6" contenteditable="true">
+                                        Technical support</p>
+                                        <p class="text-muted mb-0" data-builder-edit="text" data-builder-name="text7"
+                                           contenteditable="true">support@example.com</p>
+                                        <p class="text-muted mb-0" data-builder-edit="text" data-builder-name="text8"
+                                           contenteditable="true">+1 234-567-89</p></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-5">
+                                <div class="d-flex align-items-start">
+                                    <div class="flex-shrink-0">
+                                        <div class="p-3 bg-primary rounded-4 shadow-2-strong"><i
+                                                class="fas fa-dollar-sign fa-lg text-white fa-fw"
+                                                data-builder-edit="icon" data-builder-name="icon2"
+                                                aria-controls="#picker-editor"></i></div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1" data-builder-edit="text"
+                                                                     data-builder-name="text9" contenteditable="true">
+                                        Sales questions</p>
+                                        <p class="text-muted mb-0" data-builder-edit="text" data-builder-name="text10"
+                                           contenteditable="true">sales@example.com</p>
+                                        <p class="text-muted mb-0" data-builder-edit="text" data-builder-name="text11"
+                                           contenteditable="true">+1 234-567-89</p></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-5">
+                                <div class="d-flex align-items-start">
+                                    <div class="flex-shrink-0">
+                                        <div class="p-3 bg-primary rounded-4 shadow-2-strong"><i
+                                                class="fas fa-newspaper fa-lg text-white fa-fw" data-builder-edit="icon"
+                                                data-builder-name="icon3" aria-controls="#picker-editor"></i></div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1" data-builder-edit="text"
+                                                                     data-builder-name="text12" contenteditable="true">
+                                        Press</p>
+                                        <p class="text-muted mb-0" data-builder-edit="text" data-builder-name="text13"
+                                           contenteditable="true">press@example.com</p>
+                                        <p class="text-muted mb-0" data-builder-edit="text" data-builder-name="text14"
+                                           contenteditable="true">+1 234-567-89</p></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-5">
+                                <div class="d-flex align-items-start">
+                                    <div class="flex-shrink-0">
+                                        <div class="p-3 bg-primary rounded-4 shadow-2-strong"><i
+                                                class="fas fa-bug fa-lg text-white fa-fw" data-builder-edit="icon"
+                                                data-builder-name="icon4" aria-controls="#picker-editor"></i></div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1" data-builder-edit="text"
+                                                                     data-builder-name="text15" contenteditable="true">
+                                        Bug report</p>
+                                        <p class="text-muted mb-0" data-builder-edit="text" data-builder-name="text16"
+                                           contenteditable="true">bugs@example.com</p>
+                                        <p class="text-muted mb-0" data-builder-edit="text" data-builder-name="text17"
+                                           contenteditable="true">+1 234-567-89</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<!--CONTACT US END-->
+
+
+<!--FOOTER-->
+<footer>
+    <div class="row">
+        <div class="columns small-3 medium-1 logo">
+            <a href="/"><img src="http://nzta.com.ua/wp-content/themes/nzta/images/logo.png" alt="НЗТА"></a>
+        </div>
+        <div class="columns small-7 medium-3 slogan">
+            <div class="text">Никопольский завод трубопроводной арматуры</div>
+            <div class="phone">(0566) 68-45-80 <br>(0566) 68-45-81</div>
+        </div>
+        <div class="columns small-12 medium-8 menu">
+            <nav class="footer-nav">
+                <ul id="menu-nizhnee-menyu" class="menu">
+                    <li id="menu-item-56"
+                        class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-56">
+                        <a href="http://nzta.com.ua/">Главная</a></li>
+                    <li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55">
+                        <a href="http://nzta.com.ua/o-zavode/">О заводе</a></li>
+                    <li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54">
+                        <a href="http://nzta.com.ua/produktsiya/">Продукция</a></li>
+                    <li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53">
+                        <a href="http://nzta.com.ua/novosti/">Новости</a></li>
+                    <li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52">
+                        <a href="http://nzta.com.ua/kontakty/">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="columns medium-12 copyright">
+            © 2014-2018 ООО «М-ЛИТ», Все права защищены
+            <div class="developer"><a href="http://webimperia.org/" title="webimperia.org">Разработка сайта</a> — студия
+                WebImperia
+            </div>
+        </div>
+    </div>
+</footer>
+<!--FOOTER END-->
+
+<!-- MDB -->
+<script type="text/javascript" src="static/js/mdb.min.js"></script>
+<!-- Custom scripts -->
+<script type="text/javascript"></script>
+<!--SWIPER-->
+<script src="static/swiper/package/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script src="static/js/swiper.js"></script>
+<!--AOS-->
+<script src="static/aos-master/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+/* Collapsible navigation */
+var navigation = responsiveNav(".nav-collapse", {
+    animate: true,                    // Boolean: Use CSS3 transitions, true or false
+    transition: 284,                  // Integer: Speed of the transition, in milliseconds
+    label: "",                    // String: Label for the navigation toggle
+    insert: "before",                  // String: Insert the toggle before or after the navigation
+    customToggle: "",                 // Selector: Specify the ID of a custom toggle
+    closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+    openPos: "relative",              // String: Position of the opened nav, relative or static
+    navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
+    navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+    jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+    init: function(){},               // Function: Init callback
+    open: function(){},               // Function: Open callback
+    close: function(){}               // Function: Close callback
+  });
+
+$(function(){
+    
+  $('#image-slider').bjqs({
+        height      : 600,
+        width       : 1920,
+        responsive  : true,
+        showcontrols : false,
+        showmarkers : false,
+        usecaptions : false
+    });
+    
+    setTimeout(function(){
+		$('.postgallery').carouFredSel({
+        width: '100%',
+        scroll: 2
+    });    
+    }, 150)
+    
+    window.scrollReveal = new scrollReveal();
+    
+    //=======Start интерактивная схема
+    
+    $('.element').click(function(){
+		var url  = $(this).data('url');
+   		var product  = $(this).data('product'); 
+   		var cur_url = $('.scheme').data('cur_url'); 
+   		if(product != undefined && cur_url != url){
+   			if(product!='')product = '?current_product=' + product;
+   			else product = '';
+   			
+	   		document.location.href = 'http://' + document.domain + url + product;
+	   	}
+	   	else if(cur_url == url){
+	   		$('.scheme .active').removeClass('active');
+	   		$('.row .current_product').removeClass('current_product');
+	   		$(this).addClass('active');	
+	   		$('.item[data-product="'+product+'"]').addClass('current_product');	
+	   		var destination = $('.item[data-product="'+product+'"]').offset().top;
+	   		$('body').animate({ scrollTop: destination }, 1100);
+	   	}
+    })
+    
+    
+    $('.item.current_product').each(function(){
+    var j = $(this);
+    	setTimeout(function(){
+	    	var destination = j.offset().top;
+	   		$('body').animate({ scrollTop: destination }, 1100);
+    	}, 500);
+	  		
+    })
+    //=======END интерактивная схема
+    
+
+});
+
+(function($) {
+ 
+/*
+*  render_map
+*
+*  This function will render a Google Map onto the selected jQuery element
+*
+*  @type    function
+*  @date    8/11/2013
+*  @since   4.3.0
+*
+*  @param   $el (jQuery element)
+*  @return  n/a
+*/
+ 
+function render_map( $el ) {
+ 
+    // var
+    var $markers = $el.find('.marker');
+ 
+    // vars
+    var args = {
+        zoom        : 16,
+        center      : new google.maps.LatLng(0, 0),
+        mapTypeId   : google.maps.MapTypeId.ROADMAP
+    };
+ 
+    // create map               
+    var map = new google.maps.Map( $el[0], args);
+ 
+    // add a markers reference
+    map.markers = [];
+ 
+    // add markers
+    $markers.each(function(){
+ 
+        add_marker( $(this), map );
+ 
+    });
+ 
+    // center map
+    center_map( map );
+ 
+}
+ 
+/*
+*  add_marker
+*
+*  This function will add a marker to the selected Google Map
+*
+*  @type    function
+*  @date    8/11/2013
+*  @since   4.3.0
+*
+*  @param   $marker (jQuery element)
+*  @param   map (Google Map object)
+*  @return  n/a
+*/
+ 
+function add_marker( $marker, map ) {
+ 
+    // var
+    var latlng = new google.maps.LatLng( $marker.attr('data-lat'), $marker.attr('data-lng') );
+ 
+    // create marker
+    var marker = new google.maps.Marker({
+        position    : latlng,
+        map         : map
+    });
+ 
+    // add to array
+    map.markers.push( marker );
+ 
+    // if marker contains HTML, add it to an infoWindow
+    if( $marker.html() )
+    {
+        // create info window
+        var infowindow = new google.maps.InfoWindow({
+            content     : $marker.html()
+        });
+ 
+        // show info window when marker is clicked
+        google.maps.event.addListener(marker, 'click', function() {
+ 
+            infowindow.open( map, marker );
+ 
+        });
+    }
+ 
+}
+ 
+/*
+*  center_map
+*
+*  This function will center the map, showing all markers attached to this map
+*
+*  @type    function
+*  @date    8/11/2013
+*  @since   4.3.0
+*
+*  @param   map (Google Map object)
+*  @return  n/a
+*/
+ 
+function center_map( map ) {
+ 
+    // vars
+    var bounds = new google.maps.LatLngBounds();
+ 
+    // loop through all markers and create bounds
+    $.each( map.markers, function( i, marker ){
+ 
+        var latlng = new google.maps.LatLng( marker.position.lat(), marker.position.lng() );
+ 
+        bounds.extend( latlng );
+ 
+    });
+ 
+    // only 1 marker?
+    if( map.markers.length == 1 )
+    {
+        // set center of map
+        map.setCenter( bounds.getCenter() );
+        map.setZoom( 16 );
+    }
+    else
+    {
+        // fit to bounds
+        map.fitBounds( bounds );
+    }
+ 
+}
+ 
+/*
+*  document ready
+*
+*  This function will render each map when the document is ready (page has loaded)
+*
+*  @type    function
+*  @date    8/11/2013
+*  @since   5.0.0
+*
+*  @param   n/a
+*  @return  n/a
+*/
+ 
+$(document).ready(function(){
+ 
+    $('.acf-map').each(function(){
+ 
+        render_map( $(this) );
+ 
+    });
+ 
+});
+ 
+})(jQuery);
