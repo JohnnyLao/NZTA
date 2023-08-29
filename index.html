@@ -24,6 +24,24 @@
     <link rel="stylesheet" href="static/swiper/package/swiper-bundle.min.css"/>
     <!--    AOS-->
     <link href="static/aos-master/dist/aos.css" rel="stylesheet">
+    <!--    GOOGLE MAP-->
+    <link rel="stylesheet" href="static/css/map.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <style>
+             .cascading-right { margin-left: -200px; margin-top: -50px } @media (max-width: 991.98px) { .cascading-right { margin-left: 0; } }
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
 </head>
 
 <body class="">
@@ -49,13 +67,13 @@
 <!--JS SPINNER-->
 <script src="static/js/spinner.js"></script>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg pt-0 bg-primary">
+<nav class="navbar navbar-expand-lg pt-0 bg-primary sticky-top">
     <!-- Container wrapper -->
     <div class="container-fluid shadow-lg">
         <div data-aos="fade-right" class="col-2">
             <!-- Navbar brand -->
             <a class="navbar-brand" href="#">
-                <img class="im-fluid mx-auto" src="static/images/logo.png" alt="">
+                <img class="im-fluid mx-auto" src="static/images/logo.png" alt="" style="max-width: 50px">
             </a>
         </div>
         <div class="col-8 text-center">
@@ -113,6 +131,7 @@
         <div class="col-2 text-center">
             <ul class="navbar-nav">
                 <!-- Language dropdown -->
+                <!--                ОСНОВНОЙ УКРАИНСКИЙ, АНГЛИЙСКИЙ, НЕМЕЦКИЙ, РУМЫНСКИЙ, ПОЛЬСКИЙ, ЧЕШСКИЙ, РУССКИЙ-->
                 <li class="nav-item dropdown mx-auto">
                     <a
                             class="nav-link dropdown-toggle"
@@ -163,36 +182,31 @@
                 </li>
             </ul>
         </div>
-
-
     </div>
 </nav>
 <!-- Navbar -->
 
 <!--SWIPER-->
 <section class="mb-10">
-    <div class="container-fluid px-0">
-        <!-- Swiper -->
-        <link rel="stylesheet" href="static/css/index.css"/>
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper" style="max-height: 450px">
-                <div class="swiper-slide"><img class="" src="static/images/slide2.jpg" alt=""></div>
-                <div class="swiper-slide"><img class="" src="static/images/slide1.jpg" alt=""></div>
+    <div class="container-fluid px-0" style="background-image:url(static/images/D75_4962.jpg);
+        background-position: 50% 10%;
+        background-size: cover;
+        height: 300px;">
+        <div class="row">
+            <div class="col-0 col-lg-5"></div>
+            <div class="col-12 col-lg-7 text-center text-primary"><h1 class="mt-5 pt-5">Никопольский завод
+                трубопроводной арматуры</h1>
             </div>
         </div>
+
+
     </div>
 </section>
 <!--SWIPER END-->
 
 <!--ABOUT US-->
 <section class="my-5 text-center text-lg-start">
-    <style>
-             .cascading-right { margin-left: -200px; margin-top: -50px } @media (max-width: 991.98px) { .cascading-right { margin-left: 0; } }
-
-
-
-
-    </style> <!-- Jumbotron -->
+    <!-- Jumbotron -->
     <div class="container">
         <div class="row g-0">
             <div data-aos="fade-right" data-aos-duration="1000" class="col-lg-6 my-auto"><img
@@ -251,57 +265,93 @@
 
 <!--OUR PRODUCTS-->
 <section class="container my-5 text-center text-lg-start">
-    <h2 class="fw-bold mb-5 text-center">Наша продукция</h2>
-    <div class="row gx-lg-5">
-        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <h2 class="fw-bold text-center">Наша продукция</h2>
+    <div class="row gx-lg-5 my-5">
+
+        <div class="col-lg-4">
             <div>
-                <div class="bg-image hover-zoom rounded mb-4 text-center py-3">
-                    <img src="static/images/prod1.png" class="" alt="">
-                </div>
-                <h5 class="fw-bold">
-                    Задвижки чугунные</h5>
-                <div class="mb-3 text-danger small">
-                    <i class="fas fa-fire me-2"></i>
-                    <span>Hot news</span>
-                </div>
-                <p class="text-muted">Назначение и область применения: Задвижки параллельные двухдисковые на
-                    номинальное давление PN10 предназначены для установки в качестве запорного устройства на
-                    трубопроводах различных отраслей промышленности.</p>
-            </div>
-        </div>
-        <div class="col-lg-4 mb-4 mb-lg-0">
-            <div>
-                <div class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-4"
-                     data-mdb-ripple-color="dark">
+                <div class="bg-image mb-3 hover-zoom ripple rounded-4 text-center py-4 border border-primary"
+                     data-mdb-ripple-color="dark" style="height: 280px">
                     <img src="static/images/zatvor-19ch16br.png"
-                         class="mx-3" alt="">
+                         class="me-5 my-5" alt="">
                     <img src="static/images/zatvor-19ch21br.png"
                          class="" alt="">
                 </div>
                 <h5 class="fw-bold"> Затворы</h5>
-                <div class="mb-3 text-primary small"><i class="fas fa-flask me-2"></i>
-                    <span>Experiment</span>
+                <div class="mb-3 text-primary small">
                 </div>
-                <p class="text-muted"> Suspendisse in volutpat massa. Nulla facilisi. Sed aliquet diam orci, nec
-                    ornare metus semper sed. Integer volutpat ornare erat sit amet rutrum. </p></div>
+                <p class="text-muted"> Затворы обратные поворотные фланцевые чугунные предназначены для
+                    предотвращения обратного потока рабочей среды в трубопроводах, транспортирующих воду, пар , нефть ,
+                    масла и другие нефтепродукты </p>
+                <button class="btn btn-primary btn-rounded">
+                    <i class="fas fa-industry me-2"></i>
+                    <span>Подробнее</span>
+                </button>
+            </div>
+
         </div>
-        <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="col-lg-4 col-md-12 mb-lg-0">
             <div>
-                <div class="bg-image hover-zoom ripple shadow-1-strong rounded-4 mb-4 text-center py-3"
-                     data-mdb-ripple-color="dark">
-                    <img src="static/images/vantuz1.png" class="" alt="">
+                <div class="swiper mySwiper mb-3">
+                    <div class="swiper-wrapper hover-zoom">
+                        <div class="swiper-slide">
+                            <img src="static/images/prod1.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide py-3">
+                            <img src="static/images/30ch47bk.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="static/images/30ch6bk.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="static/images/30ch906br-e1406039549144.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <!--                <div class="bg-image hover-zoom rounded mb-4 text-center py-3">-->
+                <!--                    <img src="static/images/prod1.png" class="" alt="">-->
+                <!--                </div>-->
+                <script>
+
+                </script>
+                <h5 class="fw-bold">
+                    Задвижки чугунные</h5>
+                <div class="mb-3 text-danger small">
+                </div>
+                <p class="text-muted">Назначение и область применения: Задвижки параллельные двухдисковые предназначены
+                    для установки в качестве запорного устройства на
+                    трубопроводах различных отраслей промышленности.</p>
+                <button class="btn btn-primary btn-rounded">
+                    <i class="fas fa-industry me-2"></i>
+                    <span>Подробнее</span>
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-3 mb-lg-0">
+            <div>
+                <div class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3"
+                     data-mdb-ripple-color="dark" style="height: 280px">
+                    <img src="static/images/vantuz1.png" class="mt-5" alt="">
                 </div>
                 <h5 class="fw-bold"> Вантузы</h5>
                 <div class="mb-3 text-warning small">
-                    <i class="fas fa-sun me-2"></i>
-                    <span>Family friendly</span></div>
-                <p class="text-muted">
-                    Curabitur tristique, mi a mollis sagittis, metus felis mattis arcu, non vehicula nisl dui quis
-                    diam. Mauris ut risus eget massa volutpat feugiat. Donec.</p></div>
+                    <p class="text-muted">
+                        Вантузы аэрационные чугунные предназначены для автоматического удаления
+                        воздуха при его накоплении, а также для его автоматического впуска при образовании вакуума в
+                        системах водоснабжения, водяного отопления и других сетевых устройств, транспортирующих воду с
+                        температурой до 363К (900 С)</p>
+                    <button class="btn btn-danger btn-rounded">
+                        <i class="fas fa-industry me-2"></i>
+                        <span>Подробнее</span>
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 <!--OUR PRODUCTS END-->
+
+
 <!--IRON CASTING-->
 <section class="container my-5">
     <div class="card mb-3">
@@ -318,55 +368,55 @@
                     <div class="row">
                         <div class="col-lg-4 mb-2">
                             <p>
-                                <i class="fas fa-check text-dark me-2"></i>
-                                <span>Support 24/7</span>
+                                <i class="fas fa-check text-success me-2"></i>
+                                <span>Люк лёгкий</span>
                             </p>
                         </div>
                         <div class="col-lg-4 mb-2">
                             <p>
-                                <i class="fas fa-check text-dark me-2"></i>
-                                <span>Analytics</span>
+                                <i class="fas fa-check text-success me-2"></i>
+                                <span>Люк средний</span>
                             </p>
                         </div>
                         <div class="col-lg-4 mb-2">
-                            <p><i class="fas fa-check text-dark me-2"></i>
-                                <span>Components</span>
-                            </p>
-                        </div>
-                        <div class="col-lg-4 mb-2">
-                            <p>
-                                <i class="fas fa-check text-dark me-2"></i>
-                                <span>Updates</span>
+                            <p><i class="fas fa-check text-success me-2"></i>
+                                <span>Люк тяжелый</span>
                             </p>
                         </div>
                         <div class="col-lg-4 mb-2">
                             <p>
-                                <i class="fas fa-check text-dark me-2"></i>
-                                <span>Reports</span>
+                                <i class="fas fa-check text-success me-2"></i>
+                                <span>Люк антивандальный</span>
                             </p>
                         </div>
                         <div class="col-lg-4 mb-2">
                             <p>
-                                <i class="fas fa-check text-dark me-2"></i>
-                                <span>Mobile</span>
+                                <i class="fas fa-check text-success me-2"></i>
+                                <span>Дождеприемники</span>
                             </p>
                         </div>
                         <div class="col-lg-4 mb-2">
                             <p>
-                                <i class="fas fa-check text-dark me-2"></i>
-                                <span>Modules</span>
+                                <i class="fas fa-check text-success me-2"></i>
+                                <span>Решетки ливневые</span>
                             </p>
                         </div>
                         <div class="col-lg-4 mb-2">
                             <p>
-                                <i class="fas fa-check text-dark me-2"></i>
-                                <span>Blocks</span>
+                                <i class="fas fa-check text-success me-2"></i>
+                                <span>Скамейки</span>
                             </p>
                         </div>
                         <div class="col-lg-4 mb-2">
                             <p>
-                                <i class="fas fa-check text-dark me-2"></i>
-                                <span>Templates</span>
+                                <i class="fas fa-check text-success me-2"></i>
+                                <span>Клины вагона</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                            <p>
+                                <i class="fas fa-check text-success me-2"></i>
+                                <span>Колодки тормозные</span>
                             </p>
                         </div>
                     </div>
@@ -376,46 +426,6 @@
     </div>
 </section>
 <!--IRON CASTING END-->
-<!--OUR CLIENT-->
-<section class="container my-5 text-center">
-    <h2 class="fw-bold mb-5">
-        <span>Наши</span>
-        <u class="text-primary">Клиенты</u>
-    </h2>
-    <div class="row gx-lg-5">
-        <div class="col-xl-3 col-md-4 mb-5">
-            <img src="static/images/clients/nzf-logo.png"
-                 class="rounded-circle shadow mb-3 bg-primary" alt=""
-                 style="max-width: 100px">
-            <p class="fw-bold mb-1">НЗФ</p>
-            <p class="text-muted mb-0">ПАО «Никопольский завод ферросплавов»</p>
-        </div>
-        <div class="col-xl-3 col-md-4 mb-5">
-            <img src="static/images/clients/nzf-logo.png"
-                 class="rounded-circle shadow mb-3 bg-primary" alt=""
-                 style="max-width: 100px">
-            <p class="fw-bold mb-1">НЗФ</p>
-            <p class="text-muted mb-0">ПАО «Никопольский завод ферросплавов»</p>
-        </div>
-        <div class="col-xl-3 col-md-4 mb-5">
-            <img src="static/images/clients/nzf-logo.png"
-                 class="rounded-circle shadow mb-3 bg-primary" alt=""
-                 style="max-width: 100px">
-            <p class="fw-bold mb-1">НЗФ</p>
-            <p class="text-muted mb-0">ПАО «Никопольский завод ферросплавов»</p>
-        </div>
-        <div class="col-xl-3 col-md-4 mb-5">
-            <img src="static/images/clients/nzf-logo.png"
-                 class="rounded-circle shadow mb-3 bg-primary" alt=""
-                 style="max-width: 100px">
-            <p class="fw-bold mb-1">НЗФ</p>
-            <p class="text-muted mb-0">ПАО «Никопольский завод ферросплавов»</p>
-        </div>
-    </div>
-</section>
-
-<!--OUR CLIENTS END-->
-
 
 <!--OUR ADVANTAGES-->
 <section class="container my-5">
@@ -423,7 +433,7 @@
     <div class="row gx-lg-5 align-items-center">
         <div class="col-lg-5 mb-5 mb-lg-0">
             <div class="bg-image rounded-5 shadow-5-strong"
-                 style="background-image: url(&quot;https://cdn.hswstatic.com/gif/gettyimages-492798423.jpg&quot;); height: 560px; background-size: cover; background-position: 50% 50%;">
+                 style="background-image: url(static/images/D75_4995.jpg); height: 560px; background-size: cover; background-position: 50% 50%;">
                 <div class="mask1" style="background-color: rgba(0, 0, 0, 0.4)">
                     <div class="d-flex justify-content-center align-items-center">
                         <div class="px-4 py-5 px-md-5 text-white text-center"><h3
@@ -486,165 +496,223 @@
 </section>
 <!--OUR ADVANTAGES END-->
 
+<!--OUR CLIENT-->
+<section class="container my-5 text-center">
+    <h2 class="fw-bold mb-5">
+        <span>Наши</span>
+        <u class="text-primary">Клиенты</u>
+    </h2>
+    <div class="row gx-lg-5">
+        <div class="col-xl-3 col-md-4 mb-5">
+            <img src="static/images/clients/nzf-logo.png"
+                 class="rounded-circle shadow mb-3 px-3 py-1 bg-primary" alt=""
+                 style="width: auto; height: 60px">
+            <p class="fw-bold mb-0">ПАО «Никопольский завод ферросплавов»</p>
+        </div>
+        <div class="col-xl-3 col-md-4 mb-5">
+            <img src="static/images/clients/amk.png"
+                 class="rounded-circle shadow mb-0 px-3 py-1 bg-primary" alt=""
+                 style="width: auto; height: 80px">
+            <p class="fw-bold mb-0">ПАО «Алчевский металлургический комбинат»</p>
+        </div>
+        <div class="col-xl-3 col-md-4 mb-5">
+            <img src="static/images/clients/p9.png"
+                 class="rounded shadow mb-3 px-3 py-1 bg-primary" alt=""
+                 style="width: auto; height: 80px">
+            <p class="fw-bold mb-0">АО «Промарматура» г. Днепропетровск</p>
+        </div>
+        <div class="col-xl-3 col-md-4 mb-5">
+            <img src="static/images/clients/p13.png"
+                 class="rounded-circle shadow mb-3 px-3 py-1 bg-primary" alt=""
+                 style="width: auto; height: 80px">
+            <p class="fw-bold mb-0">ООО «Интерекст» г. Киев</p>
+        </div>
+        <div class="col-xl-3 col-md-4 mb-5">
+            <img src="static/images/clients/sn.png"
+                 class="rounded-circle shadow mb-3 px-3 py-1 bg-primary" alt=""
+                 style="width: auto; height: 80px">
+            <p class="fw-bold mb-0">АО «Сумской завод «Насосэнергомаш»»</p>
+        </div>
+        <div class="col-xl-3 col-md-4 mb-5">
+            <img src="static/images/clients/yakz.png"
+                 class="rounded shadow mb-3 px-3 py-1 bg-primary" alt=""
+                 style="width: auto; height: 80px">
+            <p class="fw-bold mb-0">ПАО «Ясиновский коксохимический завод»</p>
+        </div>
+        <div class="col-xl-3 col-md-4 mb-5">
+            <img src="static/images/clients/zkg.png"
+                 class="rounded shadow mb-3 px-3 py-1 bg-primary" alt=""
+                 style="width: auto; height: 80px">
+            <p class="fw-bold mb-0">предприятия ЖКХ</p>
+        </div>
+        <div class="col-xl-3 col-md-4 mb-5">
+            <img src="static/images/clients/p7.png"
+                 class="rounded shadow mb-3 px-3 py-1 bg-primary" alt=""
+                 style="width: auto; height: 80px">
+            <p class="fw-bold mb-0">ЗАО «Белтепломашстрой» г. Минск</p>
+        </div>
+        <div class="col-xl-3 col-md-4 mb-5">
+            <img src="static/images/clients/p8.png"
+                 class="rounded shadow mb-3 px-3 py-1 bg-primary" alt=""
+                 style="width: 250px; height: auto">
+            <p class="fw-bold mb-0">ЗАО «Чистый берег» г. Минск</p>
+        </div>
+    </div>
+</section>
+
+<!--OUR CLIENTS END-->
+
+
 <!--STATS-->
-<section draggable="false" class="container pt-5" data-v-271253ee="">
-    <section class="mb-10 text-center"><h2 class="fw-bold mb-9 text-center">Why is it so great?</h2>
-        <div class="row gx-lg-5">
-            <div class="col-lg-4 col-md-12 mb-8 mb-lg-0">
-                <div class="card shadow-2-strong h-100">
-                    <div class="d-flex justify-content-center" style="margin-top: -43px">
-                        <div class="p-4 bg-primary rounded-circle shadow-5-strong d-inline-block"><i
-                                class="fas fa-cubes fa-2x text-white"></i></div>
-                    </div>
-                    <div class="card-body"><h3 class="fw-bold text-primary mb-3">1000</h3> <h5
-                            class="text-muted mb-3">Components</h5>
-                        <p class="text-muted">
-                            Laudantium totam quas cumque pariatur at doloremque hic quos quia eius</p></div>
+<section class="container mb-10 text-center">
+    <h2 class="fw-bold mb-9 text-center">Why is it so great?</h2>
+    <div class="row gx-lg-5">
+        <div class="col-lg-4 col-md-12 mb-8 mb-lg-0">
+            <div class="card shadow-2-strong h-100">
+                <div class="d-flex justify-content-center" style="margin-top: -43px">
+                    <div class="p-4 bg-primary rounded-circle shadow-5-strong d-inline-block"><i
+                            class="fas fa-cubes fa-2x text-white"></i></div>
                 </div>
-            </div>
-            <div class="col-lg-4 mb-8 mb-lg-0">
-                <div class="card shadow-2-strong h-100">
-                    <div class="d-flex justify-content-center" style="margin-top: -43px">
-                        <div class="p-4 bg-primary rounded-circle shadow-5-strong d-inline-block"><i
-                                class="fas fa-chart-pie fa-2x text-white"></i></div>
-                    </div>
-                    <div class="card-body"><h3 class="fw-bold text-primary mb-3">70%</h3> <h5
-                            class="text-muted mb-3">Growth</h5>
-                        <p class="text-muted">
-                            Eum nostrum fugit numquam, voluptates veniam neque quibusdam ullam</p></div>
-                </div>
-            </div>
-            <div class="col-lg-4 mb-8 mb-lg-0">
-                <div class="card shadow-2-strong h-100">
-                    <div class="d-flex justify-content-center" style="margin-top: -43px">
-                        <div class="p-4 bg-primary rounded-circle shadow-5-strong d-inline-block"><i
-                                class="fas fa-cogs fa-2x text-white"></i></div>
-                    </div>
-                    <div class="card-body"><h3 class="fw-bold text-primary mb-3">49</h3> <h5
-                            class="text-muted mb-3">Projects</h5>
-                        <p class="text-muted">Cupiditate enim, minus nulla dolor cumque iure eveniet facere
-                            ullam</p></div>
-                </div>
+                <div class="card-body"><h3 class="fw-bold text-primary mb-3">1000</h3> <h5
+                        class="text-muted mb-3">Components</h5>
+                    <p class="text-muted">
+                        Laudantium totam quas cumque pariatur at doloremque hic quos quia eius</p></div>
             </div>
         </div>
-    </section>
+        <div class="col-lg-4 mb-8 mb-lg-0">
+            <div class="card shadow-2-strong h-100">
+                <div class="d-flex justify-content-center" style="margin-top: -43px">
+                    <div class="p-4 bg-primary rounded-circle shadow-5-strong d-inline-block"><i
+                            class="fas fa-chart-pie fa-2x text-white"></i></div>
+                </div>
+                <div class="card-body"><h3 class="fw-bold text-primary mb-3">70%</h3> <h5
+                        class="text-muted mb-3">Growth</h5>
+                    <p class="text-muted">
+                        Eum nostrum fugit numquam, voluptates veniam neque quibusdam ullam</p></div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-8 mb-lg-0">
+            <div class="card shadow-2-strong h-100">
+                <div class="d-flex justify-content-center" style="margin-top: -43px">
+                    <div class="p-4 bg-primary rounded-circle shadow-5-strong d-inline-block"><i
+                            class="fas fa-cogs fa-2x text-white"></i></div>
+                </div>
+                <div class="card-body"><h3 class="fw-bold text-primary mb-3">49</h3> <h5
+                        class="text-muted mb-3">Projects</h5>
+                    <p class="text-muted">Cupiditate enim, minus nulla dolor cumque iure eveniet facere
+                        ullam</p></div>
+            </div>
+        </div>
+    </div>
 </section>
 <!--STATS END-->
 
 <!--CONTACT US-->
-<section draggable="false" class="container pt-5" data-v-271253ee="">
-    <section class="mb-10">
-        <style>
-             /* Map settings */ .map-container-2 { height: 500px; } .map-container-2 iframe { left: 0; top: 0; height: 100%; width: 100%; } .rounded-t-5 { border-top-left-radius: 0.5rem; border-top-right-radius: 0.5rem; } @media (min-width: 992px) { .rounded-tr-lg-0 { border-top-right-radius: 0; } .rounded-bl-lg-5 { border-bottom-left-radius: 0.5rem; } }
 
-
-
-
-        </style>
-        <div class="card mb-3">
-            <div class="row g-0 d-flex align-items-center">
-                <div class="col-lg-4 d-none d-lg-flex">
-                    <div class="map-container-2 w-100 mb-4 mb-lg-0">
-                        <iframe src="https://maps.google.com/maps?q=manhatan&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-                                class="rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5" frameborder="0"
-                                allowfullscreen=""></iframe>
-                    </div>
+<section class="container my-5">
+    <div class="card mb-3">
+        <div class="row g-0 d-flex align-items-center">
+            <div class="col-lg-4 d-none d-lg-flex">
+                <div class="map-container-2 w-100 mb-4 mb-lg-0">
+                    <iframe src="https://maps.google.com/maps?q=manhatan&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                            class="rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5" frameborder="0"
+                            allowfullscreen=""></iframe>
                 </div>
-                <div class="col-lg-8">
-                    <div class="card-body py-5 px-md-5">
-                        <div class="row gx-lg-5">
-                            <div class="col-md-6 mb-5">
-                                <div class="d-flex align-items-start">
-                                    <div class="flex-shrink-0">
-                                        <div class="p-3 bg-primary rounded-4 shadow-2-strong"><i
-                                                class="fas fa-headset fa-lg text-white fa-fw"></i></div>
-                                    </div>
-                                    <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">
-                                        Technical support</p>
-                                        <p class="text-muted mb-0">support@example.com</p>
-                                        <p class="text-muted mb-0">+1 234-567-89</p></div>
+            </div>
+            <div class="col-lg-8">
+                <div class="card-body py-5 px-md-5">
+                    <div class="row gx-lg-5">
+                        <div class="col-md-6 mb-5">
+                            <div class="d-flex align-items-start">
+                                <div class="flex-shrink-0">
+                                    <div class="p-3 bg-primary rounded-4 shadow-2-strong"><i
+                                            class="fas fa-headset fa-lg text-white fa-fw"></i></div>
                                 </div>
+                                <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">
+                                    Technical support</p>
+                                    <p class="text-muted mb-0">support@example.com</p>
+                                    <p class="text-muted mb-0">+1 234-567-89</p></div>
                             </div>
-                            <div class="col-md-6 mb-5">
-                                <div class="d-flex align-items-start">
-                                    <div class="flex-shrink-0">
-                                        <div class="p-3 bg-primary rounded-4 shadow-2-strong"><i
-                                                class="fas fa-dollar-sign fa-lg text-white fa-fw"></i></div>
-                                    </div>
-                                    <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">
-                                        Sales questions</p>
-                                        <p class="text-muted mb-0">sales@example.com</p>
-                                        <p class="text-muted mb-0">+1 234-567-89</p></div>
+                        </div>
+                        <div class="col-md-6 mb-5">
+                            <div class="d-flex align-items-start">
+                                <div class="flex-shrink-0">
+                                    <div class="p-3 bg-primary rounded-4 shadow-2-strong"><i
+                                            class="fas fa-dollar-sign fa-lg text-white fa-fw"></i></div>
                                 </div>
+                                <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">
+                                    Sales questions</p>
+                                    <p class="text-muted mb-0">sales@example.com</p>
+                                    <p class="text-muted mb-0">+1 234-567-89</p></div>
                             </div>
-                            <div class="col-md-6 mb-5">
-                                <div class="d-flex align-items-start">
-                                    <div class="flex-shrink-0">
-                                        <div class="p-3 bg-primary rounded-4 shadow-2-strong"><i
-                                                class="fas fa-newspaper fa-lg text-white fa-fw"></i></div>
-                                    </div>
-                                    <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">
-                                        Press</p>
-                                        <p class="text-muted mb-0">press@example.com</p>
-                                        <p class="text-muted mb-0">+1 234-567-89</p></div>
+                        </div>
+                        <div class="col-md-6 mb-5">
+                            <div class="d-flex align-items-start">
+                                <div class="flex-shrink-0">
+                                    <div class="p-3 bg-primary rounded-4 shadow-2-strong"><i
+                                            class="fas fa-newspaper fa-lg text-white fa-fw"></i></div>
                                 </div>
+                                <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">
+                                    Press</p>
+                                    <p class="text-muted mb-0">press@example.com</p>
+                                    <p class="text-muted mb-0">+1 234-567-89</p></div>
                             </div>
-                            <div class="col-md-6 mb-5">
-                                <div class="d-flex align-items-start">
-                                    <div class="flex-shrink-0">
-                                        <div class="p-3 bg-primary rounded-4 shadow-2-strong"><i
-                                                class="fas fa-bug fa-lg text-white fa-fw"></i></div>
-                                    </div>
-                                    <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">
-                                        Bug report</p>
-                                        <p class="text-muted mb-0">bugs@example.com</p>
-                                        <p class="text-muted mb-0">+1 234-567-89</p></div>
+                        </div>
+                        <div class="col-md-6 mb-5">
+                            <div class="d-flex align-items-start">
+                                <div class="flex-shrink-0">
+                                    <div class="p-3 bg-primary rounded-4 shadow-2-strong"><i
+                                            class="fas fa-bug fa-lg text-white fa-fw"></i></div>
                                 </div>
+                                <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">
+                                    Bug report</p>
+                                    <p class="text-muted mb-0">bugs@example.com</p>
+                                    <p class="text-muted mb-0">+1 234-567-89</p></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 </section>
 <!--CONTACT US END-->
 
 
 <!--FOOTER-->
 <footer>
-    <div class="row">
-        <div class="columns small-3 medium-1 logo">
-            <a href="/"><img src="http://nzta.com.ua/wp-content/themes/nzta/images/logo.png" alt="НЗТА"></a>
-        </div>
-        <div class="columns small-7 medium-3 slogan">
-            <div class="text">Никопольский завод трубопроводной арматуры</div>
-            <div class="phone">(0566) 68-45-80 <br>(0566) 68-45-81</div>
-        </div>
-        <div class="columns small-12 medium-8 menu">
-            <nav class="footer-nav">
-                <ul id="menu-nizhnee-menyu" class="menu">
-                    <li id="menu-item-56"
-                        class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-56">
-                        <a href="http://nzta.com.ua/">Главная</a></li>
-                    <li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55">
-                        <a href="http://nzta.com.ua/o-zavode/">О заводе</a></li>
-                    <li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54">
-                        <a href="http://nzta.com.ua/produktsiya/">Продукция</a></li>
-                    <li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53">
-                        <a href="http://nzta.com.ua/novosti/">Новости</a></li>
-                    <li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52">
-                        <a href="http://nzta.com.ua/kontakty/">Контакты</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="columns medium-12 copyright">
-            © 2014-2018 ООО «М-ЛИТ», Все права защищены
-            <div class="developer"><a href="http://webimperia.org/" title="webimperia.org">Разработка сайта</a> — студия
-                WebImperia
-            </div>
-        </div>
-    </div>
+    <!--    <div class="row">-->
+    <!--        <div class="columns small-3 medium-1 logo">-->
+    <!--            <a href="/"><img src="http://nzta.com.ua/wp-content/themes/nzta/images/logo.png" alt="НЗТА"></a>-->
+    <!--        </div>-->
+    <!--        <div class="columns small-7 medium-3 slogan">-->
+    <!--            <div class="text">Никопольский завод трубопроводной арматуры</div>-->
+    <!--            <div class="phone">(0566) 68-45-80 <br>(0566) 68-45-81</div>-->
+    <!--        </div>-->
+    <!--        <div class="columns small-12 medium-8 menu">-->
+    <!--            <nav class="footer-nav">-->
+    <!--                <ul id="menu-nizhnee-menyu" class="menu">-->
+    <!--                    <li id="menu-item-56"-->
+    <!--                        class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-56">-->
+    <!--                        <a href="http://nzta.com.ua/">Главная</a></li>-->
+    <!--                    <li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55">-->
+    <!--                        <a href="http://nzta.com.ua/o-zavode/">О заводе</a></li>-->
+    <!--                    <li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54">-->
+    <!--                        <a href="http://nzta.com.ua/produktsiya/">Продукция</a></li>-->
+    <!--                    <li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53">-->
+    <!--                        <a href="http://nzta.com.ua/novosti/">Новости</a></li>-->
+    <!--                    <li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52">-->
+    <!--                        <a href="http://nzta.com.ua/kontakty/">Контакты</a></li>-->
+    <!--                </ul>-->
+    <!--            </nav>-->
+    <!--        </div>-->
+    <!--        <div class="columns medium-12 copyright">-->
+    <!--            © 2014-2018 ООО «М-ЛИТ», Все права защищены-->
+    <!--            <div class="developer"><a href="http://webimperia.org/" title="webimperia.org">Разработка сайта</a> — студия-->
+    <!--                WebImperia-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
 </footer>
 <!--FOOTER END-->
 
@@ -660,6 +728,19 @@
 <script src="static/aos-master/dist/aos.js"></script>
 <script>
   AOS.init();
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </script>
