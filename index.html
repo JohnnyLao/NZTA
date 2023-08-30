@@ -27,24 +27,15 @@
     <!--    GOOGLE MAP-->
     <link rel="stylesheet" href="static/css/map.css">
     <link rel="stylesheet" href="static/css/index.css">
+<!--    JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
              .cascading-right { margin-left: -200px; margin-top: -50px } @media (max-width: 991.98px) { .cascading-right { margin-left: 0; } }
-
-
-
-
-
-
-
-
-
-
-
-
     </style>
 </head>
 
 <body class="">
+<!--LOADING SPINNER-->
 <div class="mask">
     <div class="loader">
         <svg viewBox="0 0 80 80">
@@ -66,6 +57,17 @@
 </div>
 <!--JS SPINNER-->
 <script src="static/js/spinner.js"></script>
+<!--LOADING SPINNET END-->
+
+<!--button up-->
+<a id="scrollToTopButton" class="btn fs-1 mx-2 shadow btn-rounded"
+   style="color: #fd7014; background: rgba(33, 37, 41, 0.5); position: fixed; bottom: 90px; left: 15px; display: none; z-index: 100"
+   href="#header">
+    <i class="fas fa-arrow-up-long"></i>
+</a>
+<script src="static/js/button_up.js"></script>
+<!--button end-->
+
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg pt-0 bg-primary sticky-top">
     <!-- Container wrapper -->
@@ -90,10 +92,10 @@
                 <ul class="navbar-nav">
 
                     <!-- Link -->
-                    <li class="nav-item">
+                    <li class="nav-item ripple" data-mdb-ripple-color="red">
                         <a data-aos="fade-right" data-aos-delay="600" class="nav-link text-white" href="#">Главная</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ripple">
                         <a data-aos="fade-right" data-aos-delay="400" class="nav-link text-white" href="#">О нас</a>
                     </li>
                     <!-- Dropdown -->
@@ -106,10 +108,10 @@
                         <!-- Dropdown menu -->
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
-                                <a class="dropdown-item" href="#">Задвижки чугунные</a>
+                                <a class="dropdown-item ripple " href="#">Задвижки чугунные</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">Затворы</a>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="#">Затворы</a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="#">Вантузы</a>
@@ -123,7 +125,10 @@
                         </ul>
                     </li>
                     <li data-aos="fade-right" class="nav-item">
-                        <a class="nav-link text-white" href="#">Контакты</a>
+                        <a class="nav-link text-white btn-animate" href="#">Контакты</a>
+                    </li>
+                    <li data-aos="fade-right" class="nav-item">
+                        <a class="nav-link text-white ripple btn-animate" href="#">Карьера</a>
                     </li>
                 </ul>
             </div>
@@ -283,7 +288,7 @@
                 <p class="text-muted"> Затворы обратные поворотные фланцевые чугунные предназначены для
                     предотвращения обратного потока рабочей среды в трубопроводах, транспортирующих воду, пар , нефть ,
                     масла и другие нефтепродукты </p>
-                <button class="btn btn-primary btn-rounded">
+                <button class="btn btn-primary">
                     <i class="fas fa-industry me-2"></i>
                     <span>Подробнее</span>
                 </button>
@@ -321,7 +326,7 @@
                 <p class="text-muted">Назначение и область применения: Задвижки параллельные двухдисковые предназначены
                     для установки в качестве запорного устройства на
                     трубопроводах различных отраслей промышленности.</p>
-                <button class="btn btn-primary btn-rounded">
+                <button class="btn btn-primary btn-rounded btn-animate">
                     <i class="fas fa-industry me-2"></i>
                     <span>Подробнее</span>
                 </button>
@@ -359,69 +364,77 @@
             <div class="col-lg-5 col-xl-4 d-none d-lg-flex"><img
                     src="static/images/D75_5057.jpg" alt=""
                     class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5 ms-3"></div>
-            <div class="col-lg-7 col-xl-8">
-                <div class="card-body py-5 px-md-5"><h2 class="fw-bold mb-4">Чугунное
-                    литьё</h2>
+            <div class="col-lg-7 col-xl-8 text-center text-md-start">
+                <div class="card-body px-md-5">
+                    <h2 class="fw-bold mb-4">Чугунное литьё</h2>
                     <p class="text-muted mb-4">Nunc tincidunt vulputate elit. Mauris varius purus malesuada neque
                         iaculis malesuada. Aenean gravida magna orci, non efficitur est porta id. Donec magna
                         diam.</p>
                     <div class="row">
-                        <div class="col-lg-4 mb-2">
+                        <div class="col-6 col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
                                 <span>Люк лёгкий</span>
                             </p>
                         </div>
-                        <div class="col-lg-4 mb-2">
+                        <div class="col-6 col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
                                 <span>Люк средний</span>
                             </p>
                         </div>
-                        <div class="col-lg-4 mb-2">
+                        <div class="col-lg-4">
                             <p><i class="fas fa-check text-success me-2"></i>
                                 <span>Люк тяжелый</span>
                             </p>
                         </div>
-                        <div class="col-lg-4 mb-2">
+                        <div class="col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
                                 <span>Люк антивандальный</span>
                             </p>
                         </div>
-                        <div class="col-lg-4 mb-2">
+                        <div class="col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
                                 <span>Дождеприемники</span>
                             </p>
                         </div>
-                        <div class="col-lg-4 mb-2">
+                        <div class="col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
                                 <span>Решетки ливневые</span>
                             </p>
                         </div>
-                        <div class="col-lg-4 mb-2">
+                        <div class="col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
                                 <span>Скамейки</span>
                             </p>
                         </div>
-                        <div class="col-lg-4 mb-2">
+                        <div class="col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
                                 <span>Клины вагона</span>
                             </p>
                         </div>
-                        <div class="col-lg-4 mb-2">
+                        <div class="col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
                                 <span>Колодки тормозные</span>
                             </p>
                         </div>
                     </div>
+                    <div class="col-12 text-center">
+                    <button class="btn btn-rounded btn-danger btn-animate">
+                        <i class="fas fa-industry me-2"></i>
+                        <span>Подробнее</span>
+                    </button>
                 </div>
+                </div>
+
             </div>
+
         </div>
     </div>
 </section>
@@ -681,38 +694,16 @@
 
 <!--FOOTER-->
 <footer>
-    <!--    <div class="row">-->
-    <!--        <div class="columns small-3 medium-1 logo">-->
-    <!--            <a href="/"><img src="http://nzta.com.ua/wp-content/themes/nzta/images/logo.png" alt="НЗТА"></a>-->
-    <!--        </div>-->
-    <!--        <div class="columns small-7 medium-3 slogan">-->
-    <!--            <div class="text">Никопольский завод трубопроводной арматуры</div>-->
-    <!--            <div class="phone">(0566) 68-45-80 <br>(0566) 68-45-81</div>-->
-    <!--        </div>-->
-    <!--        <div class="columns small-12 medium-8 menu">-->
-    <!--            <nav class="footer-nav">-->
-    <!--                <ul id="menu-nizhnee-menyu" class="menu">-->
-    <!--                    <li id="menu-item-56"-->
-    <!--                        class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-56">-->
-    <!--                        <a href="http://nzta.com.ua/">Главная</a></li>-->
-    <!--                    <li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55">-->
-    <!--                        <a href="http://nzta.com.ua/o-zavode/">О заводе</a></li>-->
-    <!--                    <li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54">-->
-    <!--                        <a href="http://nzta.com.ua/produktsiya/">Продукция</a></li>-->
-    <!--                    <li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53">-->
-    <!--                        <a href="http://nzta.com.ua/novosti/">Новости</a></li>-->
-    <!--                    <li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52">-->
-    <!--                        <a href="http://nzta.com.ua/kontakty/">Контакты</a></li>-->
-    <!--                </ul>-->
-    <!--            </nav>-->
-    <!--        </div>-->
-    <!--        <div class="columns medium-12 copyright">-->
-    <!--            © 2014-2018 ООО «М-ЛИТ», Все права защищены-->
-    <!--            <div class="developer"><a href="http://webimperia.org/" title="webimperia.org">Разработка сайта</a> — студия-->
-    <!--                WebImperia-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
+    <div class="container-fluid bg-primary">
+        <div class="container py-1">
+            <div class="row">
+                <div class="col-12 text-center text-white my-0 py-0">
+                    <a href="#"><img src="static/images/logo.png" alt="НЗТА"></a>
+                    Copyright © 2014-2023 ООО «М-ЛИТ», Все права защищены
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 <!--FOOTER END-->
 
@@ -728,6 +719,8 @@
 <script src="static/aos-master/dist/aos.js"></script>
 <script>
   AOS.init();
+
+
 
 
 

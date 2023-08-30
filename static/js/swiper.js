@@ -1,6 +1,6 @@
 var swiper = new Swiper(".mySwiper", {
-      grabCursor: true,
-      effect: "coverflow",
+      grabCursor: false,
+      effect: "fade",
       speed: 800,
       loop: true,
       autoplay: {

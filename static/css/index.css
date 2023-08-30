@@ -216,3 +216,19 @@ body {
   margin: 0 16px;
 }
 
+.btn-animate:active {
+    animation-name: buttonPress;
+    animation-duration: 0.2s;
+}
+
+@keyframes buttonPress {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
