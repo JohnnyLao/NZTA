@@ -27,10 +27,11 @@
     <!--    GOOGLE MAP-->
     <link rel="stylesheet" href="static/css/map.css">
     <link rel="stylesheet" href="static/css/index.css">
-<!--    JQUERY-->
+    <!--    JQUERY-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
              .cascading-right { margin-left: -200px; margin-top: -50px } @media (max-width: 991.98px) { .cascading-right { margin-left: 0; } }
+
     </style>
 </head>
 
@@ -60,8 +61,8 @@
 <!--LOADING SPINNET END-->
 
 <!--button up-->
-<a id="scrollToTopButton" class="btn fs-1 mx-2 shadow btn-rounded"
-   style="color: #fd7014; background: rgba(33, 37, 41, 0.5); position: fixed; bottom: 90px; left: 15px; display: none; z-index: 100"
+<a id="scrollToTopButton" class="btn fs-1 shadow-1 mx-2 btn-rounded text-primary"
+   style="position: fixed; bottom: 50px; right: 15px; display: none; z-index: 100"
    href="#header">
     <i class="fas fa-arrow-up-long"></i>
 </a>
@@ -69,9 +70,9 @@
 <!--button end-->
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg pt-0 bg-primary sticky-top" >
+<nav class="navbar navbar-expand-lg pt-0 bg-secondary sticky-top">
     <!-- Container wrapper -->
-    <div class="container-fluid shadow-lg" >
+    <div class="container-fluid shadow-lg">
         <div data-aos="fade-right" class="col-2">
             <!-- Navbar brand -->
             <a class="navbar-brand" href="#">
@@ -100,7 +101,8 @@
                     </li>
                     <!-- Dropdown -->
                     <li class="nav-item dropdown mx-auto">
-                        <a data-aos="fade-right" data-aos-delay="200" class="nav-link dropdown-toggle text-white btn-animate"
+                        <a data-aos="fade-right" data-aos-delay="200"
+                           class="nav-link dropdown-toggle text-white btn-animate"
                            href="#" id="navbarDropdown" role="button"
                            data-mdb-toggle="dropdown" aria-expanded="false">
                             Продукция
@@ -124,7 +126,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li data-aos="fade-right" class="nav-item">
+                    <li data-aos="fade-right" data-aos-delay="100" class="nav-item">
                         <a class="nav-link text-white btn-animate" href="#">Контакты</a>
                     </li>
                     <li data-aos="fade-right" class="nav-item">
@@ -279,11 +281,11 @@
 
         <div class="col-lg-4">
             <div>
-                <div class="bg-image mb-3 hover-zoom ripple rounded-4 text-center py-4 border border-primary"
+                <div class="bg-image mb-3 hover-zoom ripple rounded-4 text-center py-4"
                      data-mdb-ripple-color="dark" style="height: 280px">
-                    <img src="static/images/zatvor-19ch16br.png"
+                    <img data-aos="fade-right" data-aos-delay="400" src="static/images/zatvor-19ch16br.png"
                          class="me-5 my-5" alt="">
-                    <img src="static/images/zatvor-19ch21br.png"
+                    <img data-aos="fade-right" data-aos-delay="300" src="static/images/zatvor-19ch21br.png"
                          class="" alt="">
                 </div>
                 <h5 class="fw-bold"> Затворы</h5>
@@ -301,7 +303,7 @@
         </div>
         <div class="col-lg-4 col-md-12 mb-lg-0">
             <div>
-                <div class="swiper mySwiper mb-3">
+                <div data-aos="fade-right" data-aos-delay="100" class="swiper mySwiper mb-3">
                     <div class="swiper-wrapper hover-zoom">
                         <div class="swiper-slide">
                             <img src="static/images/prod1.png" alt="" class="img-fluid">
@@ -317,20 +319,18 @@
                         </div>
                     </div>
                 </div>
-                <!--                <div class="bg-image hover-zoom rounded mb-4 text-center py-3">-->
-                <!--                    <img src="static/images/prod1.png" class="" alt="">-->
-                <!--                </div>-->
                 <script>
 
                 </script>
-                <h5 class="fw-bold">
+                <h5 data-aos="fade-right" data-aos-delay="100" class="fw-bold">
                     Задвижки чугунные</h5>
                 <div class="mb-3 text-danger small">
                 </div>
-                <p class="text-muted">Назначение и область применения: Задвижки параллельные двухдисковые предназначены
+                <p data-aos="fade-right" data-aos-delay="100" class="text-muted">Назначение и область применения:
+                    Задвижки параллельные двухдисковые предназначены
                     для установки в качестве запорного устройства на
                     трубопроводах различных отраслей промышленности.</p>
-                <button class="btn btn-primary btn-rounded btn-animate">
+                <button data-aos="fade-up" data-aos-delay="100" class="btn btn-primary btn-rounded btn-animate">
                     <i class="fas fa-industry me-2"></i>
                     <span>Подробнее</span>
                 </button>
@@ -338,18 +338,18 @@
         </div>
         <div class="col-lg-4 mb-3 mb-lg-0">
             <div>
-                <div class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3"
+                <div data-aos="zoom-in" class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3"
                      data-mdb-ripple-color="dark" style="height: 280px">
                     <img src="static/images/vantuz1.png" class="mt-5" alt="">
                 </div>
-                <h5 class="fw-bold"> Вантузы</h5>
+                <h5 data-aos="zoom-in" class="fw-bold"> Вантузы</h5>
                 <div class="mb-3 text-warning small">
-                    <p class="text-muted">
+                    <p data-aos="zoom-in" class="text-muted">
                         Вантузы аэрационные чугунные предназначены для автоматического удаления
                         воздуха при его накоплении, а также для его автоматического впуска при образовании вакуума в
                         системах водоснабжения, водяного отопления и других сетевых устройств, транспортирующих воду с
                         температурой до 363К (900 С)</p>
-                    <button class="btn btn-danger btn-rounded">
+                    <button data-aos="zoom-in" class="btn btn-danger btn-rounded">
                         <i class="fas fa-industry me-2"></i>
                         <span>Подробнее</span>
                     </button>
@@ -375,66 +375,66 @@
                         iaculis malesuada. Aenean gravida magna orci, non efficitur est porta id. Donec magna
                         diam.</p>
                     <div class="row">
-                        <div class="col-6 col-lg-4">
+                        <div data-aos="fade-up" class="col-6 col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
                                 <span>Люк лёгкий</span>
                             </p>
                         </div>
-                        <div class="col-6 col-lg-4">
+                        <div data-aos="fade-up" class="col-6 col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
                                 <span>Люк средний</span>
                             </p>
                         </div>
-                        <div class="col-lg-4">
+                        <div data-aos="fade-up" class="col-lg-4">
                             <p><i class="fas fa-check text-success me-2"></i>
                                 <span>Люк тяжелый</span>
                             </p>
                         </div>
-                        <div class="col-lg-4">
+                        <div data-aos="fade-up" class="col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
                                 <span>Люк антивандальный</span>
                             </p>
                         </div>
-                        <div class="col-lg-4">
+                        <div data-aos="fade-up" class="col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
                                 <span>Дождеприемники</span>
                             </p>
                         </div>
-                        <div class="col-lg-4">
+                        <div data-aos="fade-up" class="col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
                                 <span>Решетки ливневые</span>
                             </p>
                         </div>
-                        <div class="col-lg-4">
+                        <div data-aos="fade-up" class="col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
                                 <span>Скамейки</span>
                             </p>
                         </div>
-                        <div class="col-lg-4">
+                        <div data-aos="fade-up" class="col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
                                 <span>Клины вагона</span>
                             </p>
                         </div>
-                        <div class="col-lg-4">
+                        <div data-aos="fade-up" class="col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
                                 <span>Колодки тормозные</span>
                             </p>
                         </div>
                     </div>
-                    <div class="col-12 text-center">
-                    <button class="btn btn-rounded btn-danger btn-animate">
-                        <i class="fas fa-industry me-2"></i>
-                        <span>Подробнее</span>
-                    </button>
-                </div>
+                    <div data-aos="fade-up" class="col-12 text-center">
+                        <button class="btn btn-rounded btn-danger btn-animate">
+                            <i class="fas fa-industry me-2"></i>
+                            <span>Подробнее</span>
+                        </button>
+                    </div>
                 </div>
 
             </div>
@@ -446,14 +446,14 @@
 
 <!--OUR ADVANTAGES-->
 <section class="container my-5">
-    <h2 class="fw-bold mb-5 text-center">Наши технологии</h2>
+    <h2 class="fw-bold mb-5 text-center">Наши преимущества</h2>
     <div class="row gx-lg-5 align-items-center">
         <div class="col-lg-5 mb-5 mb-lg-0">
-            <div class="bg-image rounded-5 shadow-5-strong"
+            <div data-aos="fade-right" data-aos-duration="1000" class="bg-image rounded-5 shadow-5-strong"
                  style="background-image: url(static/images/D75_4995.jpg); height: 560px; background-size: cover; background-position: 50% 50%;">
-                <div class="mask1" style="background-color: rgba(0, 0, 0, 0.4)">
+                <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" class="mask1" style="background-color: rgba(0, 0, 0, 0.4)">
                     <div class="d-flex justify-content-center align-items-center">
-                        <div class="px-4 py-5 px-md-5 text-white text-center"><h3
+                        <div  class="px-4 py-5 px-md-5 text-white text-center"><h3
                                 class="text-uppercase fw-bold mb-4"><span>THE FUTURE IS</span>
                             <u style="color: hsl(231, 52.6%, 85%)">now</u></h3>
                             <p class="mb-0" style="color: hsl(231, 52.6%, 85%)">Lorem ipsum dolor sit amet
@@ -465,45 +465,42 @@
             </div>
         </div>
         <div class="col-lg-7 mb-4 mb-lg-0">
-            <div class="d-flex align-items-start mb-5">
+            <div data-aos="fade-up" class="d-flex align-items-start mb-5">
                 <div class="flex-shrink-0">
                     <div class="p-3 rounded-4 shadow-2-strong" style="background-color: hsl(231, 52.6%, 20%)"><i
                             class="fas fa-headset fa-lg text-white fa-fw"></i></div>
                 </div>
-                <div class="flex-grow-1 ms-4">
-                    <p class="fw-bold mb-1">Support 24/7</p>
+                <div  class="flex-grow-1 ms-4">
+                    <p class="fw-bold mb-1">Предприятие полного цикла</p>
                     <p class="text-muted mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
                         quisquam quibusdam modi sapiente magni molestias pariatur facilis reprehenderit facere
                         aliquam ex.</p>
                 </div>
             </div>
-            <div class="d-flex align-items-start mb-5">
+            <div data-aos="fade-up" class="d-flex align-items-start mb-5">
                 <div class="flex-shrink-0">
                     <div class="p-3 rounded-4 shadow-2-strong" style="background-color: hsl(231, 52.6%, 20%)"><i
                             class="fas fa-shield-alt fa-lg text-white fa-fw"></i></div>
                 </div>
-                <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">Safe and solid</p>
+                <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">Современное оборудование</p>
                     <p class="text-muted mb-0">Eum nostrum fugit numquam, voluptates veniam neque quibusdam ullam
                         aspernatur odio soluta, quisquam dolore animi mollitia a omnis praesentium, expedita
                         nobis!</p></div>
             </div>
-            <div class="d-flex align-items-start mb-5">
+            <div data-aos="fade-up" class="d-flex align-items-start mb-5">
                 <div class="flex-shrink-0">
                     <div class="p-3 rounded-4 shadow-2-strong" style="background-color: hsl(231, 52.6%, 20%)"><i
                             class="fas fa-shipping-fast fa-lg text-white fa-fw"></i></div>
                 </div>
-                <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">Extremely fast</p>
-                    <p class="text-muted mb-0">Enim cupiditate, minus nulla dolor cumque iure eveniet facere ullam
-                        beatae hic voluptatibus dolores exercitationem? Facilis debitis aspernatur amet nisi iure
-                        eveniet facere?</p></div>
+                <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">Скорость работы</p>
+                    <p class="text-muted mb-0">Производство полного цикла</p></div>
             </div>
-            <div class="d-flex align-items-start">
+            <div data-aos="fade-up" class="d-flex align-items-start">
                 <div class="flex-shrink-0">
                     <div class="p-3 rounded-4 shadow-2-strong" style="background-color: hsl(231, 52.6%, 20%)"><i
                             class="fas fa-chart-pie fa-lg text-white fa-fw"></i></div>
                 </div>
-                <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">Live
-                    analytics</p>
+                <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">Гарантированное качество</p>
                     <p class="text-muted mb-0">Illum doloremque ea, blanditiis sed dolor laborum praesentium maxime
                         sint, consectetur atque ipsum ab adipisci ullam aspernatur odio soluta, quisquam dolore</p>
                 </div>
@@ -520,55 +517,55 @@
         <u class="text-primary">Клиенты</u>
     </h2>
     <div class="row gx-lg-5">
-        <div class="col-xl-3 col-md-4 mb-5">
+        <div data-aos="fade-up" class="col-xl-3 col-md-4 mb-5">
             <img src="static/images/clients/nzf-logo.png"
                  class="rounded-circle shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: auto; height: 60px">
             <p class="fw-bold mb-0">ПАО «Никопольский завод ферросплавов»</p>
         </div>
-        <div class="col-xl-3 col-md-4 mb-5">
+        <div data-aos="fade-up" class="col-xl-3 col-md-4 mb-5">
             <img src="static/images/clients/amk.png"
                  class="rounded-circle shadow mb-0 px-3 py-1 bg-primary" alt=""
                  style="width: auto; height: 80px">
             <p class="fw-bold mb-0">ПАО «Алчевский металлургический комбинат»</p>
         </div>
-        <div class="col-xl-3 col-md-4 mb-5">
+        <div data-aos="fade-up" class="col-xl-3 col-md-4 mb-5">
             <img src="static/images/clients/p9.png"
                  class="rounded shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: auto; height: 80px">
             <p class="fw-bold mb-0">АО «Промарматура» г. Днепропетровск</p>
         </div>
-        <div class="col-xl-3 col-md-4 mb-5">
+        <div data-aos="fade-up" class="col-xl-3 col-md-4 mb-5">
             <img src="static/images/clients/p13.png"
                  class="rounded-circle shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: auto; height: 80px">
             <p class="fw-bold mb-0">ООО «Интерекст» г. Киев</p>
         </div>
-        <div class="col-xl-3 col-md-4 mb-5">
+        <div data-aos="fade-up" class="col-xl-3 col-md-4 mb-5">
             <img src="static/images/clients/sn.png"
                  class="rounded-circle shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: auto; height: 80px">
             <p class="fw-bold mb-0">АО «Сумской завод «Насосэнергомаш»»</p>
         </div>
-        <div class="col-xl-3 col-md-4 mb-5">
+        <div data-aos="fade-up" class="col-xl-3 col-md-4 mb-5">
             <img src="static/images/clients/yakz.png"
                  class="rounded shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: auto; height: 80px">
             <p class="fw-bold mb-0">ПАО «Ясиновский коксохимический завод»</p>
         </div>
-        <div class="col-xl-3 col-md-4 mb-5">
+        <div data-aos="fade-up" class="col-xl-3 col-md-4 mb-5">
             <img src="static/images/clients/zkg.png"
                  class="rounded shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: auto; height: 80px">
             <p class="fw-bold mb-0">предприятия ЖКХ</p>
         </div>
-        <div class="col-xl-3 col-md-4 mb-5">
+        <div data-aos="fade-up" class="col-xl-3 col-md-4 mb-5">
             <img src="static/images/clients/p7.png"
                  class="rounded shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: auto; height: 80px">
             <p class="fw-bold mb-0">ЗАО «Белтепломашстрой» г. Минск</p>
         </div>
-        <div class="col-xl-3 col-md-4 mb-5">
+        <div data-aos="fade-up" class="col-xl-3 col-md-4 mb-5">
             <img src="static/images/clients/p8.png"
                  class="rounded shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: 250px; height: auto">
@@ -584,7 +581,7 @@
 <section class="container mb-10 text-center">
     <h2 class="fw-bold mb-9 text-center">Why is it so great?</h2>
     <div class="row gx-lg-5">
-        <div class="col-lg-4 col-md-12 mb-8 mb-lg-0">
+        <div data-aos="fade-right" data-aos-delay="400" class="col-lg-4 col-md-12 mb-8 mb-lg-0">
             <div class="card shadow-2-strong h-100">
                 <div class="d-flex justify-content-center" style="margin-top: -43px">
                     <div class="p-4 bg-primary rounded-circle shadow-5-strong d-inline-block"><i
@@ -596,7 +593,7 @@
                         Laudantium totam quas cumque pariatur at doloremque hic quos quia eius</p></div>
             </div>
         </div>
-        <div class="col-lg-4 mb-8 mb-lg-0">
+        <div data-aos="fade-right" data-aos-delay="200" class="col-lg-4 mb-8 mb-lg-0">
             <div class="card shadow-2-strong h-100">
                 <div class="d-flex justify-content-center" style="margin-top: -43px">
                     <div class="p-4 bg-primary rounded-circle shadow-5-strong d-inline-block"><i
@@ -608,7 +605,7 @@
                         Eum nostrum fugit numquam, voluptates veniam neque quibusdam ullam</p></div>
             </div>
         </div>
-        <div class="col-lg-4 mb-8 mb-lg-0">
+        <div data-aos="fade-right" class="col-lg-4 mb-8 mb-lg-0">
             <div class="card shadow-2-strong h-100">
                 <div class="d-flex justify-content-center" style="margin-top: -43px">
                     <div class="p-4 bg-primary rounded-circle shadow-5-strong d-inline-block"><i
@@ -625,7 +622,7 @@
 <!--STATS END-->
 
 <!--CONTACT US-->
-
+<!--г. Никополь, ул.Электрометаллургов, 300 – новая площадка (литейный цех)-->
 <section class="container my-5">
     <div class="card mb-3">
         <div class="row g-0 d-flex align-items-center">
@@ -723,6 +720,7 @@
 <script src="static/aos-master/dist/aos.js"></script>
 <script>
   AOS.init();
+
 
 
 
