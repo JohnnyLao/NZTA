@@ -58,7 +58,7 @@
 </div>
 <!--JS SPINNER-->
 <script src="static/js/spinner.js"></script>
-<!--LOADING SPINNET END-->
+<!--LOADING SPINNER END-->
 
 <!--button up-->
 <a id="scrollToTopButton" class="btn fs-1 shadow-1 mx-2 btn-rounded text-primary"
@@ -87,16 +87,14 @@
                     aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
-
             <!-- Collapsible wrapper -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-
                     <!-- Link -->
-                    <li class="nav-item ripple" data-mdb-ripple-color="red">
+                    <li class="nav-item btn-animate" data-mdb-ripple-color="red">
                         <a data-aos="fade-right" data-aos-delay="600" class="nav-link text-white" href="#">Главная</a>
                     </li>
-                    <li class="nav-item ripple">
+                    <li class="nav-item btn-animate">
                         <a data-aos="fade-right" data-aos-delay="400" class="nav-link text-white" href="#">О нас</a>
                     </li>
                     <!-- Dropdown -->
@@ -110,27 +108,29 @@
                         <!-- Dropdown menu -->
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
-                                <a class="dropdown-item ripple " href="#">Задвижки чугунные</a>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="warning" href="#">Клины / Колодки</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider border border-primary"/>
+                            <li>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="#">Задвижки чугунные</a>
                             </li>
                             <li>
                                 <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="#">Затворы</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">Вантузы</a>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="#">Вантузы</a>
                             </li>
                             <li>
-                                <hr class="dropdown-divider"/>
+                                <hr class="dropdown-divider border border-danger"/>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">Чугунное литье</a>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="danger" href="#">Чугунное литье</a>
                             </li>
                         </ul>
                     </li>
-                    <li data-aos="fade-right" data-aos-delay="100" class="nav-item">
-                        <a class="nav-link text-white btn-animate" href="#">Контакты</a>
-                    </li>
                     <li data-aos="fade-right" class="nav-item">
-                        <a class="nav-link text-white ripple btn-animate" href="#">Карьера</a>
+                        <a class="nav-link text-white btn-animate" href="#">Контакты</a>
                     </li>
                 </ul>
             </div>
@@ -139,7 +139,7 @@
             <ul class="navbar-nav">
                 <!-- Language dropdown -->
                 <!--                ОСНОВНОЙ УКРАИНСКИЙ, АНГЛИЙСКИЙ, НЕМЕЦКИЙ, РУМЫНСКИЙ, ПОЛЬСКИЙ, ЧЕШСКИЙ, РУССКИЙ-->
-                <li class="nav-item dropdown mx-auto">
+                <li class="nav-item dropdown mx-auto btn-animate">
                     <a
                             class="nav-link dropdown-toggle"
                             href="#"
@@ -147,7 +147,7 @@
                             role="button"
                             data-mdb-toggle="dropdown"
                             aria-expanded="false"
-                    >
+                    style="color: white">
                         <i class="flag-russia flag m-0"></i>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="languageDropdown">
@@ -194,27 +194,39 @@
 <!-- Navbar -->
 
 <!--SWIPER-->
-<section class="mb-0" id="header">
-    <div class="container-fluid px-0" style="background-image:url(static/images/D75_4962.jpg);
-        background-position: 50% 10%;
-        background-size: cover;
-        height: 400px;">
-        <div class="row mx-0">
-            <div class="col-0 col-lg-5 mx-0"></div>
-            <div class="col-12 col-lg-7 text-center text-primary mx-0 px-0"><h1 class="mt-5 pt-5">Никопольский завод
-                трубопроводной арматуры</h1>
-            </div>
-        </div>
-    </div>
-</section>
-<!--SWIPER END-->
-<section style="background: linear-gradient(0deg, rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url(static/images/bg1.jpg);
-        height: 100px;
-        background-position: 50% 0%;
+<section class="container-fluid mb-0 shadow" id="header"
+         style="background: linear-gradient(0deg, rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url(static/images/bg1.jpg);
+        height: 450px;
+        background-position: 0% 90%;
         background-size: 150vh;
         background-repeat: repeat;
         background-attachment: fixed">
+    <div class="swiper mySwiper" style="height: 450px; max-width: 1000px">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide ">
+                <img src="static/images/D75_5057.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="swiper-slide">
+                <img src="static/images/D75_5044.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="swiper-slide">
+                <img src="static/images/D75_5005.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="swiper-slide">
+                <img src="static/images/D75_5001.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
 </section>
+<!--SWIPER END-->
+<!--<section style="background: linear-gradient(0deg, rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url(static/images/bg1.jpg);-->
+<!--        height: 100px;-->
+<!--        background-position: 50% 0%;-->
+<!--        background-size: 150vh;-->
+<!--        background-repeat: repeat;-->
+<!--        background-attachment: fixed">-->
+<!--</section>-->
 <!--ABOUT US-->
 <section class="my-5 text-center text-lg-start">
     <!-- Jumbotron -->
@@ -720,7 +732,6 @@
 <script src="static/aos-master/dist/aos.js"></script>
 <script>
   AOS.init();
-
 
 
 
