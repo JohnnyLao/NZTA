@@ -21,7 +21,7 @@ body {
 }
 
 .swiper {
-  width: 350px;
+  width: auto;
   height: 280px;
 }
 
