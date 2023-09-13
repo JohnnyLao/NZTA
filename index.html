@@ -13,11 +13,10 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <!-- Google Fonts Roboto -->
-    <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-    />
+<!--    GOOGLE FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- MDB -->
     <link rel="stylesheet" href="static/css/mdb.min.css"/>
     <!--    SWIPER-->
@@ -31,12 +30,10 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
              .cascading-right { margin-left: -200px; margin-top: -50px } @media (max-width: 991.98px) { .cascading-right { margin-left: 0; } }
-
-
     </style>
-</head>
+    </head>
 
-<body class="">
+<body class="" style="font-family: 'Lexend Deca', sans-serif;">
 <!--LOADING SPINNER-->
 <div class="mask">
     <div class="loader">
@@ -142,7 +139,7 @@
         <div class="col-2 text-center">
             <ul class="navbar-nav">
                 <!-- Language dropdown -->
-                <!--                ОСНОВНОЙ УКРАИНСКИЙ, АНГЛИЙСКИЙ, НЕМЕЦКИЙ, РУМЫНСКИЙ, ПОЛЬСКИЙ, ЧЕШСКИЙ, РУССКИЙ-->
+                <!--                ОСНОВНОЙ АНГЛИЙСКИЙ, РУССКИЙ, УКРАИНСКИЙ, НЕМЕЦКИЙ, РУМЫНСКИЙ, ПОЛЬСКИЙ, ЧЕШСКИЙ-->
                 <li class="nav-item dropdown mx-auto">
                     <a
                             class="nav-link dropdown-toggle btn-animate"
@@ -198,7 +195,7 @@
 <!-- Navbar -->
 
 <!--SWIPER-->
-<section class="container-fluid mb-0 shadow" id="header"
+<section class="container-fluid mb-9 shadow" id="header"
          style="background: linear-gradient(0deg, rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url(static/images/bg1.jpg);
         height: 400px;
         background-position: 0% 90%;
@@ -241,7 +238,7 @@
             <div class="col-lg-6 my-auto">
                 <div class="card cascading-right"
                      style=" background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px)">
-                    <div class="card-body py-5 px-md-5 shadow-5"><h2 class="fw-bold mb-4">О компании</h2>
+                    <div class="card-body py-5 px-md-5 shadow-5"><h2 class="fw-bold mb-4">About us</h2>
                         <p class="text-muted mb-4">ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ «М-ЛИТ» (Никопольский
                             завод трубопроводной арматуры,в прошлом – Никопольский литейно–механический завод
                             «Большевик») — известное в Украине и за рубежом крупное специализированное предприятие
@@ -286,30 +283,34 @@
                 </div>
             </div>
         </div>
-    </div> <!-- Jumbotron --> </section>
+    </div>
+</section>
 <!--ABOUT US END-->
+
+
 <!--OUR PRODUCTS KEY-->
-<section draggable="false" class="container pt-5" data-v-271253ee="">
-    <section class="mb-10"><h2 class="fw-bold mb-5 text-center" data-builder-edit="text" data-builder-name="text1"
-                               contenteditable="true">Наша продукция</h2>
-        <div class="row gx-lg-5 align-items-center mb-5">
-            <div class="col-md-6 mb-4 mb-md-0">
+<section draggable="false" class="container">
+    <section>
+        <h2 class="fw-bold text-center">
+            <span>Our</span>
+            <u class="text-primary">products</u>
+        </h2>
+        <h3 class="fw-bold text-center my-3">Клины, Колодки для железной дороги</h3>
+        <!--        ЦВЕТ ЗЕЛЕНЫЙ -->
+        <div class="row">
+            <div class="col-md-6 my-3 text-center">
                 <div class="bg-image hover-overlay ripple shadow-4-strong rounded-4 mb-4" data-mdb-ripple-color="light">
                     <img src="https://mdbootstrap.com/img/new/standard/city/018.jpg" class="w-100" alt=""
-                         data-builder-edit="image" data-builder-name="image1" aria-controls="#picker-editor"
-                         draggable="false"></div>
+                    ></div>
+
+            <h4 class="fw-bold">Welcome to California</h4>
+            <div class="mb-2 text-danger small">
+                <i class="fas fa-globe-americas me-2"></i>
+                <span>Travels</span>
             </div>
-            <div class="col-md-6 mb-4 mb-md-0"><h3 class="fw-bold" data-builder-edit="text" data-builder-name="text2"
-                                                   contenteditable="true">Welcome to California</h3>
-                <div class="mb-2 text-danger small"><i class="fas fa-globe-americas me-2" data-builder-edit="icon"
-                                                       data-builder-name="icon1"
-                                                       aria-controls="#picker-editor"></i><span data-builder-edit="text"
-                                                                                                data-builder-name="text3"
-                                                                                                contenteditable="true">Travels</span>
+            <p class="text-muted">Ut pretium ultricies dignissim. Sed sit amet mi eget urna placerat vulputate. Ut vulputate est non quam
+                dignissim elementum. Donec a ullamcorper diam.</p>
                 </div>
-                <p class="text-muted" data-builder-edit="text" data-builder-name="text4" contenteditable="true">Ut
-                    pretium ultricies dignissim. Sed sit amet mi eget urna placerat vulputate. Ut vulputate est non quam
-                    dignissim elementum. Donec a ullamcorper diam.</p></div>
         </div>
         <div class="row gx-lg-5 align-items-center mb-5 flex-lg-row-reverse">
             <div class="col-md-6 mb-4 mb-md-0">
@@ -331,78 +332,86 @@
     </section>
 </section>
 <!--OUR PRODUCTS KEY END-->
+
+
 <!--OUR PRODUCTS WATER-->
 <section class="container my-5 text-center text-lg-start">
-    <h2 class="fw-bold text-center">Pipelines</h2>
+    <h3 class="fw-bold mb-5 text-center">
+        <span>Shut-off</span>
+        <u class="text-primary">valves</u>
+    </h3>
     <div class="row gx-lg-5 my-5">
-
-        <div class="col-lg-4">
+        <div class="col-lg-4 mb-3 mb-lg-0 text-center">
             <div>
-                <div data-aos="zoom-in" class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
-                     data-mdb-ripple-color="primary" style="height: 280px">
-                    <img src="static/images/zatvor-19ch16br.png" class="mt-5 mx-3" alt="">
-                    <img src="static/images/zatvor-19ch21br.png" class="mt-5" alt="">
+                <div data-aos="fade-right"
+                     class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
+                     data-mdb-ripple-color="primary" style="height: 265px">
+                    <img src="static/images/zatvor-19ch16br.png" class="mt-5 pt-3 me-3" alt="">
+                    <img src="static/images/zatvor-19ch21br.png" class="mt-5 pt-3" alt="">
                 </div>
-                <h5 class="fw-bold"> Затворы</h5>
+                <h5 data-aos="fade-right" class="fw-bold"> Затворы</h5>
                 <div class="mb-3 text-primary small">
                 </div>
-                <p class="text-muted"> Затворы обратные поворотные фланцевые чугунные предназначены для
+                <p data-aos="fade-right" class="text-muted"> Затворы обратные поворотные фланцевые чугунные
+                    предназначены для
                     предотвращения обратного потока рабочей среды в трубопроводах, транспортирующих воду, пар , нефть ,
                     масла и другие нефтепродукты </p>
-                <button data-aos="fade-up" class="btn btn-primary btn-animate px-3">
-                    <i class="fas fa-droplet pe-2"></i>
-                    <span>Подробнее</span>
+                <button data-aos="fade-right" class="btn btn-primary btn-animate px-3">
+                        <span>More
+                            <i class="fas fa-droplet ms-1"></i>
+                        </span>
                 </button>
             </div>
 
         </div>
-        <div class="col-lg-4 col-md-12 mb-lg-0">
+        <div class="col-lg-4 mb-3 mb-lg-0 text-center">
             <div>
-                <div data-aos="zoom-in" data-aos-delay="200"
+                <div data-aos="fade-up"
                      class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
-                     data-mdb-ripple-color="primary" style="height: 280px">
+                     data-mdb-ripple-color="primary" style="height: 265px">
                     <img src="static/images/prod1.png" class="img" alt="">
                 </div>
-                <h5 data-aos="zoom-in" data-aos-delay="200" class="fw-bold">
+                <h5 data-aos="fade-up" class="fw-bold">
                     Задвижки чугунные</h5>
                 <div class="mb-3 text-danger small">
                 </div>
-                <p data-aos="zoom-in" data-aos-delay="200" class="text-muted">Назначение и область применения:
+                <p data-aos="fade-up" class="text-muted">Назначение и область применения:
                     Задвижки параллельные двухдисковые предназначены
                     для установки в качестве запорного устройства на
                     трубопроводах различных отраслей промышленности.</p>
                 <button data-aos="fade-up" class="btn btn-primary btn-animate px-3">
-                    <i class="fas fa-droplet pe-2"></i>
-                    <span>Подробнее</span>
+                        <span>More
+                            <i class="fas fa-droplet ms-1"></i>
+                        </span>
                 </button>
             </div>
         </div>
-        <div class="col-lg-4 mb-3 mb-lg-0">
+        <div class="col-lg-4 mb-3 mb-lg-0 text-center">
             <div>
                 <div data-aos="fade-left" class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
-                     data-mdb-ripple-color="primary" style="height: 280px">
+                     data-mdb-ripple-color="primary" style="height: 265px">
                     <img src="static/images/vantuz1.png" class="mt-4" alt="">
                 </div>
-                <h5 data-aos="fade-left" class="fw-bold"> Вантузы</h5>
-                <div class="mb-3 text-warning small">
-                    <p data-aos="fade-left" class="text-muted">
+                <h5 data-aos="fade-left" class="fw-bold mb-3"> Вантузы</h5>
+                <div class="mb-3 text-warning small mx-auto">
+                    <p data-aos="fade-left" class="text-muted text-start">
                         Вантузы аэрационные чугунные предназначены для автоматического удаления
                         воздуха при его накоплении, а также для его автоматического впуска при образовании вакуума в
                         системах водоснабжения, водяного отопления и других сетевых устройств, транспортирующих воду с
                         температурой до 363К (900 С)</p>
-                    <button data-aos="fade-up" class="btn btn-primary btn-animate px-3">
-                        <i class="fas fa-droplet pe-2"></i>
-                        <span>Подробнее</span>
+                    <button data-aos="fade-left" class="btn btn-primary btn-animate px-3">
+                        <span>More
+                            <i class="fas fa-droplet ms-1"></i>
+                        </span>
                     </button>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!--OUR PRODUCTS END-->
+<!--OUR PRODUCTS WATER END-->
 
-
-<!--IRON CASTING-->
+<!--OUR PRODUCTS IRON CASTING-->
 <section class="container my-5">
     <div class="card mb-3">
         <div class="row g-0 d-flex align-items-center">
@@ -411,7 +420,7 @@
                     class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5 ms-3"></div>
             <div class="col-lg-7 col-xl-8 text-center text-md-start">
                 <div class="card-body px-md-5">
-                    <h2 class="fw-bold mb-4">Чугунное литьё</h2>
+                    <h3 class="fw-bold mb-4 text-danger"><u>Iron casting</u></h3>
                     <p class="text-muted mb-4">Nunc tincidunt vulputate elit. Mauris varius purus malesuada neque
                         iaculis malesuada. Aenean gravida magna orci, non efficitur est porta id. Donec magna
                         diam.</p>
@@ -472,8 +481,9 @@
                     </div>
                     <div data-aos="fade-up" class="col-12 text-center">
                         <button class="btn btn-danger btn-animate px-3">
-                            <i class="fas fa-fire-flame-curved me-1"></i>
-                            <span>Подробнее</span>
+                            <span>More
+                                <i class="fas fa-fill-drip ms-1"></i>
+                            </span>
                         </button>
                     </div>
                 </div>
@@ -484,21 +494,26 @@
     </div>
 </section>
 <!--IRON CASTING END-->
+<!--OUR PRODUCTS END-->
+
 
 <!--OUR ADVANTAGES-->
 <section class="container my-5">
-    <h2 class="fw-bold mb-5 text-center">Наши преимущества</h2>
+    <h2 class="fw-bold mb-5 text-center">
+        <u class="text-primary">Best</u>
+        <span>for your business</span>
+    </h2>
     <div class="row gx-lg-5 align-items-center">
         <div class="col-lg-5 mb-5 mb-lg-0">
             <div data-aos="fade-right" data-aos-duration="1000" class="bg-image rounded-5 shadow-5-strong"
                  style="background-image: url(static/images/D75_4995.jpg); height: 560px; background-size: cover; background-position: 50% 50%;">
                 <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" class="mask1"
-                     style="background-color: rgba(0, 0, 0, 0.4)">
+                     style="background-color: rgba(0, 0, 0, 0.5)">
                     <div class="d-flex justify-content-center align-items-center">
                         <div class="px-4 py-5 px-md-5 text-white text-center"><h3
                                 class="text-uppercase fw-bold mb-4"><span>THE FUTURE IS</span>
-                            <u style="color: hsl(231, 52.6%, 85%)">now</u></h3>
-                            <p class="mb-0" style="color: hsl(231, 52.6%, 85%)">Lorem ipsum dolor sit amet
+                            <u class="text-primary">now</u></h3>
+                            <p class="" style="color: hsl(231, 52.6%, 85%)">Lorem ipsum dolor sit amet
                                 consectetur adipisicing elit. Harum quia laboriosam error consequuntur fugit,
                                 doloribus rerum, iure nesciunt amet quidem veniam cupiditate hic fugiat dolore
                                 aperiam quisquam libero earum quibusdam?</p></div>
@@ -555,63 +570,63 @@
 <!--OUR CLIENT-->
 <section class="container my-5 text-center">
     <h2 class="fw-bold mb-5">
-        <span>Наши</span>
-        <u class="text-primary">Клиенты</u>
+        <span>Our</span>
+        <u class="text-primary">Clients</u>
     </h2>
     <div class="row gx-lg-5">
-        <div data-aos="fade-up" class="col-xl-3 col-md-4 mb-5">
+        <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
             <img src="static/images/clients/nzf-logo.png"
                  class="rounded-circle shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: auto; height: 60px">
-            <p class="fw-bold mb-0">ПАО «Никопольский завод ферросплавов»</p>
+            <p class="fw-bold">ПАО «Никопольский завод ферросплавов»</p>
         </div>
-        <div data-aos="fade-up" class="col-xl-3 col-md-4 mb-5">
+        <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
             <img src="static/images/clients/amk.png"
                  class="rounded-circle shadow mb-0 px-3 py-1 bg-primary" alt=""
                  style="width: auto; height: 80px">
-            <p class="fw-bold mb-0">ПАО «Алчевский металлургический комбинат»</p>
+            <p class="fw-bold">ПАО «Алчевский металлургический комбинат»</p>
         </div>
-        <div data-aos="fade-up" class="col-xl-3 col-md-4 mb-5">
+        <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
             <img src="static/images/clients/p9.png"
                  class="rounded shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: auto; height: 80px">
-            <p class="fw-bold mb-0">АО «Промарматура» г. Днепропетровск</p>
+            <p class="fw-bold">АО «Промарматура» г. Днепропетровск</p>
         </div>
-        <div data-aos="fade-up" class="col-xl-3 col-md-4 mb-5">
+        <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
             <img src="static/images/clients/p13.png"
                  class="rounded-circle shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: auto; height: 80px">
-            <p class="fw-bold mb-0">ООО «Интерекст» г. Киев</p>
+            <p class="fw-bold">ООО «Интерекст» г. Киев</p>
         </div>
-        <div data-aos="fade-up" class="col-xl-3 col-md-4 mb-5">
+        <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
             <img src="static/images/clients/sn.png"
                  class="rounded-circle shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: auto; height: 80px">
-            <p class="fw-bold mb-0">АО «Сумской завод «Насосэнергомаш»»</p>
+            <p class="fw-bold">АО «Сумской завод «Насосэнергомаш»»</p>
         </div>
-        <div data-aos="fade-up" class="col-xl-3 col-md-4 mb-5">
+        <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
             <img src="static/images/clients/yakz.png"
                  class="rounded shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: auto; height: 80px">
-            <p class="fw-bold mb-0">ПАО «Ясиновский коксохимический завод»</p>
+            <p class="fw-bold">ПАО «Ясиновский коксохимический завод»</p>
         </div>
-        <div data-aos="fade-up" class="col-xl-3 col-md-4 mb-5">
+        <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
             <img src="static/images/clients/zkg.png"
                  class="rounded shadow mb-3 px-3 py-1 bg-primary" alt=""
-                 style="width: auto; height: 80px">
-            <p class="fw-bold mb-0">предприятия ЖКХ</p>
+                 style="width: auto; height: 60px">
+            <p class="fw-bold ">предприятия ЖКХ</p>
         </div>
-        <div data-aos="fade-up" class="col-xl-3 col-md-4 mb-5">
+        <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
             <img src="static/images/clients/p7.png"
                  class="rounded shadow mb-3 px-3 py-1 bg-primary" alt=""
-                 style="width: auto; height: 80px">
-            <p class="fw-bold mb-0">ЗАО «Белтепломашстрой» г. Минск</p>
+                 style="width: auto; height: 60px">
+            <p class="fw-bold ">ЗАО «Белтепломашстрой» г. Минск</p>
         </div>
-        <div data-aos="fade-up" class="col-xl-3 col-md-4 mb-5">
+        <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
             <img src="static/images/clients/p8.png"
                  class="rounded shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: 250px; height: auto">
-            <p class="fw-bold mb-0">ЗАО «Чистый берег» г. Минск</p>
+            <p class="fw-bold">ЗАО «Чистый берег» г. Минск</p>
         </div>
     </div>
 </section>
@@ -620,13 +635,16 @@
 
 
 <!--STATS-->
-<section class="container mb-10 text-center">
-    <h2 class="fw-bold mb-9 text-center">Why is it so great?</h2>
+<section class="container my-5 text-center">
+    <h2 class="fw-bold mb-7">
+        <span>We build our</span>
+        <u class="text-primary">Trust</u>
+    </h2>
     <div class="row gx-lg-5">
         <div data-aos="fade-right" data-aos-delay="400" class="col-lg-4 col-md-12 mb-8 mb-lg-0">
             <div class="card shadow-2-strong h-100">
                 <div class="d-flex justify-content-center" style="margin-top: -43px">
-                    <div class="p-4 bg-primary rounded-circle shadow-5-strong d-inline-block"><i
+                    <div class="p-3 bg-primary rounded-circle shadow-5-strong d-inline-block"><i
                             class="fas fa-cubes fa-2x text-white"></i></div>
                 </div>
                 <div class="card-body"><h3 class="fw-bold text-primary mb-3">1000</h3> <h5
@@ -638,7 +656,7 @@
         <div data-aos="fade-right" data-aos-delay="200" class="col-lg-4 mb-8 mb-lg-0">
             <div class="card shadow-2-strong h-100">
                 <div class="d-flex justify-content-center" style="margin-top: -43px">
-                    <div class="p-4 bg-primary rounded-circle shadow-5-strong d-inline-block"><i
+                    <div class="p-3 bg-primary rounded-circle shadow-5-strong d-inline-block"><i
                             class="fas fa-chart-pie fa-2x text-white"></i></div>
                 </div>
                 <div class="card-body"><h3 class="fw-bold text-primary mb-3">70%</h3> <h5
@@ -650,7 +668,7 @@
         <div data-aos="fade-right" class="col-lg-4 mb-8 mb-lg-0">
             <div class="card shadow-2-strong h-100">
                 <div class="d-flex justify-content-center" style="margin-top: -43px">
-                    <div class="p-4 bg-primary rounded-circle shadow-5-strong d-inline-block"><i
+                    <div class="p-3 bg-primary rounded-circle shadow-5-strong d-inline-block"><i
                             class="fas fa-cogs fa-2x text-white"></i></div>
                 </div>
                 <div class="card-body"><h3 class="fw-bold text-primary mb-3">49</h3> <h5
@@ -666,14 +684,17 @@
 <!--CONTACT US-->
 <!--г. Никополь, ул.Электрометаллургов, 300 – новая площадка (литейный цех)-->
 <section class="container my-5">
+    <h2 class="fw-bold text-center my-5">
+        <u class="text-primary">Contact</u>
+        <span>Us</span>
+    </h2>
     <div class="card mb-3">
         <div class="row g-0 d-flex align-items-center">
             <div class="col-lg-4 d-none d-lg-flex">
-                <div class="map-container-2 w-100 mb-4 mb-lg-0">
-                    <iframe src="https://maps.google.com/maps?q=manhatan&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-                            class="rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5" frameborder="0"
-                            allowfullscreen=""></iframe>
-                </div>
+                <!--                GOOGLE MAP ENGLISH-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.60915931269!2d34.3780783!3d47.59484369999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dca3cfff35358f%3A0x65128b98055957f!2sElektrometalurhiv%20St%2C%20300%2C%20Nikopol&#39;%2C%20Dnipropetrovs&#39;ka%20oblast%2C%20Ukraine%2C%2053200!5e0!3m2!1sen!2skz!4v1694529900527!5m2!1sen!2skz"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="col-lg-8">
                 <div class="card-body py-5 px-md-5">
@@ -762,6 +783,11 @@
 <script src="static/aos-master/dist/aos.js"></script>
 <script>
   AOS.init();
+
+
+
+
+
 
 
 
