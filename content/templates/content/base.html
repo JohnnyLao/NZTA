@@ -1,0 +1,194 @@
+<!--load static tag-->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>{% block title %} {% endblock title %}</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon"/>
+    <!-- Font Awesome -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!--    GOOGLE FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- MDB -->
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}"/>
+    <!--    SWIPER-->
+    <link rel="stylesheet" href="{% static 'swiper/package/swiper-bundle.min.css' %}"/>
+    <!--    AOS-->
+    <link href="{% static 'aos-master/dist/aos.css' %}" rel="stylesheet">
+    <!--    GOOGLE MAP-->
+    <link rel="stylesheet" href="{% static 'css/map.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <!--    JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .cascading-right { margin-left: -200px; margin-top: -50px } @media (max-width: 991.98px) { .cascading-right { margin-left: 0; } }
+    </style>
+</head>
+
+
+<!--header on every page-->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg py-1 bg-light bg-gradient sticky-top">
+    <!-- Container wrapper -->
+    <div class="container-fluid shadow-lg">
+        <div data-aos="fade-right" class="col-2">
+            <!-- Navbar brand -->
+            <a class="navbar-brand" href="#">
+                <img class="im-fluid mx-auto" src="{% static 'images/logo.png' %}" alt="" style="max-width: 70px">
+            </a>
+        </div>
+        <div class="col-8 text-center">
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <!-- Link -->
+                    <li class="nav-item btn-animate" data-mdb-ripple-color="red">
+                        <a data-aos="fade-right" data-aos-delay="600" class="nav-link " href="#">Main</a>
+                    </li>
+                    <li class="nav-item btn-animate">
+                        <a data-aos="fade-right" data-aos-delay="400" class="nav-link " href="#">About us</a>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown mx-auto">
+                        <a data-aos="fade-right" data-aos-delay="200"
+                           class="nav-link dropdown-toggle  btn-animate"
+                           href="#" id="navbarDropdown" role="button"
+                           data-mdb-toggle="dropdown" aria-expanded="false">
+                            Our products
+                        </a>
+                        <!-- Dropdown menu -->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="success" href="#">Badges /
+                                    Pads</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider border border-primary"/>
+                            <li>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="#">Iron Valves</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="#">Gates</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="#">Plungers</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider border border-danger"/>
+                            </li>
+                            <li>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="danger" href="#">Iron Casting</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li data-aos="fade-right" class="nav-item">
+                        <a class="nav-link btn-animate" href="#">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-2 text-center">
+            <ul class="navbar-nav">
+                <!-- Language dropdown -->
+                <!--                ОСНОВНОЙ АНГЛИЙСКИЙ, РУССКИЙ, УКРАИНСКИЙ, НЕМЕЦКИЙ, РУМЫНСКИЙ, ПОЛЬСКИЙ, ЧЕШСКИЙ-->
+                <li class="nav-item dropdown mx-auto">
+                    <a
+                            class="nav-link dropdown-toggle btn-animate"
+                            href="#"
+                            id="languageDropdown"
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                            style="color: black">
+                        <i class="flag-us flag m-0"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <i class="flag-us flag"></i>English
+                                <i class="fa fa-check text-success ms-2"></i
+                                ></a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider"/>
+                        </li>
+                        <li>
+                            <a class="dropdown-item " href="#"><i class="flag-russia flag "></i>Русский</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item " href="#"><i class="flag-ukraine flag"></i>Український</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item " href="#"><i class="flag-germany flag"></i>Deutsch</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item " href="#"><i class="flag-romania flag"></i>Română</a>
+
+                        </li>
+                        <li>
+                            <a class="dropdown-item " href="#"><i class="flag-poland flag"></i>Polski</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End navbar -->
+
+
+<!--Write each new template not with DOCTYPE but with a BODY tag-->
+<!--Content block-->
+{% block content %} {% endblock content %}
+<!--End content block-->
+
+
+<!--footer on every page-->
+<!--FOOTER-->
+<footer>
+    <div class="container-fluid bg-primary">
+        <div class="container py-1">
+            <div class="row">
+                <div class="col-12 text-center text-white my-0 py-0">
+                    Copyright © 2014-2023 ООО «М-ЛИТ», Все права защищены
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--FOOTER END-->
+
+
+<!--SCRIPTS-->
+<!-- MDB -->
+<script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
+<!-- Custom scripts -->
+<script type="text/javascript"></script>
+<!--SWIPER-->
+<script src="{% static 'swiper/package/swiper-bundle.min.js' %}"></script>
+<!-- Initialize Swiper -->
+<script src="{% static 'js/swiper.js' %}"></script>
+<!--AOS-->
+<script src="{% static 'aos-master/dist/aos.js' %}"></script>
+<script>
+    AOS.init();
+</script>
+<!--SCRIPTS END-->
+</html>
