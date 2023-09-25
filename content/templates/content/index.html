@@ -1,13 +1,12 @@
 <!--extend base.html-->
 {% extends 'content/base.html' %}
-<!--load static tag-->
+<!--load tags-->
 {% load static %}
-
+{% load i18n %}
 
 <!--your title block here-->
 {% block title %}
-    Public Joint Stock Company "Nikopol Pipeline Fittings Plant" (Nikopol
-    foundry and mechanical plant "Bolshevik")
+    {% translate "Public Joint Stock Company 'Nikopol Pipeline Fittings Plant' (Nikopol foundry and mechanical plant 'Bolshevik')" %}
 {% endblock title %}
 <!--title end-->
 
@@ -96,52 +95,52 @@
     <div class="container">
         <div class="row g-0">
             <div data-aos="fade-right" data-aos-duration="1000" class="col-lg-6 my-auto"><img
-                    src="static/images/MLIT-01.jpg"
+                    src="{% static 'images/MLIT-01.jpg' %}"
                     class="w-75 rounded-4 shadowlg" alt="" draggable="false"></div>
             <div class="col-lg-6 my-auto">
                 <div class="card cascading-right"
                      style=" background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px)">
-                    <div class="card-body py-5 px-md-5 shadow-lg"><h2 class="fw-bold mb-4">About us</h2>
-                        <p class="text-muted mb-4">LIMITED LIABILITY COMPANY "M-LIT" (Nikopol Pipeline Valve Plant,
-                            formerly Nikopol Foundry and Mechanical Plant "Bolshevik") is a large specialized enterprise
-                            known in Ukraine and abroad for the production of shut-off valves.</p>
+                    <div class="card-body py-5 px-md-5 shadow-lg"><h2 class="fw-bold mb-4">{% translate 'About us' %}</h2>
+                        <p class="text-muted mb-4">
+                            {% translate 'LIMITED LIABILITY COMPANY "M-LIT" (Nikopol Pipeline Valve Plant,' %}
+                            {% translate 'formerly Nikopol Foundry and Mechanical Plant "Bolshevik") is a large specialized enterprise' %}
+                            {% translate 'known in Ukraine and abroad for the production of shut-off valves.' %}</p>
                         <div class="row mb-3">
                             <div data-aos="zoom-in" class="col-lg-4"><p>
                                 <i class="fas fa-check-circle text-success me-2"></i>
-                                <span>Best team</span>
+                                <span>{% translate 'Best team' %}</span>
                             </p>
                             </div>
                             <div data-aos="zoom-in" data-aos-delay="400" class="col-lg-4">
                                 <p>
                                     <i class="fas fa-check-circle text-success me-2"></i>
-                                    <span>Best quality</span>
+                                    <span>{% translate 'Best quality' %}</span>
                                 </p>
                             </div>
                             <div data-aos="zoom-in" data-aos-delay="800" class="col-lg-4">
                                 <p>
                                     <i class="fas fa-check-circle text-success me-2"></i>
-                                    <span>Best experience</span>
+                                    <span>{% translate 'Best experience' %}</span>
                                 </p>
                             </div>
                         </div>
-                        <p class="text-muted mb-0 d-none d-sm-block">LLC "M-LIT" (NZTA) (formerly Nikopol Foundry and
-                            Mechanical Plant "Bolshevik") is a large specialized enterprise known in Ukraine and abroad
-                            for the production of shut-off valves. The company was created more than 115 years ago.
-                            During this period, the plant went from producing furnace castings to producing cast iron
-                            valves used as shut-off devices on pipelines to shut off the working environment. The
-                            company produces cast iron valves with a nominal bore from 50 mm to 500 mm, grades 30ch6br
-                            and 30ch906br for water and steam, with manual control and electric drive; 30ch6bk for
-                            petroleum products and oils; 30ch47bk4 and 30ch47br for natural gas and water with nominal
-                            bore from 50 mm to 150 mm. "M-LIT" today is
-                            technical equipment of production with universal and specialized equipment,
-                            qualified specialists, which, combined with extensive experience of the plant in this
-                            industry allows the enterprise team to produce a wide range of products
-                            pipeline fittings. Contact us - and we will fulfill your order quickly and
-                            qualitatively. Products bearing the logo of our company can be found everywhere - from
-                            huge metallurgical plants, thermal power plants, quarries to irrigation systems in rural
-                            economy, public utilities of any settlement in the CIS countries. And products are
-                            everywhere
-                            Our enterprise operates efficiently and reliably.</p></div>
+                        <p class="text-muted mb-0 d-none d-sm-block">
+                            {% translate 'LLC "M-LIT" (NZTA) (formerly Nikopol Foundry and' %}
+                            {% translate 'Mechanical Plant "Bolshevik") is a large specialized enterprise known in Ukraine and abroad' %}
+                            {% translate 'for the production of shut-off valves. The company was created more than 115 years ago.' %}
+                            {% translate 'During this period, the plant went from producing furnace castings to producing cast iron' %}
+                            {% translate 'valves used as shut-off devices on pipelines to shut off the working environment. The' %}
+                            {% translate 'company produces cast iron valves with a nominal bore from 50 mm to 500 mm, grades 30ch6br' %}
+                            {% translate 'and 30ch906br for water and steam, with manual control and electric drive; 30ch6bk for' %}
+                            {% translate 'petroleum products and oils; 30ch47bk4 and 30ch47br for natural gas and water with nominal bore from 50 mm to 150 mm. "M-LIT" today is' %}
+                            {% translate 'technical equipment of production with universal and specialized equipment,' %}
+                            {% translate 'qualified specialists, which, combined with extensive experience of the plant in this' %}
+                            {% translate 'industry allows the enterprise team to produce a wide range of products' %}
+                            {% translate 'pipeline fittings. Contact us - and we will fulfill your order quickly and' %}
+                            {% translate 'qualitatively. Products bearing the logo of our company can be found everywhere - from' %}
+                            {% translate 'huge metallurgical plants, thermal power plants, quarries to irrigation systems in rural' %}
+                            {% translate 'economy, public utilities of any settlement in the CIS countries. And products are everywhere' %}
+                            {% translate 'Our enterprise operates efficiently and reliably.' %}</p></div>
                 </div>
             </div>
         </div>
@@ -155,12 +154,12 @@
 <section>
     <div class="container">
         <h2 class="fw-bold text-center my-5">
-            <span data-aos="fade-down">MEET</span>
-            <span data-aos="fade-down" data-aos-delay="200">OUR</span>
-            <u data-aos="fade-down" data-aos-delay="400" class="text-success">PRODUCTS</u>
+            <span data-aos="fade-down">{% translate 'MEET' %}</span>
+            <span data-aos="fade-down" data-aos-delay="200">{% translate 'OUR' %}</span>
+            <u data-aos="fade-down" data-aos-delay="400" class="text-success">{% translate 'PRODUCTS' %}</u>
         </h2>
         <div class="container-fluid text-center">
-            <img data-aos="fade-left" draggable="false" src="static/images/Train-PNG-File-Download-Free.png" alt=""
+            <img data-aos="fade-left" draggable="false" src="{% static 'images/Train-PNG-File-Download-Free.png' %}" alt=""
                  class="img-fluid w-25 rounded-circle" style="">
         </div>
         <!--        ЦВЕТ ЗЕЛЕНЫЙ -->
@@ -169,26 +168,27 @@
                  class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3"
                  data-mdb-ripple-color="success" style="height: auto">
                 <img data-aos-delay="200" draggable="false"
-                     src="static/images/кл2-removebg-preview.png"
+                     src="{% static 'images/кл2-removebg-preview.png' %}"
                      class="w-25 btn-animate me-2" alt="" style="max-height: 150px; max-width: 150px;">
-                <img draggable="false" src="static/images/кл1-removebg-preview.png"
+                <img draggable="false" src="{% static 'images/кл1-removebg-preview.png' %}"
                      class="w-25 btn-animate me-2" style="max-height: 150px; max-width: 150px" alt="">
-                <img draggable="false" src="static/images/кт1-removebg-preview.png"
+                <img draggable="false" src="{% static 'images/кт1-removebg-preview.png' %}"
                      class="img-fluid w-25 btn-animate me-2" style="max-height: 150px; max-width: 150px" alt="">
                 <img draggable="false" style="max-height: 150px; max-width: 150px"
-                     src="static/images/кт2-removebg-preview.png" class="img-fluid w-25 btn-animate me-2" alt="">
+                     src="{% static 'images/кт2-removebg-preview.png' %}" class="img-fluid w-25 btn-animate me-2" alt="">
                 <img draggable="false" style="max-height: 150px; max-width: 150px"
-                     src="static/images/кт3-removebg-preview.png" class="img-fluid w-25 btn-animate me-2" alt="">
+                     src="{% static 'images/кт3-removebg-preview.png' %}" class="img-fluid w-25 btn-animate me-2" alt="">
                 <img draggable="false" style="max-height: 150px; max-width: 150px"
-                     src="static/images/кт4-removebg-preview.png" class="img-fluid w-25 btn-animate me-2" alt="">
+                     src="{% static 'images/кт4-removebg-preview.png' %}" class="img-fluid w-25 btn-animate me-2" alt="">
             </div>
             <div class="col-12 col-md-5 text-center mx-auto">
-                <h4 data-aos="fade-up" class="fw-bold">Wadges</h4>
+                <h4 data-aos="fade-up" class="fw-bold">{% translate 'Wadges' %}</h4>
                 <div data-aos="fade-up" class="mb-2 text-success small">
                     <i class="fas fa-globe-americas me-2"></i>
-                    <span>Best experience</span>
+                    <span>{% translate 'Best experience' %}</span>
                 </div>
-                <p data-aos="fade-up" class="text-muted">Ut pretium ultricies dignissim. Sed sit amet mi eget urna
+                <p data-aos="fade-up" class="text-muted">
+                    Ut pretium ultricies dignissim. Sed sit amet mi eget urna
                     placerat vulputate. Ut
                     vulputate est non quam
                     dignissim elementum. Donec a ullamcorper diam.</p>
@@ -199,17 +199,18 @@
                 </button>
             </div>
             <div class="col-12 col-md-5 text-center mx-auto">
-                <h4 data-aos="fade-up" class="fw-bold">Pads</h4>
+                <h4 data-aos="fade-up" class="fw-bold">{% translate 'Pads' %}</h4>
                 <div data-aos="fade-up" class="mb-2 text-success small">
                     <i class="fas fa-check-circle me-2"></i>
-                    <span>Best quality</span>
+                    <span>{% translate 'Best quality' %}</span>
                 </div>
-                <p data-aos="fade-up" class="text-muted">Ut pretium ultricies dignissim. Sed sit amet mi eget urna
+                <p data-aos="fade-up" class="text-muted">
+                    Ut pretium ultricies dignissim. Sed sit amet mi eget urna
                     placerat vulputate. Ut
                     vulputate est non quam
                     dignissim elementum. Donec a ullamcorper diam.</p>
                 <button data-aos="fade-up" class="btn btn-success btn-animate px-3">
-                        <span>More
+                        <span>{% translate 'More' %}
                             <i class="fas fa-train ms-1"></i>
                         </span>
                 </button>
@@ -220,31 +221,32 @@
 <!--OUR PRODUCTS KEY END-->
 
 <div class="container-fluid text-center mt-5">
-    <img draggable="false" src="static/images/pipe.png" alt="" class="img-fluid">
+    <img draggable="false" src="{% static 'images/pipe.png' %}" alt="" class="img-fluid">
 </div>
 <!--OUR PRODUCTS WATER-->
 <section class="container my-5 text-center text-lg-start">
     <h3 class="fw-bold mb-5 text-center">
-        <span>Shut-off</span>
-        <u class="text-primary">valves</u>
+        <span>{% translate 'Shut-off' %}</span>
+        <u class="text-primary">{% translate 'valves' %}</u>
     </h3>
     <div class="row gx-lg-5 my-5">
         <div class="col-lg-4 mb-3 mb-lg-0 text-center">
             <div data-aos="fade-right"
                  class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
                  data-mdb-ripple-color="primary" style="height: 265px">
-                <img draggable="false" src="static/images/zatvor-19ch16br.png" class="mt-5 pt-3 me-3" alt="">
-                <img draggable="false" src="static/images/zatvor-19ch21br.png" class="mt-5 pt-3" alt="">
+                <img draggable="false" src="{% static 'images/zatvor-19ch16br.png' %}" class="mt-5 pt-3 me-3" alt="">
+                <img draggable="false" src="{% static 'images/zatvor-19ch21br.png' %}" class="mt-5 pt-3" alt="">
             </div>
-            <h5 data-aos="fade-right" class="fw-bold"> Gates</h5>
+            <h5 data-aos="fade-right" class="fw-bold">{% translate ' Gates' %}</h5>
             <div class="mb-3 text-primary small">
             </div>
-            <p data-aos="fade-right" class="text-muted"> Cast iron flanged check valves
+            <p data-aos="fade-right" class="text-muted">
+                Cast iron flanged check valves
                 intended for preventing the reverse flow of the working medium in pipelines transporting water, steam,
                 oil,
                 oils and other petroleum products </p>
             <button data-aos="fade-right" class="btn btn-primary btn-animate px-3">
-                        <span>More
+                        <span>{% translate 'More' %}
                             <i class="fas fa-droplet ms-1"></i>
                         </span>
             </button>
@@ -254,7 +256,7 @@
                 <div data-aos="fade-up"
                      class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
                      data-mdb-ripple-color="primary" style="height: 265px">
-                    <img draggable="false" src="static/images/prod1.png" class="img" alt="">
+                    <img draggable="false" src="{% static 'images/prod1.png' %}" class="img" alt="">
                 </div>
                 <h5 data-aos="fade-up" class="fw-bold">
                     Cast iron valves</h5>
@@ -275,7 +277,7 @@
             <div>
                 <div data-aos="fade-up" class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
                      data-mdb-ripple-color="primary" style="height: 265px">
-                    <img draggable="false" src="static/images/vantuz1.png" class="mt-4" alt="">
+                    <img draggable="false" src="{% static 'images/vantuz1.png' %}" class="mt-4" alt="">
                 </div>
                 <h5 data-aos="fade-up" class="fw-bold mb-3"> Plungers</h5>
                 <div class="mb-3 text-warning small mx-auto">
@@ -301,7 +303,7 @@
     <div class="card mb-3 shadow-lg">
         <div class="row g-0 d-flex align-items-center">
             <div class="col-lg-5 col-xl-4 d-none d-lg-flex"><img
-                    src="static/images/D75_5057.jpg" alt=""
+                    src="{% static 'images/D75_5057.jpg' %}" alt=""
                     class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5 ms-3"></div>
             <div class="col-lg-7 col-xl-8 text-center text-md-start">
                 <div class="card-body px-md-5">
@@ -462,55 +464,56 @@
     </h2>
     <div class="row gx-lg-5">
         <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
-            <img src="static/images/clients/nzf-logo.png"
+            {% static 'images/clients/p9.png' %}
+            <img src="{% static 'images/clients/nzf-logo.png' %}"
                  class="rounded-circle shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: auto; height: 60px">
             <p class="fw-bold">ПАО «Никопольский завод ферросплавов»</p>
         </div>
         <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
-            <img src="static/images/clients/amk.png"
+            <img src="{% static 'images/clients/amk.png' %}"
                  class="rounded-circle shadow mb-0 px-3 py-1 bg-primary" alt=""
                  style="width: auto; height: 80px">
             <p class="fw-bold">ПАО «Алчевский металлургический комбинат»</p>
         </div>
         <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
-            <img src="static/images/clients/p9.png"
+            <img src="{% static 'images/clients/p9.png' %}"
                  class="rounded shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: auto; max-height: 80px">
             <p class="fw-bold">АО «Промарматура» г. Днепропетровск</p>
         </div>
         <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
-            <img src="static/images/clients/p13.png"
+            <img src="{% static 'images/clients/p13.png' %}"
                  class="rounded-circle shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: auto; max-height: 60px">
             <p class="fw-bold">ООО «Интерекст» г. Киев</p>
         </div>
         <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
-            <img src="static/images/clients/sn.png"
+            <img src="{% static 'images/clients/sn.png' %}"
                  class="rounded-circle shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: auto; max-height: 80px">
             <p class="fw-bold">АО «Сумской завод «Насосэнергомаш»»</p>
         </div>
         <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
-            <img src="static/images/clients/yakz.png"
+            <img src="{% static 'images/clients/yakz.png' %}"
                  class="rounded shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: auto; max-height: 80px">
             <p class="fw-bold">ПАО «Ясиновский коксохимический завод»</p>
         </div>
         <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
-            <img src="static/images/clients/zkg.png"
+            <img src="{% static 'images/clients/zkg.png' %}"
                  class="rounded shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: auto; max-height: 60px">
             <p class="fw-bold ">предприятия ЖКХ</p>
         </div>
         <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
-            <img src="static/images/clients/p7.png"
+            <img src="{% static 'images/clients/p7.png' %}"
                  class="rounded shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: auto; max-height: 50px">
             <p class="fw-bold ">ЗАО «Белтепломашстрой» г. Минск</p>
         </div>
         <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
-            <img src="static/images/clients/p8.png"
+            <img src="{% static 'images/clients/p8.png' %}"
                  class="rounded shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: 250px; max-height: auto">
             <p class="fw-bold">ЗАО «Чистый берег» г. Минск</p>
@@ -641,12 +644,6 @@
     </div>
 </section>
 <!--CONTACT US END-->
-
-
-
-
-
-
 </body>
 
 {% endblock content %}

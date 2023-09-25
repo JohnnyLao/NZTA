@@ -1,5 +1,6 @@
-<!--load static tag-->
+<!--load tags-->
 {% load static %}
+{% load i18n %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -60,10 +61,10 @@
                 <ul class="navbar-nav">
                     <!-- Link -->
                     <li class="nav-item btn-animate" data-mdb-ripple-color="red">
-                        <a data-aos="fade-right" data-aos-delay="600" class="nav-link " href="#">Main</a>
+                        <a data-aos="fade-right" data-aos-delay="600" class="nav-link " href="#">{% translate 'Main' %}</a>
                     </li>
                     <li class="nav-item btn-animate">
-                        <a data-aos="fade-right" data-aos-delay="400" class="nav-link " href="#">About us</a>
+                        <a data-aos="fade-right" data-aos-delay="400" class="nav-link " href="#">{% translate 'About us' %}</a>
                     </li>
                     <!-- Dropdown -->
                     <li class="nav-item dropdown mx-auto">
@@ -71,35 +72,34 @@
                            class="nav-link dropdown-toggle  btn-animate"
                            href="#" id="navbarDropdown" role="button"
                            data-mdb-toggle="dropdown" aria-expanded="false">
-                            Our products
+                            {% translate 'Our products' %}
                         </a>
                         <!-- Dropdown menu -->
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
-                                <a class="dropdown-item ripple" data-mdb-ripple-color="success" href="#">Badges /
-                                    Pads</a>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="success" href="#">{% translate 'Badges / Pads' %}</a>
                             </li>
                             <li>
                                 <hr class="dropdown-divider border border-primary"/>
                             <li>
-                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="#">Iron Valves</a>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="#">{% translate 'Iron Valves' %}</a>
                             </li>
                             <li>
-                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="#">Gates</a>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="#">{% translate 'Gates' %}</a>
                             </li>
                             <li>
-                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="#">Plungers</a>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="#">{% translate 'Plungers' %}</a>
                             </li>
                             <li>
                                 <hr class="dropdown-divider border border-danger"/>
                             </li>
                             <li>
-                                <a class="dropdown-item ripple" data-mdb-ripple-color="danger" href="#">Iron Casting</a>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="danger" href="#">{% translate 'Iron Casting' %}</a>
                             </li>
                         </ul>
                     </li>
                     <li data-aos="fade-right" class="nav-item">
-                        <a class="nav-link btn-animate" href="#">Contacts</a>
+                        <a class="nav-link btn-animate" href="#">{% translate 'Contacts' %}</a>
                     </li>
                 </ul>
             </div>
@@ -121,7 +121,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="languageDropdown">
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="{% url 'index:set_language' 'en' %}">
                                 <i class="flag-us flag"></i>English
                                 <i class="fa fa-check text-success ms-2"></i
                                 ></a>
@@ -130,7 +130,7 @@
                             <hr class="dropdown-divider"/>
                         </li>
                         <li>
-                            <a class="dropdown-item " href="#"><i class="flag-russia flag "></i>Русский</a>
+                            <a class="dropdown-item " href="{% url 'index:set_language' 'ru' %}"><i class="flag-russia flag "></i>Русский</a>
                         </li>
                         <li>
                             <a class="dropdown-item " href="#"><i class="flag-ukraine flag"></i>Український</a>

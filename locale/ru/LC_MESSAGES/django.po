@@ -1,0 +1,186 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-25 11:42+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: NZTA_main_config/settings.py:123
+msgid "English"
+msgstr ""
+
+#: NZTA_main_config/settings.py:124
+msgid "Russian"
+msgstr ""
+
+#: content/templates/content/base.html:64
+msgid "Main"
+msgstr ""
+
+#: content/templates/content/base.html:67
+#: content/templates/content/index.html:103
+msgid "About us"
+msgstr ""
+
+#: content/templates/content/base.html:75
+msgid "Our products"
+msgstr ""
+
+#: content/templates/content/base.html:80
+msgid "Badges / Pads"
+msgstr ""
+
+#: content/templates/content/base.html:85
+msgid "Iron Valves"
+msgstr ""
+
+#: content/templates/content/base.html:88
+msgid "Gates"
+msgstr ""
+
+#: content/templates/content/base.html:91
+msgid "Plungers"
+msgstr ""
+
+#: content/templates/content/base.html:97
+msgid "Iron Casting"
+msgstr ""
+
+#: content/templates/content/base.html:102
+msgid "Contacts"
+msgstr ""
+
+#: content/templates/content/index.html:9
+msgid ""
+"Public Joint Stock Company 'Nikopol Pipeline Fittings Plant' (Nikopol "
+"foundry and mechanical plant 'Bolshevik')"
+msgstr ""
+
+#: content/templates/content/index.html:105
+msgid "LIMITED LIABILITY COMPANY \"M-LIT\" (Nikopol Pipeline Valve Plant,"
+msgstr ""
+
+#: content/templates/content/index.html:106
+msgid ""
+"formerly Nikopol Foundry and Mechanical Plant \"Bolshevik\") is a large "
+"specialized enterprise"
+msgstr ""
+
+#: content/templates/content/index.html:107
+msgid "known in Ukraine and abroad for the production of shut-off valves."
+msgstr ""
+
+#: content/templates/content/index.html:111
+msgid "Best team"
+msgstr ""
+
+#: content/templates/content/index.html:117
+msgid "Best quality"
+msgstr ""
+
+#: content/templates/content/index.html:123
+msgid "Best experience"
+msgstr ""
+
+#: content/templates/content/index.html:128
+msgid "LLC \"M-LIT\" (NZTA) (formerly Nikopol Foundry and"
+msgstr ""
+
+#: content/templates/content/index.html:129
+msgid ""
+"Mechanical Plant \"Bolshevik\") is a large specialized enterprise known in "
+"Ukraine and abroad"
+msgstr ""
+
+#: content/templates/content/index.html:130
+msgid ""
+"for the production of shut-off valves. The company was created more than 115 "
+"years ago."
+msgstr ""
+
+#: content/templates/content/index.html:131
+msgid ""
+"During this period, the plant went from producing furnace castings to "
+"producing cast iron"
+msgstr ""
+
+#: content/templates/content/index.html:132
+msgid ""
+"valves used as shut-off devices on pipelines to shut off the working "
+"environment. The"
+msgstr ""
+
+#: content/templates/content/index.html:133
+msgid ""
+"company produces cast iron valves with a nominal bore from 50 mm to 500 mm, "
+"grades 30ch6br"
+msgstr ""
+
+#: content/templates/content/index.html:134
+msgid ""
+"and 30ch906br for water and steam, with manual control and electric drive; "
+"30ch6bk for"
+msgstr ""
+
+#: content/templates/content/index.html:135
+msgid ""
+"petroleum products and oils; 30ch47bk4 and 30ch47br for natural gas and "
+"water with nominal bore from 50 mm to 150 mm. \"M-LIT\" today is"
+msgstr ""
+
+#: content/templates/content/index.html:136
+msgid ""
+"technical equipment of production with universal and specialized equipment,"
+msgstr ""
+
+#: content/templates/content/index.html:137
+msgid ""
+"qualified specialists, which, combined with extensive experience of the "
+"plant in this"
+msgstr ""
+
+#: content/templates/content/index.html:138
+msgid "industry allows the enterprise team to produce a wide range of products"
+msgstr ""
+
+#: content/templates/content/index.html:139
+msgid ""
+"pipeline fittings. Contact us - and we will fulfill your order quickly and"
+msgstr ""
+
+#: content/templates/content/index.html:140
+msgid ""
+"qualitatively. Products bearing the logo of our company can be found "
+"everywhere - from"
+msgstr ""
+
+#: content/templates/content/index.html:141
+msgid ""
+"huge metallurgical plants, thermal power plants, quarries to irrigation "
+"systems in rural"
+msgstr ""
+
+#: content/templates/content/index.html:142
+msgid ""
+"economy, public utilities of any settlement in the CIS countries. And "
+"products are everywhere"
+msgstr ""
+
+#: content/templates/content/index.html:143
+msgid "Our enterprise operates efficiently and reliably."
+msgstr ""
