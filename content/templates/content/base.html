@@ -117,20 +117,23 @@
                             data-mdb-toggle="dropdown"
                             aria-expanded="false"
                             style="color: black">
-                        <i class="flag-us flag m-0"></i>
+                        {% if request.LANGUAGE_CODE == 'ru' %}
+                        <i class="flag-russia flag" id="current_language_flag"></i>
+                        {% elif request.LANGUAGE_CODE == 'en' %}
+                        <i class="flag-us flag" id="current_language_flag"></i>
+                        {% endif %}
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="languageDropdown">
                         <li>
                             <a class="dropdown-item" href="{% url 'index:set_language' 'en' %}">
                                 <i class="flag-us flag"></i>English
-                                <i class="fa fa-check text-success ms-2"></i
-                                ></a>
+                            </a>
                         </li>
                         <li>
-                            <hr class="dropdown-divider"/>
                         </li>
                         <li>
-                            <a class="dropdown-item " href="{% url 'index:set_language' 'ru' %}"><i class="flag-russia flag "></i>Русский</a>
+                            <a class="dropdown-item " href="{% url 'index:set_language' 'ru' %}"><i
+                                    class="flag-russia flag "></i>Русский</a>
                         </li>
                         <li>
                             <a class="dropdown-item " href="#"><i class="flag-ukraine flag"></i>Український</a>

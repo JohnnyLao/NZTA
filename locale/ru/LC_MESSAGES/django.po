@@ -22,36 +22,36 @@ msgstr ""
 
 #: NZTA_main_config/settings.py:123
 msgid "English"
-msgstr ""
+msgstr "Английский"
 
 #: NZTA_main_config/settings.py:124
 msgid "Russian"
-msgstr ""
+msgstr "Русский"
 
 #: content/templates/content/base.html:64
 msgid "Main"
-msgstr ""
+msgstr "Главная"
 
 #: content/templates/content/base.html:67
 #: content/templates/content/index.html:103
 msgid "About us"
-msgstr ""
+msgstr "О компании"
 
 #: content/templates/content/base.html:75
 msgid "Our products"
-msgstr ""
+msgstr "Производство"
 
 #: content/templates/content/base.html:80
 msgid "Badges / Pads"
-msgstr ""
+msgstr "Клины"
 
 #: content/templates/content/base.html:85
 msgid "Iron Valves"
-msgstr ""
+msgstr "Чугунные "
 
 #: content/templates/content/base.html:88
 msgid "Gates"
-msgstr ""
+msgstr "Задвижки"
 
 #: content/templates/content/base.html:91
 msgid "Plungers"
@@ -69,43 +69,44 @@ msgstr ""
 msgid ""
 "Public Joint Stock Company 'Nikopol Pipeline Fittings Plant' (Nikopol "
 "foundry and mechanical plant 'Bolshevik')"
-msgstr ""
+msgstr "Публичное акционерное общество «Никопольский завод трубопроводной арматуры» (Никополь) Литейно-механический завод «Большевик»"
 
 #: content/templates/content/index.html:105
 msgid "LIMITED LIABILITY COMPANY \"M-LIT\" (Nikopol Pipeline Valve Plant,"
-msgstr ""
+msgstr "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ «М-ЛИТ» (Никопольский завод трубопроводной арматуры, г."
 
 #: content/templates/content/index.html:106
 msgid ""
 "formerly Nikopol Foundry and Mechanical Plant \"Bolshevik\") is a large "
 "specialized enterprise"
-msgstr ""
+msgstr "бывший Никопольский литейно-механический завод «Большевик») — крупное специализированное предприятие"
 
 #: content/templates/content/index.html:107
 msgid "known in Ukraine and abroad for the production of shut-off valves."
-msgstr ""
+msgstr "известен в Украине и за рубежом производством запорной арматуры"
 
 #: content/templates/content/index.html:111
 msgid "Best team"
-msgstr ""
+msgstr "Лучшие специалисты"
 
 #: content/templates/content/index.html:117
 msgid "Best quality"
-msgstr ""
+msgstr "Лучшее качество"
 
 #: content/templates/content/index.html:123
 msgid "Best experience"
-msgstr ""
+msgstr "Надёжный опыт"
 
 #: content/templates/content/index.html:128
 msgid "LLC \"M-LIT\" (NZTA) (formerly Nikopol Foundry and"
-msgstr ""
+msgstr "ООО «М-ЛИТ» (НЗТА) (бывший Никопольский литейный завод"
 
 #: content/templates/content/index.html:129
 msgid ""
 "Mechanical Plant \"Bolshevik\") is a large specialized enterprise known in "
 "Ukraine and abroad"
-msgstr ""
+msgstr "Механический завод «Большевик») — крупное специализированное предприятие, известное в «
+«Украина и зарубежье"
 
 #: content/templates/content/index.html:130
 msgid ""
