@@ -19,40 +19,6 @@
 
 <body class=""
       style="font-family: 'Roboto'; background: linear-gradient(0deg, rgba(238,238,238,1) 0%, rgba(245,238,238,1) 45%, rgba(238,238,245,1) 60%, rgba(238,245,238,1) 65%, rgba(238,238,238,1) 100%)">
-<!--LOADING SPINNER-->
-<div class="mask">
-    <div class="loader">
-        <svg viewBox="0 0 80 80">
-            <circle id="test" cx="40" cy="40" r="32"></circle>
-        </svg>
-    </div>
-
-    <div class="loader triangle">
-        <svg viewBox="0 0 86 80">
-            <polygon points="43 8 79 72 7 72"></polygon>
-        </svg>
-    </div>
-
-    <div class="loader">
-        <svg viewBox="0 0 80 80">
-            <rect x="8" y="8" width="64" height="64"></rect>
-        </svg>
-    </div>
-</div>
-<!--JS SPINNER-->
-<script src="{% static 'js/spinner.js' %}"></script>
-<!--LOADING SPINNER END-->
-
-<!--button up-->
-<a id="scrollToTopButton" class="fs-3 shadow-0 mx-2 btn-rounded text-primary btn-animate"
-   style="position: fixed; bottom: 50px; right: 40px; display: none; z-index: 100"
-   href="#header">
-    <i class="fas fa-arrow-up-long fa-2x" ></i>
-</a>
-<script src="{% static 'js/button_up.js' %}"></script>
-<!--button end-->
-
-
 
 <!--SWIPER-->
 <section class="container-fluid mb-9 shadow-lg" id="header"
@@ -90,7 +56,7 @@
 
 
 <!--ABOUT US-->
-<section class="my-5 mb-10 text-center text-lg-start">
+<section class="my-5 mb-10 text-center text-lg-start" id="about_us">
     <!-- Jumbotron -->
     <div class="container">
         <div class="row g-0">
@@ -299,9 +265,11 @@
 <section class="container my-5 mb-10">
     <div class="card mb-3 shadow-lg">
         <div class="row g-0 d-flex align-items-center">
-            <div class="col-lg-5 col-xl-4 d-none d-lg-flex"><img
+            <div class="col-lg-5 col-xl-4 d-none d-lg-flex">
+                <img
                     src="{% static 'images/D75_5057.jpg' %}" alt=""
-                    class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5 ms-3"></div>
+                    class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5 ms-3">
+            </div>
             <div class="col-lg-7 col-xl-8 text-center text-md-start">
                 <div class="card-body px-md-5">
                     <h3 class="fw-bold mb-4 text-danger"><u>Iron casting</u></h3>
@@ -567,79 +535,6 @@
 </section>
 <!--STATS END-->
 
-<!--CONTACT US-->
-<!--г. Никополь, ул.Электрометаллургов, 300 – новая площадка (литейный цех)-->
-<section class="container my-5">
-    <h2 class="fw-bold text-center my-5">
-        <u class="text-primary">Contact</u>
-        <span>Us</span>
-    </h2>
-    <div class="card mb-3">
-        <div class="row g-0 d-flex align-items-center">
-            <div class="col-lg-4 d-none d-lg-flex">
-                <!--                GOOGLE MAP ENGLISH-->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.60915931269!2d34.3780783!3d47.59484369999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dca3cfff35358f%3A0x65128b98055957f!2sElektrometalurhiv%20St%2C%20300%2C%20Nikopol&#39;%2C%20Dnipropetrovs&#39;ka%20oblast%2C%20Ukraine%2C%2053200!5e0!3m2!1sen!2skz!4v1694529900527!5m2!1sen!2skz"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="col-lg-8">
-                <div class="card-body py-5 px-md-5">
-                    <div class="row gx-lg-5">
-                        <div class="col-md-6 mb-5">
-                            <div class="d-flex align-items-start">
-                                <div class="flex-shrink-0">
-                                    <div class="p-3 bg-primary rounded-4 shadow"><i
-                                            class="fas fa-headset fa-lg text-white fa-fw"></i></div>
-                                </div>
-                                <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">
-                                    Technical support</p>
-                                    <p class="text-muted mb-0">support@example.com</p>
-                                    <p class="text-muted mb-0">+1 234-567-89</p></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-5">
-                            <div class="d-flex align-items-start">
-                                <div class="flex-shrink-0">
-                                    <div class="p-3 bg-primary rounded-4 shadow"><i
-                                            class="fas fa-dollar-sign fa-lg text-white fa-fw"></i></div>
-                                </div>
-                                <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">
-                                    Sales questions</p>
-                                    <p class="text-muted mb-0">sales@example.com</p>
-                                    <p class="text-muted mb-0">+1 234-567-89</p></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-5">
-                            <div class="d-flex align-items-start">
-                                <div class="flex-shrink-0">
-                                    <div class="p-3 bg-primary rounded-4 shadow"><i
-                                            class="fas fa-newspaper fa-lg text-white fa-fw"></i></div>
-                                </div>
-                                <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">
-                                    Press</p>
-                                    <p class="text-muted mb-0">press@example.com</p>
-                                    <p class="text-muted mb-0">+1 234-567-89</p></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-5">
-                            <div class="d-flex align-items-start">
-                                <div class="flex-shrink-0">
-                                    <div class="p-3 bg-primary rounded-4 shadow"><i
-                                            class="fas fa-bug fa-lg text-white fa-fw"></i></div>
-                                </div>
-                                <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">
-                                    Bug report</p>
-                                    <p class="text-muted mb-0">bugs@example.com</p>
-                                    <p class="text-muted mb-0">+1 234-567-89</p></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--CONTACT US END-->
 </body>
 
 {% endblock content %}

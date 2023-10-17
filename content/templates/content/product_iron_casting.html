@@ -1,0 +1,115 @@
+<!--extend base.html-->
+{% extends 'content/base.html' %}
+<!--load tags-->
+{% load static %}
+{% load i18n %}
+
+<!--your title block here-->
+{% block title %}
+    {% translate "Public Joint Stock Company 'Nikopol Pipeline Fittings Plant' (Nikopol foundry and mechanical plant 'Bolshevik')" %}
+{% endblock title %}
+<!--title end-->
+
+
+<!--HEADER -> BASE.HTML-->
+
+
+<!--your content block here-->
+{% block content %}
+
+<body>
+
+<!--OUR PRODUCTS IRON CASTING-->
+<section class="container my-5 mb-10">
+    <div class="card mb-3 shadow-lg">
+        <div class="row g-0 d-flex align-items-center">
+            <div class="col-lg-5 col-xl-4 d-none d-lg-flex"><img
+                    src="{% static 'images/D75_5057.jpg' %}" alt=""
+                    class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5 ms-3"></div>
+            <div class="col-lg-7 col-xl-8 text-center text-md-start">
+                <div class="card-body px-md-5">
+                    <h3 class="fw-bold mb-4 text-danger"><u>Iron casting</u></h3>
+                    <p class="text-muted mb-4">Nunc tincidunt vulputate elit. Mauris varius purus malesuada neque
+                        iaculis malesuada. Aenean gravida magna orci, non efficitur est porta id. Donec magna
+                        diam.</p>
+                    <div class="row">
+                        <div data-aos="fade-up" class="col-6 col-lg-4">
+                            <p>
+                                <i class="fas fa-check text-success me-2"></i>
+                                <span>Light hatch</span>
+                            </p>
+                        </div>
+                        <div data-aos="fade-up" class="col-6 col-lg-4">
+                            <p>
+                                <i class="fas fa-check text-success me-2"></i>
+                                <span>Hatch average</span>
+                            </p>
+                        </div>
+                        <div data-aos="fade-up" class="col-lg-4">
+                            <p><i class="fas fa-check text-success me-2"></i>
+                                <span>Hatch heavy</span>
+                            </p>
+                        </div>
+                        <div data-aos="fade-up" class="col-lg-4">
+                            <p>
+                                <i class="fas fa-check text-success me-2"></i>
+                                <span>Hatch anti-vandal</span>
+                            </p>
+                        </div>
+                        <div data-aos="fade-up" class="col-lg-4">
+                            <p>
+                                <i class="fas fa-check text-success me-2"></i>
+                                <span>Storm water inlets</span>
+                            </p>
+                        </div>
+                        <div data-aos="fade-up" class="col-lg-4">
+                            <p>
+                                <i class="fas fa-check text-success me-2"></i>
+                                <span>Storm grates</span>
+                            </p>
+                        </div>
+                        <div data-aos="fade-up" class="col-lg-4">
+                            <p>
+                                <i class="fas fa-check text-success me-2"></i>
+                                <span>Benches</span>
+                            </p>
+                        </div>
+                        <div data-aos="fade-up" class="col-lg-4">
+                            <p>
+                                <i class="fas fa-check text-success me-2"></i>
+                                <span>Car wedges</span>
+                            </p>
+                        </div>
+                        <div data-aos="fade-up" class="col-lg-4">
+                            <p>
+                                <i class="fas fa-check text-success me-2"></i>
+                                <span>Car brake pads</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="col-12 text-center">
+                        <button class="btn btn-danger btn-animate px-3">
+                            <span>More
+                                <i class="fas fa-fill-drip ms-1"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--IRON CASTING END-->
+
+
+
+
+</body>
+
+{% endblock content %}
+<!--content end-->
+
+
+<!--FOOTER -> BASE.HTML-->

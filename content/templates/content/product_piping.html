@@ -1,0 +1,107 @@
+<!--extend base.html-->
+{% extends 'content/base.html' %}
+<!--load tags-->
+{% load static %}
+{% load i18n %}
+
+<!--your title block here-->
+{% block title %}
+    {% translate "Public Joint Stock Company 'Nikopol Pipeline Fittings Plant' (Nikopol foundry and mechanical plant 'Bolshevik')" %}
+{% endblock title %}
+<!--title end-->
+
+
+<!--HEADER -> BASE.HTML-->
+
+
+<!--your content block here-->
+{% block content %}
+
+<body>
+<div class="container-fluid text-center mt-5">
+    <img draggable="false" src="{% static 'images/pipe.png' %}" alt="" class="img-fluid">
+</div>
+<!--OUR PRODUCTS WATER-->
+<section class="container my-5 text-center text-lg-start">
+    <h3 class="fw-bold mb-5 text-center">
+        <span>{% translate 'Shut-off' %}</span>
+        <u class="text-primary">{% translate 'valves' %}</u>
+    </h3>
+    <div class="row gx-lg-5 my-5">
+        <div class="col-lg-4 mb-3 mb-lg-0 text-center">
+            <div data-aos="fade-right"
+                 class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
+                 data-mdb-ripple-color="primary" style="height: 265px">
+                <img draggable="false" src="{% static 'images/zatvor-19ch16br.png' %}" class="mt-5 pt-3 me-3" alt="">
+                <img draggable="false" src="{% static 'images/zatvor-19ch21br.png' %}" class="mt-5 pt-3" alt="">
+            </div>
+            <h5 data-aos="fade-right" class="fw-bold">{% translate ' Gates' %}</h5>
+            <div class="mb-3 text-primary small">
+            </div>
+            <p data-aos="fade-right" class="text-muted">
+                Cast iron flanged check valves
+                intended for preventing the reverse flow of the working medium in pipelines transporting water, steam,
+                oil,
+                oils and other petroleum products </p>
+            <button data-aos="fade-right" class="btn btn-primary btn-animate px-3">
+                        <span>{% translate 'More' %}
+                            <i class="fas fa-droplet ms-1"></i>
+                        </span>
+            </button>
+        </div>
+        <div class="col-lg-4 mb-3 mb-lg-0 text-center">
+            <div>
+                <div data-aos="fade-up"
+                     class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
+                     data-mdb-ripple-color="primary" style="height: 265px">
+                    <img draggable="false" src="{% static 'images/prod1.png' %}" class="img" alt="">
+                </div>
+                <h5 data-aos="fade-up" class="fw-bold">
+                    Cast iron valves</h5>
+                <div class="mb-3 text-danger small">
+                </div>
+                <p data-aos="fade-up" class="text-muted">Purpose and scope:
+                    Parallel double disc valves are designed
+                    for installation as a locking device on
+                    pipelines of various industries.</p>
+                <button data-aos="fade-up" class="btn btn-primary btn-animate px-3">
+                        <span>More
+                            <i class="fas fa-droplet ms-1"></i>
+                        </span>
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-3 mb-lg-0 text-center">
+            <div>
+                <div data-aos="fade-up" class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
+                     data-mdb-ripple-color="primary" style="height: 265px">
+                    <img draggable="false" src="{% static 'images/vantuz1.png' %}" class="mt-4" alt="">
+                </div>
+                <h5 data-aos="fade-up" class="fw-bold mb-3"> Plungers</h5>
+                <div class="mb-3 text-warning small mx-auto">
+                    <p data-aos="fade-up" class="text-muted text-start">
+                        Cast iron aeration plungers are designed for automatic removal
+                        air when it accumulates, as well as for its automatic intake when a vacuum is formed in
+                        water supply systems, water heating and other network devices transporting water from
+                        temperatures up to 363K (900 C)</p>
+                    <button data-aos="fade-up" class="btn btn-primary btn-animate px-3">
+                        <span>More
+                            <i class="fas fa-droplet ms-1"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--OUR PRODUCTS WATER END-->
+
+
+
+</body>
+
+{% endblock content %}
+<!--content end-->
+
+
+<!--FOOTER -> BASE.HTML-->

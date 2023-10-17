@@ -13,6 +13,17 @@ class MainPage(TemplateView):
     template_name = 'content/index.html'
 
 
+class Product_rw(TemplateView):
+    template_name = 'content/product_rw.html'
+
+class Product_piping(TemplateView):
+    template_name = 'content/product_piping.html'
+
+
+class Product_iron_casting(TemplateView):
+    template_name = 'content/product_iron_casting.html'
+
+
 def set_language(request, language):
     for lang, _ in settings.LANGUAGES:
         translation.activate(lang)
