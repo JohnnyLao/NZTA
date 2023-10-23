@@ -17,15 +17,15 @@
 <!--your content block here-->
 {% block content %}
 
-<body>
+<body style="background: rgba(238,245,238,1)">
 <!--OUR PRODUCTS KEY-->
 
 <section>
     <div class="container">
         <div class="container-fluid text-center">
-            <img data-aos="fade-left" draggable="false" src="{% static 'images/Train-PNG-File-Download-Free.png' %}"
+            <img data-aos="fade-left" draggable="false" src="{% static 'images/585f9208cb11b227491c357a.png' %}"
                  alt=""
-                 class="img-fluid w-50 rounded-circle" style="">
+                 class="img-fluid w-25 rounded my-0 py-0" style="">
         </div>
     </div>
 </section>
@@ -64,40 +64,133 @@
 
                 <div class="mb-3">
                     <a href="#">
-                        <span class="badge badge-success mr-1">Category 2</span>
+                        <span class="badge badge-success mr-1">Railways</span>
                     </a>
                     <a href="#">
-                        <span class="badge badge-danger mr-1">New</span>
+                        <span class="badge badge-danger mr-1">Bestseller</span>
                     </a>
                     <a href="#">
-                        <span class="badge badge-info mr-1">Bestseller</span>
+                        <span class="badge badge-info mr-1">New</span>
                     </a>
                 </div>
 
-                <h2>Name</h2>
+                <!-- Tabs navs -->
+                <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link active"
+                                id="ex1-tab-1"
+                                data-mdb-toggle="tab"
+                                href="#ex1-tabs-1"
+                                role="tab"
+                                aria-controls="ex1-tabs-1"
+                                aria-selected="true"
+                        >Model 1</a
+                        >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link"
+                                id="ex1-tab-2"
+                                data-mdb-toggle="tab"
+                                href="#ex1-tabs-2"
+                                role="tab"
+                                aria-controls="ex1-tabs-2"
+                                aria-selected="false"
+                        >Model 2</a
+                        >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link"
+                                id="ex1-tab-3"
+                                data-mdb-toggle="tab"
+                                href="#ex1-tabs-3"
+                                role="tab"
+                                aria-controls="ex1-tabs-3"
+                                aria-selected="false"
+                        >Model 3</a
+                        >
+                    </li>
+                </ul>
+                <!-- Tabs navs -->
 
-                <p class="lead font-weight-bold">Description</p>
+                <!-- Tabs content -->
+                <div class="tab-content" id="ex1-content">
+                    <div
+                            class="tab-pane fade show active"
+                            id="ex1-tabs-1"
+                            role="tabpanel"
+                            aria-labelledby="ex1-tab-1"
+                    >
+                        <h2>Name 1</h2>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque quia
-                    ipsa
-                    sint voluptatibus!
-                    Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+                        <p class="lead font-weight-bold">Description 1</p>
 
-                <form class="d-flex justify-content-left">
-                    <!-- Default input -->
-                    <button class="btn btn-success btn-md my-0 p" type="submit">Get an offer
-                        <i class="fas fa-shopping-cart ml-1"></i>
-                    </button>
-                </form>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque
+                            quia
+                            ipsa
+                            sint voluptatibus!
+                            Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+
+                        <a class="d-flex justify-content-left" href="#">
+                            <!-- Default input -->
+                            <button class="btn btn-success btn-md my-0 p btn-animate" type="button">Get an offer
+                                <i class="fas fa-shopping-cart ml-1"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                        <h2>Name 2</h2>
+
+                        <p class="lead font-weight-bold">Description 2</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque
+                            quia
+                            ipsa
+                            sint voluptatibus!
+                            Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+
+                        <a class="d-flex justify-content-left" href="#">
+                            <!-- Default input -->
+                            <button class="btn btn-success btn-md my-0 p btn-animate" type="button">Get an offer
+                                <i class="fas fa-shopping-cart ml-1"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+                        <h2>Name 3</h2>
+
+                        <p class="lead font-weight-bold">Description 3</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque
+                            quia
+                            ipsa
+                            sint voluptatibus!
+                            Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+
+                        <a class="d-flex justify-content-left" href="#">
+                            <!-- Default input -->
+                            <button class="btn btn-success btn-md my-0 p btn-animate" type="button">Get an offer
+                                <i class="fas fa-shopping-cart ml-1"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <!-- Tabs content -->
+
+
             </div>
             <!--Content-->
+
         </div>
         <!--Grid column-->
+
     </div>
     <!--Grid row-->
     <hr>
 
-    <!--        PRODUCT 2-->
+    <!--PRODUCT 2-->
     <!--Grid row-->
     <div class="row wow fadeIn">
         <!--Grid column-->
@@ -115,7 +208,7 @@
                      src="{% static 'images/new_photos/05_KT_C-removebg-preview.png' %}"
                      class="w-25 w-md-50 btn-animate mx-3 my-3" alt="" style="max-height: 150px; max-width: 150px;">
                 <img data-aos-delay="200" draggable="false"
-                     src="{% static 'images/new_photos/05_KT_C-removebg-preview.png' %}"
+                     src="{% static 'images/new_photos/09_KT_RIZ-removebg-preview.png' %}"
                      class="btn-animate mx-3 my-3" alt="" style="max-height: 150px; max-width: 150px;">
             </div>
         </div>
@@ -128,31 +221,136 @@
             <div class="p-4">
                 <div class="mb-3">
                     <a href="#">
-                        <span class="badge badge-success mr-1">Category 2</span>
+                        <span class="badge badge-success mr-1">Railways</span>
                     </a>
                     <a href="#">
-                        <span class="badge badge-danger mr-1">New</span>
+                        <span class="badge badge-danger mr-1">Bestseller</span>
                     </a>
                     <a href="#">
-                        <span class="badge badge-info mr-1">Bestseller</span>
+                        <span class="badge badge-info mr-1">New</span>
                     </a>
                 </div>
 
-                <h2>Name</h2>
+                <!-- Tabs navs -->
+                <ul class="nav nav-tabs mb-3" id="ex2" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link active"
+                                id="ex2-tab-1"
+                                data-mdb-toggle="tab"
+                                href="#ex2-tabs-1"
+                                role="tab"
+                                aria-controls="ex1-tabs-1"
+                                aria-selected="true"
+                        >Model 1</a
+                        >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link"
+                                id="ex2-tab-2"
+                                data-mdb-toggle="tab"
+                                href="#ex2-tabs-2"
+                                role="tab"
+                                aria-controls="ex2-tabs-2"
+                                aria-selected="false"
+                        >Model 2</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link"
+                                id="ex2-tab-3"
+                                data-mdb-toggle="tab"
+                                href="#ex2-tabs-3"
+                                role="tab"
+                                aria-controls="ex2-tabs-3"
+                                aria-selected="false"
+                        >Model 3</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link"
+                                id="ex2-tab-4"
+                                data-mdb-toggle="tab"
+                                href="#ex2-tabs-4"
+                                role="tab"
+                                aria-controls="ex2-tabs-4"
+                                aria-selected="false"
+                        >Model 4</a>
+                    </li>
+                </ul>
+                <!-- Tabs navs -->
 
-                <p class="lead font-weight-bold">Description</p>
+                <!-- Tabs content -->
+                <div class="tab-content" id="ex2-content">
+                    <div
+                            class="tab-pane fade show active"
+                            id="ex2-tabs-1"
+                            role="tabpanel"
+                            aria-labelledby="ex2-tab-1"
+                    >
+                        <h2>Name 1</h2>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque quia
-                    ipsa
-                    sint voluptatibus!
-                    Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+                        <p class="lead font-weight-bold">Description 1</p>
 
-                <form class="d-flex justify-content-left">
-                    <!-- Default input -->
-                    <button class="btn btn-success btn-md my-0 p" type="submit">Get an offer
-                        <i class="fas fa-shopping-cart ml-1"></i>
-                    </button>
-                </form>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque
+                            quia
+                            ipsa
+                            sint voluptatibus!
+                            Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+
+
+                    </div>
+                    <div class="tab-pane fade" id="ex2-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                        <h2>Name 2</h2>
+
+                        <p class="lead font-weight-bold">Description 2</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque
+                            quia
+                            ipsa
+                            sint voluptatibus!
+                            Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+
+
+                    </div>
+                    <div class="tab-pane fade" id="ex2-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+                        <h2>Name 3</h2>
+
+                        <p class="lead font-weight-bold">Description 3</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque
+                            quia
+                            ipsa
+                            sint voluptatibus!
+                            Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+
+
+                    </div>
+
+                    <div class="tab-pane fade" id="ex2-tabs-4" role="tabpanel" aria-labelledby="ex1-tab-3">
+                        <h2>Name 4</h2>
+
+                        <p class="lead font-weight-bold">Description 4</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque
+                            quia
+                            ipsa
+                            sint voluptatibus!
+                            Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+
+
+                    </div>
+                    <a class="d-flex justify-content-left" href="#">
+                            <!-- Default input -->
+                            <button class="btn btn-success btn-md my-0 p btn-animate" type="button">Get an offer
+                                <i class="fas fa-shopping-cart ml-1"></i>
+                            </button>
+                        </a>
+                </div>
+                <!-- Tabs content -->
+
+
             </div>
             <!--Content-->
 
@@ -164,6 +362,7 @@
 
     <hr>
 
+    <!--PRODUCT 3-->
     <!--Grid row-->
     <div class="row wow fadeIn">
 
@@ -194,31 +393,113 @@
 
                 <div class="mb-3">
                     <a href="#">
-                        <span class="badge badge-success mr-1">Category 2</span>
+                        <span class="badge badge-success mr-1">Railways</span>
                     </a>
                     <a href="#">
-                        <span class="badge badge-danger mr-1">New</span>
+                        <span class="badge badge-danger mr-1">Bestseller</span>
                     </a>
                     <a href="#">
-                        <span class="badge badge-info mr-1">Bestseller</span>
+                        <span class="badge badge-info mr-1">New</span>
                     </a>
                 </div>
 
-                <h2>Name</h2>
+                <!-- Tabs navs -->
+                <ul class="nav nav-tabs mb-3" id="ex3" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link active"
+                                id="ex3-tab-1"
+                                data-mdb-toggle="tab"
+                                href="#ex3-tabs-1"
+                                role="tab"
+                                aria-controls="ex3-tabs-1"
+                                aria-selected="true"
+                        >Model 1</a
+                        >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link"
+                                id="ex3-tab-2"
+                                data-mdb-toggle="tab"
+                                href="#ex3-tabs-2"
+                                role="tab"
+                                aria-controls="ex3-tabs-2"
+                                aria-selected="false"
+                        >Model 2</a
+                        >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link"
+                                id="ex3-tab-3"
+                                data-mdb-toggle="tab"
+                                href="#ex3-tabs-3"
+                                role="tab"
+                                aria-controls="ex3-tabs-3"
+                                aria-selected="false"
+                        >Model 3</a
+                        >
+                    </li>
+                </ul>
+                <!-- Tabs navs -->
 
-                <p class="lead font-weight-bold">Description</p>
+                <!-- Tabs content -->
+                <div class="tab-content" id="ex3-content">
+                    <div
+                            class="tab-pane fade show active"
+                            id="ex3-tabs-1"
+                            role="tabpanel"
+                            aria-labelledby="ex3-tab-1"
+                    >
+                        <h2>Name 1</h2>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque quia
-                    ipsa
-                    sint voluptatibus!
-                    Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+                        <p class="lead font-weight-bold">Description 1</p>
 
-                <form class="d-flex justify-content-left">
-                    <!-- Default input -->
-                    <button class="btn btn-success btn-md my-0 p" type="submit">Get an offer
-                        <i class="fas fa-shopping-cart ml-1"></i>
-                    </button>
-                </form>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque
+                            quia
+                            ipsa
+                            sint voluptatibus!
+                            Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+
+
+                    </div>
+                    <div class="tab-pane fade" id="ex3-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                        <h2>Name 2</h2>
+
+                        <p class="lead font-weight-bold">Description 2</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque
+                            quia
+                            ipsa
+                            sint voluptatibus!
+                            Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+
+
+                    </div>
+                    <div class="tab-pane fade" id="ex3-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+                        <h2>Name 3</h2>
+
+                        <p class="lead font-weight-bold">Description 3</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque
+                            quia
+                            ipsa
+                            sint voluptatibus!
+                            Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+
+
+                    </div>
+                    <a class="d-flex justify-content-left" href="#">
+                            <!-- Default input -->
+                            <button class="btn btn-success btn-md my-0 p btn-animate" type="button">Get an offer
+                                <i class="fas fa-shopping-cart ml-1"></i>
+                            </button>
+                        </a>
+                </div>
+                <!-- Tabs content -->
+
+
             </div>
             <!--Content-->
 
@@ -229,7 +510,7 @@
     <!--Grid row-->
 
     <hr>
-
+    <!--Other products-->
     <!--Grid row-->
     <div class="row d-flex justify-content-center wow fadeIn">
 
@@ -256,31 +537,33 @@
         <div class="col-12 col-md-6 text-center">
 
             <div data-aos="fade-right"
-                 class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
+                 class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 "
                  data-mdb-ripple-color="primary">
-                <img draggable="false" src="{% static 'images/zatvor-19ch16br.png' %}" class="my-auto pt-3 me-3" alt="">
-                <img draggable="false" src="{% static 'images/zatvor-19ch21br.png' %}" class="pt-3 me-3" alt="">
-                <img draggable="false" src="{% static 'images/prod1.png' %}" class="img me-3" alt="">
-                <img draggable="false" src="{% static 'images/vantuz1.png' %}" class="mt-3" alt="">
+                <img draggable="false" src="{% static 'images/zatvor-19ch16br.png' %}" class="my-auto pt-3 me-3 btn-animate" alt="">
+                <img draggable="false" src="{% static 'images/zatvor-19ch21br.png' %}" class="pt-3 me-3 btn-animate" alt="">
+                <img draggable="false" src="{% static 'images/prod1.png' %}" class="img me-3 btn-animate" alt="">
+                <img draggable="false" src="{% static 'images/vantuz1.png' %}" class="mt-3 btn-animate" alt="">
             </div>
             <a href="piping">
-            <button class="btn btn-primary btn-animate">See more</button>
-                </a>
+                <button class="btn btn-primary btn-animate">See more</button>
+            </a>
         </div>
         <!--Grid column-->
 
         <!--Grid column-->
         <div class="col-12 col-md-6 text-center">
             <div data-aos="fade-right"
-                 class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
+                 class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 "
                  data-mdb-ripple-color="danger">
-            <img src="{% static 'images/dozhdepriemnik.png' %}" alt="" class="" style="max-height: 120px">
-            <img src="{% static 'images/livnevka.png' %}" alt="" style="max-height: 120px">
-            <img src="{% static 'images/prod4.png' %}" alt="" style="max-height: 120px">
-            <img src="{% static 'images/LYUKI-.png' %}" alt="" class="my-3" style="max-height: 120px">
-            <img src="{% static 'images/Lyuk-kvadrat2.png' %}" class="my-3" alt="" style="max-height: 120px">
+                <img src="{% static 'images/dozhdepriemnik.png' %}" alt="" class="btn-animate" style="max-height: 120px">
+                <img src="{% static 'images/livnevka.png' %}" alt="" class="btn-animate" style="max-height: 120px">
+                <img src="{% static 'images/prod4.png' %}" alt="" class="btn-animate" style="max-height: 120px">
+                <img src="{% static 'images/LYUKI-.png' %}" alt="" class="my-3 btn-animate" style="max-height: 120px">
+                <img src="{% static 'images/Lyuk-kvadrat2.png' %}" class="my-3 mx-3 btn-animate" alt="" style="max-height: 120px">
             </div>
-            <button class="btn btn-danger">See more</button>
+            <a href="iron_casting">
+                <button class="btn btn-danger btn-animate">See more</button>
+            </a>
         </div>
         <!--Grid column-->
     </div>
