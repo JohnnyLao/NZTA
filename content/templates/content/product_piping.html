@@ -6,7 +6,7 @@
 
 <!--your title block here-->
 {% block title %}
-    {% translate "Public Joint Stock Company 'Nikopol Pipeline Fittings Plant' (Nikopol foundry and mechanical plant 'Bolshevik')" %}
+{% translate "Public Joint Stock Company 'Nikopol Pipeline Fittings Plant' (Nikopol foundry and mechanical plant 'Bolshevik')" %}
 {% endblock title %}
 <!--title end-->
 
@@ -17,86 +17,646 @@
 <!--your content block here-->
 {% block content %}
 
-<body style="background: rgba(238,238,245,1)">
-<div class="container-fluid text-center mt-5">
-    <img draggable="false" src="{% static 'images/pipe.png' %}" alt="" class="img-fluid">
-</div>
-<!--OUR PRODUCTS WATER-->
-<section class="container my-5 text-center text-lg-start">
-    <h3 class="fw-bold mb-5 text-center">
-        <span>{% translate 'Shut-off' %}</span>
-        <u class="text-primary">{% translate 'valves' %}</u>
-    </h3>
-    <div class="row gx-lg-5 my-5">
-        <div class="col-lg-4 mb-3 mb-lg-0 text-center">
-            <div data-aos="fade-right"
-                 class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
-                 data-mdb-ripple-color="primary" style="height: 265px">
-                <img draggable="false" src="{% static 'images/zatvor-19ch16br.png' %}" class="mt-5 pt-3 me-3" alt="">
-                <img draggable="false" src="{% static 'images/zatvor-19ch21br.png' %}" class="mt-5 pt-3" alt="">
-            </div>
-            <h5 data-aos="fade-right" class="fw-bold">{% translate ' Gates' %}</h5>
-            <div class="mb-3 text-primary small">
-            </div>
-            <p data-aos="fade-right" class="text-muted">
-                Cast iron flanged check valves
-                intended for preventing the reverse flow of the working medium in pipelines transporting water, steam,
-                oil,
-                oils and other petroleum products </p>
-            <button data-aos="fade-right" class="btn btn-primary btn-animate px-3">
-                        <span>{% translate 'More' %}
-                            <i class="fas fa-droplet ms-1"></i>
-                        </span>
-            </button>
-        </div>
-        <div class="col-lg-4 mb-3 mb-lg-0 text-center">
-            <div>
-                <div data-aos="fade-up"
-                     class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
-                     data-mdb-ripple-color="primary" style="height: 265px">
-                    <img draggable="false" src="{% static 'images/prod1.png' %}" class="img" alt="">
-                </div>
-                <h5 data-aos="fade-up" class="fw-bold">
-                    Cast iron valves</h5>
-                <div class="mb-3 text-danger small">
-                </div>
-                <p data-aos="fade-up" class="text-muted">Purpose and scope:
-                    Parallel double disc valves are designed
-                    for installation as a locking device on
-                    pipelines of various industries.</p>
-                <button data-aos="fade-up" class="btn btn-primary btn-animate px-3">
-                        <span>More
-                            <i class="fas fa-droplet ms-1"></i>
-                        </span>
-                </button>
-            </div>
-        </div>
-        <div class="col-lg-4 mb-3 mb-lg-0 text-center">
-            <div>
-                <div data-aos="fade-up" class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
-                     data-mdb-ripple-color="primary" style="height: 265px">
-                    <img draggable="false" src="{% static 'images/vantuz1.png' %}" class="mt-4" alt="">
-                </div>
-                <h5 data-aos="fade-up" class="fw-bold mb-3"> Plungers</h5>
-                <div class="mb-3 text-warning small mx-auto">
-                    <p data-aos="fade-up" class="text-muted text-start">
-                        Cast iron aeration plungers are designed for automatic removal
-                        air when it accumulates, as well as for its automatic intake when a vacuum is formed in
-                        water supply systems, water heating and other network devices transporting water from
-                        temperatures up to 363K (900 C)</p>
-                    <button data-aos="fade-up" class="btn btn-primary btn-animate px-3">
-                        <span>More
-                            <i class="fas fa-droplet ms-1"></i>
-                        </span>
-                    </button>
-                </div>
-            </div>
+<body style="background: rgba(238,238,245,1)" id="header">
+<!--OUR PRODUCTS KEY-->
+
+<section>
+    <div class="container">
+        <div class="container-fluid text-center">
+            <img data-aos="fade-left" draggable="false" src="{% static 'images/585f9208cb11b227491c357a.png' %}"
+                 alt=""
+                 class="img-fluid w-25 rounded my-0 py-0" style="">
         </div>
     </div>
 </section>
-<!--OUR PRODUCTS WATER END-->
+
+<!--PRODUCT 1-->
+<!--Main layout-->
+<div class="container dark-grey-text my-0">
+
+    <!--Grid row-->
+    <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-4 mx-auto my-0">
+
+            <div data-aos="fade-right"
+                 class="bg-image hover-zoom ripple rounded-4 text-center "
+                 data-mdb-ripple-color="primary">
+                <img data-aos-delay="200" draggable="false"
+                     src="{% static 'images/piping/08DN150_2-removebg-preview.png' %}"
+                     class="btn-animate mx-3 my-3" alt="" style="max-height: 250px">
+                <img data-aos-delay="200" draggable="false"
+                     src="{% static 'images/piping/30ch6bk.png' %}"
+                     class="btn-animate mx-3 my-3" alt="" style="max-height: 250px">
+            </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-8">
+
+            <!--Content-->
+            <div class="">
+                <div class="mb-2 user-select-none">
+                    <span class="badge badge-primary mr-1">Water</span>
+                    <span class="badge badge-light mr-1">Steam</span>
+                </div>
+                <h2>Параллельные, двухдисковые 30ч6бр</h2>
+                <h5>DN 50-500 PN10, Tmax=225 C(ДСТУ ГОСТ 5762:2004)</h5>
+                <!-- Tabs navs -->
+                <p class="my-0">Models:</p>
+                <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link px-2"
+                                id="ex1-tab-1"
+                                data-mdb-toggle="tab"
+                                href="#ex1-tabs-1"
+                                role="tab"
+                                aria-controls="ex1-tabs-1"
+                                aria-selected="true"
+                        >DN 50</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link px-2"
+                                id="ex1-tab-2"
+                                data-mdb-toggle="tab"
+                                href="#ex1-tabs-2"
+                                role="tab"
+                                aria-controls="ex1-tabs-2"
+                                aria-selected="false"
+                        >DN 80</a
+                        >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link px-2"
+                                id="ex1-tab-3"
+                                data-mdb-toggle="tab"
+                                href="#ex1-tabs-3"
+                                role="tab"
+                                aria-controls="ex1-tabs-3"
+                                aria-selected="false"
+                        >DN 100</a
+                        >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link px-2"
+                                id="ex1-tab-4"
+                                data-mdb-toggle="tab"
+                                href="#ex1-tabs-4"
+                                role="tab"
+                                aria-controls="ex1-tabs-4"
+                                aria-selected="false"
+                        >DN 125/100</a
+                        >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link px-2"
+                                id="ex1-tab-5"
+                                data-mdb-toggle="tab"
+                                href="#ex1-tabs-5"
+                                role="tab"
+                                aria-controls="ex1-tabs-5"
+                                aria-selected="false"
+                        >DN 150</a
+                        >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link px-2"
+                                id="ex1-tab-6"
+                                data-mdb-toggle="tab"
+                                href="#ex1-tabs-6"
+                                role="tab"
+                                aria-controls="ex1-tabs-6"
+                                aria-selected="false"
+                        >DN 200</a
+                        >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link px-2"
+                                id="ex1-tab-7"
+                                data-mdb-toggle="tab"
+                                href="#ex1-tabs-7"
+                                role="tab"
+                                aria-controls="ex1-tabs-7"
+                                aria-selected="false"
+                        >DN 250</a
+                        >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link px-2"
+                                id="ex1-tab-8"
+                                data-mdb-toggle="tab"
+                                href="#ex1-tabs-8"
+                                role="tab"
+                                aria-controls="ex1-tabs-8"
+                                aria-selected="false"
+                        >DN 300</a
+                        >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link px-2"
+                                id="ex1-tab-9"
+                                data-mdb-toggle="tab"
+                                href="#ex1-tabs-9"
+                                role="tab"
+                                aria-controls="ex1-tabs-9"
+                                aria-selected="false"
+                        >DN 350/300</a
+                        >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link px-2"
+                                id="ex1-tab-10"
+                                data-mdb-toggle="tab"
+                                href="#ex1-tabs-10"
+                                role="tab"
+                                aria-controls="ex1-tabs-10"
+                                aria-selected="false"
+                        >DN 400</a
+                        >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link px-2"
+                                id="ex1-tab-11"
+                                data-mdb-toggle="tab"
+                                href="#ex1-tabs-11"
+                                role="tab"
+                                aria-controls="ex1-tabs-11"
+                                aria-selected="false"
+                        >DN 500</a
+                        >
+                    </li>
+                </ul>
+                <!-- Tabs navs -->
+
+                <!-- Tabs content -->
+                <div class="tab-content" id="ex1-content">
+                    <div
+                            class="tab-pane fade show"
+                            id="ex1-tabs-1"
+                            role="tabpanel"
+                            aria-labelledby="ex1-tab-1"
+                    >
+                        <h2>Name 1</h2>
+
+                        <p class="lead font-weight-bold">Description 1</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque
+                            quia
+                            ipsa
+                            sint voluptatibus!
+                            Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+
+                    </div>
+                    <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                        <h2>Name 2</h2>
+
+                        <p class="lead font-weight-bold">Description 2</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque
+                            quia
+                            ipsa
+                            sint voluptatibus!
+                            Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+
+                    </div>
+                    <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+                        <h2>Name 3</h2>
+
+                        <p class="lead font-weight-bold">Description 3</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque
+                            quia
+                            ipsa
+                            sint voluptatibus!
+                            Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
 
 
+                    </div>
+                    <a class="d-flex justify-content-left" href="#">
+                        <!-- Default input -->
+                        <button class="btn btn-primary btn-md my-0 p btn-animate" type="button">Get an offer
+                            <i class="fas fa-shopping-cart ml-1"></i>
+                        </button>
+                    </a>
+                </div>
+                <!-- Tabs content -->
+
+
+            </div>
+            <!--Content-->
+
+        </div>
+        <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+    <hr>
+
+    <!--PRODUCT 2-->
+    <!--Grid row-->
+    <div class="row wow fadeIn">
+        <!--Grid column-->
+        <div class="col-md-4 mb-4 mx-auto my-auto">
+            <div data-aos="fade-right"
+                 class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3"
+                 data-mdb-ripple-color="light">
+                <img data-aos-delay="200" draggable="false"
+                     src="{% static 'images/new_photos/03KTM-removebg-preview.png' %}"
+                     class="btn-animate mx-3 my-3" alt="" style="max-height: 150px; max-width: 150px;">
+                <img data-aos-delay="200" draggable="false"
+                     src="{% static 'images/new_photos/04KT_F-removebg-preview.png' %}"
+                     class="btn-animate mx-3 my-3" alt="" style="max-height: 150px; max-width: 150px;">
+                <img data-aos-delay="200" draggable="false"
+                     src="{% static 'images/new_photos/05_KT_C-removebg-preview.png' %}"
+                     class="w-25 w-md-50 btn-animate mx-3 my-3" alt="" style="max-height: 150px; max-width: 150px;">
+                <img data-aos-delay="200" draggable="false"
+                     src="{% static 'images/new_photos/09_KT_RIZ-removebg-preview.png' %}"
+                     class="btn-animate mx-3 my-3" alt="" style="max-height: 150px; max-width: 150px;">
+            </div>
+        </div>
+        <!--Grid column-->
+
+        <!--            PRODUCT 3-->
+        <!--Grid column-->
+        <div class="col-md-8 mb-4">
+            <!--Content-->
+            <div class="p-4">
+                <div class="mb-3">
+                    <a href="#">
+                        <span class="badge badge-success mr-1">Railways</span>
+                    </a>
+                    <a href="#">
+                        <span class="badge badge-danger mr-1">Bestseller</span>
+                    </a>
+                    <a href="#">
+                        <span class="badge badge-info mr-1">New</span>
+                    </a>
+                </div>
+
+                <!-- Tabs navs -->
+                <ul class="nav nav-tabs mb-3" id="ex2" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link active"
+                                id="ex2-tab-1"
+                                data-mdb-toggle="tab"
+                                href="#ex2-tabs-1"
+                                role="tab"
+                                aria-controls="ex1-tabs-1"
+                                aria-selected="true"
+                        >Model 1</a
+                        >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link"
+                                id="ex2-tab-2"
+                                data-mdb-toggle="tab"
+                                href="#ex2-tabs-2"
+                                role="tab"
+                                aria-controls="ex2-tabs-2"
+                                aria-selected="false"
+                        >Model 2</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link"
+                                id="ex2-tab-3"
+                                data-mdb-toggle="tab"
+                                href="#ex2-tabs-3"
+                                role="tab"
+                                aria-controls="ex2-tabs-3"
+                                aria-selected="false"
+                        >Model 3</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link"
+                                id="ex2-tab-4"
+                                data-mdb-toggle="tab"
+                                href="#ex2-tabs-4"
+                                role="tab"
+                                aria-controls="ex2-tabs-4"
+                                aria-selected="false"
+                        >Model 4</a>
+                    </li>
+                </ul>
+                <!-- Tabs navs -->
+
+                <!-- Tabs content -->
+                <div class="tab-content" id="ex2-content">
+                    <div
+                            class="tab-pane fade show active"
+                            id="ex2-tabs-1"
+                            role="tabpanel"
+                            aria-labelledby="ex2-tab-1"
+                    >
+                        <h2>Name 1</h2>
+
+                        <p class="lead font-weight-bold">Description 1</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque
+                            quia
+                            ipsa
+                            sint voluptatibus!
+                            Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+
+
+                    </div>
+                    <div class="tab-pane fade" id="ex2-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                        <h2>Name 2</h2>
+
+                        <p class="lead font-weight-bold">Description 2</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque
+                            quia
+                            ipsa
+                            sint voluptatibus!
+                            Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+
+
+                    </div>
+                    <div class="tab-pane fade" id="ex2-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+                        <h2>Name 3</h2>
+
+                        <p class="lead font-weight-bold">Description 3</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque
+                            quia
+                            ipsa
+                            sint voluptatibus!
+                            Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+
+
+                    </div>
+
+                    <div class="tab-pane fade" id="ex2-tabs-4" role="tabpanel" aria-labelledby="ex1-tab-3">
+                        <h2>Name 4</h2>
+
+                        <p class="lead font-weight-bold">Description 4</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque
+                            quia
+                            ipsa
+                            sint voluptatibus!
+                            Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+
+
+                    </div>
+                    <a class="d-flex justify-content-left" href="#">
+                        <!-- Default input -->
+                        <button class="btn btn-primary btn-md my-0 p btn-animate" type="button">Get an offer
+                            <i class="fas fa-shopping-cart ml-1"></i>
+                        </button>
+                    </a>
+                </div>
+                <!-- Tabs content -->
+
+
+            </div>
+            <!--Content-->
+
+        </div>
+        <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+    <hr>
+
+    <!--PRODUCT 3-->
+    <!--Grid row-->
+    <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-4 mb-4 mx-auto my-auto">
+
+            <div data-aos="fade-right"
+                 class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3"
+                 data-mdb-ripple-color="light">
+                <img data-aos-delay="200" draggable="false"
+                     src="{% static 'images/new_photos/Anker-removebg-preview.png' %}"
+                     class="btn-animate mx-3 my-3" alt="" style="max-height: 150px; max-width: 150px;">
+                <img data-aos-delay="200" draggable="false"
+                     src="{% static 'images/new_photos/Anker_2-removebg-preview.png' %}"
+                     class="btn-animate mx-3 my-3" alt="" style="max-height: 150px; max-width: 150px;">
+                <img data-aos-delay="200" draggable="false"
+                     src="{% static 'images/new_photos/Anker_3-removebg-preview.png' %}"
+                     class="btn-animate mx-3 my-3" alt="" style="max-height: 150px; max-width: 150px;">
+            </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-8 mb-4">
+
+            <!--Content-->
+            <div class="p-4">
+
+                <div class="mb-3">
+                    <a href="#">
+                        <span class="badge badge-success mr-1">Railways</span>
+                    </a>
+                    <a href="#">
+                        <span class="badge badge-danger mr-1">Bestseller</span>
+                    </a>
+                    <a href="#">
+                        <span class="badge badge-info mr-1">New</span>
+                    </a>
+                </div>
+
+                <!-- Tabs navs -->
+                <ul class="nav nav-tabs mb-3" id="ex3" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link active"
+                                id="ex3-tab-1"
+                                data-mdb-toggle="tab"
+                                href="#ex3-tabs-1"
+                                role="tab"
+                                aria-controls="ex3-tabs-1"
+                                aria-selected="true"
+                        >Model 1</a
+                        >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link"
+                                id="ex3-tab-2"
+                                data-mdb-toggle="tab"
+                                href="#ex3-tabs-2"
+                                role="tab"
+                                aria-controls="ex3-tabs-2"
+                                aria-selected="false"
+                        >Model 2</a
+                        >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a
+                                class="nav-link"
+                                id="ex3-tab-3"
+                                data-mdb-toggle="tab"
+                                href="#ex3-tabs-3"
+                                role="tab"
+                                aria-controls="ex3-tabs-3"
+                                aria-selected="false"
+                        >Model 3</a
+                        >
+                    </li>
+                </ul>
+                <!-- Tabs navs -->
+
+                <!-- Tabs content -->
+                <div class="tab-content" id="ex3-content">
+                    <div
+                            class="tab-pane fade show active"
+                            id="ex3-tabs-1"
+                            role="tabpanel"
+                            aria-labelledby="ex3-tab-1"
+                    >
+                        <h2>Name 1</h2>
+
+                        <p class="lead font-weight-bold">Description 1</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque
+                            quia
+                            ipsa
+                            sint voluptatibus!
+                            Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+
+
+                    </div>
+                    <div class="tab-pane fade" id="ex3-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                        <h2>Name 2</h2>
+
+                        <p class="lead font-weight-bold">Description 2</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque
+                            quia
+                            ipsa
+                            sint voluptatibus!
+                            Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+
+
+                    </div>
+                    <div class="tab-pane fade" id="ex3-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+                        <h2>Name 3</h2>
+
+                        <p class="lead font-weight-bold">Description 3</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque
+                            quia
+                            ipsa
+                            sint voluptatibus!
+                            Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+
+
+                    </div>
+                    <a class="d-flex justify-content-left" href="#">
+                        <!-- Default input -->
+                        <button class="btn btn-success btn-md my-0 p btn-animate" type="button">Get an offer
+                            <i class="fas fa-shopping-cart ml-1"></i>
+                        </button>
+                    </a>
+                </div>
+                <!-- Tabs content -->
+
+
+            </div>
+            <!--Content-->
+
+        </div>
+        <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+    <hr>
+    <!--Other products-->
+    <!--Grid row-->
+    <div class="row d-flex justify-content-center wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-6 text-center">
+
+            <h4 class="my-4 h2 fw-bold">Look at our other <u class="text-success">products</u></h4>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus suscipit modi sapiente illo soluta
+                odit
+                voluptates,
+                quibusdam officia. Neque quibusdam quas a quis porro? Molestias illo neque eum in laborum.</p>
+
+        </div>
+        <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+    <!--Grid row-->
+    <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-12 col-md-6 text-center">
+
+            <div class="bg-image ripple rounded-4 mb-4 text-center py-3 "
+                 data-mdb-ripple-color="primary">
+                <img data-aos="zoom-in-right" data-aos-delay="150" draggable="false"
+                     src="{% static 'images/zatvor-19ch16br.png' %}"
+                     class="my-auto pt-3 me-3 btn-animate" alt="">
+                <img data-aos="zoom-in-right" data-aos-delay="100" draggable="false"
+                     src="{% static 'images/zatvor-19ch21br.png' %}" class="pt-3 me-3 btn-animate"
+                     alt="">
+                <img data-aos="zoom-in-right" data-aos-delay="50" draggable="false"
+                     src="{% static 'images/prod1.png' %}" class="img me-3 btn-animate" alt="">
+                <img data-aos="zoom-in-right" draggable="false" src="{% static 'images/vantuz1.png' %}"
+                     class="mt-3 btn-animate" alt="">
+            </div>
+            <a href="piping">
+                <button data-aos="fade-up" class="btn btn-primary btn-animate">See more</button>
+            </a>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-12 col-md-6 text-center">
+            <div class="bg-image ripple rounded-4 mb-4 text-center py-3 "
+                 data-mdb-ripple-color="danger">
+                <img draggable="false" data-aos="zoom-in-right" src="{% static 'images/dozhdepriemnik.png' %}" alt=""
+                     class="btn-animate"
+                     style="max-height: 120px">
+                <img draggable="false" data-aos="zoom-in-right" data-aos-delay="100"
+                     src="{% static 'images/livnevka.png' %}" alt="" class="btn-animate" style="max-height: 120px">
+                <img draggable="false" data-aos="zoom-in-right" data-aos-delay="200"
+                     src="{% static 'images/prod4.png' %}" alt="" class="btn-animate" style="max-height: 120px">
+                <img draggable="false" data-aos="zoom-in-right" src="{% static 'images/LYUKI-.png' %}" alt=""
+                     class="my-3 btn-animate" style="max-height: 120px">
+                <img draggable="false" data-aos="zoom-in-right" data-aos-delay="100"
+                     src="{% static 'images/Lyuk-kvadrat2.png' %}" class="my-3 mx-3 btn-animate" alt=""
+                     style="max-height: 120px">
+            </div>
+            <a href="iron_casting">
+                <button data-aos="fade-up" class="btn btn-danger btn-animate">See more</button>
+            </a>
+        </div>
+        <!--Grid column-->
+    </div>
+    <!--Grid row-->
+</div>
+<!--Main layout-->
 
 </body>
 

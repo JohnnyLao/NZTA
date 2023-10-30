@@ -17,7 +17,7 @@
 <!--your content block here-->
 {% block content %}
 
-<body class=""
+<body class="" id="header"
       style="font-family: 'Roboto'; background: linear-gradient(0deg, rgba(238,238,238,1) 0%, rgba(245,238,238,1) 45%, rgba(238,238,245,1) 60%, rgba(238,245,238,1) 65%, rgba(238,238,238,1) 100%)">
 
 <!--SWIPER-->
@@ -125,8 +125,8 @@
             <u data-aos="fade-down" data-aos-delay="400" class="text-success">{% translate 'PRODUCTS' %}</u>
         </h2>
         <div class="container-fluid text-center">
-            <img data-aos="fade-left" draggable="false" src="{% static 'images/Train-PNG-File-Download-Free.png' %}" alt=""
-                 class="img-fluid w-25 rounded-circle" style="">
+            <img data-aos="fade-up" draggable="false" src="{% static 'images/Train-PNG-File-Download-Free.png' %}" alt=""
+                 class="img-fluid rounded-circle" style="max-width: 300px; overflow-x: hidden">
         </div>
         <!--        ЦВЕТ ЗЕЛЕНЫЙ -->
         <div class="row gy-3">
@@ -154,12 +154,15 @@
                     <span>{% translate 'Best experience' %}</span>
                 </div>
                 <p data-aos="fade-up" class="text-muted">
-                    text text text text text text text text text text text text text text text text text text text text</p>
-                <button data-aos="fade-up" class="btn btn-success btn-animate px-3">
+                    text text text text text text text text text text text text text text text text text text text
+                    text</p>
+                <a href="badges&Pads" class="d-none d-md-block">
+                    <button data-aos="fade-up" class="btn btn-success btn-animate px-3">
                         <span>More
                             <i class="fas fa-train ms-1"></i>
                         </span>
-                </button>
+                    </button>
+                </a>
             </div>
             <div class="col-12 col-md-5 text-center mx-auto">
                 <h4 data-aos="fade-up" class="fw-bold">{% translate 'Pads' %}</h4>
@@ -172,11 +175,13 @@
                     placerat vulputate. Ut
                     vulputate est non quam
                     dignissim elementum. Donec a ullamcorper diam.</p>
-                <button data-aos="fade-up" class="btn btn-success btn-animate px-3">
-                        <span>{% translate 'More' %}
+                <a href="badges&Pads">
+                    <button data-aos="fade-up" class="btn btn-success btn-animate px-3">
+                        <span>More
                             <i class="fas fa-train ms-1"></i>
                         </span>
-                </button>
+                    </button>
+                </a>
             </div>
         </div>
     </div>
@@ -208,52 +213,58 @@
                 intended for preventing the reverse flow of the working medium in pipelines transporting water, steam,
                 oil,
                 oils and other petroleum products </p>
-            <button data-aos="fade-right" class="btn btn-primary btn-animate px-3">
+            <a href="piping">
+                <button data-aos="fade-up" class="btn btn-primary btn-animate px-3">
                         <span>{% translate 'More' %}
                             <i class="fas fa-droplet ms-1"></i>
                         </span>
-            </button>
+                </button>
+            </a>
         </div>
         <div class="col-lg-4 mb-3 mb-lg-0 text-center">
             <div>
-                <div data-aos="fade-up"
+                <div data-aos="fade-right"
                      class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
                      data-mdb-ripple-color="primary" style="height: 265px">
                     <img draggable="false" src="{% static 'images/prod1.png' %}" class="img" alt="">
                 </div>
-                <h5 data-aos="fade-up" class="fw-bold">
+                <h5 data-aos="fade-right" class="fw-bold">
                     Cast iron valves</h5>
                 <div class="mb-3 text-danger small">
                 </div>
-                <p data-aos="fade-up" class="text-muted">Purpose and scope:
+                <p data-aos="fade-right" class="text-muted">Purpose and scope:
                     Parallel double disc valves are designed
                     for installation as a locking device on
                     pipelines of various industries.</p>
-                <button data-aos="fade-up" class="btn btn-primary btn-animate px-3">
-                        <span>More
+                <a href="piping">
+                    <button data-aos="fade-up" class="btn btn-primary btn-animate px-3">
+                        <span>{% translate 'More' %}
                             <i class="fas fa-droplet ms-1"></i>
                         </span>
-                </button>
+                    </button>
+                </a>
             </div>
         </div>
         <div class="col-lg-4 mb-3 mb-lg-0 text-center">
             <div>
-                <div data-aos="fade-up" class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
+                <div data-aos="fade-right" class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
                      data-mdb-ripple-color="primary" style="height: 265px">
                     <img draggable="false" src="{% static 'images/vantuz1.png' %}" class="mt-4" alt="">
                 </div>
-                <h5 data-aos="fade-up" class="fw-bold mb-3"> Plungers</h5>
+                <h5 data-aos="fade-right" class="fw-bold mb-3"> Plungers</h5>
                 <div class="mb-3 text-warning small mx-auto">
-                    <p data-aos="fade-up" class="text-muted text-start">
+                    <p data-aos="fade-right" class="text-muted text-start">
                         Cast iron aeration plungers are designed for automatic removal
                         air when it accumulates, as well as for its automatic intake when a vacuum is formed in
                         water supply systems, water heating and other network devices transporting water from
                         temperatures up to 363K (900 C)</p>
-                    <button data-aos="fade-up" class="btn btn-primary btn-animate px-3">
-                        <span>More
+                    <a href="piping">
+                        <button data-aos="fade-up" class="btn btn-primary btn-animate px-3">
+                        <span>{% translate 'More' %}
                             <i class="fas fa-droplet ms-1"></i>
                         </span>
-                    </button>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -332,11 +343,13 @@
                         </div>
                     </div>
                     <div data-aos="fade-up" class="col-12 text-center">
-                        <button class="btn btn-danger btn-animate px-3">
+                        <a href="iron_casting">
+                            <button class="btn btn-danger btn-animate px-3">
                             <span>More
                                 <i class="fas fa-fill-drip ms-1"></i>
                             </span>
-                        </button>
+                            </button>
+                        </a>
                     </div>
                 </div>
 
