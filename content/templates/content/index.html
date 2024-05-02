@@ -6,7 +6,7 @@
 
 <!--your title block here-->
 {% block title %}
-    {% translate "Public Joint Stock Company 'Nikopol Pipeline Fittings Plant' (Nikopol foundry and mechanical plant 'Bolshevik')" %}
+{% translate "Public Joint Stock Company 'Nikopol Pipeline Fittings Plant' (Nikopol foundry and mechanical plant 'Bolshevik')" %}
 {% endblock title %}
 <!--title end-->
 
@@ -66,10 +66,11 @@
             <div class="col-lg-6 my-auto">
                 <div class="card cascading-right"
                      style=" background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px)">
-                    <div class="card-body py-5 px-md-5 shadow-lg"><h2 class="fw-bold mb-4">{% translate 'About us' %}</h2>
+                    <div class="card-body py-5 px-md-5 shadow-lg"><h2 class="fw-bold mb-4">{% translate 'About us'%}</h2>
                         <p class="text-muted mb-4">
                             {% translate 'LIMITED LIABILITY COMPANY "M-LIT" (Nikopol Pipeline Valve Plant,' %}
-                            {% translate 'formerly Nikopol Foundry and Mechanical Plant "Bolshevik") is a large specialized enterprise' %}
+                            {% translate 'formerly Nikopol Foundry and Mechanical Plant "Bolshevik") is a large
+                            specialized enterprise' %}
                             {% translate 'known in Ukraine and abroad for the production of shut-off valves.' %}</p>
                         <div class="row mb-3">
                             <div data-aos="zoom-in" class="col-lg-4"><p>
@@ -92,20 +93,32 @@
                         </div>
                         <p class="text-muted mb-0 d-none d-sm-block">
                             {% translate 'LLC "M-LIT" (NZTA) (formerly Nikopol Foundry and' %}
-                            {% translate 'Mechanical Plant "Bolshevik") is a large specialized enterprise known in Ukraine and abroad' %}
-                            {% translate 'for the production of shut-off valves. The company was created more than 115 years ago.' %}
-                            {% translate 'During this period, the plant went from producing furnace castings to producing cast iron' %}
-                            {% translate 'valves used as shut-off devices on pipelines to shut off the working environment. The' %}
-                            {% translate 'company produces cast iron valves with a nominal bore from 50 mm to 500 mm, grades 30ch6br' %}
-                            {% translate 'and 30ch906br for water and steam, with manual control and electric drive; 30ch6bk for' %}
-                            {% translate 'petroleum products and oils; 30ch47bk4 and 30ch47br for natural gas and water with nominal bore from 50 mm to 150 mm. "M-LIT" today is' %}
-                            {% translate 'technical equipment of production with universal and specialized equipment,' %}
-                            {% translate 'qualified specialists, which, combined with extensive experience of the plant in this' %}
+                            {% translate 'Mechanical Plant "Bolshevik") is a large specialized enterprise known in
+                            Ukraine and abroad' %}
+                            {% translate 'for the production of shut-off valves. The company was created more than 115
+                            years ago.' %}
+                            {% translate 'During this period, the plant went from producing furnace castings to
+                            producing cast iron' %}
+                            {% translate 'valves used as shut-off devices on pipelines to shut off the working
+                            environment. The' %}
+                            {% translate 'company produces cast iron valves with a nominal bore from 50 mm to 500 mm,
+                            grades 30ch6br' %}
+                            {% translate 'and 30ch906br for water and steam, with manual control and electric drive;
+                            30ch6bk for' %}
+                            {% translate 'petroleum products and oils; 30ch47bk4 and 30ch47br for natural gas and water
+                            with nominal bore from 50 mm to 150 mm. "M-LIT" today is' %}
+                            {% translate 'technical equipment of production with universal and specialized equipment,'
+                            %}
+                            {% translate 'qualified specialists, which, combined with extensive experience of the plant
+                            in this' %}
                             {% translate 'industry allows the enterprise team to produce a wide range of products' %}
                             {% translate 'pipeline fittings. Contact us - and we will fulfill your order quickly and' %}
-                            {% translate 'qualitatively. Products bearing the logo of our company can be found everywhere - from' %}
-                            {% translate 'huge metallurgical plants, thermal power plants, quarries to irrigation systems in rural' %}
-                            {% translate 'economy, public utilities of any settlement in the CIS countries. And products are everywhere' %}
+                            {% translate 'qualitatively. Products bearing the logo of our company can be found
+                            everywhere - from' %}
+                            {% translate 'huge metallurgical plants, thermal power plants, quarries to irrigation
+                            systems in rural' %}
+                            {% translate 'economy, public utilities of any settlement in the CIS countries. And products
+                            are everywhere' %}
                             {% translate 'Our enterprise operates efficiently and reliably.' %}</p></div>
                 </div>
             </div>
@@ -125,15 +138,14 @@
             <u data-aos="fade-down" data-aos-delay="400" class="text-success">{% translate 'PRODUCTS' %}</u>
         </h2>
         <div class="container-fluid text-center">
-            <img data-aos="fade-up" draggable="false" src="{% static 'images/Train-PNG-File-Download-Free.png' %}" alt=""
+            <img draggable="false" src="{% static 'images/Train-PNG-File-Download-Free.png' %}" alt=""
                  class="img-fluid rounded-circle" style="max-width: 300px; overflow-x: hidden">
         </div>
         <!--        ЦВЕТ ЗЕЛЕНЫЙ -->
         <div class="row gy-3">
-            <div data-aos="fade-right"
-                 class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3"
-                 data-mdb-ripple-color="success" style="height: auto">
-                <img data-aos-delay="200" draggable="false"
+            <div class="bg-image hover-zoom  rounded-4 mb-4 text-center py-3"
+                 style="height: auto">
+                <img draggable="false"
                      src="{% static 'images/кл2-removebg-preview.png' %}"
                      class="w-25 btn-animate me-2" alt="" style="max-height: 150px; max-width: 150px;">
                 <img draggable="false" src="{% static 'images/кл1-removebg-preview.png' %}"
@@ -141,21 +153,24 @@
                 <img draggable="false" src="{% static 'images/кт1-removebg-preview.png' %}"
                      class="img-fluid w-25 btn-animate me-2" style="max-height: 150px; max-width: 150px" alt="">
                 <img draggable="false" style="max-height: 150px; max-width: 150px"
-                     src="{% static 'images/кт2-removebg-preview.png' %}" class="img-fluid w-25 btn-animate me-2" alt="">
+                     src="{% static 'images/кт2-removebg-preview.png' %}" class="img-fluid w-25 btn-animate me-2"
+                     alt="">
                 <img draggable="false" style="max-height: 150px; max-width: 150px"
-                     src="{% static 'images/кт3-removebg-preview.png' %}" class="img-fluid w-25 btn-animate me-2" alt="">
+                     src="{% static 'images/кт3-removebg-preview.png' %}" class="img-fluid w-25 btn-animate me-2"
+                     alt="">
                 <img draggable="false" style="max-height: 150px; max-width: 150px"
-                     src="{% static 'images/кт4-removebg-preview.png' %}" class="img-fluid w-25 btn-animate me-2" alt="">
+                     src="{% static 'images/кт4-removebg-preview.png' %}" class="img-fluid w-25 btn-animate me-2"
+                     alt="">
             </div>
             <div class="col-12 col-md-5 text-center mx-auto">
-                <h4 data-aos="fade-up" class="fw-bold">{% translate 'Wadges' %}</h4>
-                <div data-aos="fade-up" class="mb-2 text-success small">
+                <h4 class="fw-bold">{% translate 'Wadges' %}</h4>
+                <div class="mb-2 text-success small">
                     <i class="fas fa-globe-americas me-2"></i>
                     <span>{% translate 'Best experience' %}</span>
                 </div>
-                <p data-aos="fade-up" class="text-muted">
-                    text text text text text text text text text text text text text text text text text text text
-                    text</p>
+                <p class="text-muted">
+                    Wedges provide a connection between the bolster and the side frame. Friction on the vertical wall
+                    area dampens the oscillations of the wagon </p>
                 <a href="badges&Pads" class="d-none d-md-block">
                     <button data-aos="fade-up" class="btn btn-success btn-animate px-3">
                         <span>More
@@ -165,16 +180,14 @@
                 </a>
             </div>
             <div class="col-12 col-md-5 text-center mx-auto">
-                <h4 data-aos="fade-up" class="fw-bold">{% translate 'Pads' %}</h4>
-                <div data-aos="fade-up" class="mb-2 text-success small">
+                <h4 class="fw-bold">{% translate 'Pads' %}</h4>
+                <div class="mb-2 text-success small">
                     <i class="fas fa-check-circle me-2"></i>
                     <span>{% translate 'Best quality' %}</span>
                 </div>
-                <p data-aos="fade-up" class="text-muted">
-                    Ut pretium ultricies dignissim. Sed sit amet mi eget urna
-                    placerat vulputate. Ut
-                    vulputate est non quam
-                    dignissim elementum. Donec a ullamcorper diam.</p>
+                <p class="text-muted">
+                    These are brake pads used to ensure the necessary braking efficiency in the brake assemblies of
+                    railroad cars</p>
                 <a href="badges&Pads">
                     <button data-aos="fade-up" class="btn btn-success btn-animate px-3">
                         <span>More
@@ -199,16 +212,17 @@
     </h3>
     <div class="row gx-lg-5 my-5">
         <div class="col-lg-4 mb-3 mb-lg-0 text-center">
-            <div data-aos="fade-right"
-                 class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
-                 data-mdb-ripple-color="primary" style="height: 265px">
-                <img draggable="false" src="{% static 'images/piping/zatvor-19ch16br.png' %}" class="mt-5 pt-3 me-3" alt="">
+            <div class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
+                 data-mdb-ripple-color="primary" data-mdb-ripple-unbound="true" data-mdb-ripple-radius="50"
+                 style="height: 265px">
+                <img draggable="false" src="{% static 'images/piping/zatvor-19ch16br.png' %}" class="mt-5 pt-3 me-3"
+                     alt="">
                 <img draggable="false" src="{% static 'images/piping/zatvor-19ch21br.png' %}" class="mt-5 pt-3" alt="">
             </div>
-            <h5 data-aos="fade-right" class="fw-bold">{% translate ' Gates' %}</h5>
+            <h5 class="fw-bold">{% translate ' Gates' %}</h5>
             <div class="mb-3 text-primary small">
             </div>
-            <p data-aos="fade-right" class="text-muted">
+            <p class="text-muted">
                 Cast iron flanged check valves
                 intended for preventing the reverse flow of the working medium in pipelines transporting water, steam,
                 oil,
@@ -223,16 +237,16 @@
         </div>
         <div class="col-lg-4 mb-3 mb-lg-0 text-center">
             <div>
-                <div data-aos="fade-right"
-                     class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
-                     data-mdb-ripple-color="primary" style="height: 265px">
+                <div class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
+                     data-mdb-ripple-color="primary" data-mdb-ripple-unbound="true" data-mdb-ripple-radius="50"
+                     style="height: 265px">
                     <img draggable="false" src="{% static 'images/piping/prod1.png' %}" class="img" alt="">
                 </div>
-                <h5 data-aos="fade-right" class="fw-bold">
+                <h5 class="fw-bold">
                     Cast iron valves</h5>
                 <div class="mb-3 text-danger small">
                 </div>
-                <p data-aos="fade-right" class="text-muted">Purpose and scope:
+                <p class="text-muted">Purpose and scope:
                     Parallel double disc valves are designed
                     for installation as a locking device on
                     pipelines of various industries.</p>
@@ -247,13 +261,14 @@
         </div>
         <div class="col-lg-4 mb-3 mb-lg-0 text-center">
             <div>
-                <div data-aos="fade-right" class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
-                     data-mdb-ripple-color="primary" style="height: 265px">
+                <div class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
+                     data-mdb-ripple-color="primary" data-mdb-ripple-unbound="true" data-mdb-ripple-radius="50"
+                     style="height: 265px">
                     <img draggable="false" src="{% static 'images/piping/vantuz1.png' %}" class="mt-4" alt="">
                 </div>
-                <h5 data-aos="fade-right" class="fw-bold mb-3"> Plungers</h5>
+                <h5 class="fw-bold mb-3"> Plungers</h5>
                 <div class="mb-3 text-warning small mx-auto">
-                    <p data-aos="fade-right" class="text-muted text-start">
+                    <p class="text-muted text-start">
                         Cast iron aeration plungers are designed for automatic removal
                         air when it accumulates, as well as for its automatic intake when a vacuum is formed in
                         water supply systems, water heating and other network devices transporting water from
@@ -278,72 +293,73 @@
         <div class="row g-0 d-flex align-items-center">
             <div class="col-lg-5 col-xl-4 d-none d-lg-flex">
                 <img
-                    src="{% static 'images/D75_5057.jpg' %}" alt=""
-                    class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5 ms-3">
+                        src="{% static 'images/D75_5057.jpg' %}" alt=""
+                        class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5 ms-3">
             </div>
             <div class="col-lg-7 col-xl-8 text-center text-md-start">
                 <div class="card-body px-md-5">
                     <h3 class="fw-bold mb-4 text-danger"><u>Iron casting</u></h3>
-                    <p class="text-muted mb-4">Nunc tincidunt vulputate elit. Mauris varius purus malesuada neque
-                        iaculis malesuada. Aenean gravida magna orci, non efficitur est porta id. Donec magna
-                        diam.</p>
+                    <p class="text-muted mb-4">Our client's enterprise specializes in crafting a diverse range of cast
+                        iron products. With meticulous attention
+                        to detail and superior craftsmanship, we deliver quality solutions tailored to meet varied
+                        needs</p>
                     <div class="row">
-                        <div data-aos="fade-up" class="col-6 col-lg-4">
+                        <div class="col-6 col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
                                 <span>Light hatch</span>
                             </p>
                         </div>
-                        <div data-aos="fade-up" class="col-6 col-lg-4">
+                        <div class="col-6 col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
                                 <span>Hatch average</span>
                             </p>
                         </div>
-                        <div data-aos="fade-up" class="col-lg-4">
+                        <div class="col-lg-4">
                             <p><i class="fas fa-check text-success me-2"></i>
                                 <span>Hatch heavy</span>
                             </p>
                         </div>
-                        <div data-aos="fade-up" class="col-lg-4">
+                        <div class="col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
                                 <span>Hatch anti-vandal</span>
                             </p>
                         </div>
-                        <div data-aos="fade-up" class="col-lg-4">
+                        <div class="col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
                                 <span>Storm water inlets</span>
                             </p>
                         </div>
-                        <div data-aos="fade-up" class="col-lg-4">
+                        <div class="col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
                                 <span>Storm grates</span>
                             </p>
                         </div>
-                        <div data-aos="fade-up" class="col-lg-4">
+                        <div class="col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
                                 <span>Benches</span>
                             </p>
                         </div>
-                        <div data-aos="fade-up" class="col-lg-4">
+                        <div class="col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
                                 <span>Car wedges</span>
                             </p>
                         </div>
-                        <div data-aos="fade-up" class="col-lg-4">
+                        <div class="col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
                                 <span>Car brake pads</span>
                             </p>
                         </div>
                     </div>
-                    <div data-aos="fade-up" class="col-12 text-center">
-                        <a href="iron_casting">
+                    <div class="col-12 text-center">
+                        <a data-aos="fade-up" href="iron_casting">
                             <button class="btn btn-danger btn-animate px-3">
                             <span>More
                                 <i class="fas fa-fill-drip ms-1"></i>
@@ -370,63 +386,57 @@
     </h2>
     <div class="row gx-lg-5 align-items-center">
         <div class="col-lg-5 mb-5 mb-lg-0">
-            <div data-aos="fade-right" data-aos-duration="1000" class="bg-image rounded-5 shadow-lg"
+            <div class="bg-image rounded-5 shadow-lg"
                  style="background-image: url({% static 'images/D75_4995.jpg' %}); height: 560px; background-size: cover; background-position: 50% 50%;">
-                <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" class="mask1"
+                <div data-aos="fade-up" data-aos-duration="1000" class="mask1"
                      style="background-color: rgba(0, 0, 0, 0.5)">
                     <div class="d-flex justify-content-center align-items-center">
                         <div class="px-4 py-5 px-md-5 text-white text-center"><h3
                                 class="text-uppercase fw-bold mb-4"><span>THE FUTURE IS</span>
                             <u class="text-primary">now</u></h3>
-                            <p class="" style="color: hsl(231, 52.6%, 85%)">Lorem ipsum dolor sit amet
-                                consectetur adipisicing elit. Harum quia laboriosam error consequuntur fugit,
-                                doloribus rerum, iure nesciunt amet quidem veniam cupiditate hic fugiat dolore
-                                aperiam quisquam libero earum quibusdam?</p></div>
+                            <p class="" style="color: hsl(231, 52.6%, 85%)">Our factory is equipped with
+                                state-of-the-art metal and cast iron processing machinery, including modern furnaces and
+                                processing machines. We prioritize innovative technologies to ensure the high quality
+                                and precision of our products. By employing advanced methods and cutting-edge equipment,
+                                we guarantee reliability and excellence at every stage of production</p></div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-lg-7 mb-4 mb-lg-0">
-            <div data-aos="fade-up" class="d-flex align-items-start mb-5">
+            <div class="d-flex align-items-start mb-5">
                 <div class="flex-shrink-0">
                     <div class="p-3 rounded-4 shadow" style="background-color: hsl(231, 52.6%, 20%)">
                         <i class="fas fa-industry fa-lg text-white"></i></div>
                 </div>
                 <div class="flex-grow-1 ms-4">
                     <p class="fw-bold mb-1">Full cycle production</p>
-                    <p class="text-muted mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
-                        quisquam quibusdam modi sapiente magni molestias pariatur facilis reprehenderit facere
-                        aliquam ex.</p>
+                    <p class="text-muted mb-0">Our integrated production process ensures quality control and timely delivery, with everything from design to finishing handled under one roof</p>
                 </div>
             </div>
-            <div data-aos="fade-up" class="d-flex align-items-start mb-5">
+            <div class="d-flex align-items-start mb-5">
                 <div class="flex-shrink-0">
                     <div class="p-3 rounded-4 shadow" style="background-color: hsl(231, 52.6%, 20%)"><i
                             class="fas fa-shield-alt fa-lg text-white fa-fw"></i></div>
                 </div>
                 <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">Modern equipment</p>
-                    <p class="text-muted mb-0">Eum nostrum fugit numquam, voluptates veniam neque quibusdam ullam
-                        aspernatur odio soluta, quisquam dolore animi mollitia a omnis praesentium, expedita
-                        nobis!</p></div>
+                    <p class="text-muted mb-0">Equipped with state-of-the-art machinery, we efficiently produce high-quality cast iron products with precision and accuracy</p></div>
             </div>
-            <div data-aos="fade-up" class="d-flex align-items-start mb-5">
+            <div class="d-flex align-items-start mb-5">
                 <div class="flex-shrink-0">
                     <div class="p-3 rounded-4 shadow" style="background-color: hsl(231, 52.6%, 20%)"><i
                             class="fas fa-shipping-fast fa-lg text-white fa-fw"></i></div>
                 </div>
                 <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">Fast delivery</p>
-                    <p class="text-muted mb-0">Eum nostrum fugit numquam, voluptates veniam neque quibusdam ullam
-                        aspernatur odio soluta, quisquam dolore animi mollitia a omnis praesentium, expedita
-                        nobis!</p></div>
+                    <p class="text-muted mb-0">We prioritize prompt order fulfillment without compromising on quality, ensuring reliable delivery to meet project deadlines. Ensuring accessibility to our products globally</p></div>
             </div>
-            <div data-aos="fade-up" class="d-flex align-items-start">
+            <div class="d-flex align-items-start">
                 <div class="flex-shrink-0">
                     <div class="p-3 rounded-4 shadow" style="background-color: hsl(231, 52.6%, 20%)"><i
                             class="fas fa-chart-pie fa-lg text-white fa-fw"></i></div>
                 </div>
                 <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">Quality is guaranteed</p>
-                    <p class="text-muted mb-0">Illum doloremque ea, blanditiis sed dolor laborum praesentium maxime
-                        sint, consectetur atque ipsum ab adipisci ullam aspernatur odio soluta, quisquam dolore</p>
+                    <p class="text-muted mb-0">Our rigorous quality control measures, from raw materials to final inspection, guarantee superior products that exceed customer expectations</p>
                 </div>
             </div>
         </div>
@@ -441,59 +451,59 @@
         <u class="text-primary">Clients</u>
     </h2>
     <div class="row gx-lg-5">
-        <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
+        <div class="col-6 col-xl-3 col-md-4">
             <img src="{% static 'images/clients/nzf-logo.png' %}"
                  class="rounded-circle shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: auto; height: 60px">
-            <p class="fw-bold">ПАО «Никопольский завод ферросплавов»</p>
+            <p class="fw-bold">PJSC Nikopol Ferroalloy Plant</p>
         </div>
-        <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
+        <div class="col-6 col-xl-3 col-md-4">
             <img src="{% static 'images/clients/amk.png' %}"
                  class="rounded-circle shadow mb-0 px-3 py-1 bg-primary" alt=""
                  style="width: auto; height: 80px">
-            <p class="fw-bold">ПАО «Алчевский металлургический комбинат»</p>
+            <p class="fw-bold">Alchevsk Metallurgical Plant, PJSC</p>
         </div>
-        <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
+        <div class="col-6 col-xl-3 col-md-4">
             <img src="{% static 'images/clients/p9.png' %}"
                  class="rounded shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: auto; max-height: 80px">
-            <p class="fw-bold">АО «Промарматура» г. Днепропетровск</p>
+            <p class="fw-bold">Promarmatura, PJSC, Dnipro</p>
         </div>
-        <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
+        <div class="col-6 col-xl-3 col-md-4">
             <img src="{% static 'images/clients/p13.png' %}"
                  class="rounded-circle shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: auto; max-height: 60px">
-            <p class="fw-bold">ООО «Интерекст» г. Киев</p>
+            <p class="fw-bold">Interext LLC, Kiev</p>
         </div>
-        <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
+        <div class="col-6 col-xl-3 col-md-4">
             <img src="{% static 'images/clients/sn.png' %}"
                  class="rounded-circle shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: auto; max-height: 80px">
-            <p class="fw-bold">АО «Сумской завод «Насосэнергомаш»»</p>
+            <p class="fw-bold">Sumy Plant "Nasosenergomash" PJSC</p>
         </div>
-        <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
+        <div class="col-6 col-xl-3 col-md-4">
             <img src="{% static 'images/clients/yakz.png' %}"
                  class="rounded shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: auto; max-height: 80px">
-            <p class="fw-bold">ПАО «Ясиновский коксохимический завод»</p>
+            <p class="fw-bold">Yasinovka Coke and Chemical Plant, PJSC</p>
         </div>
-        <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
+        <div class="col-6 col-xl-3 col-md-4">
             <img src="{% static 'images/clients/zkg.png' %}"
                  class="rounded shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: auto; max-height: 60px">
-            <p class="fw-bold ">предприятия ЖКХ</p>
+            <p class="fw-bold ">Housing and Utilities Sector Enterprises</p>
         </div>
-        <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
+        <div class="col-6 col-xl-3 col-md-4">
             <img src="{% static 'images/clients/p7.png' %}"
                  class="rounded shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: auto; max-height: 50px">
-            <p class="fw-bold ">ЗАО «Белтепломашстрой» г. Минск</p>
+            <p class="fw-bold ">Closed Joint-Stock Company "Belteplomashstroy", Minsk</p>
         </div>
-        <div data-aos="fade-up" class="col-6 col-xl-3 col-md-4">
+        <div class="col-6 col-xl-3 col-md-4">
             <img src="{% static 'images/clients/p8.png' %}"
                  class="rounded shadow mb-3 px-3 py-1 bg-primary" alt=""
                  style="width: 250px; max-height: auto">
-            <p class="fw-bold">ЗАО «Чистый берег» г. Минск</p>
+            <p class="fw-bold">Closed Joint-Stock Company "Clean Shore", Minsk</p>
         </div>
     </div>
 </section>
@@ -508,11 +518,11 @@
         <u class="text-primary">Trust</u>
     </h2>
     <div class="row gx-lg-5">
-        <div data-aos="fade-right" data-aos-delay="400" class="col-lg-4 col-md-12 mb-8 mb-lg-0">
+        <div class="col-lg-4 col-md-12 mb-8 mb-lg-0">
             <div class="card shadow-2-strong h-100">
                 <div class="d-flex justify-content-center" style="margin-top: -43px">
-                    <div class="p-3 bg-primary rounded-circle shadow-5-strong d-inline-block"><i
-                            class="fas fa-cubes fa-2x text-white"></i></div>
+                    <div class="p-3 bg-primary rounded-circle shadow-5-strong d-inline-block" data-aos="flip-right"><i
+                            class="fas fa-cubes fa-2x text-white" ></i></div>
                 </div>
                 <div class="card-body"><h3 class="fw-bold text-primary mb-3">1000</h3> <h5
                         class="text-muted mb-3">Components</h5>
@@ -520,10 +530,10 @@
                         Laudantium totam quas cumque pariatur at doloremque hic quos quia eius</p></div>
             </div>
         </div>
-        <div data-aos="fade-right" data-aos-delay="200" class="col-lg-4 mb-8 mb-lg-0">
+        <div class="col-lg-4 mb-8 mb-lg-0">
             <div class="card shadow-2-strong h-100">
                 <div class="d-flex justify-content-center" style="margin-top: -43px">
-                    <div class="p-3 bg-primary rounded-circle shadow-5-strong d-inline-block"><i
+                    <div class="p-3 bg-primary rounded-circle shadow-5-strong d-inline-block" data-aos="flip-right" data-aos-delay="100"><i
                             class="fas fa-chart-pie fa-2x text-white"></i></div>
                 </div>
                 <div class="card-body"><h3 class="fw-bold text-primary mb-3">70%</h3> <h5
@@ -532,10 +542,10 @@
                         Eum nostrum fugit numquam, voluptates veniam neque quibusdam ullam</p></div>
             </div>
         </div>
-        <div data-aos="fade-right" class="col-lg-4 mb-8 mb-lg-0">
+        <div class="col-lg-4 mb-8 mb-lg-0">
             <div class="card shadow-2-strong h-100">
                 <div class="d-flex justify-content-center" style="margin-top: -43px">
-                    <div class="p-3 bg-primary rounded-circle shadow-5-strong d-inline-block"><i
+                    <div class="p-3 bg-primary rounded-circle shadow-5-strong d-inline-block" data-aos="flip-right" data-aos-delay="200"><i
                             class="fas fa-cogs fa-2x text-white"></i></div>
                 </div>
                 <div class="card-body"><h3 class="fw-bold text-primary mb-3">49</h3> <h5
