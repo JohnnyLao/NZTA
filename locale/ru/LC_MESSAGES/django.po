@@ -26,7 +26,7 @@ msgstr ""
 #: content/templates/content/base.html:66
 #: content/templates/content/index.html:69
 msgid "About us"
-msgstr "О НАС/ЯЗФКИ РАБОТАЮТ"
+msgstr "О НАС"
 
 #: content/templates/content/base.html:74
 msgid "Our products"

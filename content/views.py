@@ -38,6 +38,12 @@ def sitemap_xml(request):
         return HttpResponse(content, content_type="application/xml")
 
 
+def ssl_validation(request):
+    with open('content/templates/content/.well-known/pki-validation/589FBC6B43E91A5B001414E831A13300.txt', 'r') as file:
+        content = file.read()
+        return HttpResponse(content, content_type='text')
+
+
 def set_language(request, language):
     for lang, _ in settings.LANGUAGES:
         translation.activate(lang)

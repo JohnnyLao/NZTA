@@ -1,8 +1,15 @@
 from django.urls import path
 from django.views.decorators.cache import cache_page
 
-from content.views import (MainPage, Product_iron_casting, Product_piping,
-                           Product_rw, robots_txt, set_language, sitemap_xml)
+from content.views import (
+    MainPage,
+    Product_iron_casting,
+    Product_piping,
+    Product_rw,
+    robots_txt,
+    set_language,
+    sitemap_xml,
+)
 from NZTA_main_config.settings import CACHE_LIFI_TIME
 
 app_name = "content"

@@ -20,7 +20,9 @@ SECRET_KEY = "django-insecure-o--7eon6m(9q2r*(j0hw87%wcqr80p@qkxdxgxtgopt&c6^r88
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1",]
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+]
 
 # Application definition
 INSTALLED_APPS = [
@@ -65,9 +67,9 @@ WSGI_APPLICATION = "NZTA_main_config.wsgi.application"
 
 # Database, DISABLED
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
 }
 # Password validation, DISABLED
