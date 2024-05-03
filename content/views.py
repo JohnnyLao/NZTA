@@ -1,27 +1,41 @@
+from urllib.parse import urlparse
+
 from django.conf import settings
+from django.http import HttpResponseRedirect
+from django.shortcuts import HttpResponse
+from django.urls import resolve, reverse
+from django.urls.exceptions import Resolver404
 from django.utils import translation
 from django.views.generic import TemplateView
-from django.http import HttpResponseRedirect
-from django.urls import reverse
-from django.urls.exceptions import Resolver404
-from django.urls import resolve
-from urllib.parse import urlparse
 
 
 # main page class
 class MainPage(TemplateView):
-    template_name = 'content/index.html'
+    template_name = "content/index.html"
 
 
 class Product_rw(TemplateView):
-    template_name = 'content/product_rw.html'
+    template_name = "content/product_rw.html"
+
 
 class Product_piping(TemplateView):
-    template_name = 'content/product_piping.html'
+    template_name = "content/product_piping.html"
 
 
 class Product_iron_casting(TemplateView):
-    template_name = 'content/product_iron_casting.html'
+    template_name = "content/product_iron_casting.html"
+
+
+def robots_txt(request):
+    with open("content/templates/content/robots.txt", "r") as file:
+        content = file.read()
+    return HttpResponse(content, content_type="text")
+
+
+def sitemap_xml(request):
+    with open("content/templates/content/sitemap.xml", "r") as file:
+        content = file.read()
+        return HttpResponse(content, content_type="application/xml")
 
 
 def set_language(request, language):

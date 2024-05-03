@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-25 11:42+0600\n"
+"POT-Creation-Date: 2024-05-03 07:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,169 +19,125 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
-
-#: NZTA_main_config/settings.py:123
-msgid "English"
-msgstr "Английский"
-
-#: NZTA_main_config/settings.py:124
-msgid "Russian"
-msgstr "Русский"
-
-#: content/templates/content/base.html:64
+#: content/templates/content/base.html:63
 msgid "Main"
-msgstr "Главная"
+msgstr ""
 
-#: content/templates/content/base.html:67
-#: content/templates/content/index.html:103
+#: content/templates/content/base.html:66
+#: content/templates/content/index.html:69
 msgid "About us"
-msgstr "О компании"
+msgstr "О НАС/ЯЗФКИ РАБОТАЮТ"
 
-#: content/templates/content/base.html:75
+#: content/templates/content/base.html:74
 msgid "Our products"
-msgstr "Производство"
+msgstr ""
 
-#: content/templates/content/base.html:80
+#: content/templates/content/base.html:79
 msgid "Badges / Pads"
-msgstr "Клины"
+msgstr ""
 
-#: content/templates/content/base.html:85
+#: content/templates/content/base.html:84
 msgid "Iron Valves"
-msgstr "Чугунные "
+msgstr ""
 
-#: content/templates/content/base.html:88
+#: content/templates/content/base.html:87
 msgid "Gates"
-msgstr "Задвижки"
+msgstr ""
 
-#: content/templates/content/base.html:91
+#: content/templates/content/base.html:90
 msgid "Plungers"
 msgstr ""
 
-#: content/templates/content/base.html:97
+#: content/templates/content/base.html:96
 msgid "Iron Casting"
 msgstr ""
 
-#: content/templates/content/base.html:102
+#: content/templates/content/base.html:101
 msgid "Contacts"
 msgstr ""
 
 #: content/templates/content/index.html:9
+#: content/templates/content/product_iron_casting.html:9
+#: content/templates/content/product_piping.html:9
+#: content/templates/content/product_rw.html:9
 msgid ""
 "Public Joint Stock Company 'Nikopol Pipeline Fittings Plant' (Nikopol "
 "foundry and mechanical plant 'Bolshevik')"
-msgstr "Публичное акционерное общество «Никопольский завод трубопроводной арматуры» (Никополь) Литейно-механический завод «Большевик»"
+msgstr ""
 
-#: content/templates/content/index.html:105
+#: content/templates/content/index.html:71
 msgid "LIMITED LIABILITY COMPANY \"M-LIT\" (Nikopol Pipeline Valve Plant,"
-msgstr "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ «М-ЛИТ» (Никопольский завод трубопроводной арматуры, г."
+msgstr ""
 
-#: content/templates/content/index.html:106
-msgid ""
-"formerly Nikopol Foundry and Mechanical Plant \"Bolshevik\") is a large "
-"specialized enterprise"
-msgstr "бывший Никопольский литейно-механический завод «Большевик») — крупное специализированное предприятие"
-
-#: content/templates/content/index.html:107
+#: content/templates/content/index.html:74
 msgid "known in Ukraine and abroad for the production of shut-off valves."
-msgstr "известен в Украине и за рубежом производством запорной арматуры"
+msgstr ""
 
-#: content/templates/content/index.html:111
+#: content/templates/content/index.html:78
 msgid "Best team"
-msgstr "Лучшие специалисты"
+msgstr ""
 
-#: content/templates/content/index.html:117
+#: content/templates/content/index.html:84
+#: content/templates/content/index.html:186
 msgid "Best quality"
-msgstr "Лучшее качество"
+msgstr ""
 
-#: content/templates/content/index.html:123
+#: content/templates/content/index.html:90
+#: content/templates/content/index.html:169
 msgid "Best experience"
-msgstr "Надёжный опыт"
+msgstr ""
 
-#: content/templates/content/index.html:128
+#: content/templates/content/index.html:95
 msgid "LLC \"M-LIT\" (NZTA) (formerly Nikopol Foundry and"
-msgstr "ООО «М-ЛИТ» (НЗТА) (бывший Никопольский литейный завод"
-
-#: content/templates/content/index.html:129
-msgid ""
-"Mechanical Plant \"Bolshevik\") is a large specialized enterprise known in "
-"Ukraine and abroad"
-msgstr "Механический завод «Большевик») — крупное специализированное предприятие, известное в «
-«Украина и зарубежье"
-
-#: content/templates/content/index.html:130
-msgid ""
-"for the production of shut-off valves. The company was created more than 115 "
-"years ago."
 msgstr ""
 
-#: content/templates/content/index.html:131
-msgid ""
-"During this period, the plant went from producing furnace castings to "
-"producing cast iron"
-msgstr ""
-
-#: content/templates/content/index.html:132
-msgid ""
-"valves used as shut-off devices on pipelines to shut off the working "
-"environment. The"
-msgstr ""
-
-#: content/templates/content/index.html:133
-msgid ""
-"company produces cast iron valves with a nominal bore from 50 mm to 500 mm, "
-"grades 30ch6br"
-msgstr ""
-
-#: content/templates/content/index.html:134
-msgid ""
-"and 30ch906br for water and steam, with manual control and electric drive; "
-"30ch6bk for"
-msgstr ""
-
-#: content/templates/content/index.html:135
-msgid ""
-"petroleum products and oils; 30ch47bk4 and 30ch47br for natural gas and "
-"water with nominal bore from 50 mm to 150 mm. \"M-LIT\" today is"
-msgstr ""
-
-#: content/templates/content/index.html:136
-msgid ""
-"technical equipment of production with universal and specialized equipment,"
-msgstr ""
-
-#: content/templates/content/index.html:137
-msgid ""
-"qualified specialists, which, combined with extensive experience of the "
-"plant in this"
-msgstr ""
-
-#: content/templates/content/index.html:138
+#: content/templates/content/index.html:114
 msgid "industry allows the enterprise team to produce a wide range of products"
 msgstr ""
 
-#: content/templates/content/index.html:139
+#: content/templates/content/index.html:115
 msgid ""
 "pipeline fittings. Contact us - and we will fulfill your order quickly and"
 msgstr ""
 
-#: content/templates/content/index.html:140
-msgid ""
-"qualitatively. Products bearing the logo of our company can be found "
-"everywhere - from"
-msgstr ""
-
-#: content/templates/content/index.html:141
-msgid ""
-"huge metallurgical plants, thermal power plants, quarries to irrigation "
-"systems in rural"
-msgstr ""
-
-#: content/templates/content/index.html:142
-msgid ""
-"economy, public utilities of any settlement in the CIS countries. And "
-"products are everywhere"
-msgstr ""
-
-#: content/templates/content/index.html:143
+#: content/templates/content/index.html:122
 msgid "Our enterprise operates efficiently and reliably."
+msgstr ""
+
+#: content/templates/content/index.html:136
+msgid "MEET"
+msgstr ""
+
+#: content/templates/content/index.html:137
+msgid "OUR"
+msgstr ""
+
+#: content/templates/content/index.html:138
+msgid "PRODUCTS"
+msgstr ""
+
+#: content/templates/content/index.html:166
+msgid "Wadges"
+msgstr ""
+
+#: content/templates/content/index.html:183
+msgid "Pads"
+msgstr ""
+
+#: content/templates/content/index.html:210
+msgid "Shut-off"
+msgstr ""
+
+#: content/templates/content/index.html:211
+msgid "valves"
+msgstr ""
+
+#: content/templates/content/index.html:222
+msgid " Gates"
+msgstr ""
+
+#: content/templates/content/index.html:232
+#: content/templates/content/index.html:255
+#: content/templates/content/index.html:278
+msgid "More"
 msgstr ""

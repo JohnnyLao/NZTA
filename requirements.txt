@@ -3,7 +3,8 @@ black==23.9.1
 click==8.1.7
 Django==4.2.5
 django-debug-toolbar==4.2.0
-flake8==6.1.0
+black
+isort
 mccabe==0.7.0
 mypy-extensions==1.0.0
 packaging==23.1

@@ -1,0 +1,16 @@
+User-agent: *
+Host: https://m-lit.eu/
+User-agent: Googlebot
+Sitemap: https://m-lit.eu/sitemap.xml
+
+
+
+
+
+
+
+
+Disallow: /admin/
+Disallow: /js
+Disallow: /css
+Disallow: /cgi-bin
