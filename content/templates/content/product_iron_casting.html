@@ -6,7 +6,7 @@
 
 <!--your title block here-->
 {% block title %}
-    {% translate "Public Joint Stock Company 'Nikopol Pipeline Fittings Plant' (Nikopol foundry and mechanical plant 'Bolshevik')" %}
+{% translate "Public Joint Stock Company 'Nikopol Pipeline Fittings Plant' (Nikopol foundry and mechanical plant 'Bolshevik')" %}
 {% endblock title %}
 <!--title end-->
 
@@ -17,95 +17,514 @@
 <!--your content block here-->
 {% block content %}
 
-<body>
+<body style="background: rgba(238,245,238,1)" id="header">
+<!--OUR PRODUCTS KEY-->
 
-<!--OUR PRODUCTS IRON CASTING-->
-<section class="container my-5 mb-10">
-    <div class="card mb-3 shadow-lg">
-        <div class="row g-0 d-flex align-items-center">
-            <div class="col-lg-5 col-xl-4 d-none d-lg-flex"><img
-                    src="{% static 'images/D75_5057.jpg' %}" alt=""
-                    class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5 ms-3"></div>
-            <div class="col-lg-7 col-xl-8 text-center text-md-start">
-                <div class="card-body px-md-5">
-                    <h3 class="fw-bold mb-4 text-danger"><u>Iron casting</u></h3>
-                    <p class="text-muted mb-4">Nunc tincidunt vulputate elit. Mauris varius purus malesuada neque
-                        iaculis malesuada. Aenean gravida magna orci, non efficitur est porta id. Donec magna
-                        diam.</p>
-                    <div class="row">
-                        <div data-aos="fade-up" class="col-6 col-lg-4">
-                            <p>
-                                <i class="fas fa-check text-success me-2"></i>
-                                <span>Light hatch</span>
-                            </p>
-                        </div>
-                        <div data-aos="fade-up" class="col-6 col-lg-4">
-                            <p>
-                                <i class="fas fa-check text-success me-2"></i>
-                                <span>Hatch average</span>
-                            </p>
-                        </div>
-                        <div data-aos="fade-up" class="col-lg-4">
-                            <p><i class="fas fa-check text-success me-2"></i>
-                                <span>Hatch heavy</span>
-                            </p>
-                        </div>
-                        <div data-aos="fade-up" class="col-lg-4">
-                            <p>
-                                <i class="fas fa-check text-success me-2"></i>
-                                <span>Hatch anti-vandal</span>
-                            </p>
-                        </div>
-                        <div data-aos="fade-up" class="col-lg-4">
-                            <p>
-                                <i class="fas fa-check text-success me-2"></i>
-                                <span>Storm water inlets</span>
-                            </p>
-                        </div>
-                        <div data-aos="fade-up" class="col-lg-4">
-                            <p>
-                                <i class="fas fa-check text-success me-2"></i>
-                                <span>Storm grates</span>
-                            </p>
-                        </div>
-                        <div data-aos="fade-up" class="col-lg-4">
-                            <p>
-                                <i class="fas fa-check text-success me-2"></i>
-                                <span>Benches</span>
-                            </p>
-                        </div>
-                        <div data-aos="fade-up" class="col-lg-4">
-                            <p>
-                                <i class="fas fa-check text-success me-2"></i>
-                                <span>Car wedges</span>
-                            </p>
-                        </div>
-                        <div data-aos="fade-up" class="col-lg-4">
-                            <p>
-                                <i class="fas fa-check text-success me-2"></i>
-                                <span>Car brake pads</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div data-aos="fade-up" class="col-12 text-center">
-                        <button class="btn btn-danger btn-animate px-3">
-                            <span>More
-                                <i class="fas fa-fill-drip ms-1"></i>
-                            </span>
-                        </button>
-                    </div>
+<section>
+    <div class="container">
+        <div class="container-fluid text-center">
+            <img data-aos="fade-right" draggable="false" src="{% static 'images/slide.jpg' %}"
+                 alt=""
+                 class="img-fluid rounded-circle my-3 py-0 shadow" style="max-width: 300px">
+        </div>
+    </div>
+</section>
+
+<!--PRODUCT 1-->
+<!--Main layout-->
+<div class="container dark-grey-text my-0">
+
+    <!--Grid row-->
+    <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-4 mx-auto my-auto">
+
+            <div class="bg-image hover-zoom ripple rounded-4 text-center"
+                 data-mdb-ripple-color="light">
+                <img draggable="false"
+                     src="{% static 'images/casting/LYUKI-.png' %}"
+                     class="btn-animate mx-3 my-3" alt="" style="max-height: 250px; max-width: 250px;">
+            </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-8">
+
+            <!--Content-->
+            <div class="mb-3">
+                <span class="badge badge-danger mr-1">Литьё</span>
+            </div>
+
+            <!-- Tabs navs -->
+            <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a
+                            class="nav-link active"
+                            id="ex1-tab-1"
+                            data-mdb-toggle="tab"
+                            href="#ex1-tabs-1"
+                            role="tab"
+                            aria-controls="ex1-tabs-1"
+                            aria-selected="true"
+                    >Люк Легкий/Средний/Тяжелый</a
+                    >
+                </li>
+            </ul>
+            <!-- Tabs navs -->
+
+            <!-- Tabs content -->
+            <div class="tab-content" id="ex1-content">
+                <div
+                        class="tab-pane active"
+                        id="ex1-tabs-1"
+                        role="tabpanel"
+                        aria-labelledby="ex1-tab-1"
+                >
+                    <table class="table table-sm table-bordered text-center">
+                        <thead>
+                        <tr>
+                            <th scope="col">Наименование</th>
+                            <th scope="col">Диаметр мм.</th>
+                            <th scope="col">Высота мм.</th>
+                            <th scope="col">Корпус кг.</th>
+                            <th scope="col">Крышка кг.</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Люк лёгкий</th>
+                            <td>770</td>
+                            <td>90</td>
+                            <td>37</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Люк Средний</th>
+                            <td>870</td>
+                            <td>120</td>
+                            <td>47</td>
+                            <td>47</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Люк Тяжелый</th>
+                            <td>870</td>
+                            <td>120</td>
+                            <td>58</td>
+                            <td>62</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <p class="my-0">Назначение: Люки чугунные для смотровых колодцев предназначены для установки на колодцах
+                сетей водопровода и канализации:</p>
+            <p class="mt-3 mb-1 mt-1 ms-3"><i
+                    class="fas fa-circle-dot fa-xs me-2 text-primary"></i>в зоне зеленых насаждений, пешеходной зоне
+                (легкий люк) ЛЮКЛ (А15)-ВК-1-60</p>
+            <p class="my-1 mt-1 ms-3"><i
+                    class="fas fa-circle-dot fa-xs me-2 text-primary"></i>автостоянках, тротуарах и проезжей части
+                городских парков (средний люк) - ЛЮКС (В125)-ВК-1-60</p>
+            <p class="my-1 mt-1 ms-3"><i
+                    class="fas fa-circle-dot fa-xs me-2 text-primary"></i>на городских автомобильных дорогах с
+                интенсивным движением (тяжелый люк) - ЛЮКТ (С250)-ВК-1-60 ДСТУ Б.В. 2.5-26:2005(ГОСТ 3634-99</p>
+
+            <div class="d-flex justify-content-center">
+                <a data-aos="fade-up" class="" href="#">
+                    <!-- Default input -->
+                    <button class="btn btn-danger btn-md my-0 p btn-animate" type="button">Узнать цену
+                        <i class="fas fa-shopping-cart ml-1"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--Content-->
+
+</div>
+<!--Grid column-->
+<hr>
+
+<!--PRODUCT 2-->
+<!--Grid row-->
+<div class="container">
+
+
+    <div class="row wow fadeIn">
+        <!--Grid column-->
+        <div class="col-md-4 mb-4 mx-auto my-0">
+            <div class="bg-image hover-zoom ripple rounded-4 text-center"
+                 data-mdb-ripple-color="light">
+                <img draggable="false"
+                     src="{% static 'images/casting/Lyuk-kvadrat2.png' %}"
+                     class="btn-animate mx-3 my-3" alt="" style="max-height: 250px; max-width: 250px;">
+            </div>
+        </div>
+        <!--Grid column-->
+
+        <!--            PRODUCT 3-->
+        <!--Grid column-->
+        <div class="col-md-8 mb-4">
+            <!--Content-->
+            <!-- Tabs navs -->
+            <div class="mb-3">
+                <a href="#">
+                    <span class="badge badge-danger mr-1">Литье</span>
+                </a>
+            </div>
+
+            <!-- Tabs navs -->
+            <ul class="nav nav-tabs mb-3" id="ex2" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a
+                            class="nav-link active"
+                            id="ex2-tab-1"
+                            data-mdb-toggle="tab"
+                            href="#ex2-tabs-1"
+                            role="tab"
+                            aria-controls="ex2-tabs-1"
+                            aria-selected="true"
+                    >Люк антивандальный</a
+                    >
+                </li>
+            </ul>
+            <!-- Tabs navs -->
+
+            <!-- Tabs content -->
+            <div class="tab-content" id="ex2-content">
+                <div
+                        class="tab-pane active"
+                        id="ex2-tabs-1"
+                        role="tabpanel"
+                        aria-labelledby="ex2-tab-1"
+                >
+                    <table class="table table-sm table-bordered text-center">
+                        <thead>
+                        <tr>
+                            <th scope="col">Наименование</th>
+                            <th scope="col">Длина мм.</th>
+                            <th scope="col">Ширина мм.</th>
+                            <th scope="col">Высота мм.</th>
+                            <th scope="col">Корпус кг.</th>
+                            <th scope="col">Крышка кг.</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Люк антивандальный</th>
+                            <td>830</td>
+                            <td>830</td>
+                            <td>125</td>
+                            <td>66</td>
+                            <td>84</td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
 
             </div>
 
+
+            <p class="my-0">Назначение: Люки чугунные для смотровых колодцев с запорным устройством предназначены для
+                установки на городских автомобильных дорогах с интенсивным движением - ЛЮК Т (С250)-ВК-6-64х64 ДСТУ Б В.
+                2,5-26:2005 (ГОСТ 3634-99). Нагрузка номинальная 250кН (25,0 тс)</p>
+
+            <div class="d-flex justify-content-center">
+                <a data-aos="fade-up" class="" href="#">
+                    <!-- Default input -->
+                    <button class="btn btn-danger btn-md my-0 p btn-animate" type="button">Узнать цену
+                        <i class="fas fa-shopping-cart ml-1"></i>
+                    </button>
+                </a>
+            </div>
         </div>
     </div>
-</section>
-<!--IRON CASTING END-->
+</div>
+<!--Content-->
+
+<hr>
+<!--PRODUCT 3-->
+<!--Grid row-->
+<div class="container">
 
 
+    <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-4 mx-auto my-0">
+
+            <div class="bg-image hover-zoom ripple rounded-4 text-center"
+                 data-mdb-ripple-color="light">
+                <img draggable="false"
+                     src="{% static 'images/casting/dozhdepriemnik.png' %}"
+                     class="btn-animate mx-3 my-3" alt="" style="max-height: 150px; max-width: 150px;">
+                <img draggable="false"
+                     src="{% static 'images/casting/livnevka.png' %}"
+                     class="btn-animate mx-3 my-3" alt="" style="max-height: 150px; max-width: 150px;">
+            </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-8 mb-4">
+            <!--Content-->
+            <!-- Tabs navs -->
+            <div class="mb-3">
+                <a href="#">
+                    <span class="badge badge-info mr-1">Литьё</span>
+                </a>
+            </div>
+
+            <!-- Tabs navs -->
+            <ul class="nav nav-tabs mb-3" id="ex3" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a
+                            class="nav-link active"
+                            id="ex3-tab-1"
+                            data-mdb-toggle="tab"
+                            href="#ex3-tabs-1"
+                            role="tab"
+                            aria-controls="ex3-tabs-1"
+                            aria-selected="true"
+                    >Дождеприемники</a
+                    >
+                </li>
+
+            </ul>
+            <!-- Tabs navs -->
+
+            <!-- Tabs content -->
+            <div class="tab-content" id="ex3-content">
+                <div
+                        class="tab-pane active"
+                        id="ex3-tabs-1"
+                        role="tabpanel"
+                        aria-labelledby="ex1-tab-1"
+                >
+                    <table class="table table-sm table-bordered text-center">
+                        <thead>
+                        <tr>
+                            <th scope="col">Наименование</th>
+                            <th scope="col">Масса кг.</th>
+                            <th scope="col">Длина мм.</th>
+                            <th scope="col">Ширина мм.</th>
+                            <th scope="col">Высота мм.</th>
+                            <th scope="col">Площадь живого сечения 0,28 м2</th>
+                            <th scope="col">Площадь пазов %</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Дождеприемник</th>
+                            <td>119</td>
+                            <td>915</td>
+                            <td>570</td>
+                            <td>120</td>
+                            <td>0,28</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Ливневка</th>
+                            <td>95</td>
+                            <td>740</td>
+                            <td>400</td>
+                            <td>80</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <p class="my-0">Назначение: дождеприемники и ливневки колодцев предназначены для приема поверхностных
+                сточных вод с улиц, дворов и других территорий. Дождеприемники устанавливаются на автостоянках и
+                проезжей части городских дорог.
+            </p>
+
+            <div class="d-flex justify-content-center">
+                <a data-aos="fade-up" class="" href="#">
+                    <!-- Default input -->
+                    <button class="btn btn-danger btn-md my-0 p btn-animate" type="button">Узнать цену
+                        <i class="fas fa-shopping-cart ml-1"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--Grid row-->
+
+<hr>
+<!--PRODUCT 4-->
+<!--Grid row-->
+<div class="container">
 
 
+    <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-4 mx-auto my-0">
+
+            <div class="bg-image hover-zoom ripple rounded-4 text-center"
+                 data-mdb-ripple-color="light">
+                <img draggable="false"
+                     src="{% static 'images/casting/prod4.png' %}"
+                     class="btn-animate mx-3 my-3" alt="" style="max-height: 250px; max-width: 250px;">
+            </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-8 mb-4">
+            <!--Content-->
+            <!-- Tabs navs -->
+            <div class="mb-3">
+                <a href="#">
+                    <span class="badge badge-info mr-1">Литьё</span>
+                </a>
+            </div>
+
+            <!-- Tabs navs -->
+            <ul class="nav nav-tabs mb-3" id="ex4" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a
+                            class="nav-link active"
+                            id="ex4-tab-1"
+                            data-mdb-toggle="tab"
+                            href="#ex3-tabs-1"
+                            role="tab"
+                            aria-controls="ex3-tabs-1"
+                            aria-selected="true"
+                    >Скамейки</a
+                    >
+                </li>
+
+            </ul>
+            <!-- Tabs navs -->
+
+            <!-- Tabs content -->
+            <div class="tab-content" id="ex4-content">
+                <div
+                        class="tab-pane active"
+                        id="ex4-tabs-1"
+                        role="tabpanel"
+                        aria-labelledby="ex1-tab-1"
+                >
+                    <table class="table table-sm table-bordered text-center">
+                        <thead>
+                        <tr>
+                            <th scope="col">Наименование</th>
+                            <th scope="col">Длина мм.</th>
+                            <th scope="col">Ширина мм.</th>
+                            <th scope="col">Высота со спинкой мм.</th>
+                            <th scope="col">Масса</th>
+                            <th scope="col">Масса ножки</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Скамейка парковая</th>
+                            <td>1750</td>
+                            <td>550</td>
+                            <td>800</td>
+                            <td>65</td>
+                            <td>23</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <p class="my-0">Назначение: скамейки парковые, состоящие из двух ножек, изготовленные литьем из чугуна СЧ 18
+                с устройством сидения и спинки из дерева. Скамейки предназначены для оборудования мест отдыха на дачных
+                участках, в карках, детских и школьных площадках, остановок транспортных средств и др.
+            </p>
+
+            <div class="d-flex justify-content-center">
+                <a data-aos="fade-up" class="" href="#">
+                    <!-- Default input -->
+                    <button class="btn btn-danger btn-md my-0 p btn-animate" type="button">Узнать цену
+                        <i class="fas fa-shopping-cart ml-1"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--Grid row-->
+
+<div class="container">
+
+
+    <div class="row d-flex justify-content-center wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-6 text-center">
+
+            <h4 class="my-4 h2 fw-bold">Взгляните на другие <u class="text-danger">продукты</u></h4>
+
+        </div>
+        <!--Grid column-->
+
+    </div>
+</div>
+<!--Grid row-->
+
+<!--Grid row-->
+<div class="container">
+
+
+    <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-12 col-md-6 text-center">
+
+        <div class="bg-image ripple rounded-4 mb-4 text-center py-3"
+             data-mdb-ripple-color="success" data-mdb-ripple-unbound="true" data-mdb-ripple-radius="50">
+            <img data-aos="zoom-in-right" draggable="false"
+                 src="{% static 'images/new_photos/Wedge-removebg-preview.png' %}"
+                 class="btn-animate mx-3 my-3" alt="" style="max-height: 150px; max-width: 150px;">
+            <img data-aos="zoom-in-right" data-aos-delay="100" draggable="false"
+                 src="{% static 'images/new_photos/03KTM-removebg-preview.png' %}"
+                 class="btn-animate mx-3 my-3" alt="" style="max-height: 150px; max-width: 150px;">
+            <img data-aos="zoom-in-right" data-aos-delay="200" draggable="false"
+                 src="{% static 'images/new_photos/Anker_3-removebg-preview.png' %}"
+                 class="btn-animate mx-3 my-3" alt="" style="max-height: 150px; max-width: 150px;">
+        </div>
+        <a href="badges&Pads">
+            <button data-aos="fade-up" class="btn btn-success btn-animate">Подробнее</button>
+        </a>
+    </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-12 col-md-6 text-center">
+
+            <div class="bg-image ripple rounded-4 mb-4 text-center py-3 "
+                 data-mdb-ripple-color="primary" data-mdb-ripple-unbound="true" data-mdb-ripple-radius="50">
+                <img draggable="false"
+                     src="{% static 'images/piping/zatvor-19ch16br.png' %}"
+                     class="my-auto pt-3 me-3 btn-animate" alt="">
+                <img draggable="false"
+                     src="{% static 'images/piping/zatvor-19ch21br.png' %}" class="pt-3 me-3 btn-animate"
+                     alt="">
+                <img draggable="false"
+                     src="{% static 'images/piping/prod1.png' %}" class="img me-3 btn-animate" alt="">
+                <img draggable="false" src="{% static 'images/vantuz1.png' %}"
+                     class="mt-3 btn-animate" alt="">
+            </div>
+            <a href="piping">
+                <button data-aos="fade-up" class="btn btn-primary btn-animate">Подробнее</button>
+            </a>
+        </div>
+        <!--Grid column-->
+
+
+    </div>
+    <!--Grid row-->
+</div>
 </body>
 
 {% endblock content %}
