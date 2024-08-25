@@ -19,7 +19,7 @@ urlpatterns = [
     # sitemap
     path("sitemap.xml", cache_page(CACHE_LIFI_TIME)(sitemap_xml), name="sitemap"),
     # ssl
-    path(".well-known/pki-validation/589FBC6B43E91A5B001414E831A13300.txt", ssl_validation, name='ss_validation'),
+    path(".well-known/pki-validation/92A02BB84FB4BD727D3E40F1502477C0.txt", ssl_validation, name='ss_validation'),
 ]
 
 urlpatterns += i18n_patterns(

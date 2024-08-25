@@ -39,7 +39,7 @@ def sitemap_xml(request):
 
 
 def ssl_validation(request):
-    with open('content/templates/content/.well-known/pki-validation/589FBC6B43E91A5B001414E831A13300.txt', 'r') as file:
+    with open('content/templates/content/.well-known/pki-validation/92A02BB84FB4BD727D3E40F1502477C0.txt', 'r') as file:
         content = file.read()
         return HttpResponse(content, content_type='text')
 
