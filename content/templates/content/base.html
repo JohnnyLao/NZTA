@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <title>{% block title %} {% endblock title %}</title>
+    <meta name="description" content="{% block description %} {% endblock description %}">
     <!-- MDB icon -->
     <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon"/>
     <!-- Font Awesome -->
@@ -83,12 +84,10 @@
                 <ul class="navbar-nav">
                     <!-- Link -->
                     <li class="nav-item btn-animate" data-mdb-ripple-color="red">
-                        <a data-aos="fade-right" data-aos-delay="600" class="nav-link " href="/">{% translate
-                            'Главная'%}</a>
+                        <a data-aos="fade-right" data-aos-delay="600" class="nav-link " href="/">{% translate 'Главная'%}</a>
                     </li>
                     <li class="nav-item btn-animate">
-                        <a data-aos="fade-right" data-aos-delay="400" class="nav-link " href="/#about_us">{% translate
-                            'О Компании' %}</a>
+                        <a data-aos="fade-right" data-aos-delay="400" class="nav-link " href="/#about_us">{% translate 'О Компании' %}</a>
                     </li>
                     <!-- Dropdown -->
                     <li class="nav-item dropdown mx-auto">
@@ -101,29 +100,24 @@
                         <!-- Dropdown menu -->
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
-                                <a class="dropdown-item ripple" data-mdb-ripple-color="success" href="badges&Pads">{%
-                                    translate 'Клины / Колодки' %}</a>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="success" href="badges&Pads">{% translate 'Клины / Колодки' %}</a>
                             </li>
                             <li>
                                 <hr class="dropdown-divider border border-primary"/>
                             <li>
-                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="piping">{%
-                                    translate 'Задвижки чугунные' %}</a>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="piping">{% translate 'Задвижки чугунные' %}</a>
                             </li>
                             <li>
-                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="piping">{%
-                                    translate 'Затворы' %}</a>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="piping">{% translate 'Затворы' %}</a>
                             </li>
                             <li>
-                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="piping">{%
-                                    translate 'Вантузы' %}</a>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="piping">{% translate 'Вантузы' %}</a>
                             </li>
                             <li>
                                 <hr class="dropdown-divider border border-danger"/>
                             </li>
                             <li>
-                                <a class="dropdown-item ripple" data-mdb-ripple-color="danger" href="iron_casting">{%
-                                    translate 'Чугунное Литье' %}</a>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="danger" href="iron_casting">{% translate 'Чугунное Литье' %}</a>
                             </li>
                         </ul>
                     </li>
