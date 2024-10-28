@@ -63,3 +63,8 @@ def set_language(request, language):
     else:
         response = HttpResponseRedirect("/")
     return response
+
+
+# {% blocktrans %}
+# {% endblocktrans %}
+# {% translate ' ' %}
