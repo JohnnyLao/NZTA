@@ -38,4 +38,5 @@ urlpatterns = [
     ),
     # languages
     path("set_language/<str:language>", set_language, name="set_language"),
+
 ]

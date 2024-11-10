@@ -1,5 +1,5 @@
 from urllib.parse import urlparse
-
+from django.shortcuts import redirect
 from django.conf import settings
 from django.http import HttpResponseRedirect
 from django.shortcuts import HttpResponse
@@ -9,9 +9,13 @@ from django.utils import translation
 from django.views.generic import TemplateView
 
 
-# main page class
 class MainPage(TemplateView):
-    template_name = "content/index.html"
+
+    def get_template_names(self):
+        if self.request.LANGUAGE_CODE == 'ru':
+            return ['content/index.html',]
+        elif self.request.LANGUAGE_CODE == 'en':
+            return ['content/index-en.html',]
 
 
 class Product_rw(TemplateView):
@@ -45,26 +49,10 @@ def ssl_validation(request):
 
 
 def set_language(request, language):
-    for lang, _ in settings.LANGUAGES:
-        translation.activate(lang)
-        try:
-            view = resolve(urlparse(request.META.get("HTTP_REFERER")).path)
-        except Resolver404:
-            view = None
-        if view:
-            break
-    if view:
-        translation.activate(language)
-        next_url = reverse(
-            f"{view.namespace}:{view.url_name}", args=view.args, kwargs=view.kwargs
-        )
-        response = HttpResponseRedirect(next_url)
-        response.set_cookie(settings.LANGUAGE_COOKIE_NAME, language)
-    else:
-        response = HttpResponseRedirect("/")
+
+    translation.activate(language)
+    response = redirect(reverse('index:main_page'))
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME, language)
+
     return response
 
-
-# {% blocktrans %}
-# {% endblocktrans %}
-# {% translate ' ' %}
