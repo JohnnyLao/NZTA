@@ -21,13 +21,32 @@ class MainPage(TemplateView):
 class Product_rw(TemplateView):
     template_name = "content/product_rw.html"
 
+    def get_template_names(self):
+        if self.request.LANGUAGE_CODE == 'ru':
+            return ['content/product_rw.html',]
+        elif self.request.LANGUAGE_CODE == 'en':
+            return ['content/product_rw-en.html',]
+
 
 class Product_piping(TemplateView):
     template_name = "content/product_piping.html"
 
+    def get_template_names(self):
+        if self.request.LANGUAGE_CODE == 'ru':
+            return ['content/product_piping.html',]
+        elif self.request.LANGUAGE_CODE == 'en':
+            return ['content/product_piping-en.html',]
+
 
 class Product_iron_casting(TemplateView):
     template_name = "content/product_iron_casting.html"
+
+    def get_template_names(self):
+        print(self.request.LANGUAGE_CODE)
+        if self.request.LANGUAGE_CODE == 'ru':
+            return ['content/product_iron_casting.html', ]
+        elif self.request.LANGUAGE_CODE == 'en':
+            return ['content/product_iron_casting-en.html', ]
 
 
 def robots_txt(request):

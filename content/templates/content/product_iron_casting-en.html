@@ -1,0 +1,537 @@
+<!--extend base.html-->
+{% extends 'content/base-en.html' %}
+<!--load tags-->
+{% load static %}
+{% load i18n %}
+
+<!--your title block here-->
+{% block title %}
+{% translate 'Cast iron' %}
+{% endblock title %}
+<!--title end-->
+{% block description %}
+{% translate 'Light hatch, medium hatch, heavy hatch, anti-vandal hatch, rain inlet, storm grate, benches' %}
+{% endblock description %}
+
+
+<!--HEADER -> BASE.HTML-->
+
+
+<!--your content block here-->
+{% block content %}
+
+<body style="background: rgba(238,245,238,1)" id="header">
+<!--OUR PRODUCTS KEY-->
+
+<section>
+    <div class="container">
+        <div class="container-fluid text-center">
+            <img data-aos="fade-right" draggable="false" src="{% static 'images/slide.jpg' %}"
+                 alt=""
+                 class="img-fluid rounded-circle my-3 py-0 shadow" style="max-width: 300px">
+        </div>
+    </div>
+</section>
+
+<!--PRODUCT 1-->
+<!--Main layout-->
+<div class="container dark-grey-text my-0">
+
+    <!--Grid row-->
+    <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-4 mx-auto my-auto">
+
+            <div class="bg-image hover-zoom ripple rounded-4 text-center"
+                 data-mdb-ripple-color="light">
+                <img draggable="false"
+                     src="{% static 'images/casting/LYUKI-.png' %}"
+                     class="btn-animate mx-3 my-3" alt="" style="max-height: 250px; max-width: 250px;">
+            </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-8">
+
+            <!--Content-->
+            <div class="mb-3">
+                <span class="badge badge-danger mr-1">{% translate 'Cast' %}</span>
+            </div>
+
+            <!-- Tabs navs -->
+            <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a
+                            class="nav-link active"
+                            id="ex1-tab-1"
+                            data-mdb-toggle="tab"
+                            href="#ex1-tabs-1"
+                            role="tab"
+                            aria-controls="ex1-tabs-1"
+                            aria-selected="true"
+                    >{% translate 'Hatch Light/Medium/Heavy' %}</a
+                    >
+                </li>
+            </ul>
+            <!-- Tabs navs -->
+
+            <!-- Tabs content -->
+            <div class="tab-content" id="ex1-content">
+                <div
+                        class="tab-pane active"
+                        id="ex1-tabs-1"
+                        role="tabpanel"
+                        aria-labelledby="ex1-tab-1"
+                >
+                    <table class="table table-sm table-bordered text-center">
+                        <thead>
+                        <tr>
+                            <th scope="col">{% translate 'Name' %}</th>
+                            <th scope="col">{% translate 'Diameter mm.' %}</th>
+                            <th scope="col">{% translate 'Height mm.' %}</th>
+                            <th scope="col">{% translate 'Body kg.' %}</th>
+                            <th scope="col">{% translate 'Lid kg.' %}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">{% translate 'Light hatch' %}</th>
+                            <td>770</td>
+                            <td>90</td>
+                            <td>37</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">{% translate 'Hatch Medium' %}</th>
+                            <td>870</td>
+                            <td>120</td>
+                            <td>47</td>
+                            <td>47</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">{% translate 'Hatch Heavy' %}</th>
+                            <td>870</td>
+                            <td>120</td>
+                            <td>58</td>
+                            <td>62</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <p class="my-0">{% blocktrans %}Purpose: Cast iron hatches for inspection wells are intended for installation on wells
+                water supply and sewerage networks:{% endblocktrans %}</p>
+            <p class="mt-3 mb-1 mt-1 ms-3"><i
+                    class="fas fa-circle-dot fa-xs me-2 text-primary"></i>{% blocktrans %}in a green area, pedestrian area
+                (light hatch) LYUKL (A15)-VK-1-60{% endblocktrans %}</p>
+            <p class="my-1 mt-1 ms-3"><i
+                    class="fas fa-circle-dot fa-xs me-2 text-primary"></i>{% blocktrans %}parking lots, sidewalks and roadways
+                city parks (middle hatch) - LUX (B125)-VK-1-60{% endblocktrans %}</p>
+            <p class="my-1 mt-1 ms-3"><i
+                    class="fas fa-circle-dot fa-xs me-2 text-primary"></i>{% blocktrans %}on city roads with
+                heavy traffic (heavy hatch) - LYUKT (S250)-VK-1-60 DSTU B.V. 2.5-26:2005(GOST 3634-99{% endblocktrans %}</p>
+
+            <div class="d-flex justify-content-center">
+                <a data-aos="fade-up" class="" href="#">
+                    <!-- Default input -->
+                    <button class="btn btn-danger btn-md my-0 p btn-animate" type="button">{% translate 'Get price' %}
+                        <i class="fas fa-shopping-cart ml-1"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--Content-->
+
+</div>
+<!--Grid column-->
+<hr>
+
+<!--PRODUCT 2-->
+<!--Grid row-->
+<div class="container">
+
+
+    <div class="row wow fadeIn">
+        <!--Grid column-->
+        <div class="col-md-4 mb-4 mx-auto my-0">
+            <div class="bg-image hover-zoom ripple rounded-4 text-center"
+                 data-mdb-ripple-color="light">
+                <img draggable="false"
+                     src="{% static 'images/casting/Lyuk-kvadrat2.png' %}"
+                     class="btn-animate mx-3 my-3" alt="" style="max-height: 250px; max-width: 250px;">
+            </div>
+        </div>
+        <!--Grid column-->
+
+        <!-- PRODUCT 3-->
+        <!--Grid column-->
+        <div class="col-md-8 mb-4">
+            <!--Content-->
+            <!-- Tabs navs -->
+            <div class="mb-3">
+                <a href="#">
+                    <span class="badge badge-danger mr-1">{% translate 'Casting' %}</span>
+                </a>
+            </div>
+
+            <!-- Tabs navs -->
+            <ul class="nav nav-tabs mb-3" id="ex2" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a
+                            class="nav-link active"
+                            id="ex2-tab-1"
+                            data-mdb-toggle="tab"
+                            href="#ex2-tabs-1"
+                            role="tab"
+                            aria-controls="ex2-tabs-1"
+                            aria-selected="true"
+                    >{% translate 'Anti-vandal hatch' %}</a
+                    >
+                </li>
+            </ul>
+            <!-- Tabs navs -->
+
+            <!-- Tabs content -->
+            <div class="tab-content" id="ex2-content">
+                <div
+                        class="tab-pane active"
+                        id="ex2-tabs-1"
+                        role="tabpanel"
+                        aria-labelledby="ex2-tab-1"
+                >
+                    <table class="table table-sm table-bordered text-center">
+                        <thead>
+                        <tr>
+                            <th scope="col">{% translate 'Name' %}</th>
+                            <th scope="col">{% translate 'Length mm.' %}</th>
+                            <th scope="col">{% translate 'Width mm.' %}</th>
+                            <th scope="col">{% translate 'Height mm.' %}</th>
+                            <th scope="col">{% translate 'Body kg.' %}</th>
+                            <th scope="col">{% translate 'Lid kg.' %}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">{% translate 'Anti-vandal hatch' %}</th>
+                            <td>830</td>
+                            <td>830</td>
+                            <td>125</td>
+                            <td>66</td>
+                            <td>84</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+
+            <p class="my-0">{% blocktrans %}Purpose: Cast iron hatches for inspection wells with a locking device are intended for
+                installations on urban roads with heavy traffic - LYUK T (S250)-VK-6-64x64 DSTU B V.
+                2.5-26:2005 (GOST 3634-99). Nominal load 250 kN (25.0 tf){% endblocktrans %}</p>
+
+            <div class="d-flex justify-content-center">
+                <a data-aos="fade-up" class="" href="#">
+                    <!-- Default input -->
+                    <button class="btn btn-danger btn-md my-0 p btn-animate" type="button">{% translate 'Get price' %}
+                        <i class="fas fa-shopping-cart ml-1"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Content-->
+
+<hr>
+<!--PRODUCT 3-->
+<!--Grid row-->
+<div class="container">
+
+
+    <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-4 mx-auto my-0">
+
+            <div class="bg-image hover-zoom ripple rounded-4 text-center"
+                 data-mdb-ripple-color="light">
+                <img draggable="false"
+                     src="{% static 'images/casting/dozhdepriemnik.png' %}"
+                     class="btn-animate mx-3 my-3" alt="" style="max-height: 150px; max-width: 150px;">
+                <img draggable="false"
+                     src="{% static 'images/casting/livnevka.png' %}"
+                     class="btn-animate mx-3 my-3" alt="" style="max-height: 150px; max-width: 150px;">
+            </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-8 mb-4">
+            <!--Content-->
+            <!-- Tabs navs -->
+            <div class="mb-3">
+                <a href="#">
+                    <span class="badge badge-info mr-1">{% translate 'Casting' %}</span>
+                </a>
+            </div>
+
+            <!-- Tabs navs -->
+            <ul class="nav nav-tabs mb-3" id="ex3" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a
+                            class="nav-link active"
+                            id="ex3-tab-1"
+                            data-mdb-toggle="tab"
+                            href="#ex3-tabs-1"
+                            role="tab"
+                            aria-controls="ex3-tabs-1"
+                            aria-selected="true"
+                    >{% translate 'Storm drains' %}</a
+                    >
+                </li>
+
+            </ul>
+            <!-- Tabs navs -->
+
+            <!-- Tabs content -->
+            <div class="tab-content" id="ex3-content">
+                <div
+                        class="tab-pane active"
+                        id="ex3-tabs-1"
+                        role="tabpanel"
+                        aria-labelledby="ex1-tab-1"
+                >
+                    <table class="table table-sm table-bordered text-center">
+                        <thead>
+                        <tr>
+                            <th scope="col">{% translate 'Name' %}</th>
+                            <th scope="col">{% translate 'Mass kg.' %}</th>
+                            <th scope="col">{% translate 'Length mm.' %}</th>
+                            <th scope="col">{% translate 'Width mm.' %}</th>
+                            <th scope="col">{% translate 'Height mm.' %}</th>
+                            <th scope="col">{% translate 'Live cross-sectional area 0.28 m2' %}</th>
+                            <th scope="col">{% translate 'Slot area %' %}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">{% translate 'Storm drain' %}</th>
+                            <td>119</td>
+                            <td>915</td>
+                            <td>570</td>
+                            <td>120</td>
+                            <td>0.28</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">{% translate 'Storm drain' %}</th>
+                            <td>95</td>
+                            <td>740</td>
+                            <td>400</td>
+                            <td>80</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <p class="my-0">{% blocktrans %}Purpose: storm water inlets and storm water wells are designed to receive surface water
+                wastewater from streets, courtyards and other areas. Storm water inlets are installed in parking lots and
+                roadway of city roads.{% endblocktrans %}
+            </p>
+
+            <div class="d-flex justify-content-center">
+                <a data-aos="fade-up" class="" href="#">
+                    <!-- Default input -->
+                    <button class="btn btn-danger btn-md my-0 p btn-animate" type="button">{% translate 'Get price' %}
+                        <i class="fas fa-shopping-cart ml-1"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--Grid row-->
+
+<hr>
+<!--PRODUCT 4-->
+<!--Grid row-->
+<div class="container">
+
+
+    <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-4 mx-auto my-0">
+
+            <div class="bg-image hover-zoom ripple rounded-4 text-center"
+                 data-mdb-ripple-color="light">
+                <img draggable="false"
+                     src="{% static 'images/casting/prod4.png' %}"
+                     class="btn-animate mx-3 my-3" alt="" style="max-height: 250px; max-width: 250px;">
+            </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-8 mb-4">
+            <!--Content-->
+            <!-- Tabs navs -->
+            <div class="mb-3">
+                <a href="#">
+                    <span class="badge badge-info mr-1">{% translate 'Casting' %}</span>
+                </a>
+            </div>
+
+            <!-- Tabs navs -->
+            <ul class="nav nav-tabs mb-3" id="ex4" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a
+                            class="nav-link active"
+                            id="ex4-tab-1"
+                            data-mdb-toggle="tab"
+                            href="#ex3-tabs-1"
+                            role="tab"
+                            aria-controls="ex3-tabs-1"
+                            aria-selected="true"
+                    >{% translate 'Benches' %}</a
+                    >
+                </li>
+
+            </ul>
+            <!-- Tabs navs -->
+
+            <!-- Tabs content -->
+            <div class="tab-content" id="ex4-content">
+                <div
+                        class="tab-pane active"
+                        id="ex4-tabs-1"
+                        role="tabpanel"
+                        aria-labelledby="ex1-tab-1"
+                >
+                    <table class="table table-sm table-bordered text-center">
+                        <thead>
+                        <tr>
+                            <th scope="col">{% translate 'Name' %}</th>
+                            <th scope="col">{% translate 'Length mm.' %}</th>
+                            <th scope="col">{% translate 'Width mm.' %}</th>
+                            <th scope="col">{% translate 'Height with backrest mm.' %}</th>
+                            <th scope="col">{% translate 'Mass' %}</th>
+                            <th scope="col">{% translate 'Leg mass' %}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">{% translate 'Park bench' %}</th>
+                            <td>1750</td>
+                            <td>550</td>
+                            <td>800</td>
+                            <td>65</td>
+                            <td>23</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <p class="my-0">{% blocktrans %}Purpose: park benches, consisting of two legs, made of cast iron SCH 18
+                with seat and backrest made of wood. Benches are intended for equipping recreation areas in country houses.
+                areas, car parks, children's and school playgrounds, vehicle stops, etc.{% endblocktrans %}
+            </p>
+
+            <div class="d-flex justify-content-center">
+                <a data-aos="fade-up" class="" href="#">
+                    <!-- Default input -->
+                    <button class="btn btn-danger btn-md my-0 p btn-animate" type="button">{% translate 'Get price' %}
+                        <i class="fas fa-shopping-cart ml-1"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--Grid row-->
+
+<div class="container">
+
+
+    <div class="row d-flex justify-content-center wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-6 text-center">
+
+            <h4 class="my-4 h2 fw-bold">{% translate 'Others' %} <u class="text-danger">{% translate 'products' %}</u></h4>
+
+        </div>
+        <!--Grid column-->
+
+    </div>
+</div>
+<!--Grid row-->
+
+<!--Grid row-->
+<div class="container">
+
+
+    <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-12 col-md-6 text-center">
+
+        <div class="bg-image ripple rounded-4 mb-4 text-center py-3"
+             data-mdb-ripple-color="success" data-mdb-ripple-unbound="true" data-mdb-ripple-radius="50">
+            <img data-aos="zoom-in-right" draggable="false"
+                 src="{% static 'images/new_photos/Wedge-removebg-preview.png' %}"
+                 class="btn-animate mx-3 my-3" alt="" style="max-height: 150px; max-width: 150px;">
+            <img data-aos="zoom-in-right" data-aos-delay="100" draggable="false"
+                 src="{% static 'images/new_photos/03KTM-removebg-preview.png' %}"
+                 class="btn-animate mx-3 my-3" alt="" style="max-height: 150px; max-width: 150px;">
+            <img data-aos="zoom-in-right" data-aos-delay="200" draggable="false"
+                 src="{% static 'images/new_photos/Anker_3-removebg-preview.png' %}"
+                 class="btn-animate mx-3 my-3" alt="" style="max-height: 150px; max-width: 150px;">
+        </div>
+        <a href="badges&Pads">
+            <button data-aos="fade-up" class="btn btn-success btn-animate">{% translate 'More' %}</button>
+        </a>
+    </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-12 col-md-6 text-center">
+
+            <div class="bg-image ripple rounded-4 mb-4 text-center py-3 "
+                 data-mdb-ripple-color="primary" data-mdb-ripple-unbound="true" data-mdb-ripple-radius="50">
+                <img draggable="false"
+                     src="{% static 'images/piping/zatvor-19ch16br.png' %}"
+                     class="my-auto pt-3 me-3 btn-animate" alt="">
+                <img draggable="false"
+                     src="{% static 'images/piping/zatvor-19ch21br.png' %}" class="pt-3 me-3 btn-animate"
+                     alt="">
+                <img draggable="false"
+                     src="{% static 'images/piping/prod1.png' %}" class="img me-3 btn-animate" alt="">
+                <img draggable="false" src="{% static 'images/vantuz1.png' %}"
+                     class="mt-3 btn-animate" alt="">
+            </div>
+            <a href="piping">
+                <button data-aos="fade-up" class="btn btn-primary btn-animate">{% translate 'More' %}</button>
+            </a>
+        </div>
+        <!--Grid column-->
+
+
+    </div>
+    <!--Grid row-->
+</div>
+</body>
+
+{% endblock content %}
+<!--content end-->
+
+
+<!--FOOTER -> BASE.HTML-->

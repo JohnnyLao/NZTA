@@ -1,16 +1,16 @@
 <!--extend base.html-->
-{% extends 'content/base.html' %}
+{% extends 'content/base-en.html' %}
 <!--load tags-->
 {% load static %}
 {% load i18n %}
 
 <!--your title block here-->
 {% block title %}
-{% translate 'ООО «М-ЛИТ ENENENE»' %}
+{% translate 'LLC "M-LIT"' %}
 {% endblock title %}
 <!--title end-->
 {% block description %}
-{% translate 'Производство трубопроводной арматуры и запасных частей для подвижного состава' %}
+{% translate 'Production of pipeline fittings and spare parts for rolling stock' %}
 {% endblock description %}
 
 
@@ -69,66 +69,66 @@
             <div class="col-lg-6 my-auto">
                 <div class="card cascading-right"
                      style="background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px)">
-                    <div class="card-body py-5 px-md-5 shadow-lg"><h2 class="fw-bold mb-4">{% translate 'О компании' %}</h2>
-                        <p class="fw-bold">{% translate 'ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "М-ЛИТ"' %} </p>
+                    <div class="card-body py-5 px-md-5 shadow-lg"><h2 class="fw-bold mb-4">{% translate 'About the company' %}</h2>
+                        <p class="fw-bold">{% translate 'LIMITED LIABILITY COMPANY "M-LIT"' %} </p>
                         <div class="row">
                             <div data-aos="zoom-in" class="col-lg-6"><p>
                                 <i class="fas fa-check-circle text-success me-2"></i>
-                                <span>{% translate 'Трубопроводная арматура' %}</span>
+                                <span>{% translate 'Pipe fittings' %}</span>
                             </p>
                             </div>
                             <div data-aos="zoom-in" data-aos-delay="400" class="col-lg-6">
                                 <p>
                                     <i class="fas fa-check-circle text-success me-2"></i>
-                                    <span>{% translate 'Запасные части для подвижного состава' %}</span>
+                                    <span>{% translate 'Spare parts for rolling stock' %}</span>
                                 </p>
                             </div>
                         </div>
                         <p class="">
                             {% blocktrans %}
-                            (бывшее АО «Никопольский завод трубопроводной арматуры») - крупное
-                            специализированное литейное предприятие, известное в Украине и за рубежом по производству
-                            изделий из чугуна.
-                            Предприятие оснащенно универсальным и специализированным оборудованием известных
-                            производителей :
+                            (formerly JSC Nikopol Pipeline Fittings Plant) - large
+                            a specialized foundry, known in Ukraine and abroad for the production
+                            cast iron products.
+                            The enterprise is equipped with universal and specialized equipment of famous
+                            manufacturers:
                             {% endblocktrans %}
                         </p>
 
                         <li class="fw-bold">
                             {% blocktrans %}
-                            Трехтонная индукционная печь «Inductotherm» (Inductotherm Europe Ltd., Великобритания)
-                            2017г.
+                            Three-ton induction furnace “Inductotherm” (Inductotherm Europe Ltd., UK)
+                            2017
                             {% endblocktrans %}
                         </li>
                         <li class="fw-bold">
                             {% blocktrans %}
-                            Автоматическая формовочная линия « DISA MATCH 32Х32» (DISA Industries AS
-                            (Дания 2017г.)
+                            Automatic molding line "DISA MATCH 32Х32" (DISA Industries AS
+                            (Denmark 2017)
                             {% endblocktrans %}
                         </li>
                         <li class="fw-bold">
                             {% blocktrans %}
-                            Автоматическое смесеприготовительное отделение «Eirich» Maschinenfabrik Gustav Eirich
-                            GmbH & Co KG (Германия), 2017г.
+                            Automatic mixture preparation department "Eirich" Maschinenfabrik Gustav Eirich
+                            GmbH & Co KG (Germany), 2017
                             {% endblocktrans %}
                         </li>
                         <li class="fw-bold">
                             {% blocktrans %}
-                            Стержневые машины «Laempe» Laempe & Mössner GmbH (Німеччина2016г.).Способ изготовления
-                            Cold-box процесс. Участок больших стержней OMEGA Foundry Machinery Limited (Великобритания
-                            2016г.)
+                            Core machines "Laempe" Laempe & Mössner GmbH (Nimechchina 2016). Manufacturing method
+                            Cold-box process. Large Rod Site OMEGA Foundry Machinery Limited (UK
+                            2016)
                             {% endblocktrans %}
                         </li>
                         <li class="fw-bold">
                             {% blocktrans %}
-                            Оборудование изготовления стержневого и модельного оснащения Haas Automation Inc.
-                            (США), 2017г.
+                            Core and pattern making equipment Haas Automation Inc.
+                            (USA), 2017
                             {% endblocktrans %}
                         </li>
                         <li class="fw-bold">
                             {% blocktrans %}
-                            Спектральная лаборатория контроля качества металла Thermo Fisher Scientific
-                            (Швейцария), 2017г.
+                            Thermo Fisher Scientific Spectral Laboratory for Metal Quality Control
+                            (Switzerland), 2017
                             {% endblocktrans %}
                         </li>
                     </div>
@@ -138,11 +138,11 @@
         <div class="card mt-5" style="background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px)">
             <div class="card-body">
                 {% blocktrans %}
-                Завод располагает полным циклом производства - литейным цехом, цехом механической обработки,
-                ремонтно-инструментальным цехом, сборочным участком, испытательным комплексом и складским
-                хозяйством.
-                Основная специализация завода – производство трубопроводной арматуры и запасные части
-                подвижного состава.
+                The plant has a full production cycle - a foundry shop, a machining shop,
+                repair and tool shop, assembly area, testing complex and warehouse
+                farming
+                The main specialization of the plant is the production of pipeline fittings and spare parts
+                rolling stock.
                 {% endblocktrans %}
             </div>
         </div>
@@ -151,46 +151,46 @@
             <div class="col">
                 <div class="card" style="background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px)">
                     <div class="card-body">
-                        <h5>{% translate '1.Трубопроводная арматура' %}</h5>
+                        <h5>{% translate '1.Pipe fittings' %}</h5>
                         <p>
                             {% blocktrans %}
-                            Предприятие выпускает промышленную трубопроводную арматуру, которая используется в качестве
-                            запорных устройств на трубопроводах для перекрытия рабочей среды. Продукцию нашего завода
-                            можно
-                            встретить повсюду - от огромных металлургических предприятий, ТЭЦ, карьеров до оросительных
-                            систем в сельском хозяйстве, в коммунальном хозяйстве любого населенного пункта.
+                            The company produces industrial pipeline fittings, which are used as
+                            shut-off devices on pipelines to shut off the working environment. Products from our factory
+                            Can
+                            meet everywhere - from huge metallurgical enterprises, thermal power plants, quarries to irrigation
+                            systems in agriculture, in public utilities of any settlement.
                             {% endblocktrans %}
                         </p>
-                        <p class="fw-bold">{% translate 'Номенклатура выпускаемых изделий:' %}</p>
-                        <li class="fw-bold">{% translate 'Задвижки 30ч6бр PN10-16 DN50-500' %}</li>
-                        <li class="fw-bold">{% translate 'Задвижки 30ч906бр PN10-16 DN50-500 (для воды и пара с ручным управлением и электроприводом);' %}
+                        <p class="fw-bold">{% translate 'Product range:' %}</p>
+                        <li class="fw-bold">{% translate 'Valve valves 30x6br PN10-16 DN50-500' %}</li>
+                        <li class="fw-bold">{% translate 'Valve valves 30ch906br PN10-16 DN50-500 (for water and steam with manual control and electric drive);' %}
                         </li>
-                        <li class="fw-bold">{% translate 'Задвижки 30ч6бк PN10-16 DN50-500 (для нефтепродуктов и масел)' %}</li>
-                        <li class="fw-bold">{% translate 'Задвижки 30ч47бк4 PN6 DN50-150 (для природного газа)' %}</li>
-                        <li class="fw-bold">{% translate 'Задвижки 30ч47бр PN6 DN50-150 (для воды пара, нефтепродукты, масла)' %}</li>
-                        <li class="fw-bold">{% translate 'Затворы обратные поворотные без фланцевые PN16 DN50-400' %}</li>
-                        <li class="fw-bold">{% translate 'Затвори обратные поворотные  фланцевые PN16 DN50-200' %}</li>
+                        <li class="fw-bold">{% translate 'Valve valves 30h6bk PN10-16 DN50-500 (for petroleum products and oils)' %}</li>
+                        <li class="fw-bold">{% translate 'Valve valves 30ch47bk4 PN6 DN50-150 (for natural gas)' %}</li>
+                        <li class="fw-bold">{% translate 'Valve valves 30х47br PN6 DN50-150 (for water, steam, petroleum products, oils)' %}</li>
+                        <li class="fw-bold">{% translate 'Rotary check valves without flange PN16 DN50-400' %}</li>
+                        <li class="fw-bold">{% translate 'Flange check valve PN16 DN50-200' %}</li>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px)">
                     <div class="card-body">
-                        <h5>{% translate '2. Запасные части для подвижного состава' %}</h5>
+                        <h5>{% translate '2. Spare parts for rolling stock' %}</h5>
                         <p>
                             {% blocktrans %}
-                            Продукция завода соответствует системе управления качества ISO 9001, производится и
-                            отвечает требованиям нормативной документации, имеет гигиенические сертификаты, безопасна в
-                            эксплуатации и для окружающей среды.
+                            The plant's products comply with the ISO 9001 quality management system, and are produced
+                            meets the requirements of regulatory documentation, has hygienic certificates, is safe in
+                            operation and for the environment.
                             {% endblocktrans %}
                         </p>
-                        <p class="fw-bold">{% translate 'Номенклатура выпускаемых изделий:' %}</p>
-                        <li class="fw-bold">{% translate 'Колодка тормозная  гребневая локомотивная тип «М»' %}</li>
-                        <li class="fw-bold">{% translate 'Колодка тормозная фосфористая для електропоездов тип «Ф»' %}</li>
-                        <li class="fw-bold">{% translate 'Колодки тормозная  для пасажирських вагонов тип «С»' %}</li>
-                        <li class="fw-bold">{% translate 'Колодка тормозная КТ-РИЦ для вагонов стандарта РИЦ' %}</li>
-                        <li class="fw-bold">{% translate 'Колодка тормозная электровоза ЧС' %}</li>
-                        <li class="fw-bold">{% translate 'Клин фрикционный для тележки грузового вагона' %}</li>
+                        <p class="fw-bold">{% translate 'Product range:' %}</p>
+                        <li class="fw-bold">{% translate 'Locomotive ridge brake pad type "M"' %}</li>
+                        <li class="fw-bold">{% translate 'Phosphorous brake pad for electric trains type "F"' %}</li>
+                        <li class="fw-bold">{% translate 'Brake pads for passenger cars type "C"' %}</li>
+                        <li class="fw-bold">{% translate 'Brake block KT-RITs for cars of the RITs standard' %}</li>
+                        <li class="fw-bold">{% translate 'Brake block of the electric locomotive ChS' %}</li>
+                        <li class="fw-bold">{% translate 'Friction wedge for freight car bogie' %}</li>
                     </div>
                 </div>
             </div>
@@ -208,8 +208,8 @@
 <section>
     <div class="container">
         <h2 class="fw-bold text-center my-5">
-            <span data-aos="fade-down" data-aos-delay="100">{% translate 'Ж/Д' %}</span>
-            <u data-aos="fade-down" data-aos-delay="200" class="text-success">{% translate 'Продукция' %}</u>
+            <span data-aos="fade-down" data-aos-delay="100">{% translate 'Railway' %}</span>
+            <u data-aos="fade-down" data-aos-delay="200" class="text-success">{% translate 'Products' %}</u>
         </h2>
         <div class="container-fluid text-center">
             <img draggable="false" src="{% static 'images/Train-PNG-File-Download-Free.png' %}" alt=""
@@ -237,41 +237,41 @@
                      alt="">
             </div>
             <div class="col-12 col-md-5 text-center mx-auto">
-                <h4 class="fw-bold">{% translate 'Клины' %}</h4>
+                <h4 class="fw-bold">{% translate 'Klins' %}</h4>
                 <div class="mb-2 text-success small">
                     <i class="fas fa-globe-americas me-2"></i>
                     <span>Global</span>
                 </div>
                 <p class="text-muted">
                     {% blocktrans %}
-                    Клинья обеспечивают соединение между надрессорной балкой и боковой рамой. Трение о вертикальную
-                    стену
-                    площадка гасит колебания повозки
+                    The wedges provide the connection between the bolster and the side frame. Friction on vertical
+                    wall
+                    the platform dampens the vibrations of the cart
                     {% endblocktrans %}
                 </p>
                 <a href="badges&Pads" class="d-none d-md-block">
                     <button data-aos="fade-up" class="btn btn-success btn-animate px-3">
-                        <span>{% translate 'Подробнее' %}
+                        <span>{% translate 'More details' %}
                             <i class="fas fa-train ms-1"></i>
                         </span>
                     </button>
                 </a>
             </div>
             <div class="col-12 col-md-5 text-center mx-auto">
-                <h4 class="fw-bold">{% translate 'Колодки' %}</h4>
+                <h4 class="fw-bold">{% translate 'Pads' %}</h4>
                 <div class="mb-2 text-success small">
                     <i class="fas fa-check-circle me-2"></i>
                     <span>Quality</span>
                 </div>
                 <p class="text-muted">
                     {% blocktrans %}
-                    Это тормозные колодки, используемые для обеспечения необходимой эффективности торможения в тормозных
-                    узлах железнодорожных вагонов.
+                    These are brake pads used to provide the required braking performance in brake applications.
+                    railway car units.
                     {% endblocktrans %}
                 </p>
                 <a href="badges&Pads">
                     <button data-aos="fade-up" class="btn btn-success btn-animate px-3">
-                        <span>{% translate 'Подробнее' %}
+                        <span>{% translate 'More details' %}
                             <i class="fas fa-train ms-1"></i>
                         </span>
                     </button>
@@ -288,8 +288,8 @@
 <!--OUR PRODUCTS WATER-->
 <section class="container my-5 text-center text-lg-start">
     <h3 class="fw-bold mb-5 text-center">
-        <span>{% translate 'Изделия' %}</span>
-        <u class="text-primary">{% translate 'Трубопровода' %}</u>
+        <span>{% translate 'Products' %}</span>
+        <u class="text-primary">{% translate 'Pipeline' %}</u>
     </h3>
     <div class="row gx-lg-5 my-5">
         <div class="col-lg-4 mb-3 mb-lg-0 text-center">
@@ -300,18 +300,18 @@
                      alt="">
                 <img draggable="false" src="{% static 'images/piping/zatvor-19ch21br.png' %}" class="mt-5 pt-3" alt="">
             </div>
-            <h5 class="fw-bold">{% translate 'Затвор' %}</h5>
+            <h5 class="fw-bold">{% translate 'Prison' %}</h5>
             <div class="mb-3 text-primary small">
             </div>
             <p class="text-muted">
                 {% blocktrans %}
-                Клапаны обратные чугунные фланцевые, предназначенные для предотвращения обратного течения рабочей среды
-                в трубопроводах, транспортирующих воду, пар, нефть, масла и другие нефтепродукты.
+                Cast iron flanged check valves designed to prevent backflow of the working medium
+                in pipelines transporting water, steam, oil, oils and other petroleum products.
                 {% endblocktrans %}
             </p>
             <a href="piping">
                 <button data-aos="fade-up" class="btn btn-primary btn-animate px-3">
-                        <span>{% translate 'Подробнее' %}
+                        <span>{% translate 'More details' %}
                             <i class="fas fa-droplet ms-1"></i>
                         </span>
                 </button>
@@ -325,19 +325,19 @@
                     <img draggable="false" src="{% static 'images/piping/prod1.png' %}" class="img" alt="">
                 </div>
                 <h5 class="fw-bold">
-                    {% translate 'Задвижки чугунные' %}</h5>
+                    {% translate 'Cast iron valves' %}</h5>
                 <div class="mb-3 text-danger small">
                 </div>
                 <p class="text-muted">
                     {% blocktrans %}
-                    Назначение и область применения: Клапаны параллельные двухдисковые предназначены
-                    для установки в качестве запорного устройства на трубопроводах различных отраслей
-                    промышленности.
+                    Purpose and scope of application: Double-disc parallel valves are designed
+                    for installation as a shut-off device on pipelines of various industries
+                    industry.
                     {% endblocktrans %}
                 </p>
                 <a href="piping">
                     <button data-aos="fade-up" class="btn btn-primary btn-animate px-3">
-                        <span>{% translate 'Подробнее' %}
+                        <span>{% translate 'More details' %}
                             <i class="fas fa-droplet ms-1"></i>
                         </span>
                     </button>
@@ -351,19 +351,19 @@
                      style="height: 265px">
                     <img draggable="false" src="{% static 'images/piping/vantuz1.png' %}" class="mt-4" alt="">
                 </div>
-                <h5 class="fw-bold mb-3">{% translate 'Вантузы' %}</h5>
+                <h5 class="fw-bold mb-3">{% translate 'Plungers' %}</h5>
                 <div class="mb-3 text-warning small mx-auto">
                     <p class="text-muted text-start">
                         {% blocktrans %}
-                        Плунжеры аэрационные чугунные предназначены для автоматического удаления воздуха при его
-                        скоплении, а также для автоматического его забора при образовании вакуума в системах
-                        водоснабжения, водонагрева и других сетевых устройствах, транспортирующих воду с температурой до
-                        363К (900 С).
+                        Cast iron aeration plungers are designed to automatically remove air when it is
+                        accumulation, as well as for its automatic sampling when a vacuum forms in the systems
+                        water supply, water heating and other network devices transporting water with temperatures up to
+                        363K (900 C).
                         {% endblocktrans %}
                     </p>
                     <a href="piping">
                         <button data-aos="fade-up" class="btn btn-primary btn-animate px-3">
-                        <span>{% translate 'Подробнее' %}
+                        <span>{% translate 'More details' %}
                             <i class="fas fa-droplet ms-1"></i>
                         </span>
                         </button>
@@ -386,61 +386,61 @@
             </div>
             <div class="col-lg-7 col-xl-8 text-center text-md-start">
                 <div class="card-body px-md-5">
-                    <h3 class="fw-bold mb-4 text-danger"><u>{% translate 'Чугунное литьё' %}</u></h3>
+                    <h3 class="fw-bold mb-4 text-danger"><u>{% translate 'Cast iron' %}</u></h3>
                     <p class="text-muted mb-4">
                         {% blocktrans %}
-                        Предприятие нашего клиента специализируется на выпуске широкого спектра
-                        чугунных изделий. Благодаря тщательному вниманию к деталям и высочайшему мастерству мы
-                        предоставляем качественные решения, отвечающие различным потребностям.
+                        Our client’s company specializes in producing a wide range of
+                        cast iron products. Through meticulous attention to detail and superior craftsmanship, we
+                        We provide quality solutions that meet various needs.
                         {% endblocktrans %}
                     </p>
                     <div class="row">
                         <div class="col-6 col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
-                                <span>{% translate 'Люк лёгкий' %}</span>
+                                <span>{% translate 'Light hatch' %}</span>
                             </p>
                         </div>
                         <div class="col-6 col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
-                                <span>{% translate 'Люк средний' %}</span>
+                                <span>{% translate 'Hatch average' %}</span>
                             </p>
                         </div>
                         <div class="col-lg-4">
                             <p><i class="fas fa-check text-success me-2"></i>
-                                <span>{% translate 'Люк тяжелый' %}</span>
+                                <span>{% translate 'Hatch heavy' %}</span>
                             </p>
                         </div>
                         <div class="col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
-                                <span>{% translate 'Люк антивандальный' %}</span>
+                                <span>{% translate 'Anti-vandal hatch' %}</span>
                             </p>
                         </div>
                         <div class="col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
-                                <span>{% translate 'Дождеприемник' %}</span>
+                                <span>{% translate 'Rain catcher' %}</span>
                             </p>
                         </div>
                         <div class="col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
-                                <span>{% translate 'Решетка ливневая' %}</span>
+                                <span>{% translate 'Storm grate' %}</span>
                             </p>
                         </div>
                         <div class="col-lg-4">
                             <p>
                                 <i class="fas fa-check text-success me-2"></i>
-                                <span>{% translate 'Скамейки' %}</span>
+                                <span>{% translate 'Benches' %}</span>
                             </p>
                         </div>
                     </div>
                     <div class="col-12 text-center">
                         <a data-aos="fade-up" href="iron_casting">
                             <button class="btn btn-danger btn-animate px-3">
-                            <span>{% translate 'Подробнее' %}
+                            <span>{% translate 'More details' %}
                                 <i class="fas fa-fill-drip ms-1"></i>
                             </span>
                             </button>
@@ -460,8 +460,8 @@
 <!--OUR ADVANTAGES-->
 <section class="container my-5 mb-10">
     <h2 class="fw-bold mb-5 text-center">
-        <u class="text-primary">{% translate 'Стратегический' %}</u>
-        <span>{% translate 'партнёр' %}</span>
+        <u class="text-primary">{% translate 'Strategic' %}</u>
+        <span>{% translate 'partner' %}</span>
     </h2>
     <div class="row gx-lg-5 align-items-center">
         <div class="col-lg-5 mb-5 mb-lg-0">
@@ -475,12 +475,12 @@
                             <u class="text-primary">NOW</u></h3>
                             <p class="text-light" style="">
                                 {% blocktrans %}
-                                Наш завод оснащен самым современным и дорогостоящим
-                                оборудованием
-                                для обработки металла и чугуна, включая современные печи и обрабатывающие станки. Мы
-                                отдаем приоритет инновационным технологиям, чтобы обеспечить высокое качество и точность
-                                нашей продукции. Используя передовые методы и новейшее оборудование, мы гарантируем
-                                надежность и качество на каждом этапе производства.
+                                Our plant is equipped with the most modern and expensive
+                                equipment
+                                for metal and cast iron processing, including modern furnaces and processing machines. We
+                                We give priority to innovative technologies to ensure high quality and accuracy
+                                our products. Using advanced techniques and the latest equipment, we guarantee
+                                reliability and quality at every stage of production.
                                 {% endblocktrans %}
                             </p></div>
                     </div>
@@ -494,12 +494,12 @@
                         <i class="fas fa-industry fa-lg text-white"></i></div>
                 </div>
                 <div class="flex-grow-1 ms-4">
-                    <p class="fw-bold mb-1">{% translate 'Завод полного цикла' %}</p>
+                    <p class="fw-bold mb-1">{% translate 'Full cycle plant' %}</p>
                     <p class="text-muted mb-0">
                         {% blocktrans %}
-                        Наш интегрированный производственный процесс обеспечивает контроль
-                        качества и своевременную доставку, при этом все, от проектирования до отделки, осуществляется
-                        под одной крышей.
+                        Our integrated manufacturing process provides control
+                        quality and timely delivery, with everything from design to finishing carried out
+                        under one roof.
                         {% endblocktrans %}
                     </p>
                 </div>
@@ -509,11 +509,11 @@
                     <div class="p-3 rounded-4 shadow" style="background-color: hsl(231, 52.6%, 20%)"><i
                             class="fas fa-shield-alt fa-lg text-white fa-fw"></i></div>
                 </div>
-                <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">{% translate 'Современное оборудование' %}</p>
+                <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">{% translate 'Modern equipment' %}</p>
                     <p class="text-muted mb-0">
                         {% blocktrans %}
-                        Оснащенное самым современным оборудованием, мы эффективно производим
-                        высококачественные чугунные изделия с точностью и аккуратностью.
+                        Equipped with the most modern equipment, we efficiently produce
+                        high quality cast iron products with precision and accuracy.
                         {% endblocktrans %}
                     </p></div>
             </div>
@@ -522,12 +522,12 @@
                     <div class="p-3 rounded-4 shadow" style="background-color: hsl(231, 52.6%, 20%)"><i
                             class="fas fa-shipping-fast fa-lg text-white fa-fw"></i></div>
                 </div>
-                <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">{% translate 'Быстрая доставка' %}</p>
+                <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">{% translate 'Fast delivery' %}</p>
                     <p class="text-muted mb-0">
                         {% blocktrans %}
-                        Мы уделяем приоритетное внимание быстрому выполнению заказов без ущерба
-                        для качества, обеспечивая надежную доставку и соблюдение сроков проекта. Обеспечение доступности
-                        нашей продукции по всему миру
+                        We give priority to quickly fulfilling orders without damage
+                        for quality, ensuring reliable delivery and meeting project deadlines. Ensuring accessibility
+                        our products all over the world
                         {% endblocktrans %}
                     </p></div>
             </div>
@@ -536,11 +536,11 @@
                     <div class="p-3 rounded-4 shadow" style="background-color: hsl(231, 52.6%, 20%)"><i
                             class="fas fa-chart-pie fa-lg text-white fa-fw"></i></div>
                 </div>
-                <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">{% translate 'Качество гарантировано!' %}</p>
+                <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">{% translate 'Quality guaranteed!' %}</p>
                     <p class="text-muted mb-0">
                         {% blocktrans %}
-                        Наши строгие меры контроля качества, от сырья до окончательной проверки,
-                        гарантируют превосходную продукцию, превосходящую ожидания клиентов.
+                        Our strict quality control measures, from raw materials to final inspection,
+                        guarantee superior products that exceed customer expectations.
                         {% endblocktrans %}
                     </p>
                 </div>
@@ -553,8 +553,8 @@
 <!--OUR CLIENT-->
 <section class="container my-5 text-center">
     <h2 class="fw-bold mb-5">
-        <span>{% translate 'Наши' %}</span>
-        <u class="text-primary">{% translate 'Клиенты' %}</u>
+        <span>{% translate 'Ours' %}</span>
+        <u class="text-primary">{% translate 'Clients' %}</u>
     </h2>
     <div class="row gx-lg-5 gy-4">
         <div class="col-6 col-xl-3 col-md-4">
@@ -626,8 +626,8 @@
 <!--STATS-->
 <section class="container my-5 text-center">
     <h2 class="fw-bold mb-7">
-        <span>{% translate 'О нас в' %}</span>
-        <u class="text-primary">{% translate 'цифрах' %}</u>
+        <span>{% translate 'About us at' %}</span>
+        <u class="text-primary">{% translate 'in numbers' %}</u>
     </h2>
     <div class="row gx-lg-5">
         <div class="col-lg-4 col-md-12 mb-8 mb-lg-0">
@@ -637,7 +637,7 @@
                             class="fas fa-cubes fa-2x text-white"></i></div>
                 </div>
                 <div class="card-body"><h3 class="fw-bold text-primary mb-3">10</h3> <h5
-                        class="text-muted mb-3">{% translate 'Лет на рынке' %}</h5>
+                        class="text-muted mb-3">{% translate 'Years on the market' %}</h5>
                 </div>
             </div>
         </div>
@@ -649,7 +649,7 @@
                             class="fas fa-chart-pie fa-2x text-white"></i></div>
                 </div>
                 <div class="card-body"><h3 class="fw-bold text-primary mb-3"> > 150 000</h3> <h5
-                        class="text-muted mb-3">{% translate 'Произведено компонентов' %}</h5>
+                        class="text-muted mb-3">{% translate 'Components produced' %}</h5>
                 </div>
             </div>
         </div>
@@ -661,7 +661,7 @@
                             class="fas fa-cogs fa-2x text-white"></i></div>
                 </div>
                 <div class="card-body"><h3 class="fw-bold text-primary mb-3">92%</h3> <h5
-                        class="text-muted mb-3">{% translate 'Клиентов заказывают повторно' %}</h5>
+                        class="text-muted mb-3">{% translate 'Customers re-order' %}</h5>
                 </div>
             </div>
         </div>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<!--load tags-->
+{% load static %}
+{% load i18n %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>{% block title %} {% endblock title %}</title>
+    <meta name="description" content="{% block description %} {% endblock description %}">
+    <!-- MDB icon -->
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon"/>
+    <!-- Font Awesome -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!--    GOOGLE FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- MDB -->
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}"/>
+    <!--    SWIPER-->
+    <link rel="stylesheet" href="{% static 'swiper/package/swiper-bundle.min.css' %}"/>
+    <!--    AOS-->
+    <link href="{% static 'aos-master/dist/aos.css' %}" rel="stylesheet">
+    <!--    GOOGLE MAP-->
+    <link rel="stylesheet" href="{% static 'css/map.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <!--    JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .cascading-right { margin-left: -200px; margin-top: -50px } @media (max-width: 991.98px) { .cascading-right { margin-left: 0; } }
+    </style>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(98158804, "init", {
+             clickmap:true,
+             trackLinks:true,
+             accurateTrackBounce:true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/98158804" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!--    Webmaster-->
+    <meta name="yandex-verification" content="a0d406aaee0548bc" />
+    <!--    Google Search-->
+    <meta name="google-site-verification" content="ugCNr1QbJhnb3cgi1Jle-3F3LsRaP7kY-MvB9uO32Qk"/>
+</head>
+
+
+<!--header on every page-->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg py-1 bg-light bg-gradient sticky-top">
+    <!-- Container wrapper -->
+    <div class="container-fluid shadow-lg">
+        <div data-aos="fade-right" class="col-2">
+            <!-- Navbar brand -->
+            <a class="navbar-brand" href="/">
+                <img class="im-fluid mx-auto btn-animate" draggable="false" src="{% static 'images/logo.png' %}" alt=""
+                     style="max-width: 70px">
+            </a>
+        </div>
+        <div class="col-8 text-center">
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <!-- Link -->
+                    <li class="nav-item btn-animate" data-mdb-ripple-color="red">
+                        <a data-aos="fade-right" data-aos-delay="600" class="nav-link " href="/">{% translate 'Home'%}</a>
+                    </li>
+                    <li class="nav-item btn-animate">
+                        <a data-aos="fade-right" data-aos-delay="400" class="nav-link " href="/#about_us">{% translate 'About the Company' %}</a>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown mx-auto">
+                        <a data-aos="fade-right" data-aos-delay="200"
+                           class="nav-link dropdown-toggle  btn-animate"
+                           href="#" id="navbarDropdown" role="button"
+                           data-mdb-toggle="dropdown" aria-expanded="false">
+                            {% translate 'Products' %}
+                        </a>
+                        <!-- Dropdown menu -->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="success" href="badges&Pads">{% translate 'Wedges / Pads' %}</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider border border-primary"/>
+                            <li>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="piping">{% translate 'Cast iron valves' %}</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="piping">{% translate 'Gates' %}</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="piping">{% translate 'Suction cups' %}</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider border border-danger"/>
+                            </li>
+                            <li>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="danger" href="iron_casting">{% translate 'Iron Casting' %}</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li data-aos="fade-right" class="nav-item">
+                        <a class="nav-link btn-animate" href="#contacts">{% translate 'Contacts' %}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-2 text-center">
+            <ul class="navbar-nav">
+                <!-- Language dropdown -->
+                <li class="nav-item dropdown mx-auto">
+                    <a
+                            class="nav-link dropdown-toggle btn-animate"
+                            data-aos="flip-right"
+                            href="#"
+                            id="languageDropdown"
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                            style="color: black">
+                        {% if request.LANGUAGE_CODE == 'ru' %}
+                        <i class="flag-russia flag" id="current_language_flag"></i>
+                        {% elif request.LANGUAGE_CODE == 'en' %}
+                        <i class="flag-us flag" id="current_language_flag"></i>
+                        {% endif %}
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <li>
+                            <a class="dropdown-item" href="{% url 'index:set_language' 'en' %}">
+                                <i class="flag-us flag"></i>English
+                            </a>
+                        </li>
+                        <li>
+                        </li>
+                        <li>
+                            <a class="dropdown-item " href="{% url 'index:set_language' 'ru' %}"><i
+                                    class="flag-russia flag"></i>Русский</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item bg-secondary text-muted" href="#"><i class="flag-ukraine flag"></i>Український</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item bg-secondary text-muted" href="#"><i class="flag-germany flag"></i>Deutsch</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item bg-secondary text-muted" href="#"><i class="flag-romania flag"></i>Română</a>
+
+                        </li>
+                        <li>
+                            <a class="dropdown-item bg-secondary text-muted" href="#"><i class="flag-poland flag"></i>Polski</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End navbar -->
+<div class="mask">
+    <div class="loader">
+        <svg viewBox="0 0 80 80">
+            <circle id="test" cx="40" cy="40" r="32"></circle>
+        </svg>
+    </div>
+
+    <div class="loader triangle">
+        <svg viewBox="0 0 86 80">
+            <polygon points="43 8 79 72 7 72"></polygon>
+        </svg>
+    </div>
+
+    <div class="loader">
+        <svg viewBox="0 0 80 80">
+            <rect x="8" y="8" width="64" height="64"></rect>
+        </svg>
+    </div>
+</div>
+<!--JS SPINNER-->
+<script src="{% static 'js/spinner.js' %}"></script>
+<!--LOADING SPINNER END-->
+
+<!--button up-->
+<a id="scrollToTopButton" class="fs-3 shadow-0 mx-2 btn-rounded text-primary btn-animate"
+   style="position: fixed; bottom: 50px; right: 40px; display: none; z-index: 100"
+   href="#header">
+    <i class="fas fa-arrow-up-long fa-2x"></i>
+</a>
+<script src="{% static 'js/button_up.js' %}"></script>
+<!--button end-->
+
+<!--Write each new template not with DOCTYPE but with a BODY tag-->
+<!--Content block-->
+{% block content %} {% endblock content %}
+<!--End content block-->
+
+
+<!--footer on every page-->
+<!--FOOTER-->
+
+<!--CONTACT US-->
+<!--г. Никополь, ул.Электрометаллургов, 300 – новая площадка (литейный цех)-->
+<section class="container my-5" id="contacts">
+    <h2 class="fw-bold text-center my-5">
+        <u class="text-primary">{% translate 'Contact' %}</u>
+        <span>{% translate 'with us' %}</span>
+    </h2>
+    <div class="card mb-3">
+        <div class="row g-0 d-flex align-items-center">
+            <div class="col-lg-4 d-none d-lg-flex">
+                <!--                GOOGLE MAP ENGLISH-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.60915931269!2d34.3780783!3d47.59484369999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dca3cfff35358f%3A0x65128b98055957f!2sElektrometalurhiv%20St%2C%20300%2C%20Nikopol&#39;%2C%20Dnipropetrovs&#39;ka%20oblast%2C%20Ukraine%2C%2053200!5e0!3m2!1sen!2skz!4v1694529900527!5m2!1sen!2skz"
+                        width="600" height="800" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-lg-8">
+                <h3 class="text-center">{% translate 'LLC "M-LIT"' %}</h3>
+                <div class="text-center">{% translate '53221, Ukraine, Dnepropetrovsk region, Nikopol, st. Elektrometallurgov, 300' %}
+                </div>
+                <div class="card-body ps-5 pe-1 py-2">
+                    <div class="row gx-lg-5">
+                        <h4 class="text-center my-3">{% translate 'Management' %}</h4>
+                        <div class="col-auto mb-5 mx-0 px-1">
+                            <div class="d-flex align-items-start">
+                                <div class="flex-shrink-0">
+                                    <div class="p-3 bg-primary rounded-4 shadow">
+                                        <i class="fas fa-user fa-lg text-white fa-fw"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <p class="fw-bold mb-1">{% translate 'Plant Director' %}</p>
+                                    <p class="text-muted mb-0">{% translate 'Popov Evgeniy Svyatoslavovich' %}</p>
+                                    <p class="text-muted mb-0"><span class="fw-bold">{% translate 'Phone.:' %}</span> +38 (0566) 68-45-78
+                                    </p>
+                                    <p class="text-muted mb-0 ms-5 ps-2"> (0566) 69-60-34</p>
+                                    <p class="text-muted mb-0"><span class="fw-bold">Email: </span> espgenie@gmail.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-auto mb-5 mx-auto px-1">
+                            <div class="d-flex align-items-start">
+
+                                <div class="flex-grow-1 mx-0">
+                                    <p class="fw-bold mb-1">{% translate 'Chief Engineer' %}</p>
+                                    <p class="text-muted mb-0">{% translate 'Dolnyk Vladimir Mykolayovych' %}</p>
+                                    <p class="text-muted mb-0"><span class="fw-bold">{% translate 'Phone.:' %}</span> +38 (0566) 69-60-35
+                                    </p>
+                                    <p class="text-muted mb-0"><span class="fw-bold">Email: </span> olodymyr@gmail.com
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-auto mb-5 mx-auto px-1">
+                            <div class="d-flex align-items-start">
+
+                                <div class="flex-grow-1 mx-0">
+                                    <p class="fw-bold mb-1">{% translate 'Head of Technical Control Department' %}</p>
+                                    <p class="text-muted mb-0">{% translate 'Kocherga Irina Nikolaevna' %}</p>
+                                    <p class="text-muted mb-0"><span class="fw-bold">{% translate 'Phone.:' %}</span> +38 (0566) 68-45-83
+                                    </p>
+                                    <p class="text-muted mb-0"><span class="fw-bold">Email: </span>
+                                        irinakocherga1963@gmail.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 class="text-center mb-3">{% translate 'Sales department' %}</h4>
+                    <div class="row gx-lg-5">
+                        <div class="col-auto mb-5 mx-0 px-1">
+                            <div class="d-flex align-items-start">
+                                <div class="flex-shrink-0">
+                                    <div class="p-3 bg-primary rounded-4 shadow">
+                                        <i class="fas fa-dollar-sign fa-lg text-white fa-fw"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <p class="fw-bold mb-1">{% translate 'Deputy Director for Marketing and Sales' %}</p>
+                                    <p class="text-muted mb-0">{% translate 'Zyryanova Elena Anatolyevna' %}</p>
+                                    <p class="text-muted mb-0"><span class="fw-bold">{% translate 'Phone.:' %}</span> +38 (0566) 68-45-82
+                                    </p>
+                                    <p class="text-muted mb-0">+38(095) 787-07-97</p>
+                                    <p class="text-muted mb-0"><span class="fw-bold">Email: </span> m_lit@ukr.net
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-auto mb-5 mx-auto px-1">
+                            <div class="d-flex align-items-start">
+
+                                <div class="flex-grow-1 mx-0">
+                                    <p class="fw-bold mb-1">{% translate 'Head of Sales Department' %}</p>
+                                    <p class="text-muted mb-0">{% translate 'Priladysheva Tatyana Vladimirovna' %}</p>
+                                    <p class="text-muted mb-0"><span class="fw-bold">{% translate 'Phone.:' %}</span> +38 (050) 450-16-50
+                                    </p>
+                                    <p class="text-muted mb-0"><span class="fw-bold">{% translate 'Phone.:' %}</span> +38 (0566) 68-45-81
+                                    </p>
+                                    <p class="text-muted mb-0"><span class="fw-bold">Email: </span> mlit-sbut@ukr.net
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="text-center mb-3">{% translate 'For suppliers' %}</h4>
+                    <div class="row gx-lg-5">
+                        <div class="col-auto mb-5 mx-0 px-1">
+                            <div class="d-flex align-items-start">
+                                <div class="flex-shrink-0">
+                                    <div class="p-3 bg-primary rounded-4 shadow">
+                                        <i class="fas fa-truck-ramp-box fa-lg text-white fa-fw"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <p class="fw-bold mb-1">{% translate 'Deputy Director for Marketing and Sales' %}</p>
+                                    <p class="text-muted mb-0">{% translate 'Zyryanova Elena Anatolyevna' %}</p>
+                                    <p class="text-muted mb-0"><span class="fw-bold">{% translate 'Тел.:' %}</span> +38 (0566) 68-45-82
+                                    </p>
+                                    <p class="text-muted mb-0">+38(095) 787-07-97</p>
+                                    <p class="text-muted mb-0"><span class="fw-bold">Email: </span> m_lit@ukr.net
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--CONTACT US END-->
+<footer class="bg-primary">
+    <div class="container-fluid">
+        <div class="container py-1">
+            <div class="row">
+                <div class="col-12 text-center text-white my-0 py-0">
+                    {% translate 'Copyright © 2014-2024 «M-LIT», All rights reserved' %}
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--FOOTER END-->
+
+
+<!--SCRIPTS-->
+<!-- MDB -->
+<script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
+<!-- Custom scripts -->
+<script type="text/javascript"></script>
+<!--SWIPER-->
+<script src="{% static 'swiper/package/swiper-bundle.min.js' %}"></script>
+<!-- Initialize Swiper -->
+<script src="{% static 'js/swiper.js' %}"></script>
+<!--AOS-->
+<script src="{% static 'aos-master/dist/aos.js' %}"></script>
+<script>
+    AOS.init();
+</script>
+<!--SCRIPTS END-->
+</html>
