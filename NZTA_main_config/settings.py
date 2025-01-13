@@ -93,24 +93,15 @@ else:
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Internationalization/Languages config
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "ru"
 TIME_ZONE = "Europe/Berlin"
 USE_I18N = True
-USE_L10N = True
 USE_TZ = True
-
-LANGUAGES = (
-    ("en", _("English")),
-    ("ru", _("Russian")),
-    # and more languages
-)
-
-LOCALE_PATHS = [
-    BASE_DIR / "locale",
-]
 
 # debug-toolbar
 INTERNAL_IPS = [
     "127.0.0.1",
     "localhost",
 ]
+
+

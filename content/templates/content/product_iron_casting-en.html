@@ -1,16 +1,16 @@
 <!--extend base.html-->
-{% extends 'content/base.html' %}
+{% extends 'content/base-en.html' %}
 <!--load tags-->
 {% load static %}
 {% load i18n %}
 
 <!--your title block here-->
 {% block title %}
-{% translate 'Чугунное литьё' %}
+{% translate 'Cast iron' %}
 {% endblock title %}
 <!--title end-->
 {% block description %}
-{% translate 'Люк лёгкий, люк средний, люк тяжелый, люк антивандальный, дождеприемник, решетка ливневая, скамейки' %}
+{% translate 'Light hatch, medium hatch, heavy hatch, anti-vandal hatch, rain inlet, storm grate, benches' %}
 {% endblock description %}
 
 
@@ -57,7 +57,7 @@
 
             <!--Content-->
             <div class="mb-3">
-                <span class="badge badge-danger mr-1">{% translate 'Литьё' %}</span>
+                <span class="badge badge-danger mr-1">{% translate 'Cast' %}</span>
             </div>
 
             <!-- Tabs navs -->
@@ -71,7 +71,7 @@
                             role="tab"
                             aria-controls="ex1-tabs-1"
                             aria-selected="true"
-                    >{% translate 'Люк Легкий/Средний/Тяжелый' %}</a
+                    >{% translate 'Hatch Light/Medium/Heavy' %}</a
                     >
                 </li>
             </ul>
@@ -88,30 +88,30 @@
                     <table class="table table-sm table-bordered text-center">
                         <thead>
                         <tr>
-                            <th scope="col">{% translate 'Наименование' %}</th>
-                            <th scope="col">{% translate 'Диаметр мм.' %}</th>
-                            <th scope="col">{% translate 'Высота мм.' %}</th>
-                            <th scope="col">{% translate 'Корпус кг.' %}</th>
-                            <th scope="col">{% translate 'Крышка кг.' %}</th>
+                            <th scope="col">{% translate 'Name' %}</th>
+                            <th scope="col">{% translate 'Diameter mm.' %}</th>
+                            <th scope="col">{% translate 'Height mm.' %}</th>
+                            <th scope="col">{% translate 'Body kg.' %}</th>
+                            <th scope="col">{% translate 'Lid kg.' %}</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <th scope="row">{% translate 'Люк лёгкий' %}</th>
+                            <th scope="row">{% translate 'Light hatch' %}</th>
                             <td>770</td>
                             <td>90</td>
                             <td>37</td>
                             <td>30</td>
                         </tr>
                         <tr>
-                            <th scope="row">{% translate 'Люк Средний' %}</th>
+                            <th scope="row">{% translate 'Hatch Medium' %}</th>
                             <td>870</td>
                             <td>120</td>
                             <td>47</td>
                             <td>47</td>
                         </tr>
                         <tr>
-                            <th scope="row">{% translate 'Люк Тяжелый' %}</th>
+                            <th scope="row">{% translate 'Hatch Heavy' %}</th>
                             <td>870</td>
                             <td>120</td>
                             <td>58</td>
@@ -121,22 +121,22 @@
                     </table>
                 </div>
             </div>
-            <p class="my-0">{% blocktrans %}Назначение: Люки чугунные для смотровых колодцев предназначены для установки на колодцах
-                сетей водопровода и канализации:{% endblocktrans %}</p>
+            <p class="my-0">{% blocktrans %}Purpose: Cast iron hatches for inspection wells are intended for installation on wells
+                water supply and sewerage networks:{% endblocktrans %}</p>
             <p class="mt-3 mb-1 mt-1 ms-3"><i
-                    class="fas fa-circle-dot fa-xs me-2 text-primary"></i>{% blocktrans %}в зоне зеленых насаждений, пешеходной зоне
-                (легкий люк) ЛЮКЛ (А15)-ВК-1-60{% endblocktrans %}</p>
+                    class="fas fa-circle-dot fa-xs me-2 text-primary"></i>{% blocktrans %}in a green area, pedestrian area
+                (light hatch) LYUKL (A15)-VK-1-60{% endblocktrans %}</p>
             <p class="my-1 mt-1 ms-3"><i
-                    class="fas fa-circle-dot fa-xs me-2 text-primary"></i>{% blocktrans %}автостоянках, тротуарах и проезжей части
-                городских парков (средний люк) - ЛЮКС (В125)-ВК-1-60{% endblocktrans %}</p>
+                    class="fas fa-circle-dot fa-xs me-2 text-primary"></i>{% blocktrans %}parking lots, sidewalks and roadways
+                city parks (middle hatch) - LUX (B125)-VK-1-60{% endblocktrans %}</p>
             <p class="my-1 mt-1 ms-3"><i
-                    class="fas fa-circle-dot fa-xs me-2 text-primary"></i>{% blocktrans %}на городских автомобильных дорогах с
-                интенсивным движением (тяжелый люк) - ЛЮКТ (С250)-ВК-1-60 ДСТУ Б.В. 2.5-26:2005(ГОСТ 3634-99{% endblocktrans %}</p>
+                    class="fas fa-circle-dot fa-xs me-2 text-primary"></i>{% blocktrans %}on city roads with
+                heavy traffic (heavy hatch) - LYUKT (S250)-VK-1-60 DSTU B.V. 2.5-26:2005(GOST 3634-99{% endblocktrans %}</p>
 
             <div class="d-flex justify-content-center">
                 <a data-aos="fade-up" class="" href="#">
                     <!-- Default input -->
-                    <button class="btn btn-danger btn-md my-0 p btn-animate" type="button">{% translate 'Узнать цену' %}
+                    <button class="btn btn-danger btn-md my-0 p btn-animate" type="button">{% translate 'Get price' %}
                         <i class="fas fa-shopping-cart ml-1"></i>
                     </button>
                 </a>
@@ -166,14 +166,14 @@
         </div>
         <!--Grid column-->
 
-        <!--            PRODUCT 3-->
+        <!-- PRODUCT 3-->
         <!--Grid column-->
         <div class="col-md-8 mb-4">
             <!--Content-->
             <!-- Tabs navs -->
             <div class="mb-3">
                 <a href="#">
-                    <span class="badge badge-danger mr-1">{% translate 'Литье' %}</span>
+                    <span class="badge badge-danger mr-1">{% translate 'Casting' %}</span>
                 </a>
             </div>
 
@@ -188,7 +188,7 @@
                             role="tab"
                             aria-controls="ex2-tabs-1"
                             aria-selected="true"
-                    >{% translate 'Люк антивандальный' %}</a
+                    >{% translate 'Anti-vandal hatch' %}</a
                     >
                 </li>
             </ul>
@@ -205,17 +205,17 @@
                     <table class="table table-sm table-bordered text-center">
                         <thead>
                         <tr>
-                            <th scope="col">{% translate 'Наименование' %}</th>
-                            <th scope="col">{% translate 'Длина мм.' %}</th>
-                            <th scope="col">{% translate 'Ширина мм.' %}</th>
-                            <th scope="col">{% translate 'Высота мм.' %}</th>
-                            <th scope="col">{% translate 'Корпус кг.' %}</th>
-                            <th scope="col">{% translate 'Крышка кг.' %}</th>
+                            <th scope="col">{% translate 'Name' %}</th>
+                            <th scope="col">{% translate 'Length mm.' %}</th>
+                            <th scope="col">{% translate 'Width mm.' %}</th>
+                            <th scope="col">{% translate 'Height mm.' %}</th>
+                            <th scope="col">{% translate 'Body kg.' %}</th>
+                            <th scope="col">{% translate 'Lid kg.' %}</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <th scope="row">{% translate 'Люк антивандальный' %}</th>
+                            <th scope="row">{% translate 'Anti-vandal hatch' %}</th>
                             <td>830</td>
                             <td>830</td>
                             <td>125</td>
@@ -229,14 +229,14 @@
             </div>
 
 
-            <p class="my-0">{% blocktrans %}Назначение: Люки чугунные для смотровых колодцев с запорным устройством предназначены для
-                установки на городских автомобильных дорогах с интенсивным движением - ЛЮК Т (С250)-ВК-6-64х64 ДСТУ Б В.
-                2,5-26:2005 (ГОСТ 3634-99). Нагрузка номинальная 250кН (25,0 тс){% endblocktrans %}</p>
+            <p class="my-0">{% blocktrans %}Purpose: Cast iron hatches for inspection wells with a locking device are intended for
+                installations on urban roads with heavy traffic - LYUK T (S250)-VK-6-64x64 DSTU B V.
+                2.5-26:2005 (GOST 3634-99). Nominal load 250 kN (25.0 tf){% endblocktrans %}</p>
 
             <div class="d-flex justify-content-center">
                 <a data-aos="fade-up" class="" href="#">
                     <!-- Default input -->
-                    <button class="btn btn-danger btn-md my-0 p btn-animate" type="button">{% translate 'Узнать цену' %}
+                    <button class="btn btn-danger btn-md my-0 p btn-animate" type="button">{% translate 'Get price' %}
                         <i class="fas fa-shopping-cart ml-1"></i>
                     </button>
                 </a>
@@ -275,7 +275,7 @@
             <!-- Tabs navs -->
             <div class="mb-3">
                 <a href="#">
-                    <span class="badge badge-info mr-1">{% translate 'Литьё' %}</span>
+                    <span class="badge badge-info mr-1">{% translate 'Casting' %}</span>
                 </a>
             </div>
 
@@ -290,7 +290,7 @@
                             role="tab"
                             aria-controls="ex3-tabs-1"
                             aria-selected="true"
-                    >{% translate 'Дождеприемники' %}</a
+                    >{% translate 'Storm drains' %}</a
                     >
                 </li>
 
@@ -308,27 +308,27 @@
                     <table class="table table-sm table-bordered text-center">
                         <thead>
                         <tr>
-                            <th scope="col">{% translate 'Наименование' %}</th>
-                            <th scope="col">{% translate 'Масса кг.' %}</th>
-                            <th scope="col">{% translate 'Длина мм.' %}</th>
-                            <th scope="col">{% translate 'Ширина мм.' %}</th>
-                            <th scope="col">{% translate 'Высота мм.' %}</th>
-                            <th scope="col">{% translate 'Площадь живого сечения 0,28 м2' %}</th>
-                            <th scope="col">{% translate 'Площадь пазов %' %}</th>
+                            <th scope="col">{% translate 'Name' %}</th>
+                            <th scope="col">{% translate 'Mass kg.' %}</th>
+                            <th scope="col">{% translate 'Length mm.' %}</th>
+                            <th scope="col">{% translate 'Width mm.' %}</th>
+                            <th scope="col">{% translate 'Height mm.' %}</th>
+                            <th scope="col">{% translate 'Live cross-sectional area 0.28 m2' %}</th>
+                            <th scope="col">{% translate 'Slot area %' %}</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <th scope="row">{% translate 'Дождеприемник' %}</th>
+                            <th scope="row">{% translate 'Storm drain' %}</th>
                             <td>119</td>
                             <td>915</td>
                             <td>570</td>
                             <td>120</td>
-                            <td>0,28</td>
+                            <td>0.28</td>
                             <td>50</td>
                         </tr>
                         <tr>
-                            <th scope="row">{% translate 'Ливневка' %}</th>
+                            <th scope="row">{% translate 'Storm drain' %}</th>
                             <td>95</td>
                             <td>740</td>
                             <td>400</td>
@@ -340,15 +340,15 @@
                     </table>
                 </div>
             </div>
-            <p class="my-0">{% blocktrans %}Назначение: дождеприемники и ливневки колодцев предназначены для приема поверхностных
-                сточных вод с улиц, дворов и других территорий. Дождеприемники устанавливаются на автостоянках и
-                проезжей части городских дорог.{% endblocktrans %}
+            <p class="my-0">{% blocktrans %}Purpose: storm water inlets and storm water wells are designed to receive surface water
+                wastewater from streets, courtyards and other areas. Storm water inlets are installed in parking lots and
+                roadway of city roads.{% endblocktrans %}
             </p>
 
             <div class="d-flex justify-content-center">
                 <a data-aos="fade-up" class="" href="#">
                     <!-- Default input -->
-                    <button class="btn btn-danger btn-md my-0 p btn-animate" type="button">{% translate 'Узнать цену' %}
+                    <button class="btn btn-danger btn-md my-0 p btn-animate" type="button">{% translate 'Get price' %}
                         <i class="fas fa-shopping-cart ml-1"></i>
                     </button>
                 </a>
@@ -385,7 +385,7 @@
             <!-- Tabs navs -->
             <div class="mb-3">
                 <a href="#">
-                    <span class="badge badge-info mr-1">{% translate 'Литьё' %}</span>
+                    <span class="badge badge-info mr-1">{% translate 'Casting' %}</span>
                 </a>
             </div>
 
@@ -400,7 +400,7 @@
                             role="tab"
                             aria-controls="ex3-tabs-1"
                             aria-selected="true"
-                    >{% translate 'Скамейки' %}</a
+                    >{% translate 'Benches' %}</a
                     >
                 </li>
 
@@ -418,17 +418,17 @@
                     <table class="table table-sm table-bordered text-center">
                         <thead>
                         <tr>
-                            <th scope="col">{% translate 'Наименование' %}</th>
-                            <th scope="col">{% translate 'Длина мм.' %}</th>
-                            <th scope="col">{% translate 'Ширина мм.' %}</th>
-                            <th scope="col">{% translate 'Высота со спинкой мм.' %}</th>
-                            <th scope="col">{% translate 'Масса' %}</th>
-                            <th scope="col">{% translate 'Масса ножки' %}</th>
+                            <th scope="col">{% translate 'Name' %}</th>
+                            <th scope="col">{% translate 'Length mm.' %}</th>
+                            <th scope="col">{% translate 'Width mm.' %}</th>
+                            <th scope="col">{% translate 'Height with backrest mm.' %}</th>
+                            <th scope="col">{% translate 'Mass' %}</th>
+                            <th scope="col">{% translate 'Leg mass' %}</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <th scope="row">{% translate 'Скамейка парковая' %}</th>
+                            <th scope="row">{% translate 'Park bench' %}</th>
                             <td>1750</td>
                             <td>550</td>
                             <td>800</td>
@@ -439,15 +439,15 @@
                     </table>
                 </div>
             </div>
-            <p class="my-0">{% blocktrans %}Назначение: скамейки парковые, состоящие из двух ножек, изготовленные литьем из чугуна СЧ 18
-                с устройством сидения и спинки из дерева. Скамейки предназначены для оборудования мест отдыха на дачных
-                участках, в карках, детских и школьных площадках, остановок транспортных средств и др.{% endblocktrans %}
+            <p class="my-0">{% blocktrans %}Purpose: park benches, consisting of two legs, made of cast iron SCH 18
+                with seat and backrest made of wood. Benches are intended for equipping recreation areas in country houses.
+                areas, car parks, children's and school playgrounds, vehicle stops, etc.{% endblocktrans %}
             </p>
 
             <div class="d-flex justify-content-center">
                 <a data-aos="fade-up" class="" href="#">
                     <!-- Default input -->
-                    <button class="btn btn-danger btn-md my-0 p btn-animate" type="button">{% translate 'Узнать цену' %}
+                    <button class="btn btn-danger btn-md my-0 p btn-animate" type="button">{% translate 'Get price' %}
                         <i class="fas fa-shopping-cart ml-1"></i>
                     </button>
                 </a>
@@ -466,7 +466,7 @@
         <!--Grid column-->
         <div class="col-md-6 text-center">
 
-            <h4 class="my-4 h2 fw-bold">{% translate 'Другие' %} <u class="text-danger">{% translate 'изделия' %}</u></h4>
+            <h4 class="my-4 h2 fw-bold">{% translate 'Others' %} <u class="text-danger">{% translate 'products' %}</u></h4>
 
         </div>
         <!--Grid column-->
@@ -497,7 +497,7 @@
                  class="btn-animate mx-3 my-3" alt="" style="max-height: 150px; max-width: 150px;">
         </div>
         <a href="badges&Pads">
-            <button data-aos="fade-up" class="btn btn-success btn-animate">{% translate 'Подробнее' %}</button>
+            <button data-aos="fade-up" class="btn btn-success btn-animate">{% translate 'More' %}</button>
         </a>
     </div>
         <!--Grid column-->
@@ -519,7 +519,7 @@
                      class="mt-3 btn-animate" alt="">
             </div>
             <a href="piping">
-                <button data-aos="fade-up" class="btn btn-primary btn-animate">{% translate 'Подробнее' %}</button>
+                <button data-aos="fade-up" class="btn btn-primary btn-animate">{% translate 'More' %}</button>
             </a>
         </div>
         <!--Grid column-->

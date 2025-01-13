@@ -14,6 +14,8 @@ from content.views import robots_txt, sitemap_xml, ssl_validation
 
 # urls
 urlpatterns = [
+    # Main pages
+    path("", include("content.urls", namespace="index")),
     # robots
     path("robots.txt", cache_page(CACHE_LIFI_TIME)(robots_txt), name="robots"),
     # sitemap
@@ -22,9 +24,6 @@ urlpatterns = [
     path(".well-known/pki-validation/92A02BB84FB4BD727D3E40F1502477C0.txt", ssl_validation, name='ss_validation'),
 ]
 
-urlpatterns += i18n_patterns(
-    path("", include("content.urls", namespace="index")), prefix_default_language=True
-)
 
 # enable debug-toolbar DEBUG=True
 if settings.DEBUG:
