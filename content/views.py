@@ -7,7 +7,7 @@ from django.urls import resolve, reverse
 from django.urls.exceptions import Resolver404
 from django.utils import translation
 from django.views.generic import TemplateView
-
+from django.core.cache import cache
 
 class MainPage(TemplateView):
 
@@ -85,6 +85,7 @@ def ssl_validation(request):
 
 def set_language(request, language):
 
+    cache.clear()
     translation.activate(language)
     response = redirect(reverse('index:main_page'))
     response.set_cookie(settings.LANGUAGE_COOKIE_NAME, language)
