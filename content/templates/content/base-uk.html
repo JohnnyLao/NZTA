@@ -87,7 +87,7 @@
                         <a data-aos="fade-right" data-aos-delay="600" class="nav-link " href="/">{% translate 'Главная'%}</a>
                     </li>
                     <li class="nav-item btn-animate">
-                        <a data-aos="fade-right" data-aos-delay="400" class="nav-link " href="/#about_us">{% translate 'О Компании' %}</a>
+                        <a data-aos="fade-right" data-aos-delay="400" class="nav-link " href="/#about_us">{% translate 'Про нас' %}</a>
                     </li>
                     <!-- Dropdown -->
                     <li class="nav-item dropdown mx-auto">
@@ -95,34 +95,34 @@
                            class="nav-link dropdown-toggle  btn-animate"
                            href="#" id="navbarDropdown" role="button"
                            data-mdb-toggle="dropdown" aria-expanded="false">
-                            {% translate 'Продукция' %}
+                            {% translate 'Продукти' %}
                         </a>
                         <!-- Dropdown menu -->
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
-                                <a class="dropdown-item ripple" data-mdb-ripple-color="success" href="badges&Pads">{% translate 'Клины / Колодки' %}</a>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="success" href="badges&Pads">{% translate 'Клинці / Підкладки' %}</a>
                             </li>
                             <li>
                                 <hr class="dropdown-divider border border-primary"/>
                             <li>
-                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="piping">{% translate 'Задвижки чугунные' %}</a>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="piping">{% translate 'Вентилі чавунні' %}</a>
                             </li>
                             <li>
-                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="piping">{% translate 'Затворы' %}</a>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="piping">{% translate 'Ворота' %}</a>
                             </li>
                             <li>
-                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="piping">{% translate 'Вантузы' %}</a>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="primary" href="piping">{% translate 'Присоски' %}</a>
                             </li>
                             <li>
                                 <hr class="dropdown-divider border border-danger"/>
                             </li>
                             <li>
-                                <a class="dropdown-item ripple" data-mdb-ripple-color="danger" href="iron_casting">{% translate 'Чугунное Литье' %}</a>
+                                <a class="dropdown-item ripple" data-mdb-ripple-color="danger" href="iron_casting">{% translate 'Чавунне лиття' %}</a>
                             </li>
                         </ul>
                     </li>
                     <li data-aos="fade-right" class="nav-item">
-                        <a class="nav-link btn-animate" href="#contacts">{% translate 'Контакты' %}</a>
+                        <a class="nav-link btn-animate" href="#contacts">{% translate 'Контакти' %}</a>
                     </li>
                 </ul>
             </div>
@@ -144,8 +144,8 @@
                         <i class="flag-russia flag" id="current_language_flag"></i>
                         {% elif request.LANGUAGE_CODE == 'en' %}
                         <i class="flag-us flag" id="current_language_flag"></i>
-                        {% elif request.LANGUAGE_CODE == 'uk' %}
-                        <i class="flag-uk flag" id="current_language_flag"></i>
+                            {% elif request.LANGUAGE_CODE == 'uk' %}
+                        <i class="flag-ukraine flag" id="current_language_flag"></i>
                         {% endif %}
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="languageDropdown">
@@ -226,8 +226,8 @@
 <!--г. Никополь, ул.Электрометаллургов, 300 – новая площадка (литейный цех)-->
 <section class="container my-5" id="contacts">
     <h2 class="fw-bold text-center my-5">
-        <u class="text-primary">{% translate 'Связаться' %}</u>
-        <span>{% translate 'с нами' %}</span>
+        <u class="text-primary">Зв'язатися</u>
+        <span>з нами</span>
     </h2>
     <div class="card mb-3">
         <div class="row g-0 d-flex align-items-center">
@@ -238,12 +238,12 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="col-lg-8">
-                <h3 class="text-center">{% translate 'ООО «М-ЛИТ»' %}</h3>
-                <div class="text-center">{% translate '53221, Украина, Днепропетровская обл., г. Никополь, ул. Электрометаллургов, 300' %}
+                <h3 class="text-center">{% translate 'ТОВ «М-ЛІТ»' %}</h3>
+                <div class="text-center">{% translate '53221, Україна, Дніпропетровська обл., м. Нікополь, вул. Електрометалургів, 300' %}
                 </div>
                 <div class="card-body ps-5 pe-1 py-2">
                     <div class="row gx-lg-5">
-                        <h4 class="text-center my-3">{% translate 'Руководство' %}</h4>
+                        <h4 class="text-center my-3">{% translate 'Керівництво' %}</h4>
                         <div class="col-auto mb-5 mx-0 px-1">
                             <div class="d-flex align-items-start">
                                 <div class="flex-shrink-0">
@@ -252,8 +252,8 @@
                                     </div>
                                 </div>
                                 <div class="flex-grow-1 ms-3">
-                                    <p class="fw-bold mb-1">{% translate 'Директор Завода' %}</p>
-                                    <p class="text-muted mb-0">{% translate 'Попов Евгений Святославович' %}</p>
+                                    <p class="fw-bold mb-1">{% translate 'Директор Заводу' %}</p>
+                                    <p class="text-muted mb-0">{% translate 'Попов Євген Святославович' %}</p>
                                     <p class="text-muted mb-0"><span class="fw-bold">{% translate 'Тел.:' %}</span> +38 (0566) 68-45-78
                                     </p>
                                     <p class="text-muted mb-0 ms-5 ps-2"> (0566) 69-60-34</p>
@@ -267,8 +267,8 @@
                             <div class="d-flex align-items-start">
 
                                 <div class="flex-grow-1 mx-0">
-                                    <p class="fw-bold mb-1">{% translate 'Главный Инженер' %}</p>
-                                    <p class="text-muted mb-0">{% translate 'Дольник Владимир Николайович' %}</p>
+                                    <p class="fw-bold mb-1">{% translate 'Головний інженер ' %}</p>
+                                    <p class="text-muted mb-0">{% translate 'Дольник Володимир Миколайович ' %}</p>
                                     <p class="text-muted mb-0"><span class="fw-bold">{% translate 'Тел.:' %}</span> +38 (0566) 69-60-35
                                     </p>
                                     <p class="text-muted mb-0"><span class="fw-bold">Email: </span> olodymyr@gmail.com
@@ -282,8 +282,8 @@
                             <div class="d-flex align-items-start">
 
                                 <div class="flex-grow-1 mx-0">
-                                    <p class="fw-bold mb-1">{% translate 'Начальник отдела технического контроля' %}</p>
-                                    <p class="text-muted mb-0">{% translate 'Кочерга Ирина Николаевна' %}</p>
+                                    <p class="fw-bold mb-1">{% translate 'Начальник відділу технічного контролю' %}</p>
+                                    <p class="text-muted mb-0">{% translate 'Кочерга Ірина Миколаївна' %}</p>
                                     <p class="text-muted mb-0"><span class="fw-bold">{% translate 'Тел.:' %}</span> +38 (0566) 68-45-83
                                     </p>
                                     <p class="text-muted mb-0"><span class="fw-bold">Email: </span>
@@ -294,7 +294,7 @@
                         </div>
                     </div>
 
-                    <h4 class="text-center mb-3">{% translate 'Отдел продаж' %}</h4>
+                    <h4 class="text-center mb-3">{% translate 'Відділ продажів' %}</h4>
                     <div class="row gx-lg-5">
                         <div class="col-auto mb-5 mx-0 px-1">
                             <div class="d-flex align-items-start">
@@ -304,8 +304,8 @@
                                     </div>
                                 </div>
                                 <div class="flex-grow-1 ms-3">
-                                    <p class="fw-bold mb-1">{% translate 'Заместитель директора по маркетингу и сбыту' %}</p>
-                                    <p class="text-muted mb-0">{% translate 'Зырянова Елена Анатольевна' %}</p>
+                                    <p class="fw-bold mb-1">{% translate 'Заступник директора з маркетингу та збуту' %}</p>
+                                    <p class="text-muted mb-0">{% translate 'Зирянова Олена Анатоліївна' %}</p>
                                     <p class="text-muted mb-0"><span class="fw-bold">{% translate 'Тел.:' %}</span> +38 (0566) 68-45-82
                                     </p>
                                     <p class="text-muted mb-0">+38(095) 787-07-97</p>
@@ -319,8 +319,8 @@
                             <div class="d-flex align-items-start">
 
                                 <div class="flex-grow-1 mx-0">
-                                    <p class="fw-bold mb-1">{% translate 'Начальник отдела продаж' %}</p>
-                                    <p class="text-muted mb-0">{% translate 'Приладышева Татьяна Владимировна' %}</p>
+                                    <p class="fw-bold mb-1">{% translate 'Начальник відділу продаж' %}</p>
+                                    <p class="text-muted mb-0">{% translate 'Приладишева Тетяна Володимирівна' %}</p>
                                     <p class="text-muted mb-0"><span class="fw-bold">{% translate 'Тел.:' %}</span> +38 (050) 450-16-50
                                     </p>
                                     <p class="text-muted mb-0"><span class="fw-bold">{% translate 'Тел.:' %}</span> +38 (0566) 68-45-81
@@ -331,7 +331,7 @@
                             </div>
                         </div>
                     </div>
-                    <h4 class="text-center mb-3">{% translate 'Поставщикам' %}</h4>
+                    <h4 class="text-center mb-3">{% translate 'Постачальникам' %}</h4>
                     <div class="row gx-lg-5">
                         <div class="col-auto mb-5 mx-0 px-1">
                             <div class="d-flex align-items-start">
@@ -341,12 +341,12 @@
                                     </div>
                                 </div>
                                 <div class="flex-grow-1 ms-3">
-                                    <p class="fw-bold mb-1">{% translate 'Заместитель директора по маркетингу и сбыту' %}</p>
-                                    <p class="text-muted mb-0">{% translate 'Зырянова Елена Анатольевна' %}</p>
-                                    <p class="text-muted mb-0"><span class="fw-bold">{% translate 'Тел.:' %}</span> +38 (0566) 68-45-82
+                                    <p class="fw-bold mb-1">{% translate 'Начальник відділу постачання' %}</p>
+                                    <p class="text-muted mb-0">{% translate 'Татаренко Олег Миколайович' %}</p>
+                                    <p class="text-muted mb-0"><span class="fw-bold">{% translate 'Тел.:' %}</span> +38 (050) 450-17-50
                                     </p>
                                     <p class="text-muted mb-0">+38(095) 787-07-97</p>
-                                    <p class="text-muted mb-0"><span class="fw-bold">Email: </span> m_lit@ukr.net
+                                    <p class="text-muted mb-0"><span class="fw-bold">Email: </span> nztasnab@gmail.com
                                     </p>
                                 </div>
                             </div>
@@ -364,7 +364,7 @@
         <div class="container py-1">
             <div class="row">
                 <div class="col-12 text-center text-white my-0 py-0">
-                    {% translate 'Copyright © 2014-2024 «M-LIT», Все права защищены' %}
+                    {% translate 'Copyright © 2014-2024 «M-LIT», All rights reserved' %}
                 </div>
             </div>
         </div>

@@ -1,0 +1,533 @@
+<!--extend base.html-->
+{% extends 'content/base-uk.html' %}
+<!--load tags-->
+{% load static %}
+{% load i18n %}
+
+<!--your title block here-->
+{% block title %}
+{% translate 'Чугунное литьё' %}
+{% endblock title %}
+<!--title end-->
+{% block description %}
+{% translate 'Люк лёгкий, люк средний, люк тяжелый, люк антивандальный, дождеприемник, решетка ливневая, скамейки' %}
+{% endblock description %}
+
+
+<!--HEADER -> BASE.HTML-->
+
+
+<!--your content block here-->
+{% block content %}
+
+<body style="background: rgba(238,245,238,1)" id="header">
+<!--OUR PRODUCTS KEY-->
+
+<section>
+    <div class="container">
+        <div class="container-fluid text-center">
+            <img data-aos="fade-right" draggable="false" src="{% static 'images/slide.jpg' %}"
+                 alt=""
+                 class="img-fluid rounded-circle my-3 py-0 shadow" style="max-width: 300px">
+        </div>
+    </div>
+</section>
+
+<!--PRODUCT 1-->
+<!--Main layout-->
+<div class="container dark-grey-text my-0">
+
+    <!--Grid row-->
+    <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-4 mx-auto my-auto">
+
+            <div class="bg-image hover-zoom ripple rounded-4 text-center"
+                 data-mdb-ripple-color="light">
+                <img draggable="false"
+                     src="{% static 'images/casting/LYUKI-.png' %}"
+                     class="btn-animate mx-3 my-3" alt="" style="max-height: 250px; max-width: 250px;">
+            </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-8">
+
+            <!--Content-->
+            <div class="mb-3">
+                <span class="badge badge-danger mr-1">{% translate 'Лиття' %}</span>
+            </div>
+
+            <!-- Tabs navs -->
+            <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a
+                            class="nav-link active"
+                            id="ex1-tab-1"
+                            data-mdb-toggle="tab"
+                            href="#ex1-tabs-1"
+                            role="tab"
+                            aria-controls="ex1-tabs-1"
+                            aria-selected="true"
+                    >{% translate 'Люк легкий/Середній/Важкий ' %}</a
+                    >
+                </li>
+            </ul>
+            <!-- Tabs navs -->
+
+            <!-- Tabs content -->
+            <div class="tab-content" id="ex1-content">
+                <div
+                        class="tab-pane active"
+                        id="ex1-tabs-1"
+                        role="tabpanel"
+                        aria-labelledby="ex1-tab-1"
+                >
+                    <table class="table table-sm table-bordered text-center">
+                        <thead>
+                        <tr>
+                            <th scope="col">{% translate 'Найменування' %}</th>
+                            <th scope="col">{% translate 'Діаметр мм.' %}</th>
+                            <th scope="col">{% translate 'Висота мм.' %}</th>
+                            <th scope="col">{% translate 'Корпус кг.' %}</th>
+                            <th scope="col">{% translate 'Кришка кг.' %}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">{% translate 'Люк лёгкий' %}</th>
+                            <td>770</td>
+                            <td>90</td>
+                            <td>37</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">{% translate 'Люк Середній' %}</th>
+                            <td>870</td>
+                            <td>120</td>
+                            <td>47</td>
+                            <td>47</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">{% translate 'Люк Важкий' %}</th>
+                            <td>870</td>
+                            <td>120</td>
+                            <td>58</td>
+                            <td>62</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <p class="my-0">{% blocktrans %}Призначення: Люки чавунні для оглядових колодязів призначені для встановлення на колодязях мереж водопроводу та каналізації:{% endblocktrans %}</p>
+            <p class="mt-3 mb-1 mt-1 ms-3"><i
+                    class="fas fa-circle-dot fa-xs me-2 text-primary"></i>{% blocktrans %}у зоні зелених насаджень, пішохідній зоні (легкий люк) ЛЮКЛ (А15)-ВК-1-60 автостоянках, тротуарах та проїжджій частині міських парків (середній люк) - ЛЮКС (В125)-ВК-1-60{% endblocktrans %}</p>
+            <p class="my-1 mt-1 ms-3"><i
+                    class="fas fa-circle-dot fa-xs me-2 text-primary"></i>{% blocktrans %}автостоянках, тротуарах та проїжджій частині міських парків (середній люк) - ЛЮКС (В125)-ВК-1-60{% endblocktrans %}</p>
+            <p class="my-1 mt-1 ms-3"><i
+                    class="fas fa-circle-dot fa-xs me-2 text-primary"></i>{% blocktrans %}на міських автомобільних дорогах з інтенсивним рухом (важкий люк) – ЛЮКТ (С250)-ВК-1-60 ДСТУ Б.В. 2.5-26:2005 (ГОСТ 3634-99){% endblocktrans %}</p>
+
+            <div class="d-flex justify-content-center">
+                <a data-aos="fade-up" class="" href="#">
+                    <!-- Default input -->
+                    <button class="btn btn-danger btn-md my-0 p btn-animate" type="button">{% translate 'Узнать цену' %}
+                        <i class="fas fa-shopping-cart ml-1"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--Content-->
+
+</div>
+<!--Grid column-->
+<hr>
+
+<!--PRODUCT 2-->
+<!--Grid row-->
+<div class="container">
+
+
+    <div class="row wow fadeIn">
+        <!--Grid column-->
+        <div class="col-md-4 mb-4 mx-auto my-0">
+            <div class="bg-image hover-zoom ripple rounded-4 text-center"
+                 data-mdb-ripple-color="light">
+                <img draggable="false"
+                     src="{% static 'images/casting/Lyuk-kvadrat2.png' %}"
+                     class="btn-animate mx-3 my-3" alt="" style="max-height: 250px; max-width: 250px;">
+            </div>
+        </div>
+        <!--Grid column-->
+
+        <!--            PRODUCT 3-->
+        <!--Grid column-->
+        <div class="col-md-8 mb-4">
+            <!--Content-->
+            <!-- Tabs navs -->
+            <div class="mb-3">
+                <a href="#">
+                    <span class="badge badge-danger mr-1">{% translate 'Лиття' %}</span>
+                </a>
+            </div>
+
+            <!-- Tabs navs -->
+            <ul class="nav nav-tabs mb-3" id="ex2" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a
+                            class="nav-link active"
+                            id="ex2-tab-1"
+                            data-mdb-toggle="tab"
+                            href="#ex2-tabs-1"
+                            role="tab"
+                            aria-controls="ex2-tabs-1"
+                            aria-selected="true"
+                    >{% translate 'Люк антивандальний' %}</a
+                    >
+                </li>
+            </ul>
+            <!-- Tabs navs -->
+
+            <!-- Tabs content -->
+            <div class="tab-content" id="ex2-content">
+                <div
+                        class="tab-pane active"
+                        id="ex2-tabs-1"
+                        role="tabpanel"
+                        aria-labelledby="ex2-tab-1"
+                >
+                    <table class="table table-sm table-bordered text-center">
+                        <thead>
+                        <tr>
+                             <th scope="col">{% translate 'Найменування' %}</th>
+                            <th scope="col">{% translate 'Довжина мм.' %}</th>
+                            <th scope="col">{% translate 'Ширина мм.' %}</th>
+                            <th scope="col">{% translate 'Висота мм.' %}</th>
+                            <th scope="col">{% translate 'Корпус кг.' %}</th>
+                            <th scope="col">{% translate 'Кришка кг.' %}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">{% translate 'Люк антивандальний' %}</th>
+                            <td>830</td>
+                            <td>830</td>
+                            <td>125</td>
+                            <td>66</td>
+                            <td>84</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+
+            <p class="my-0">{% blocktrans %}Призначення: Люки чавунні для оглядових колодязів із запірним пристроєм призначені
+                для встановлення на міських автомобільних дорогах з інтенсивним рухом – ЛЮК Т (С250)-ВК-6-64х64
+                ДСТУ Б В. 2,5-26:2005 (ГОСТ 3634-99). Навантаження номінальне 250кН (25,0 тс){% endblocktrans %}</p>
+
+            <div class="d-flex justify-content-center">
+                <a data-aos="fade-up" class="" href="#">
+                    <!-- Default input -->
+                    <button class="btn btn-danger btn-md my-0 p btn-animate" type="button">{% translate 'Узнать цену' %}
+                        <i class="fas fa-shopping-cart ml-1"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Content-->
+
+<hr>
+<!--PRODUCT 3-->
+<!--Grid row-->
+<div class="container">
+
+
+    <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-4 mx-auto my-0">
+
+            <div class="bg-image hover-zoom ripple rounded-4 text-center"
+                 data-mdb-ripple-color="light">
+                <img draggable="false"
+                     src="{% static 'images/casting/dozhdepriemnik.png' %}"
+                     class="btn-animate mx-3 my-3" alt="" style="max-height: 150px; max-width: 150px;">
+                <img draggable="false"
+                     src="{% static 'images/casting/livnevka.png' %}"
+                     class="btn-animate mx-3 my-3" alt="" style="max-height: 150px; max-width: 150px;">
+            </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-8 mb-4">
+            <!--Content-->
+            <!-- Tabs navs -->
+            <div class="mb-3">
+                <a href="#">
+                    <span class="badge badge-info mr-1">{% translate 'Лиття' %}</span>
+                </a>
+            </div>
+
+            <!-- Tabs navs -->
+            <ul class="nav nav-tabs mb-3" id="ex3" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a
+                            class="nav-link active"
+                            id="ex3-tab-1"
+                            data-mdb-toggle="tab"
+                            href="#ex3-tabs-1"
+                            role="tab"
+                            aria-controls="ex3-tabs-1"
+                            aria-selected="true"
+                    >{% translate 'Дощеприймачі' %}</a
+                    >
+                </li>
+
+            </ul>
+            <!-- Tabs navs -->
+
+            <!-- Tabs content -->
+            <div class="tab-content" id="ex3-content">
+                <div
+                        class="tab-pane active"
+                        id="ex3-tabs-1"
+                        role="tabpanel"
+                        aria-labelledby="ex1-tab-1"
+                >
+                    <table class="table table-sm table-bordered text-center">
+                        <thead>
+                        <tr>
+                            <th scope="col">{% translate 'Наименование' %}</th>
+                            <th scope="col">{% translate 'Масса кг.' %}</th>
+                            <th scope="col">{% translate 'Довжина мм.' %}</th>
+                            <th scope="col">{% translate 'Ширина мм.' %}</th>
+                            <th scope="col">{% translate 'Висота мм.' %}</th>
+                            <th scope="col">{% translate 'Площа живого перерізу 0,28 м2' %}</th>
+                            <th scope="col">{% translate 'Площа пазів %' %}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">{% translate 'Дощеприймачі' %}</th>
+                            <td>119</td>
+                            <td>915</td>
+                            <td>570</td>
+                            <td>120</td>
+                            <td>0,28</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">{% translate 'Ливнівка' %}</th>
+                            <td>95</td>
+                            <td>740</td>
+                            <td>400</td>
+                            <td>80</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <p class="my-0">{% blocktrans %}Призначення: дощеприймачі та зливи колодязів призначені для прийому
+                поверхневих стічних вод з вулиць, дворів та інших територій.
+                Дощеприймачі встановлюються на автостоянках та проїжджій частині міських доріг.{% endblocktrans %}
+            </p>
+
+            <div class="d-flex justify-content-center">
+                <a data-aos="fade-up" class="" href="#">
+                    <!-- Default input -->
+                    <button class="btn btn-danger btn-md my-0 p btn-animate" type="button">{% translate 'Узнать цену' %}
+                        <i class="fas fa-shopping-cart ml-1"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--Grid row-->
+
+<hr>
+<!--PRODUCT 4-->
+<!--Grid row-->
+<div class="container">
+
+
+    <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-4 mx-auto my-0">
+
+            <div class="bg-image hover-zoom ripple rounded-4 text-center"
+                 data-mdb-ripple-color="light">
+                <img draggable="false"
+                     src="{% static 'images/casting/prod4.png' %}"
+                     class="btn-animate mx-3 my-3" alt="" style="max-height: 250px; max-width: 250px;">
+            </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-8 mb-4">
+            <!--Content-->
+            <!-- Tabs navs -->
+            <div class="mb-3">
+                <a href="#">
+                    <span class="badge badge-info mr-1">{% translate 'Лиття' %}</span>
+                </a>
+            </div>
+
+            <!-- Tabs navs -->
+            <ul class="nav nav-tabs mb-3" id="ex4" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a
+                            class="nav-link active"
+                            id="ex4-tab-1"
+                            data-mdb-toggle="tab"
+                            href="#ex3-tabs-1"
+                            role="tab"
+                            aria-controls="ex3-tabs-1"
+                            aria-selected="true"
+                    >{% translate 'Лавки' %}</a
+                    >
+                </li>
+
+            </ul>
+            <!-- Tabs navs -->
+
+            <!-- Tabs content -->
+            <div class="tab-content" id="ex4-content">
+                <div
+                        class="tab-pane active"
+                        id="ex4-tabs-1"
+                        role="tabpanel"
+                        aria-labelledby="ex1-tab-1"
+                >
+                    <table class="table table-sm table-bordered text-center">
+                        <thead>
+                        <tr>
+                            <th scope="col">{% translate 'Найменування' %}</th>
+                            <th scope="col">{% translate 'Довжина мм.' %}</th>
+                            <th scope="col">{% translate 'Ширина мм.' %}</th>
+                            <th scope="col">{% translate 'Висота зі спинкою мм.' %}</th>
+                            <th scope="col">{% translate 'Маса' %}</th>
+                            <th scope="col">{% translate 'Маса Маса ніжки' %}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">{% translate 'Лава паркова' %}</th>
+                            <td>1750</td>
+                            <td>550</td>
+                            <td>800</td>
+                            <td>65</td>
+                            <td>23</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <p class="my-0">{% blocktrans %} Призначення: паркові лавки, що складаються з двох ніжок, виготовлені литтям з чавуну
+                СЧ 180 з влаштуванням сидіння та спинки з дерева. Лавки призначені для обладнання місць відпочинку
+                на дачних ділянках, у карках, дитячих та шкільних майданчиках, зупинок транспортних засобів та ін.{% endblocktrans %}
+            </p>
+
+            <div class="d-flex justify-content-center">
+                <a data-aos="fade-up" class="" href="#">
+                    <!-- Default input -->
+                    <button class="btn btn-danger btn-md my-0 p btn-animate" type="button">{% translate 'Узнать цену' %}
+                        <i class="fas fa-shopping-cart ml-1"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--Grid row-->
+
+<div class="container">
+
+
+    <div class="row d-flex justify-content-center wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-6 text-center">
+
+            <h4 class="my-4 h2 fw-bold">{% translate 'Другие' %} <u class="text-danger">{% translate 'изделия' %}</u></h4>
+
+        </div>
+        <!--Grid column-->
+
+    </div>
+</div>
+<!--Grid row-->
+
+<!--Grid row-->
+<div class="container">
+
+
+    <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-12 col-md-6 text-center">
+
+        <div class="bg-image ripple rounded-4 mb-4 text-center py-3"
+             data-mdb-ripple-color="success" data-mdb-ripple-unbound="true" data-mdb-ripple-radius="50">
+            <img data-aos="zoom-in-right" draggable="false"
+                 src="{% static 'images/new_photos/Wedge-removebg-preview.png' %}"
+                 class="btn-animate mx-3 my-3" alt="" style="max-height: 150px; max-width: 150px;">
+            <img data-aos="zoom-in-right" data-aos-delay="100" draggable="false"
+                 src="{% static 'images/new_photos/03KTM-removebg-preview.png' %}"
+                 class="btn-animate mx-3 my-3" alt="" style="max-height: 150px; max-width: 150px;">
+            <img data-aos="zoom-in-right" data-aos-delay="200" draggable="false"
+                 src="{% static 'images/new_photos/Anker_3-removebg-preview.png' %}"
+                 class="btn-animate mx-3 my-3" alt="" style="max-height: 150px; max-width: 150px;">
+        </div>
+        <a href="badges&Pads">
+            <button data-aos="fade-up" class="btn btn-success btn-animate">{% translate 'Подробнее' %}</button>
+        </a>
+    </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-12 col-md-6 text-center">
+
+            <div class="bg-image ripple rounded-4 mb-4 text-center py-3 "
+                 data-mdb-ripple-color="primary" data-mdb-ripple-unbound="true" data-mdb-ripple-radius="50">
+                <img draggable="false"
+                     src="{% static 'images/piping/zatvor-19ch16br.png' %}"
+                     class="my-auto pt-3 me-3 btn-animate" alt="">
+                <img draggable="false"
+                     src="{% static 'images/piping/zatvor-19ch21br.png' %}" class="pt-3 me-3 btn-animate"
+                     alt="">
+                <img draggable="false"
+                     src="{% static 'images/piping/prod1.png' %}" class="img me-3 btn-animate" alt="">
+                <img draggable="false" src="{% static 'images/vantuz1.png' %}"
+                     class="mt-3 btn-animate" alt="">
+            </div>
+            <a href="piping">
+                <button data-aos="fade-up" class="btn btn-primary btn-animate">{% translate 'Подробнее' %}</button>
+            </a>
+        </div>
+        <!--Grid column-->
+
+
+    </div>
+    <!--Grid row-->
+</div>
+</body>
+
+{% endblock content %}
+<!--content end-->
+
+
+<!--FOOTER -> BASE.HTML-->

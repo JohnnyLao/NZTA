@@ -22,6 +22,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "127.0.0.1",
+    'm-lit.eu',
 ]
 
 # Application definition
@@ -75,8 +76,6 @@ DATABASES = {
 # Password validation, DISABLED
 AUTH_PASSWORD_VALIDATORS = []
 
-# Caches
-CACHE_LIFI_TIME = 86400
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = "static/"
@@ -88,6 +87,15 @@ if DEBUG:
 else:
     STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
+CACHE_LIFE_TIME = 60 * 60 * 10
+CACHES = {
+    "default": {
+        "BACKEND": (
+            'django.core.cache.backends.db.DatabaseCache' if DEBUG else 'django.core.cache.backends.redis.RedisCache'
+        ),
+        "LOCATION": 'cache_table' if DEBUG else 'redis://127.0.0.1:6379/0',
+    }
+}
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"

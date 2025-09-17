@@ -16,6 +16,8 @@ class MainPage(TemplateView):
             return ['content/index.html',]
         elif self.request.LANGUAGE_CODE == 'en':
             return ['content/index-en.html',]
+        elif self.request.LANGUAGE_CODE == 'uk':
+            return ['content/index-uk.html',]
         else:
             return ['content/index.html',]
 
@@ -28,6 +30,8 @@ class Product_rw(TemplateView):
             return ['content/product_rw.html',]
         elif self.request.LANGUAGE_CODE == 'en':
             return ['content/product_rw-en.html',]
+        elif self.request.LANGUAGE_CODE == 'uk':
+            return ['content/product_rw-uk.html',]
         else:
             return ['content/index.html',]
 
@@ -40,6 +44,8 @@ class Product_piping(TemplateView):
             return ['content/product_piping.html',]
         elif self.request.LANGUAGE_CODE == 'en':
             return ['content/product_piping-en.html',]
+        elif self.request.LANGUAGE_CODE == 'uk':
+            return ['content/product_piping-uk.html',]
         else:
             return ['content/index.html',]
 
@@ -53,6 +59,8 @@ class Product_iron_casting(TemplateView):
             return ['content/product_iron_casting.html', ]
         elif self.request.LANGUAGE_CODE == 'en':
             return ['content/product_iron_casting-en.html', ]
+        elif self.request.LANGUAGE_CODE == 'uk':
+            return ['content/product_iron_casting-uk.html', ]
         else:
             return ['content/index.html',]
 

@@ -1,0 +1,688 @@
+<!--extend base.html-->
+{% extends 'content/base-uk.html' %}
+<!--load tags-->
+{% load static %}
+{% load i18n %}
+
+<!--your title block here-->
+{% block title %}
+    {% translate 'LLC "M-LIT"' %}
+{% endblock title %}
+<!--title end-->
+{% block description %}
+    {% translate 'Production of pipeline fittings and spare parts for rolling stock' %}
+{% endblock description %}
+
+
+<!--HEADER -> BASE.HTML-->
+
+
+<!--your content block here-->
+{% block content %}
+
+    <body class="" id="header"
+          style="font-family: 'Roboto'; background: linear-gradient(0deg, rgba(238,238,238,1) 0%, rgba(245,238,238,1) 45%, rgba(238,238,245,1) 60%, rgba(238,245,238,1) 65%, rgba(238,238,238,1) 100%)">
+
+    <!--SWIPER-->
+    <section class="container-fluid mb-9 shadow-lg"
+             style="background: linear-gradient(0deg, rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url({% static 'images/bg1.jpg' %});
+                     height: 400px;
+                     background-position: 0% 90%;
+                     background-size: 150vh;
+                     background-repeat: repeat;
+                     background-attachment: fixed">
+        <div class="row">
+            <div class="col-12 px-0">
+                <div class="swiper mySwiper" style="height: 400px; max-width: 1000px">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ">
+                            <img src="{% static 'images/D75_5057.jpg' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/D75_5044.jpg' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/D75_5005.jpg' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/D75_5001.jpg' %}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SWIPER END-->
+
+    <!--ADD STATICS FURTHER DOWN-->
+
+
+    <!--ABOUT US-->
+    <section class="my-5 mb-10 text-center text-lg-start" id="about_us">
+        <!-- Jumbotron -->
+        <div class="container">
+            <div class="row g-0">
+                <div data-aos="fade-right" data-aos-duration="1000" class="col-lg-6 my-auto"><img
+                        src="{% static 'images/MLIT-01.jpg' %}"
+                        class="w-75 rounded-4 shadow-lg" alt="" draggable="false"></div>
+                <div class="col-lg-6 my-auto">
+                    <div class="card cascading-right"
+                         style="background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px)">
+                        <div class="card-body py-5 px-md-5 shadow-lg"><h2
+                                class="fw-bold mb-4">{% translate 'Про компанию' %}</h2>
+                            <p class="fw-bold">{% translate 'ТВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ "М-ЛИТ"' %} </p>
+                            <div class="row">
+                                <div data-aos="zoom-in" class="col-lg-6"><p>
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span>{% translate 'Трубопровідна арматура' %}</span>
+                                </p>
+                                </div>
+                                <div data-aos="zoom-in" data-aos-delay="400" class="col-lg-6">
+                                    <p>
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        <span>{% translate 'Запасні частини для рухомого складу ' %}</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="">
+                                {% blocktrans %}
+                                    (колишнє ПАТ «Нікопольський завод трубопровідної арматури») - велике спеціалізоване
+                                    ливарне підприємство,
+                                    відоме в Україні та за кордоном з виробництва виробів із чавуну.
+                                    Підприємство оснащене універсальним та спеціалізованим обладнанням відомих
+                                    виробників:
+                                {% endblocktrans %}
+                            </p>
+
+                            <li class="fw-bold">
+                                {% blocktrans %}
+                                    Тритонна індукційна піч "Inductotherm" (Inductotherm Europe Ltd., Великобританія)
+                                    2017р.
+                                {% endblocktrans %}
+                            </li>
+                            <li class="fw-bold">
+                                {% blocktrans %}
+                                    Автоматична формувальна лінія DISA MATCH 32Х32 (DISA Industries AS (Данія 2017р.)
+                                {% endblocktrans %}
+                            </li>
+                            <li class="fw-bold">
+                                {% blocktrans %}
+                                    Автоматичне сумішопідготовче відділення "Eirich" Maschinenfabrik Gustav Eirich GmbH
+                                    & Co KG (Німеччина), 2017р.
+                                {% endblocktrans %}
+                            </li>
+                            <li class="fw-bold">
+                                {% blocktrans %}
+                                    Стрижневі машини Laempe Laempe & Mössner GmbH (Німеччина2016р.).Спосіб виготовлення
+                                    Cold-box процес.
+                                    Ділянка великих стрижнів OMEGA Foundry Machinery Limited (Великобританія 2016 р.)
+                                {% endblocktrans %}
+                            </li>
+                            <li class="fw-bold">
+                                {% blocktrans %}
+                                    Устаткування для виробництва стрижневого та модельного обладнання Haas Automation
+                                    Inc.
+                                    (США), 2017р.
+                                {% endblocktrans %}
+                            </li>
+                            <li class="fw-bold">
+                                {% blocktrans %}
+                                    Спектральна лабораторія контролю якості металу Thermo Fisher Scientific
+                                    (Швейцарія), 2017р.
+                                {% endblocktrans %}
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-5" style="background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px)">
+                <div class="card-body">
+                    {% blocktrans %}
+                        Завод має повний цикл виробництва - ливарний цех, цех механічної обробки,
+                        ремонтно-інструментальний цех,
+                        складальну ділянку, випробувальний комплекс і складське господарство.
+                        Основна спеціалізація заводу – виробництво трубопровідної арматури та запасних частинин рухомого
+                        складу.
+                    {% endblocktrans %}
+                </div>
+            </div>
+            <div class="row mt-3">
+
+                <div class="col">
+                    <div class="card" style="background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px)">
+                        <div class="card-body">
+                            <h5>{% translate '1.Трубопровідна арматура' %}</h5>
+                            <p>
+                                {% blocktrans %}
+                                    Підприємство випускає промислову трубопровідну арматуру, яка використовується як
+                                    запірні пристрої
+                                    на трубопроводах для перекриття робочого середовища.
+                                    Продукцію нашого заводу можна зустріти всюди - від величезних металургійних
+                                    підприємств,
+                                    ТЕЦ, кар'єрів до зрошувальних систем у сільському господарстві, комунальному
+                                    господарстві будь-якого населеного пункту.
+                                {% endblocktrans %}
+                            </p>
+                            <p class="fw-bold">{% translate 'Номенклатура виробів, що випускаються: ' %}</p>
+                            <li class="fw-bold">{% translate 'Засувки 30ч6бр PN10-16 DN50-500 500 (для води та пари з ручним керуванням);' %}</li>
+                            <li class="fw-bold">{% translate 'Засувки 30ч906бр PN10-16 DN50-500 (для води та пари з керуванням  електроприводом);' %}
+                            </li>
+                            <li class="fw-bold">{% translate 'Засувки 30ч6бк PN10-16 DN50-500 (для нафтопродуктів та олій)' %}</li>
+                            <li class="fw-bold">{% translate 'Засувки 30ч47бк4 PN6 DN50-150 (для природного газу)' %}</li>
+                            <li class="fw-bold">{% translate 'Засувки 30ч47бр PN6 DN50-150 (для води пара, нафтопродукти, олії) ' %}</li>
+                            <li class="fw-bold">{% translate 'Затвори зворотні поворотні без фланцевих PN16 DN50-400' %}</li>
+                            <li class="fw-bold">{% translate 'Затвори зворотні поворотні фланцеві PN16 DN50-200 ' %}</li>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px)">
+                        <div class="card-body">
+                            <h5>{% translate '2. Запасні частини для рухомого складу' %}</h5>
+                            <p>
+                                {% blocktrans %}
+                                    Продукція заводу відповідає системі управління якістю ISO 9001,
+                                    виробляється та відповідає вимогам нормативної документації, має гігієнічні
+                                    сертифікати,
+                                    безпечна в експлуатації та для навколишнього середовища.
+                                {% endblocktrans %}
+                            </p>
+                            <p class="fw-bold">{% translate 'Номенклатура виробів, що випускаються:' %}</p>
+                            <li class="fw-bold">{% translate 'Колодка гальмівна гребенева локомотивна тип «М»' %}</li>
+                            <li class="fw-bold">{% translate 'Колодка гальмівна фосфориста для електропоїздів тип «Ф»' %}</li>
+                            <li class="fw-bold">{% translate 'Колодки гальмівні для пасажирських вагонів тип «С»' %}</li>
+                            <li class="fw-bold">{% translate 'Колодка гальмівна КТ-РІЦ для вагонів стандарту РІЦ' %}</li>
+                            <li class="fw-bold">{% translate 'Колодка гальмівна електровоза ЧС' %}</li>
+                            <li class="fw-bold">{% translate 'Клин фрикційний для візка вантажного вагона.' %}</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <p></p>
+    </section>
+    <!--ABOUT US END-->
+
+
+    <!--OUR PRODUCTS KEY-->
+
+    <section>
+        <div class="container">
+            <h2 class="fw-bold text-center my-5">
+                <span data-aos="fade-down" data-aos-delay="100">{% translate 'Залізнична' %}</span>
+                <u data-aos="fade-down" data-aos-delay="200" class="text-success">{% translate 'продукція' %}</u>
+            </h2>
+            <div class="container-fluid text-center">
+                <img draggable="false" src="{% static 'images/Train-PNG-File-Download-Free.png' %}" alt=""
+                     class="img-fluid rounded-circle" style="max-width: 300px; overflow-x: hidden">
+            </div>
+            <!--        ЦВЕТ ЗЕЛЕНЫЙ -->
+            <div class="row gy-3">
+                <div class="bg-image hover-zoom  rounded-4 mb-4 text-center py-3"
+                     style="height: auto">
+                    <img draggable="false"
+                         src="{% static 'images/кл2-removebg-preview.png' %}"
+                         class="w-25 btn-animate me-2" alt="" style="max-height: 150px; max-width: 150px;">
+                    <img draggable="false" src="{% static 'images/кл1-removebg-preview.png' %}"
+                         class="w-25 btn-animate me-2" style="max-height: 150px; max-width: 150px" alt="">
+                    <img draggable="false" src="{% static 'images/кт1-removebg-preview.png' %}"
+                         class="img-fluid w-25 btn-animate me-2" style="max-height: 150px; max-width: 150px" alt="">
+                    <img draggable="false" style="max-height: 150px; max-width: 150px"
+                         src="{% static 'images/кт2-removebg-preview.png' %}" class="img-fluid w-25 btn-animate me-2"
+                         alt="">
+                    <img draggable="false" style="max-height: 150px; max-width: 150px"
+                         src="{% static 'images/кт3-removebg-preview.png' %}" class="img-fluid w-25 btn-animate me-2"
+                         alt="">
+                    <img draggable="false" style="max-height: 150px; max-width: 150px"
+                         src="{% static 'images/кт4-removebg-preview.png' %}" class="img-fluid w-25 btn-animate me-2"
+                         alt="">
+                </div>
+                <div class="col-12 col-md-5 text-center mx-auto">
+                    <h4 class="fw-bold">{% translate 'Клини' %}</h4>
+                    <div class="mb-2 text-success small">
+                        <i class="fas fa-globe-americas me-2"></i>
+                        <span>Global</span>
+                    </div>
+                    <p class="text-muted">
+                        {% blocktrans %}
+                            Клини є складовою частиною клинового гасителя коливань візка.
+                            Клин встановлюється в отвір між вертикальною поверхнею ресорного прийому і похилою
+                            поверхнею бічної рами візка.
+                        {% endblocktrans %}
+                    </p>
+                    <a href="badges&Pads" class="d-none d-md-block">
+                        <button data-aos="fade-up" class="btn btn-success btn-animate px-3">
+                        <span>{% translate 'Подробнее' %}
+                            <i class="fas fa-train ms-1"></i>
+                        </span>
+                        </button>
+                    </a>
+                </div>
+                <div class="col-12 col-md-5 text-center mx-auto">
+                    <h4 class="fw-bold">{% translate 'Колодки' %}</h4>
+                    <div class="mb-2 text-success small">
+                        <i class="fas fa-check-circle me-2"></i>
+                        <span>Quality</span>
+                    </div>
+                    <p class="text-muted">
+                        {% blocktrans %}
+                            Це гальмівні колодки, які використовуються для забезпечення необхідної ефективності
+                            гальмування
+                            у гальмівних вузлах залізничних вагонів.
+                        {% endblocktrans %}
+                    </p>
+                    <a href="badges&Pads">
+                        <button data-aos="fade-up" class="btn btn-success btn-animate px-3">
+                        <span>{% translate 'Подробнее' %}
+                            <i class="fas fa-train ms-1"></i>
+                        </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--OUR PRODUCTS KEY END-->
+
+    <div class="container-fluid text-center mt-5">
+        <img draggable="false" src="{% static 'images/pipe.png' %}" alt="" class="img-fluid">
+    </div>
+    <!--OUR PRODUCTS WATER-->
+    <section class="container my-5 text-center text-lg-start">
+        <h3 class="fw-bold mb-5 text-center">
+            <span>{% translate 'Вироби' %}</span>
+            <u class="text-primary">{% translate 'Трубопроводу' %}</u>
+        </h3>
+        <div class="row gx-lg-5 my-5">
+            <div class="col-lg-4 mb-3 mb-lg-0 text-center">
+                <div class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
+                     data-mdb-ripple-color="primary" data-mdb-ripple-unbound="true" data-mdb-ripple-radius="50"
+                     style="height: 265px">
+                    <img draggable="false" src="{% static 'images/piping/zatvor-19ch16br.png' %}" class="mt-5 pt-3 me-3"
+                         alt="">
+                    <img draggable="false" src="{% static 'images/piping/zatvor-19ch21br.png' %}" class="mt-5 pt-3"
+                         alt="">
+                </div>
+                <h5 class="fw-bold">{% translate 'Затвор' %}</h5>
+                <div class="mb-3 text-primary small">
+                </div>
+                <p class="text-muted">
+                    {% blocktrans %}
+                        Клапани зворотні чавунні фланцеві, призначені для запобігання зворотному перебігу робочого
+                        середовища
+                        в трубопроводах, що транспортують воду, пару, нафту, олії та інші нафтопродукти.
+                    {% endblocktrans %}
+                </p>
+                <a href="piping">
+                    <button data-aos="fade-up" class="btn btn-primary btn-animate px-3">
+                        <span>{% translate 'Подробнее' %}
+                            <i class="fas fa-droplet ms-1"></i>
+                        </span>
+                    </button>
+                </a>
+            </div>
+            <div class="col-lg-4 mb-3 mb-lg-0 text-center">
+                <div>
+                    <div class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
+                         data-mdb-ripple-color="primary" data-mdb-ripple-unbound="true" data-mdb-ripple-radius="50"
+                         style="height: 265px">
+                        <img draggable="false" src="{% static 'images/piping/prod1.png' %}" class="img" alt="">
+                    </div>
+                    <h5 class="fw-bold">
+                        {% translate 'Засувки чавунні' %}</h5>
+                    <div class="mb-3 text-danger small">
+                    </div>
+                    <p class="text-muted">
+                        {% blocktrans %}
+                            Призначення та область застосування: Засувки паралельні дводискові
+                            призначені для встановлення як запірний пристрій на трубопроводах різних галузей
+                            промисловості.
+                        {% endblocktrans %}
+                    </p>
+                    <a href="piping">
+                        <button data-aos="fade-up" class="btn btn-primary btn-animate px-3">
+                        <span>{% translate 'Подробнее' %}
+                            <i class="fas fa-droplet ms-1"></i>
+                        </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3 mb-lg-0 text-center">
+                <div>
+                    <div class="bg-image hover-zoom ripple rounded-4 mb-4 text-center py-3 btn-animate"
+                         data-mdb-ripple-color="primary" data-mdb-ripple-unbound="true" data-mdb-ripple-radius="50"
+                         style="height: 265px">
+                        <img draggable="false" src="{% static 'images/piping/vantuz1.png' %}" class="mt-4" alt="">
+                    </div>
+                    <h5 class="fw-bold mb-3">{% translate 'Вантузи' %}</h5>
+                    <div class="mb-3 text-warning small mx-auto">
+                        <p class="text-muted text-start">
+                            {% blocktrans %}
+                                Вантузи  аераційні чавунні
+                                призначені для автоматичного видалення повітря при його скупченні,
+                                а також для автоматичного забору при утворенні вакууму в системах водопостачання,
+                                водонагрівання та інших мережних пристроях, що транспортують воду з температурою до 363К
+                                (900 С).
+                            {% endblocktrans %}
+                        </p>
+                        <a href="piping">
+                            <button data-aos="fade-up" class="btn btn-primary btn-animate px-3">
+                        <span>{% translate 'Подробнее' %}
+                            <i class="fas fa-droplet ms-1"></i>
+                        </span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--OUR PRODUCTS WATER END-->
+
+    <!--OUR PRODUCTS IRON CASTING-->
+    <section class="container my-5 mb-10">
+        <div class="card mb-3 shadow-lg">
+            <div class="row g-0 d-flex align-items-center">
+                <div class="col-lg-5 col-xl-4 d-none d-lg-flex">
+                    <img
+                            src="{% static 'images/D75_5057.jpg' %}" alt=""
+                            class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5 ms-3">
+                </div>
+                <div class="col-lg-7 col-xl-8 text-center text-md-start">
+                    <div class="card-body px-md-5">
+                        <h3 class="fw-bold mb-4 text-danger"><u>{% translate 'Інші вироби' %}</u></h3>
+                        <p class="text-muted mb-4">
+                            {% blocktrans %}
+                                Компанія нашого клієнта спеціалізується на виробництві широкого асортименту чавунних
+                                виробів.
+                                Завдяки ретельній увазі до деталей та високому рівню майстерності,
+                                ми пропонуємо якісні рішення, що відповідають різноманітним потребам.
+                            {% endblocktrans %}
+                        </p>
+                        <div class="row">
+                            <div class="col-6 col-lg-4">
+                                <p>
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    <span>{% translate 'Легкий люк' %}</span>
+                                </p>
+                            </div>
+                            <div class="col-6 col-lg-4">
+                                <p>
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    <span>{% translate 'Люк середній' %}</span>
+                                </p>
+                            </div>
+                            <div class="col-lg-4">
+                                <p><i class="fas fa-check text-success me-2"></i>
+                                    <span>{% translate 'Люк важкий' %}</span>
+                                </p>
+                            </div>
+                            <div class="col-lg-4">
+                                <p>
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    <span>{% translate 'Антивандальний люк' %}</span>
+                                </p>
+                            </div>
+                            <div class="col-lg-4">
+                                <p>
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    <span>{% translate 'Водоприймальник' %}</span>
+                                </p>
+                            </div>
+                            <div class="col-lg-4">
+                                <p>
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    <span>{% translate 'Ливнева решітка' %}</span>
+                                </p>
+                            </div>
+                            <div class="col-lg-4">
+                                <p>
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    <span>{% translate 'Лавки' %}</span>
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="col-12 text-center">
+                            <a data-aos="fade-up" href="iron_casting">
+                                <button class="btn btn-danger btn-animate px-3">
+                            <span>{% translate 'Подробнее' %}
+                                <i class="fas fa-fill-drip ms-1"></i>
+                            </span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--IRON CASTING END-->
+    <!--OUR PRODUCTS END-->
+
+
+    <!--OUR ADVANTAGES-->
+    <section class="container my-5 mb-10">
+        <h2 class="fw-bold mb-5 text-center">
+            <u class="text-primary">{% translate 'Стратегічний' %}</u>
+            <span>{% translate 'партнер' %}</span>
+        </h2>
+        <div class="row gx-lg-5 align-items-center">
+            <div class="col-lg-5 mb-5 mb-lg-0">
+                <div class="bg-image rounded-5 shadow-lg"
+                     style="background-image: url({% static 'images/D75_4995.jpg' %}); height: 560px; background-size: cover; background-position: 50% 50%;">
+                    <div data-aos="fade-up" data-aos-duration="1000" class="mask1"
+                         style="background-color: rgba(0, 0, 0, 0.5)">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="px-4 py-5 px-md-5 text-white text-center"><h3
+                                    class="text-uppercase fw-bold mb-4"><span>Майбутнє вже</span>
+                                <u class="text-primary">настало</u></h3>
+                                <p class="text-light" style="">
+                                    {% blocktrans %}
+                                        Наш завод оснащений найсучаснішим та найдорожчим обладнанням для обробки металу
+                                        та чавуну,
+                                        включаючи сучасні печі та обробні верстати.
+                                        Ми віддаємо пріоритет інноваційним технологіям, щоб забезпечити високу якість та
+                                        точність нашої продукції. Використовуючи передові методи та новітнє обладнання,
+                                        ми гарантуємо надійність та якість на кожному етапі виробництва
+                                    {% endblocktrans %}
+                                </p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 mb-4 mb-lg-0">
+                <div class="d-flex align-items-start mb-5">
+                    <div class="flex-shrink-0">
+                        <div class="p-3 rounded-4 shadow" style="background-color: hsl(231, 52.6%, 20%)">
+                            <i class="fas fa-industry fa-lg text-white"></i></div>
+                    </div>
+                    <div class="flex-grow-1 ms-4">
+                        <p class="fw-bold mb-1">{% translate 'Завод повного циклу' %}</p>
+                        <p class="text-muted mb-0">
+                            {% blocktrans %}
+                                Наш інтегрований виробничий процес забезпечує контроль якості та своєчасну доставку,
+                                при цьому все, від проектування до оздоблення здійснюється під одним дахом.
+                            {% endblocktrans %}
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-start mb-5">
+                    <div class="flex-shrink-0">
+                        <div class="p-3 rounded-4 shadow" style="background-color: hsl(231, 52.6%, 20%)"><i
+                                class="fas fa-shield-alt fa-lg text-white fa-fw"></i></div>
+                    </div>
+                    <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">{% translate 'Сучасне обладнання' %}</p>
+                        <p class="text-muted mb-0">
+                            {% blocktrans %}
+                                Оснащене найсучаснішим обладнанням, ми ефективно виготовляємо високоякісні чавунні
+                                вироби з точністю та акуратністю.
+                            {% endblocktrans %}
+                        </p></div>
+                </div>
+                <div class="d-flex align-items-start mb-5">
+                    <div class="flex-shrink-0">
+                        <div class="p-3 rounded-4 shadow" style="background-color: hsl(231, 52.6%, 20%)"><i
+                                class="fas fa-shipping-fast fa-lg text-white fa-fw"></i></div>
+                    </div>
+                    <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">{% translate 'Швидка доставка' %}</p>
+                        <p class="text-muted mb-0">
+                            {% blocktrans %}
+                                Ми приділяємо пріоритетну увагу швидкому виконанню замовлень без шкоди для якості,
+                                забезпечуючи надійну доставку та дотримання термінів проекту.
+                                Забезпечення доступності нашої продукції по всьому світу
+                            {% endblocktrans %}
+                        </p></div>
+                </div>
+                <div class="d-flex align-items-start">
+                    <div class="flex-shrink-0">
+                        <div class="p-3 rounded-4 shadow" style="background-color: hsl(231, 52.6%, 20%)"><i
+                                class="fas fa-chart-pie fa-lg text-white fa-fw"></i></div>
+                    </div>
+                    <div class="flex-grow-1 ms-4"><p class="fw-bold mb-1">{% translate 'Якість гарантована!' %}</p>
+                        <p class="text-muted mb-0">
+                            {% blocktrans %}
+                                Наші суворі заходи контролю якості, від сировини до остаточної перевірки,
+                                гарантують чудову продукцію, яка перевершує очікування клієнтів.
+                            {% endblocktrans %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--OUR ADVANTAGES END-->
+
+    <!--OUR CLIENT-->
+    <section class="container my-5 text-center">
+        <h2 class="fw-bold mb-5">
+            <span>{% translate 'Наші' %}</span>
+            <u class="text-primary">{% translate 'Клієнти' %}</u>
+        </h2>
+        <div class="row gx-lg-5 gy-4">
+            <div class="col-6 col-xl-3 col-md-4">
+                <img src="{% static 'images/clients/AMU.jpg' %}"
+                     class="shadow mb-3" alt=""
+                     style="width: auto; height: 100px">
+                <p class="fw-bold">ArcelorMittal</p>
+            </div>
+            <div class="col-6 col-xl-3 col-md-4">
+                <img src="{% static 'images/clients/Arm.jpg' %}"
+                     class="shadow mb-3" alt=""
+                     style="width: auto; height: 100px">
+                <p class="fw-bold">{% translate 'Арматура України' %}</p>
+            </div>
+            <div class="col-6 col-xl-3 col-md-4 my-auto">
+                <img src="{% static 'images/clients/Inter.jpg' %}"
+                     class="shadow mb-3" alt=""
+                     style="width: auto; max-height: 100px">
+                <p class="fw-bold">Interext LLC</p>
+            </div>
+            <div class="col-6 col-xl-3 col-md-4 my-auto">
+                <img src="{% static 'images/clients/Lem.jpg' %}"
+                     class="shadow mb-3" alt=""
+                     style="width: auto; max-height: 100px">
+                <p class="fw-bold">Lemitrans</p>
+            </div>
+            <div class="col-6 col-xl-3 col-md-4">
+                <img src="{% static 'images/clients/prom.jpg' %}"
+                     class="shadow mb-3" alt=""
+                     style="width: auto; max-height: 100px">
+                <p class="fw-bold">Promarmatura</p>
+            </div>
+            <div class="col-6 col-xl-3 col-md-4">
+                <img src="{% static 'images/clients/Днипро.png' %}"
+                     class="shadow mb-3" alt=""
+                     style="width: auto; max-height: 100px">
+                <p class="fw-bold">{% translate 'Дніпровагонмаш' %}</p>
+            </div>
+            <div class="col-6 col-xl-3 col-md-4">
+                <img src="{% static 'images/clients/Карпаты.png' %}"
+                     class="shadow mb-3" alt=""
+                     style="width: auto; max-height: 100px">
+                <p class="fw-bold ">KARPATY</p>
+            </div>
+            <div class="col-6 col-xl-3 col-md-4">
+                <img src="{% static 'images/clients/Краков.png' %}"
+                     class="shadow mb-3" alt=""
+                     style="width: auto; max-height: 100px">
+                <p class="fw-bold ">{% translate 'Крюківський Вагонобудівний Завод' %}</p>
+            </div>
+            <div class="col-6 col-xl-3 col-md-4">
+                <img src="{% static 'images/clients/Пром.png' %}"
+                     class="shadow mb-3" alt=""
+                     style="max-height: 100px">
+                <p class="fw-bold">Promgroup</p>
+            </div>
+            <div class="col-6 col-xl-3 col-md-4">
+                <img src="{% static 'images/clients/ТГК.png' %}"
+                     class="shadow mb-3" alt=""
+                     style="max-height: 100px">
+                <p class="fw-bold">{% translate 'Гірничо-транспортна компанія' %}</p>
+            </div>
+        </div>
+    </section>
+
+    <!--OUR CLIENTS END-->
+
+
+    <!--STATS-->
+    <section class="container my-5 text-center">
+        <h2 class="fw-bold mb-7">
+            <span>{% translate 'Про нас у' %}</span>
+            <u class="text-primary">{% translate 'у цифрах' %}</u>
+        </h2>
+        <div class="row gx-lg-5">
+            <div class="col-lg-4 col-md-12 mb-8 mb-lg-0">
+                <div class="card shadow-2-strong h-100">
+                    <div class="d-flex justify-content-center" style="margin-top: -43px">
+                        <div class="p-3 bg-primary rounded-circle shadow-5-strong d-inline-block" data-aos="flip-right">
+                            <i
+                                    class="fas fa-cubes fa-2x text-white"></i></div>
+                    </div>
+                    <div class="card-body"><h3 class="fw-bold text-primary mb-3">10</h3> <h5
+                            class="text-muted mb-3">{% translate '10 Років на ринку' %}</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-8 mb-lg-0">
+                <div class="card shadow-2-strong h-100">
+                    <div class="d-flex justify-content-center" style="margin-top: -43px">
+                        <div class="p-3 bg-primary rounded-circle shadow-5-strong d-inline-block" data-aos="flip-right"
+                             data-aos-delay="100"><i
+                                class="fas fa-chart-pie fa-2x text-white"></i></div>
+                    </div>
+                    <div class="card-body"><h3 class="fw-bold text-primary mb-3"> > 150 000</h3> <h5
+                            class="text-muted mb-3">{% translate 'Виготовлено компонентів' %}</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-8 mb-lg-0">
+                <div class="card shadow-2-strong h-100">
+                    <div class="d-flex justify-content-center" style="margin-top: -43px">
+                        <div class="p-3 bg-primary rounded-circle shadow-5-strong d-inline-block" data-aos="flip-right"
+                             data-aos-delay="200"><i
+                                class="fas fa-cogs fa-2x text-white"></i></div>
+                    </div>
+                    <div class="card-body"><h3 class="fw-bold text-primary mb-3">92%</h3> <h5
+                            class="text-muted mb-3">{% translate 'Клієнтів замовляють повторно' %}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--STATS END-->
+
+    </body>
+
+{% endblock content %}
+<!--content end-->
+
+
+<!--FOOTER -> BASE.HTML-->

@@ -6,37 +6,37 @@ from content.views import (
     Product_iron_casting,
     Product_piping,
     Product_rw,
-    robots_txt,
     set_language,
-    sitemap_xml,
 )
-from NZTA_main_config.settings import CACHE_LIFI_TIME
+from NZTA_main_config.settings import CACHE_LIFE_TIME
 
 app_name = "content"
 
-# url path
 urlpatterns = [
     # main page
-    path("", MainPage.as_view(), name="main_page"),
+    path("", cache_page(CACHE_LIFE_TIME)(MainPage.as_view()), name="main_page"),
+
     # product_rw page
     path(
         "badges&Pads",
-        Product_rw.as_view(),
+        cache_page(CACHE_LIFE_TIME)(Product_rw.as_view()),
         name="Product_rw",
     ),
+
     # product_piping page
     path(
         "piping",
-        Product_piping.as_view(),
+        cache_page(CACHE_LIFE_TIME)(Product_piping.as_view()),
         name="Product_piping",
     ),
+
     # product_iron_casting page
     path(
         "iron_casting",
-        Product_iron_casting.as_view(),
+        cache_page(CACHE_LIFE_TIME)(Product_iron_casting.as_view()),
         name="Product_iron_casting",
     ),
+
     # languages
     path("set_language/<str:language>", set_language, name="set_language"),
-
 ]
