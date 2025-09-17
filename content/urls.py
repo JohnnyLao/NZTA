@@ -14,26 +14,26 @@ app_name = "content"
 
 urlpatterns = [
     # main page
-    path("", cache_page(CACHE_LIFE_TIME)(MainPage.as_view()), name="main_page"),
+    path("", MainPage.as_view(), name="main_page"),
 
     # product_rw page
     path(
         "badges&Pads",
-        cache_page(CACHE_LIFE_TIME)(Product_rw.as_view()),
+        Product_rw.as_view(),
         name="Product_rw",
     ),
 
     # product_piping page
     path(
         "piping",
-        cache_page(CACHE_LIFE_TIME)(Product_piping.as_view()),
+        Product_piping.as_view(),
         name="Product_piping",
     ),
 
     # product_iron_casting page
     path(
         "iron_casting",
-        cache_page(CACHE_LIFE_TIME)(Product_iron_casting.as_view()),
+        Product_iron_casting.as_view(),
         name="Product_iron_casting",
     ),
 
